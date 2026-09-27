@@ -22,14 +22,9 @@ Core verb: Move and survive
 
 First feature to cut if the project falls behind schedule: Final boss encounter
 
-### Week 3 Lab A - RenderScaleProbe
+---
 
-- Full render scale frame time: 17.92 ms
-- Half render scale (0.5) frame time: 16.72 ms
-- Difference: approximately 6.7%
-- Verdict: CPU-bound
-- Reason: halving the render scale produced only a small improvement, so GPU rendering cost is not the main bottleneck.
-- First CPU-side candidate to investigate: PostLateUpdate.FinishFrame (~19.70 ms in the earlier worst-frame capture).
+## 21 September 2026 - Week 3 Lab A
 
 ### Part B - CPU profiling
 
@@ -58,12 +53,68 @@ First feature to cut if the project falls behind schedule: Final boss encounter
 
 - Full render scale frame time: 17.92 ms
 - Half render scale (0.5) frame time: 16.72 ms
-- Improvement: approximately 6.7%
+- Difference: approximately 6.7%
 - Verdict: CPU-bound
-- Reason: halving the render scale produced only a small change in frame time.
+- Reason: halving the render scale produced only a small improvement, so GPU rendering cost is not the main bottleneck.
+- First CPU-side candidate to investigate: `PostLateUpdate.FinishFrame` (~19.70 ms in the earlier worst-frame capture).
 
 ### Part E - Frame Debugger
 
 - Frame Debugger capture completed on Android emulator.
 - 8 total frame events were observed.
 - UI overlay pass observed under `Canvas.RenderOverlays`.
+
+---
+
+## 23 September 2026 - Week 3 Lab B
+
+### Part A - Frame target
+
+- `Application.targetFrameRate = 60`
+- `QualitySettings.vSyncCount = 0`
+- Optimized Frame Pacing enabled.
+- Android emulator used for testing.
+
+### Part B - Frame time baseline
+
+- Menu: 17.33 ms average / 33.33 ms p99
+- Steady gameplay: 17.08 ms average / 33.33 ms p99
+- Worst-case stress test: 17.72 ms average / 33.33 ms p99
+- Target frame time: 16.67 ms for 60 fps.
+- Measurements were taken from the Release build on the Android emulator.
+- A temporary stress-test scene with moving objects was used for the worst-case measurement because the main gameplay loop is not yet complete.
+
+### Part C - GC allocations
+
+- GC Allocated in Frame: 116 B
+- Allocating markers:
+  - `RenderPipelineManager.DoRenderLoop_Internal()` - 48 B
+  - `NativeInputSystem.NotifyBeforeUpdate()` under `FixedUpdate.NewInputFixedUpdate` - 34 B
+  - `FrameEvents.NewInputBeforeRenderUpdate` - 17 B
+  - `NativeInputSystem.NotifyBeforeUpdate()` under `PreUpdate.NewInputUpdate` - 17 B
+- GC.Collect: none observed during the steady-state capture.
+
+### Part D - Peak memory and rendering
+
+- Peak Unity memory observed: approximately 0.59 GB.
+- TOTAL PSS: 364.2 MB.
+- Worst-case SetPass Calls: 3.
+- Worst-case Batches / Draw Calls: 0.
+- Worst-case Triangles: 507.
+- Worst-case Vertices: approximately 1.0K.
+- TOTAL RSS observed: approximately 467.7 MB.
+- TOTAL SWAP PSS observed: approximately 6.7 MB.
+
+### Part E - Cold start and APK size
+
+- Cold start #1: 1327 ms
+- Cold start #2: 844 ms
+- Cold start #3: 823 ms
+- Median cold start: 844 ms
+- APK size: 31.93 MB
+
+### Part F - Baseline documentation
+
+- Added `docs/CA2/baseline/baseline-sheet.md`.
+- Added `docs/CA2/baseline/w03-sampler-log.png`.
+- Week 3 Lab B measurements were recorded as the first performance baseline row.
