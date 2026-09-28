@@ -1,0 +1,20 @@
+Release APK install proof
+
+APK:
+releases/MyGame-0.2.0-arm64.apk
+
+Install result:
+Success
+
+Package:
+com.ardabecanim.mobilegame
+
+Verified version:
+versionCode=2
+versionName=0.2.0
+
+Minimum SDK:
+26
+
+Target SDK:
+36
