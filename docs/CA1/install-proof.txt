@@ -1,20 +1,29 @@
-Release APK install proof
+No Stars Remain — CA1 Android APK Installation Proof
 
-APK:
-releases/MyGame-0.2.0-arm64.apk
+APK: releases/MyGame-0.3.0-arm64.apk
+Package: com.ardabecanim.mobilegame
+Version: 0.3.0 (release filename / intended Player Settings)
+Bundle Version Code: 3 (intended Player Settings; confirm against installed package)
+Minimum SDK: 26 (previous build; not rechecked for v0.3.0)
+Target SDK: 36 (previous build; not rechecked for v0.3.0)
 
-Install result:
+ADB installation command (PowerShell):
+& "D:\UNITY\6000.6.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\platform-tools\adb.exe" install -r "C:\Users\probe\OneDrive\Desktop\MobileGameProject\releases\MyGame-0.3.0-arm64.apk"
+
+Installation result: Success (reported by student; full PowerShell output not retained)
+
+Testing device: Android emulator (lecturer-approved)
+Emulator model (ro.product.model): sdk_gphone64_x86_64
+Runtime check: Game launched; main menu displayed; Start Game and Quit buttons tested successfully.
+
+Screenshot: docs/CA1/device-screenshot.png (save the latest main-menu screenshot here)
+
+To capture verbatim ADB console evidence, run the installation command above again
+and paste the actual PowerShell output below:
+
+Actual ADB console output:
+Performing Streamed Install
 Success
 
-Package:
-com.ardabecanim.mobilegame
-
-Verified version:
-versionCode=2
-versionName=0.2.0
-
-Minimum SDK:
-26
-
-Target SDK:
-36
+To verify installed version and code, run:
+& "D:\UNITY\6000.6.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\platform-tools\adb.exe" shell dumpsys package com.ardabecanim.mobilegame | Select-String "versionCode|versionName"
