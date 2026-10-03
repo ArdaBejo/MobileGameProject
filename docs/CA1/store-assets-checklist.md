@@ -35,7 +35,7 @@ Screenshots used in a future store listing will represent features that are actu
 
 ## 4. Publication readiness
 
-- [ ] Prepare the short description (maximum **80 characters**) and long description in `descriptions.md`.
-- [ ] Review the game's actual runtime data use and complete `privacy-statement.md`.
+- [x] Prepare the short description (maximum **80 characters**) and long description in `descriptions.md`.
+- [x] Review the game's actual runtime data use and complete `privacy-statement.md`.
 - [ ] Recheck Google Play asset specifications and publication policies immediately before any future release.
 - [ ] Create and validate final graphical assets when the game has reached a suitable development stage.

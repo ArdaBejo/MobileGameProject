@@ -173,3 +173,20 @@ Separating development and release configurations reduces the risk of submitting
 ### Reflections and next actions
 
 The packaging failure showed that entering passwords in Unity is not proof that the correct signing key is available: signing must be tested by completing a release build. Changing the key also demonstrated why APK updates require a consistent signing identity. Separating the menu from gameplay made the startup flow easier to maintain, but testing exposed a regression on one emulator. For CA1, documenting the failure accurately is preferable to claiming compatibility that has not been achieved. The next development priorities are investigating that regression, implementing the playable arena-survivor loop, profiling the updated build and making the Reduce Motion preference affect any future motion effects.
+
+---
+
+## 3 October 2026 — Final UI polish and CA1 submission preparation
+
+### UI changes and testing
+
+- Reorganized the pause and settings interfaces into separate panels, with Settings and Back navigation so only the intended panel is shown at a time.
+- Enlarged titles, labels, buttons and settings controls for a portrait mobile layout. Updated the main menu to match the Pause and Settings menu styling while retaining its simple black background.
+- Applied the existing TextScale component to the main-menu text and checked that saved text-size preferences work across scenes.
+- Unity crashed during one layout-editing session; some unsaved scene layout changes were lost. Rebuilt the visual layout without changing the working scripts and saved the scenes before rebuilding.
+- Rebuilt the v0.3.0 release APK with the updated interface, reinstalled it on the Android 16 emulator and verified the splash screen, Main Menu, Start, Quit, Pause, Settings and Back navigation.
+- Captured updated evidence showing the running game and emulator model and prepared the APK and documentation for CA1 submission.
+
+### Reflection
+
+Keeping panel-navigation logic separate from the visual layout allowed the interfaces to be redesigned without rewriting the settings and pause scripts. The Unity crash reinforced the importance of saving scenes frequently and committing working checkpoints. Verifying the APK after rebuilding was necessary because an earlier APK filename alone would not prove that the updated interface was included.

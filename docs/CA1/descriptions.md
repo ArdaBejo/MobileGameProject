@@ -17,7 +17,7 @@ Take control of a lone survivor stranded on a desolate planet. Face increasingly
 **Planned Gameplay Features:**
 
 - **Automatic Combat:** Focus on movement and positioning while your weapons attack automatically.
-- **Three Unique Weapons:** Fight using the Pulse Blaster, Plasma Orbitals and Homing Micro-Missiles.
+- **Three Unique Weapons:** Fight using the Pistol, Laser Sword and Rocket Launcher.
 - **Character Upgrades:** Improve your damage, movement speed and survivability through passive upgrades.
 - **Challenging Enemies:** Encounter increasingly dangerous alien creatures and powerful bosses.
 - **Roguelite Progression:** Experiment with different upgrades and strategies across repeated survival attempts.
