@@ -4,7 +4,7 @@ status: in-progress
 lab: W02-B
 unity: 6000.6.0f1
 scene: Assets/Scenes/SampleScene.unity
-updated: 2026-09-16
+updated: 2026-10-03
 tags: [accessibility, haptics, ui, w02, no-stars-remain]
 ---
 
@@ -41,6 +41,7 @@ Week 2 Lab B, Parts B (haptics), C (text size) and D (accessibility pass): _Life
 | `Assets/Scripts/TextScaleSettings.cs` | Connects the Small, Normal and Large buttons to the text scale values.                    |
 | `Assets/Scripts/LifecycleGuard.cs`    | Handles pause behaviour when the application loses focus or is backgrounded.              |
 | `Assets/Scripts/PauseMenu.cs`         | Controls the pause panel and Resume action.                                               |
+| `Assets/Scripts/ReduceMotion.cs`      | Connects the Reduce Motion toggle and stores its state in PlayerPrefs.                    |
 | `docs/CA1/accessibility-pass.md`      | Accessibility findings and fixes for the current build.                                   |
 
 ## How to test
@@ -53,6 +54,20 @@ Week 2 Lab B, Parts B (haptics), C (text size) and D (accessibility pass): _Life
 6. **One-handed use:** confirm that Pause and Settings controls can be reached comfortably with one thumb.
 7. **Silent use:** set volume to zero and verify that important feedback is still communicated visually.
 8. Repeat the complete accessibility pass once the main _No Stars Remain_ gameplay loop is playable.
+
+## CA1 update — 3 October 2026 (v0.3.0 project)
+
+The original Week 2 notes and test instructions above are retained. The following results reflect the additional checks performed during CA1 preparation:
+
+| Setting       | Current status                | Evidence and limitations                                                                                                                                                                                     |
+| ------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Haptics       | Implemented                   | `Haptics.cs` reads/writes the `haptics` PlayerPrefs key; Haptics is connected to a toggle. Actual vibration has not been verified on a physical device.                                                      |
+| Text Size     | Working in Unity              | Small, Normal and Large controls now resize the intended text after correcting text-component setup. A complete Android device accessibility pass remains outstanding.                                       |
+| Reduce Motion | Toggle and preference working | `ReduceMotion.cs` stores the `reduceMotion` PlayerPrefs key. The selection was verified to persist after stopping and restarting Unity Play Mode. No motion effects are currently controlled by the setting. |
+
+**Scope of verification:** These are editor/project checks, not a claim that every setting was retested in the signed Android APK. Any settings that depend on device hardware or future gameplay effects remain unverified.
+
+**Data-use note:** Accessibility preferences are saved locally with PlayerPrefs. The CA1 privacy statement must mention this local settings storage; the project has not implemented account-based saves or gameplay progress saves.
 
 ## Known limits
 

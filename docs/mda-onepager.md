@@ -31,8 +31,8 @@ A lone space survivor fights through increasingly hostile alien swarms on a dyin
 
 - **Session length:** 10 minutes per run.
 - **Content in the vertical slice (by Week 6):** 1 arena, 3 weapons, 3 upgrades, a 10-minute run, pause/resume.
-- **Weapons:** Pulse Blaster, Plasma Orbitals, Homing Micro-Missiles.
-- **Passive upgrades:** increased fire rate, increased damage, increased movement speed.
+- **Weapons (revised for CA1):** Pistol (automatic ranged shots), Laser Sword (automatic close-range attacks), Rocket Launcher (periodic explosive attacks).
+- **Passive upgrades (revised for CA1):** Damage Up (increased weapon damage), Speed Up (increased movement speed), Shield (reduced incoming damage).
 - **Content by CA3:** 1 polished arena, 1 boss encounter, improved enemy variety, weapon feedback and balancing.
 - **Stretch goals:** additional planets/arenas and additional bosses.
 
@@ -48,13 +48,22 @@ A lone space survivor fights through increasingly hostile alien swarms on a dyin
 
 ## Performance budget (your device)
 
-- **Device:** Google sdk_gphone64_x86_64 emulator, Android 16 / API 36, Vulkan.
+- **Device:** Google sdk_gphone64_x86_64 emulator, Android 16 / API 36; graphics API for the Week 3 baseline: OpenGLES3.
 - **Target frame time:** 16.7 ms at 60 fps.
 - **99th percentile frame time:** under 25 ms.
 - **Memory ceiling:** under 600 MB.
 - **Cold start:** under 3 s to interactive.
 - **APK size:** under 100 MB.
 - **High FPS toggle:** no.
+
+### Week 3 profiling evidence (earlier build, not v0.3.0)
+
+- **Baseline recorded 26 Sep 2026:** average steady-gameplay frame time 17.08 ms; p99 33.33 ms (above the 25 ms target); worst-case average 17.72 ms.
+- **Memory:** Android TOTAL PSS 364.2 MB; Unity peak total reserved approximately 0.59 GB (close to the 600 MB target; different measurement from PSS).
+- **APK size:** 31.93 MB (below the 100 MB target). Median cold-start measurement: 844 ms; time to first interactive screen was not separately recorded.
+- **Worst-frame investigation:** a 62.03 ms main-thread frame, with 61.64 ms under PlayerLoop and 19.70 ms under PostLateUpdate.FinishFrame. Reducing render scale from 1.0 to 0.5 improved the observed frame time from 17.92 ms to 16.72 ms (~6.7%), suggesting CPU-side work should be investigated first, although the test does not conclusively isolate the bottleneck.
+- **Risk and next step:** frame-time spikes exceed the p99 budget. Re-profile the playable build and investigate frame completion, physics and avoidable allocations before adding more enemies or visual effects.
+- **Evidence:** `docs/CA2/baseline-sheet.md`, `docs/CA2/bottleneck-01.md`, `docs/CA2/w03-profile.data`, `docs/CA2/w03-bad-frame.png`, `docs/CA2/w03-gpu-pass.png`, and the Week 3 sampler log.
 
 ## Monetisation (if any) & ethics notes
 
@@ -77,6 +86,7 @@ The core movement mechanic, automatic combat, pause/resume path and Android devi
 
 - **Locked on:** Wed 16 Sep 2026
 - **Changes after lock** require a note in the development journal explaining what changed and why.
+- **3 Oct 2026 CA1 revision:** simplified the three weapon names and three passive upgrades to make the implementation and player-facing explanation clearer; kept the number of weapons/upgrades, core mechanics and ten-minute run unchanged.
 
 ## Week 6 vertical-slice target
 
