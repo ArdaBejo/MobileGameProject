@@ -190,3 +190,42 @@ The packaging failure showed that entering passwords in Unity is not proof that 
 ### Reflection
 
 Keeping panel-navigation logic separate from the visual layout allowed the interfaces to be redesigned without rewriting the settings and pause scripts. The Unity crash reinforced the importance of saving scenes frequently and committing working checkpoints. Verifying the APK after rebuilding was necessary because an earlier APK filename alone would not prove that the updated interface was included.
+
+### Week 5 Lab A - Coroutine Search
+
+Searched project-authored scripts for:
+
+- IEnumerator
+- StartCoroutine
+- WaitForSeconds
+
+No project-authored coroutines were found.
+
+The only match was:
+
+`Assets/Scripts/Enemy.cs`
+
+which already uses:
+
+`Awaitable.WaitForSecondsAsync(0.1f)`
+
+Coroutine matches found elsewhere were inside TextMesh Pro example/demo scripts and were not modified.
+
+### Week 5 Lab A - Vertical Slice Skeleton
+
+- Created Boot, Menu, Game and Result scene flow.
+- Added GameManager state machine with Playing, Paused, Won and Lost states.
+- Integrated GameManager with the existing LifecycleGuard pause system.
+- Added temporary hit feedback: enemy flashes white when hit.
+- Searched project-authored scripts for coroutines.
+- No project-authored IEnumerator / StartCoroutine usage was found.
+- Enemy.cs already uses Awaitable.WaitForSecondsAsync.
+- Added WaveTimer using Awaitable with a linked CancellationToken.
+- Added EnemyPool with prewarm, spawn and release.
+- Enemies are reused from the pool rather than destroyed.
+- Pool hierarchy count remains stable during reuse.
+- Typical spawning frame: ~17.09 ms.
+- No Instantiate allocation observed on the selected steady-state spawning frame.
+- Small allocations remained elsewhere in the frame (17 B / 48 B / 17 B).
+- Saved profiler capture as:
+  `docs/CA2/baseline/w05-spawner.data`
