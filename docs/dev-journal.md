@@ -258,3 +258,14 @@ The scope change preserves automatic combat, three waves and the run duration. A
 Drag balance correction: the project owner found direct position following too fast. Drag now sets a target and moves toward it at the same 3 world units/second limit as keyboard movement. No finger offset is applied; releasing still stops immediately. Device retest pending.
 
 Part A layout follow-up: enlarged the fixed arena to 9.2 x 12.8 world units and adjusted camera fitting. Replaced the bottom Pause text button with a 72 x 72 pause icon button at the top-left inside the safe area. Play Mode/device layout check pending.
+
+## 12 October 2026 — Week 5 Lab B, Part B implementation
+
+- Added a singleton SceneLoader component to Boot/App with DontDestroyOnLoad. Its serialized child LoadingCanvas uses Screen Space Overlay, high sort order, a dark input-blocking Image and a non-interactable Slider with no handle.
+- Routed Bootstrap -> Menu, Start -> Game, Win/Lose -> Result, Retry -> Game and Main Menu -> Menu through the same Awaitable Load method.
+- Normalized real AsyncOperation.progress by 0.9. The loop waits for progress < 0.9, releases allowSceneActivation and then awaits activation. No fake loading delay was added.
+- Guarded duplicate requests, blocked gameplay/Escape pause while loading and added cleanup for errors/cancellation so activation cannot remain locked. Only the application exit token is passed; focus/background changes do not cancel it.
+- Added Stopwatch scene-load logging for later measurements. Logged duration includes the overlay presentation and destination initialization frames.
+- Existing EnemyPool prewarm remains in Awake and shot/UI setup in Start while the overlay is visible. Optional prewarm before activation is not implemented.
+
+Validation: C# build passed with zero errors/warnings; Boot scene document/component references and Slider script GUID were checked. Runtime overlay visibility, destination transitions and singleton persistence still require Play Mode/device testing. No new load-time figures were claimed. The intentional hang and Android Home/Back resilience exercises remain for Part C. No commit or tag was created by the assistant.

@@ -28,6 +28,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
+        if (SceneLoader.Instance != null && SceneLoader.Instance.IsLoading) return;
         var kb = Keyboard.current;
         if (kb == null || !kb.escapeKey.wasPressedThisFrame) return;
 

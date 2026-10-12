@@ -16,7 +16,8 @@ public class GreyboxLane : MonoBehaviour
     [SerializeField] float shotInterval = 0.4f;
     public Vector2 HalfSize { get; } = new Vector2(4.6f, 6.4f);
     public Transform Player { get; private set; }
-    public bool Playing => Player != null && manager.CurrentState == GameManager.State.Playing && !LifecycleGuard.IsPaused && !finished;
+    public bool Playing => Player != null && manager.CurrentState == GameManager.State.Playing && !LifecycleGuard.IsPaused && !finished
+        && (SceneLoader.Instance == null || !SceneLoader.Instance.IsLoading);
     public int Wave => Mathf.Min(3, 1 + Mathf.FloorToInt(elapsed / 40f));
     public float SpawnInterval => Wave == 1 ? 2f : Wave == 2 ? 1.35f : 0.85f;
     public float EnemySpeed => Wave == 1 ? 1f : Wave == 2 ? 1.25f : 1.5f;

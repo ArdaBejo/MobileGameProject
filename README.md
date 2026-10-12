@@ -20,7 +20,15 @@ The current enabled build scenes are `Boot`, `Menu`, `Game`, and `Result`, in th
 - Result shows the outcome, survival time and kills, with Retry and Main Menu buttons.
 - Pause/Settings remain available; the HUD has a touch Pause button. Text scaling and optional hit haptics use the existing settings.
 
-The lane uses a 60-enemy prewarm and 32 reusable shots. Win/Lose, touch layout and balancing still require Play Mode/device verification. Async loading, loading-resilience tests, timing measurements and external playtest evidence are the remaining Lab B parts.
+The lane uses a 60-enemy prewarm and 32 reusable shots. Gameplay was tested by the project owner in the Editor and the Android build was reported to run; subsequent input/layout revisions still require device verification. Loading-resilience tests, timing measurements and external playtest evidence are the remaining Lab B parts.
+
+## Week 5 Lab B — Part B async loading
+
+Start Play Mode from `Boot`. Its persistent `App` owns `SceneLoader` and a serialized `LoadingCanvas` with a non-interactable, handle-free progress Slider. `Bootstrap`, Start Game, Win/Lose, Retry and Main Menu all use the same loader. No loader is created by searching other scenes.
+
+The Slider displays `AsyncOperation.progress / 0.9f`. Activation is held only until progress reaches 0.9, then released before awaiting completion. The overlay blocks clicks and remains visible until the destination initializes; duplicate load requests are ignored. Gameplay and Escape pause input are gated during loading. Background/focus changes do not cancel the application's exit token. Cleanup always releases the activation gate and hides the overlay.
+
+The loader logs `[perf] scene <name> loaded in <milliseconds> ms`, including its overlay and scene-initialization frames. Small scenes may load too quickly to show intermediate percentages. No artificial delay is added. Verify the overlay, Retry/Main Menu flow and a single persistent App in Play Mode and on Android. The intentional hang experiment and Home/Back tests belong to Part C; new cold-start and interactive measurements belong to Part D.
 
 ## Project overview
 

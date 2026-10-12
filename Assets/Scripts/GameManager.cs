@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -33,16 +32,18 @@ public class GameManager : MonoBehaviour
 
     public void WinGame()
     {
+        if (CurrentState == State.Won || CurrentState == State.Lost) return;
         SetState(State.Won);
         LifecycleGuard.SetGlobalPaused(false);
-        SceneManager.LoadScene("Result");
+        SceneLoader.RequestLoad("Result");
     }
 
     public void LoseGame()
     {
+        if (CurrentState == State.Won || CurrentState == State.Lost) return;
         SetState(State.Lost);
         LifecycleGuard.SetGlobalPaused(false);
-        SceneManager.LoadScene("Result");
+        SceneLoader.RequestLoad("Result");
     }
 
     void SetState(State newState)
