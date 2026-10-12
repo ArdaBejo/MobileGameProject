@@ -1,0 +1,42 @@
+{
+  "deviceSerial": "emulator-5554",
+  "deviceModel": "sdk_gphone64_x86_64",
+  "androidVersion": "16",
+  "package": "com.ardabecanim.mobilegame",
+  "activity": "com.ardabecanim.mobilegame/com.unity3d.player.UnityPlayerGameActivity",
+  "versionName": "0.4.0",
+  "versionCode": "4",
+  "apkPath": "C:\\Users\\probe\\OneDrive\\Desktop\\MobileGameProject\\Builds\\MyGame-0.4.0.apk",
+  "apkBytes": 35674041,
+  "apkSha256": "abe98149f86a16d0c15db7500e10475c0075156f847840ad257e87a6131dfa77",
+  "installedApkMatches": true,
+  "trials": [
+    {
+      "trial": 1,
+      "pid": 22036,
+      "totalTimeMs": 3209,
+      "interactiveSeconds": 9.44,
+      "menuSceneLoadMs": 5416
+    },
+    {
+      "trial": 2,
+      "pid": 22218,
+      "totalTimeMs": 3469,
+      "interactiveSeconds": 8.05,
+      "menuSceneLoadMs": 3958
+    },
+    {
+      "trial": 3,
+      "pid": 22403,
+      "totalTimeMs": 2733,
+      "interactiveSeconds": 8.01,
+      "menuSceneLoadMs": 4023
+    }
+  ],
+  "medianColdStartMs": 3209,
+  "medianInteractiveSeconds": 8.05,
+  "medianMenuSceneLoadMs": 4023,
+  "gameSceneLoadMs": 1513,
+  "gameSceneLoadPid": 22403,
+  "gameSceneLoadSamples": 1
+}

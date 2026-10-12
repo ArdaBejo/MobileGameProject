@@ -269,3 +269,39 @@ Part A layout follow-up: enlarged the fixed arena to 9.2 x 12.8 world units and 
 - Existing EnemyPool prewarm remains in Awake and shot/UI setup in Start while the overlay is visible. Optional prewarm before activation is not implemented.
 
 Validation: C# build passed with zero errors/warnings; Boot scene document/component references and Slider script GUID were checked. Runtime overlay visibility, destination transitions and singleton persistence still require Play Mode/device testing. No new load-time figures were claimed. The intentional hang and Android Home/Back resilience exercises remain for Part C. No commit or tag was created by the assistant.
+
+## Week 5 Lab B — Part C activation-trap experiment
+
+The project owner ran the temporary Editor-only hang experiment and confirmed that Loading stayed at 100% without activating Game. The experiment used allowSceneActivation=false and while (!operation.isDone), demonstrating that progress stops at 0.9 while isDone remains false. The temporary experiment code was then removed; the loader retains only while (operation.progress < 0.9f) followed by activation. Normal-flow retest and Android mid-load Home/Back tests remain pending.
+
+### Part C verification follow-up
+
+The project owner confirmed that normal loading worked after removal of the hang experiment and that both Android resilience tests were performed successfully: Home mid-load, wait five seconds and return; Android Back during loading. These are owner-reported results, not assistant-observed tests.
+
+## Week 5 Lab B — Part D preparation
+
+Connected device inspected via Unity's bundled ADB: emulator-5554, sdk_gphone64_x86_64, Android 16. Installed package com.ardabecanim.mobilegame reports versionName 0.4.0 / versionCode 4. Launch component was resolved as com.ardabecanim.mobilegame/com.unity3d.player.UnityPlayerGameActivity.
+
+Added MenuReady to log [perf] interactive once, on the first Menu Update after SceneLoader stops blocking input. MainMenuManager attaches it at runtime. SceneLoader already logs Stopwatch duration. C# build passed with zero errors/warnings. A fresh Android build/install is required before collecting all measurements from the same instrumented APK. No new cold-start or interactive figures are recorded yet.
+
+### Part D measured results
+
+Collected three force-stopped cold launches on Android 16 emulator-5554 using the rebuilt v0.4.0 Release IL2CPP ARM64 APK. Installed APK SHA-256 matched Builds/MyGame-0.4.0.apk. Android TotalTime: 3209 / 3469 / 2733 ms, median 3209 ms. Unity MenuReady interactive markers: 9.44 / 8.05 / 8.01 s, median 8.05 s. Boot -> Menu Stopwatch durations: 5416 / 3958 / 4023 ms, median 4023 ms. APK size: 35,674,041 bytes (35.67 MB / 34.02 MiB). Raw launch/perf evidence and a reusable measurement script are saved in docs/CA2/baseline.
+
+The 8.05 s interactive marker exceeds the existing 3 s MDA target. No cause is claimed from these timings alone; startup/activation profiling on a comparable configuration is the next performance task. The old Week 3 timing is a different-build baseline. Menu -> Game measurement is pending a Start Game input in the third measured process. External neighbour playtest remains pending.
+
+Part D completion: captured Menu -> Game load of 1513 ms in PID 22403 (one sample, not a median). Updated the Baseline Sheet and raw/JSON evidence. Part D measurements are complete; startup and transition targets are exceeded, while APK size is within budget.
+
+## Week 5 Lab B — Part E playtest feedback
+
+The project owner relayed feedback from other players: the game was understandable, but currently felt quite simple. Wave 1 felt too easy while Wave 3 felt too difficult. The project owner confirmed that the external playtest lasted two minutes.
+
+Two observations:
+1. The current greybox content felt basic. This is feedback about content depth, not evidence that controls or objectives were confusing.
+2. The difficulty ramp was uneven: little pressure in Wave 1, excessive pressure in Wave 3.
+
+No specific comprehension confusions were reported; do not invent two to satisfy the worksheet wording. The fixed arena, automatic pistol and survival loop were reported as understandable.
+
+First planned change: smooth the difficulty ramp by slightly increasing Wave 1 pressure and reducing Wave 3 pressure, then retest before choosing final values. Keep the three 40-second waves and 120-second run. No boss, extra weapons or progression systems are added in this lab step. Gameplay values have not yet changed in response to this feedback.
+
+Lab E result: the external playtest lasted two minutes; no comprehension confusions were reported. The two actual observations above are recorded instead of invented confusions. The student will commit and create the worksheet tag v0.3.1-lane; the project version remains 0.4.0. No commit or tag has been created by the assistant.

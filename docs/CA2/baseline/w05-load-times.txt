@@ -1,0 +1,41 @@
+Trial 1, PID 22036
+Starting: Intent { cmp=com.ardabecanim.mobilegame/com.unity3d.player.UnityPlayerGameActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.ardabecanim.mobilegame/com.unity3d.player.UnityPlayerGameActivity
+TotalTime: 3209
+WaitTime: 3246
+Complete
+10-12 21:52:47.427 22036 22052 I Unity   : ApplicationInfo 'com.ardabecanim.mobilegame', Version '0.4.0', Min API Level '26', Target API Level '36'
+10-12 21:52:47.427 22036 22052 I Unity   : Built from '6000.6/respin/6000.6.0f1-fa21a270ab12' branch, Version '6000.6.0f1 (f7f8ed4d1e24)', Build type 'Release', Scripting Backend 'il2cpp', CPU 'arm64-v8a', Stripping 'Enabled'
+10-12 21:52:59.402 22036 22052 I Unity   : [perf] scene Menu loaded in 5416 ms
+10-12 21:52:59.508 22036 22052 I Unity   : [perf] interactive 9.44s
+
+Trial 2, PID 22218
+Starting: Intent { cmp=com.ardabecanim.mobilegame/com.unity3d.player.UnityPlayerGameActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.ardabecanim.mobilegame/com.unity3d.player.UnityPlayerGameActivity
+TotalTime: 3469
+WaitTime: 3514
+Complete
+10-12 21:53:04.859 22218 22239 I Unity   : ApplicationInfo 'com.ardabecanim.mobilegame', Version '0.4.0', Min API Level '26', Target API Level '36'
+10-12 21:53:04.859 22218 22239 I Unity   : Built from '6000.6/respin/6000.6.0f1-fa21a270ab12' branch, Version '6000.6.0f1 (f7f8ed4d1e24)', Build type 'Release', Scripting Backend 'il2cpp', CPU 'arm64-v8a', Stripping 'Enabled'
+10-12 21:53:15.303 22218 22239 I Unity   : [perf] scene Menu loaded in 3958 ms
+10-12 21:53:15.363 22218 22239 I Unity   : [perf] interactive 8.05s
+
+Trial 3, PID 22403
+Starting: Intent { cmp=com.ardabecanim.mobilegame/com.unity3d.player.UnityPlayerGameActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.ardabecanim.mobilegame/com.unity3d.player.UnityPlayerGameActivity
+TotalTime: 2733
+WaitTime: 2782
+Complete
+10-12 21:53:20.038 22403 22419 I Unity   : ApplicationInfo 'com.ardabecanim.mobilegame', Version '0.4.0', Min API Level '26', Target API Level '36'
+10-12 21:53:20.038 22403 22419 I Unity   : Built from '6000.6/respin/6000.6.0f1-fa21a270ab12' branch, Version '6000.6.0f1 (f7f8ed4d1e24)', Build type 'Release', Scripting Backend 'il2cpp', CPU 'arm64-v8a', Stripping 'Enabled'
+10-12 21:53:30.818 22403 22419 I Unity   : [perf] scene Menu loaded in 4023 ms
+10-12 21:53:30.962 22403 22419 I Unity   : [perf] interactive 8.01s
+
+Menu -> Game, measured trial 3 process:
+10-12 21:53:44.927 22403 22419 I Unity   : [perf] scene Game loaded in 1513 ms

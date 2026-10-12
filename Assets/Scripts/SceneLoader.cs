@@ -16,6 +16,7 @@ public class SceneLoader : MonoBehaviour
     TMP_Text progressText;
     int lastPercent = -1;
 
+
     void Awake()
     {
         if (Instance != null && Instance != this)
@@ -61,6 +62,7 @@ public class SceneLoader : MonoBehaviour
             operation = SceneManager.LoadSceneAsync(scene, LoadSceneMode.Single);
             if (operation == null) throw new InvalidOperationException($"Could not load scene '{scene}'.");
             operation.allowSceneActivation = false;
+
 
             // isDone remains false at 0.9 while activation is blocked.
             while (operation.progress < 0.9f)
