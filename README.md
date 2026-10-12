@@ -7,7 +7,20 @@
 
 **Current Unity project version:** 0.4.0 (versionCode 4). The CA1 device evidence below remains specific to 0.3.0; it does not verify the current project version.
 
-The current enabled build scenes are `Boot`, `Menu`, `Game`, and `Result`, in that order. `Boot` loads `Menu` on startup. `Result` is a placeholder scene. The earlier `MainMenu` and `Sample Scene` names below describe the CA1 release history.
+The current enabled build scenes are `Boot`, `Menu`, `Game`, and `Result`, in that order. `Boot` loads `Menu` on startup. The earlier `MainMenu` and `Sample Scene` names below describe the CA1 release history.
+
+## Week 5 Lab B — Part A greybox
+
+`Game` now contains a `GreyboxLane` component which constructs the flat-colour arena, player, pooled shots and gameplay HUD at runtime. These generated objects appear in the Hierarchy during Play Mode. Inspector references connect the existing GameManager, EnemyPool and URP unlit material.
+
+- Touch the blue player and drag it directly under your finger. Release to stop. The arena boundaries clamp movement. In the Editor, mouse dragging and WASD/arrow keys are supported.
+- The pistol automatically targets the nearest enemy; enemies have 3 HP.
+- The player has 5 HP, with one second of invulnerability after contact damage.
+- Three 40-second waves increase enemy speed and spawn frequency. Survive 120 seconds to win; zero HP loses.
+- Result shows the outcome, survival time and kills, with Retry and Main Menu buttons.
+- Pause/Settings remain available; the HUD has a touch Pause button. Text scaling and optional hit haptics use the existing settings.
+
+The lane uses a 60-enemy prewarm and 32 reusable shots. Win/Lose, touch layout and balancing still require Play Mode/device verification. Async loading, loading-resilience tests, timing measurements and external playtest evidence are the remaining Lab B parts.
 
 ## Project overview
 

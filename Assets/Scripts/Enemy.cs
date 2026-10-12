@@ -31,6 +31,12 @@ public class Enemy : MonoBehaviour
     {
         health = maxHealth;
 
+        if (GreyboxLane.Instance != null && GreyboxLane.Instance.Player != null && spriteRenderer != null)
+        {
+            GreyboxLane.Instance.ConfigureEnemy(spriteRenderer);
+            originalColor = new Color(0.9f, 0.2f, 0.25f);
+        }
+
         if (spriteRenderer != null)
             spriteRenderer.color = originalColor;
     }
@@ -42,6 +48,7 @@ public class Enemy : MonoBehaviour
 
         if (health <= 0)
         {
+            GreyboxLane.Instance?.EnemyKilled();
             Despawn();
             return;
         }
@@ -85,6 +92,15 @@ public class Enemy : MonoBehaviour
 
     void OnMouseDown()
     {
-        Hit();
+        if (GreyboxLane.Instance == null) Hit();
+    }
+
+    void Update()
+    {
+        var lane = GreyboxLane.Instance;
+        if (lane == null || !lane.Playing || health <= 0) return;
+        transform.position = Vector2.MoveTowards(transform.position, lane.Player.position, lane.EnemySpeed * Time.deltaTime);
+        if (((Vector2)transform.position - (Vector2)lane.Player.position).sqrMagnitude < 0.5f * 0.5f)
+            lane.DamagePlayer();
     }
 }

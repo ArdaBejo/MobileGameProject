@@ -910,7 +910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyPool
   enemyPrefab: {fileID: -392959021812512949, guid: 7ed43d8fedda76747810584c23dcacf5, type: 3}
-  size: 10
+  size: 60
 --- !u!4 &692534475
 Transform:
   m_ObjectHideFlags: 0
@@ -3926,6 +3926,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1993d6d9469e0d04ab574b7708eb6a27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextScale
+--- !u!1 &220000001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 220000002}
+  - component: {fileID: 220000003}
+  m_Layer: 0
+  m_Name: GreyboxLane
+  m_TagString: Untagged
+  m_IsActive: 1
+--- !u!4 &220000002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220000001}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &220000003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220000001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3308bb2dcd86483cb94ea28d3d733f41, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::GreyboxLane
+  manager: {fileID: 1274864675}
+  pool: {fileID: 692534474}
+  spriteMaterialTemplate: {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  duration: 120
+  movementSpeed: 3
+  maxHealth: 5
+  shotInterval: 0.4
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3938,3 +3984,4 @@ SceneRoots:
   - {fileID: 1274864676}
   - {fileID: 692534475}
   - {fileID: 245516553}
+  - {fileID: 220000002}

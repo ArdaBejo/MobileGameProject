@@ -8,6 +8,38 @@ public class EnemyPool : MonoBehaviour
 
     readonly Stack<Enemy> pool = new();
     readonly HashSet<Enemy> activeEnemies = new();
+    public int ActiveCount => activeEnemies.Count;
+
+    public Enemy Nearest(Vector2 position)
+    {
+        Enemy nearest = null;
+        float distance = float.PositiveInfinity;
+        foreach (var enemy in activeEnemies)
+        {
+            float candidate = ((Vector2)enemy.transform.position - position).sqrMagnitude;
+            if (candidate < distance) { nearest = enemy; distance = candidate; }
+        }
+        return nearest;
+    }
+
+    public Enemy FirstHit(Vector2 from, Vector2 to, float radius)
+    {
+        Vector2 segment = to - from;
+        float lengthSquared = segment.sqrMagnitude;
+        float first = float.PositiveInfinity;
+        Enemy hit = null;
+        foreach (var enemy in activeEnemies)
+        {
+            Vector2 position = enemy.transform.position;
+            float t = lengthSquared > 0 ? Mathf.Clamp01(Vector2.Dot(position - from, segment) / lengthSquared) : 0;
+            if ((position - (from + segment * t)).sqrMagnitude <= radius * radius && t < first)
+            {
+                first = t;
+                hit = enemy;
+            }
+        }
+        return hit;
+    }
 
     void Awake()
     {

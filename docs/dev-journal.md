@@ -229,3 +229,32 @@ Coroutine matches found elsewhere were inside TextMesh Pro example/demo scripts 
 - Small allocations remained elsewhere in the frame (17 B / 48 B / 17 B).
 - Saved profiler capture as:
   `docs/CA2/baseline/w05-spawner.data`
+
+## 12 October 2026 — Week 5 Lab B, Part A implementation
+
+Lane definition: one fixed, bounded 2D arena with three 40-second survivor waves. The player moves with a virtual joystick (WASD/arrows for Editor testing) and an automatic pistol. Survive 120 seconds to win; losing all five HP ends the run. No boss, XP or upgrades are included in this lab step.
+
+- Added runtime greybox setup to Game: flat floor/boundaries, blue player, red enemies, yellow shots, fixed portrait camera and safe-area gameplay HUD.
+- Reused EnemyPool and the Awaitable WaveTimer. Enemies spawn near the arena edges, chase the player and deal contact damage with one second of player invulnerability.
+- Added three increasing wave stages, kill count, countdown, shot/hit audio stub, enemy hit flash, player hit flash and optional haptics.
+- Prewarmed 60 enemies and 32 reusable pistol shots. Projectile collision checks sweep the travelled segment.
+- Added Result outcome, survival time, kills, Retry and Main Menu. Scene transitions still use the existing loading path until Part B.
+- The arena, player and UI are generated during Play Mode by GreyboxLane; parameters and scene references are visible in the Inspector.
+
+Validation: initial C# build passed with no errors or warnings. Play Mode/device testing and difficulty tuning are pending. No new performance measurements or neighbour-playtest observations have been recorded. Parts B–E remain pending, and no commit or tag was created by the assistant.
+
+### Part A playtest follow-up
+
+The project owner reported that the gameplay worked in Play Mode, including the implemented flow, but the playable arena felt small. Enlarged the bounded arena from 7.2 x 9.6 to 8.2 x 11.6 world units and kept the camera fixed, with aspect-ratio fitting to preserve the boundaries. HP and current combat values remain unchanged.
+
+Future UI preference: place the timer at the top and display health bars above characters. This is recorded for a later UI pass, not implemented in this step. External neighbour playtest and device verification are still pending.
+
+### Part A touch-control revision
+
+After the Android build ran successfully, the project owner reported that joystick gestures sometimes opened Android's bottom system navigation. Replaced the joystick with direct player dragging at the owner's request: touch near the blue player to grab it, follow the finger without an offset, release to stop. Movement is clamped at the arena boundary. A second finger cannot take over an active drag; UI touches cannot start movement, and pause/focus changes clear the drag. Mouse dragging and WASD/arrows remain available for Editor testing. Direct dragging follows finger position rather than the keyboard movement-speed limit; difficulty may need rebalancing after a device test.
+
+The scope change preserves automatic combat, three waves and the run duration. Android verification of the revised controls is pending.
+
+Drag balance correction: the project owner found direct position following too fast. Drag now sets a target and moves toward it at the same 3 world units/second limit as keyboard movement. No finger offset is applied; releasing still stops immediately. Device retest pending.
+
+Part A layout follow-up: enlarged the fixed arena to 9.2 x 12.8 world units and adjusted camera fitting. Replaced the bottom Pause text button with a 72 x 72 pause icon button at the top-left inside the safe area. Play Mode/device layout check pending.
