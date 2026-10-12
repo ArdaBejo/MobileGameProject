@@ -15,4 +15,10 @@ public class MotionSettingsUI : MonoBehaviour
     {
         MotionSetting.ReduceMotion = value;
     }
+
+    void OnDestroy()
+    {
+        if (reduceMotionToggle != null)
+            reduceMotionToggle.onValueChanged.RemoveListener(OnChanged);
+    }
 }

@@ -2622,8 +2622,6 @@ GameObject:
   - component: {fileID: 1246561506}
   - component: {fileID: 1246561509}
   - component: {fileID: 1246561508}
-  - component: {fileID: 1246561510}
-  - component: {fileID: 1246561511}
   m_Layer: 5
   m_Name: Haptics Toggle
   m_TagString: Untagged
@@ -2801,31 +2799,6 @@ MonoBehaviour:
       m_Calls: []
   m_IsOn: 0
 --- !u!114 &1246561509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1246561504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1993d6d9469e0d04ab574b7708eb6a27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TextScale
---- !u!114 &1246561510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1246561504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a35df97efd8554f4eae0214e3295cc3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HapticsSettings
-  hapticsToggle: {fileID: 1246561508}
---- !u!114 &1246561511
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

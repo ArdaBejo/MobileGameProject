@@ -5,6 +5,19 @@ public class PauseSettingsNavigation : MonoBehaviour
     public GameObject pausePanel;
     public GameObject settingsPanel;
 
+    public void ShowPauseState(bool paused)
+    {
+        if (!paused)
+        {
+            settingsPanel.SetActive(false);
+            pausePanel.SetActive(false);
+            return;
+        }
+
+        // Focus-loss notifications must not put Pause over an open Settings panel.
+        pausePanel.SetActive(!settingsPanel.activeSelf);
+    }
+
     public void OpenSettings()
     {
         pausePanel.SetActive(false);

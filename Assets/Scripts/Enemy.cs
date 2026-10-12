@@ -1,3 +1,5 @@
+using System;
+using System.Threading;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -9,6 +11,7 @@ public class Enemy : MonoBehaviour
 
     SpriteRenderer spriteRenderer;
     Color originalColor;
+    CancellationTokenSource hitFeedback;
 
     void Awake()
     {
@@ -34,19 +37,42 @@ public class Enemy : MonoBehaviour
 
     public async void Hit()
     {
+        if (!isActiveAndEnabled || health <= 0) return;
         health--;
-
-        if (spriteRenderer != null)
-        {
-            spriteRenderer.color = Color.white;
-            await Awaitable.WaitForSecondsAsync(0.1f);
-            spriteRenderer.color = originalColor;
-        }
 
         if (health <= 0)
         {
             Despawn();
+            return;
         }
+
+        if (spriteRenderer != null)
+        {
+            CancelHitFeedback();
+            var feedback = CancellationTokenSource.CreateLinkedTokenSource(destroyCancellationToken);
+            hitFeedback = feedback;
+            spriteRenderer.color = Color.white;
+            try
+            {
+                await Awaitable.WaitForSecondsAsync(0.1f, feedback.Token);
+                spriteRenderer.color = originalColor;
+            }
+            catch (OperationCanceledException) { }
+            finally
+            {
+                if (hitFeedback == feedback) hitFeedback = null;
+                feedback.Dispose();
+            }
+        }
+    }
+
+    void OnDisable() => CancelHitFeedback();
+
+    void CancelHitFeedback()
+    {
+        var feedback = hitFeedback;
+        hitFeedback = null;
+        feedback?.Cancel();
     }
 
     public void Despawn()

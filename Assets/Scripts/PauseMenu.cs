@@ -17,7 +17,14 @@ public class PauseMenu : MonoBehaviour
         LifecycleGuard.PausedChanged -= Show;
     }
 
-    void Show(bool paused) => panel.SetActive(paused);
+    void Show(bool paused)
+    {
+        var navigation = guard.GetComponent<PauseSettingsNavigation>();
+        if (navigation != null)
+            navigation.ShowPauseState(paused);
+        else
+            panel.SetActive(paused);
+    }
 
     void Update()
     {

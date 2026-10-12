@@ -7,6 +7,7 @@ public class EnemyPool : MonoBehaviour
     [SerializeField] int size = 20;
 
     readonly Stack<Enemy> pool = new();
+    readonly HashSet<Enemy> activeEnemies = new();
 
     void Awake()
     {
@@ -30,6 +31,7 @@ public class EnemyPool : MonoBehaviour
         Enemy enemy = pool.Count > 0 ? pool.Pop() : Create();
 
         enemy.transform.position = position;
+        activeEnemies.Add(enemy);
         enemy.gameObject.SetActive(true);
 
         return enemy;
@@ -37,6 +39,7 @@ public class EnemyPool : MonoBehaviour
 
     public void Release(Enemy enemy)
     {
+        if (enemy == null || !activeEnemies.Remove(enemy)) return;
         enemy.gameObject.SetActive(false);
         pool.Push(enemy);
     }

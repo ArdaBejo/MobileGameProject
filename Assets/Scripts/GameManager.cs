@@ -18,35 +18,36 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        SetState(State.Playing);
+        SetState(LifecycleGuard.IsPaused ? State.Paused : State.Playing);
     }
 
     public void PauseGame()
     {
-        SetState(State.Paused);
+        if (CurrentState == State.Playing) LifecycleGuard.SetGlobalPaused(true);
     }
 
     public void ResumeGame()
     {
-        SetState(State.Playing);
+        if (CurrentState == State.Paused) LifecycleGuard.SetGlobalPaused(false);
     }
 
     public void WinGame()
     {
         SetState(State.Won);
+        LifecycleGuard.SetGlobalPaused(false);
         SceneManager.LoadScene("Result");
     }
 
     public void LoseGame()
     {
         SetState(State.Lost);
+        LifecycleGuard.SetGlobalPaused(false);
         SceneManager.LoadScene("Result");
     }
 
     void SetState(State newState)
     {
         CurrentState = newState;
-        Time.timeScale = newState == State.Paused ? 0f : 1f;
 
         Debug.Log($"Game state changed to: {newState}");
 
@@ -55,16 +56,17 @@ public class GameManager : MonoBehaviour
 
     void OnEnable()
     {
-    LifecycleGuard.PausedChanged += OnPauseChanged;
+        LifecycleGuard.PausedChanged += OnPauseChanged;
     }
 
     void OnDisable()
     {
-    LifecycleGuard.PausedChanged -= OnPauseChanged;
+        LifecycleGuard.PausedChanged -= OnPauseChanged;
     }
 
     void OnPauseChanged(bool paused)
     {
-    SetState(paused ? State.Paused : State.Playing);
+        if (CurrentState == State.Won || CurrentState == State.Lost) return;
+        SetState(paused ? State.Paused : State.Playing);
     }
 }

@@ -5,6 +5,10 @@
 **Project option:** 1 – Arena-Survivor Roguelite  
 **Current CA1 release:** 0.3.0
 
+**Current Unity project version:** 0.4.0 (versionCode 4). The CA1 device evidence below remains specific to 0.3.0; it does not verify the current project version.
+
+The current enabled build scenes are `Boot`, `Menu`, `Game`, and `Result`, in that order. `Boot` loads `Menu` on startup. `Result` is a placeholder scene. The earlier `MainMenu` and `Sample Scene` names below describe the CA1 release history.
+
 ## Project overview
 
 No Stars Remain is a portrait-oriented arena-survivor roguelite for Android. The player moves using a one-thumb virtual stick while weapons attack automatically. The current planned weapons are:
@@ -84,8 +88,8 @@ The repository should ignore signing files:
 2. In **File → Build Profiles**, select and activate **Release Android**.
 3. Check **Edit → Project Settings → Player → Android → Other Settings**:
    - Package name: `com.ardabecanim.mobilegame`
-   - Version: `0.3.0`
-   - Bundle Version Code: `3`
+   - Version: `0.4.0`
+   - Bundle Version Code: `4`
    - Minimum API Level: Android 8.0 / API 26
    - Target API Level: Automatic (highest installed)
    - Scripting Backend: IL2CPP
@@ -93,12 +97,14 @@ The repository should ignore signing files:
 4. Confirm **Development Build** and **Build App Bundle** are both disabled.
 5. In **Publishing Settings**, select the new release keystore and key alias; provide the passwords locally. Do not add secrets to the repository.
 6. In the Build Profiles Scene List, enable the scenes in this order:
-   - `0` — `MainMenu`
-   - `1` — `Sample Scene`
+   - `0` — `Boot`
+   - `1` — `Menu`
+   - `2` — `Game`
+   - `3` — `Result`
 7. Click **Build** and save the release APK as:
 
 ```text
-releases/MyGame-0.3.0-arm64.apk
+releases/MyGame-0.4.0-arm64.apk
 ```
 
 8. With an authorized Android device or emulator connected, install the APK using ADB (adjust paths as needed):
@@ -114,7 +120,7 @@ releases/MyGame-0.3.0-arm64.apk
 & "D:\UNITY\6000.6.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\platform-tools\adb.exe" shell dumpsys package com.ardabecanim.mobilegame | Select-String "versionCode|versionName"
 ```
 
-Expected for the v0.3.0 build: `versionCode=3` and `versionName=0.3.0`. Record the actual terminal output in `docs/CA1/install-proof.txt`.
+For a new v0.4.0 build, update the example installation path above to `releases/MyGame-0.4.0-arm64.apk`. Expected values are `versionCode=4` and `versionName=0.4.0`. Keep existing CA1 installation evidence and record new verification separately.
 
 **Update note:** An APK signed using the new keystore cannot replace an installation signed with the old key. If Android reports `INSTALL_FAILED_UPDATE_INCOMPATIBLE`, uninstall the older installation before installing the new APK; uninstalling removes the app's local data.
 
