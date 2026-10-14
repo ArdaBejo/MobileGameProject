@@ -20,7 +20,12 @@ No advertising, analytics or user-tracking features have been implemented.
 
 The current prototype uses Unity PlayerPrefs to store three accessibility preferences locally on the device: Haptics (on/off), Text Size (Small, Normal or Large), and Reduce Motion (on/off). These preferences persist between application sessions and are not intentionally transmitted to a server. The Reduce Motion preference is saved, but motion-reduction effects have not yet been implemented.
 
-The prototype does not implement persistent gameplay saves, player profiles or stored gameplay statistics. Player progress is not retained between application sessions.
+The prototype also uses Unity PlayerPrefs to store limited gameplay progress locally on the device:
+
+- `wallet.coins` — stores the player's current soft-currency balance.
+- `wallet.level` — stores the player's current upgrade level.
+
+These values persist between application sessions and are not transmitted to a server.
 
 ## 4. Network Communication
 

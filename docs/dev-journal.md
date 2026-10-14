@@ -297,6 +297,7 @@ Part D completion: captured Menu -> Game load of 1513 ms in PID 22403 (one sampl
 The project owner relayed feedback from other players: the game was understandable, but currently felt quite simple. Wave 1 felt too easy while Wave 3 felt too difficult. The project owner confirmed that the external playtest lasted two minutes.
 
 Two observations:
+
 1. The current greybox content felt basic. This is feedback about content depth, not evidence that controls or objectives were confusing.
 2. The difficulty ramp was uneven: little pressure in Wave 1, excessive pressure in Wave 3.
 
@@ -305,3 +306,18 @@ No specific comprehension confusions were reported; do not invent two to satisfy
 First planned change: smooth the difficulty ramp by slightly increasing Wave 1 pressure and reducing Wave 3 pressure, then retest before choosing final values. Keep the three 40-second waves and 120-second run. No boss, extra weapons or progression systems are added in this lab step. Gameplay values have not yet changed in response to this feedback.
 
 Lab E result: the external playtest lasted two minutes; no comprehension confusions were reported. The two actual observations above are recorded instead of invented confusions. The student will commit and create the worksheet tag v0.3.1-lane; the project version remains 0.4.0. No commit or tag has been created by the assistant.
+
+## Week 6 Lab A - Economy Loop
+
+- Soft currency: Coins
+- Earn condition: enemy kill
+- Initial coin reward: 10 coins
+- Tuned coin reward: 7 coins
+- Enemy health: increased from 3 to 4
+- First upgrade purchased at approximately 30 seconds
+- Coins remaining at the end of the 160-second run: 400
+- Total upgrades purchased: 3
+
+The upgrade increases player damage, so the effect is immediately noticeable because enemies require fewer hits after upgrading.
+
+The economy was tuned by reducing the coin reward and increasing enemy health so upgrades remained useful without making enemies feel completely harmless.

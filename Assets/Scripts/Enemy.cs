@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] int maxHealth = 3;
-
+    [SerializeField] int maxHealth = 4;
+    [SerializeField] int coinReward = 7;
     int health;
     EnemyPool pool;
 
@@ -34,7 +34,6 @@ public class Enemy : MonoBehaviour
         if (GreyboxLane.Instance != null && GreyboxLane.Instance.Player != null && spriteRenderer != null)
         {
             GreyboxLane.Instance.ConfigureEnemy(spriteRenderer);
-            originalColor = new Color(0.9f, 0.2f, 0.25f);
         }
 
         if (spriteRenderer != null)
@@ -44,11 +43,18 @@ public class Enemy : MonoBehaviour
     public async void Hit()
     {
         if (!isActiveAndEnabled || health <= 0) return;
-        health--;
+
+        int damage = 1;
+
+        if (Wallet.Instance != null)
+            damage += Wallet.Instance.Level;
+
+        health -= damage;
 
         if (health <= 0)
         {
             GreyboxLane.Instance?.EnemyKilled();
+            Wallet.Instance?.Earn(coinReward);
             Despawn();
             return;
         }
@@ -58,7 +64,7 @@ public class Enemy : MonoBehaviour
             CancelHitFeedback();
             var feedback = CancellationTokenSource.CreateLinkedTokenSource(destroyCancellationToken);
             hitFeedback = feedback;
-            spriteRenderer.color = Color.white;
+            spriteRenderer.color = Color.red;
             try
             {
                 await Awaitable.WaitForSecondsAsync(0.1f, feedback.Token);

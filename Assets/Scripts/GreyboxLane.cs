@@ -99,10 +99,7 @@ public class GreyboxLane : MonoBehaviour
 
     public void ConfigureEnemy(SpriteRenderer renderer)
     {
-        renderer.sprite = square;
-        renderer.sharedMaterial = spriteMaterial;
         renderer.sortingOrder = 4;
-        renderer.transform.localScale = Vector3.one * 0.45f;
     }
 
     void CreateUI()
