@@ -361,3 +361,7 @@ Replaced the runtime blue square with the supplied Assets/Prefabs/Player.prefab,
 Validation: C# compilation passed with zero errors/warnings. Checked the prefab's root fileID and asset GUID against the scene reference. Play Mode visual/animation and touch verification remain pending.
 
 Player animation follow-up: horizontal movement now sets sprite facing using flipX after Animator evaluation; vertical movement/stopping preserve the previous facing. Walk animation playback is reduced to 0.8x with an Inspector setting; movement speed remains 3 units/second. C# build passed with zero errors/warnings. Runtime visual check pending. Existing user edits to Player.prefab are not included in this code-only checkpoint.
+
+### Runtime feedback and GitHub checkpoint
+
+The project owner reported that the current presentation and player animation now look good. Included the owner's saved Player prefab scale adjustment from 5 to 4. This is general owner runtime feedback; specific Android telemetry event/file checks and wallet lifecycle proof remain pending. The completed checkpoints are being pushed to origin/main at the owner's request.
