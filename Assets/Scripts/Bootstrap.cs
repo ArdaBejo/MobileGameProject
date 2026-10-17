@@ -7,6 +7,7 @@ public class Bootstrap : MonoBehaviour
         Application.targetFrameRate = 60;
         Telemetry.StartSession();
         DontDestroyOnLoad(gameObject);
+        if (GetComponent<BackgroundMusic>() == null) gameObject.AddComponent<BackgroundMusic>();
     }
 
     async Awaitable Start() => await SceneLoader.Instance.Load("Menu", Application.exitCancellationToken);

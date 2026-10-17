@@ -339,3 +339,7 @@ The floor fills the camera viewport. Playable bounds adapt to the display and sa
 Validation: C# build passed with zero errors/warnings. The attempted separate Unity batch smoke-test process exited before running the test; no runtime or visual pass is claimed. Temporary smoke-test assets were removed. Play Mode, text-size layouts, touch controls and new arena pacing still need user verification.
 
 Future progression preference: after a kill threshold, level up, pause gameplay and present upgrade choices in a Vampire Survivors-style run progression. This is recorded for a later design step; today's lab retains the coin-purchase upgrade flow.
+
+### OST checkpoint
+
+Connected the supplied Assets/Resources/Sound/Void Runer.mp3 soundtrack to a BackgroundMusic component on persistent Boot/App. It loops at a low default volume and is not restarted by scene transitions. Playback pauses on gameplay pause, application backgrounding or focus loss and resumes when appropriate. Imported the long track as streaming audio with background loading. Source C# compilation passed; actual audibility, loop transition and Android lifecycle behaviour are pending user testing.
