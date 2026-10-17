@@ -6,6 +6,18 @@ using UnityEngine.UI;
 // Shared flat UI for the lane and its result. Existing Pause/Settings remain above it.
 public static class GreyboxUI
 {
+    public static readonly Color Ink = new Color(0.92f, 0.94f, 0.95f);
+    public static readonly Color Muted = new Color(0.57f, 0.64f, 0.68f);
+    public static readonly Color Accent = new Color(0.88f, 0.73f, 0.4f);
+
+    public static void Band(Transform parent, string name, bool top, float height)
+    {
+        var rect = Rect(name, parent, new Vector2(0, top ? 1 : 0), new Vector2(1, top ? 1 : 0),
+            new Vector2(0, top ? -height * 0.5f : height * 0.5f), new Vector2(0, height));
+        var image = rect.gameObject.AddComponent<Image>();
+        image.color = new Color(0.035f, 0.045f, 0.055f, 0.96f);
+        image.raycastTarget = false;
+    }
     public static RectTransform Canvas(string name, int order)
     {
         var obj = new GameObject(name, typeof(RectTransform), typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
@@ -39,21 +51,21 @@ public static class GreyboxUI
         text.text = value;
         text.fontSize = fontSize;
         text.alignment = TextAlignmentOptions.Center;
-        text.color = Color.white;
+        text.color = Ink;
         text.raycastTarget = false;
         rect.gameObject.AddComponent<TextScale>();
         return text;
     }
 
-    public static Button Button(Transform parent, string label, Vector2 anchor, Vector2 position, UnityAction action)
+    public static Button Button(Transform parent, string label, Vector2 anchor, Vector2 position, UnityAction action, float labelFontSize = 28)
     {
         var rect = Rect(label + "Button", parent, anchor, anchor, position, new Vector2(300, 72));
         var image = rect.gameObject.AddComponent<Image>();
-        image.color = new Color(0.13f, 0.24f, 0.32f);
+        image.color = new Color(0.13f, 0.17f, 0.19f);
         var button = rect.gameObject.AddComponent<Button>();
         button.targetGraphic = image;
         button.onClick.AddListener(action);
-        Label(rect, "Label", label, new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(290, 68), 28);
+        Label(rect, "Label", label, new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(290, 68), labelFontSize);
         return button;
     }
 
@@ -62,7 +74,7 @@ public static class GreyboxUI
         var anchor = new Vector2(0, 1);
         var rect = Rect("PauseButton", parent, anchor, anchor, new Vector2(62, -62), new Vector2(72, 72));
         var background = rect.gameObject.AddComponent<Image>();
-        background.color = new Color(0.13f, 0.24f, 0.32f);
+        background.color = new Color(0, 0, 0, 0);
         var button = rect.gameObject.AddComponent<Button>();
         button.targetGraphic = background;
         button.onClick.AddListener(action);

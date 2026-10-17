@@ -52,8 +52,9 @@ public class WaveTimer : MonoBehaviour
                         case 2: position = new Vector2(UnityEngine.Random.Range(-bounds.x, bounds.x), -bounds.y); break;
                         default: position = new Vector2(UnityEngine.Random.Range(-bounds.x, bounds.x), bounds.y); break;
                     }
+                    position += lane.ArenaCenter;
                     // Avoid contact damage immediately on spawn near a boundary.
-                    if ((position - (Vector2)lane.Player.position).sqrMagnitude < 2.25f) position = -position;
+                    if ((position - (Vector2)lane.Player.position).sqrMagnitude < 2.25f) position = 2 * lane.ArenaCenter - position;
                     pool.Spawn(position);
                 }
 

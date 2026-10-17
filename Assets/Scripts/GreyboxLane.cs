@@ -14,7 +14,9 @@ public class GreyboxLane : MonoBehaviour
     [SerializeField] float movementSpeed = 3f;
     [SerializeField] int maxHealth = 5;
     [SerializeField] float shotInterval = 0.4f;
-    public Vector2 HalfSize { get; } = new Vector2(4.6f, 6.4f);
+    public Rect ArenaBounds { get; private set; }
+    public Vector2 HalfSize => ArenaBounds.size * 0.5f;
+    public Vector2 ArenaCenter => ArenaBounds.center;
     public Transform Player { get; private set; }
     public bool Playing => Player != null && manager.CurrentState == GameManager.State.Playing && !LifecycleGuard.IsPaused && !finished
         && (SceneLoader.Instance == null || !SceneLoader.Instance.IsLoading);
@@ -30,7 +32,17 @@ public class GreyboxLane : MonoBehaviour
     bool draggingMouse;
     readonly List<RaycastResult> uiHits = new();
     TMP_Text status;
+    TMP_Text timer;
     TMP_Text instruction;
+    RectTransform hud;
+    Transform floor;
+    Transform topEdge;
+    Transform bottomEdge;
+    Transform leftEdge;
+    Transform rightEdge;
+    Transform healthFill;
+    Vector2 viewportSize;
+    Rect safeArea;
     AudioSource audioSource;
     AudioClip click;
     int health;
@@ -63,15 +75,21 @@ public class GreyboxLane : MonoBehaviour
         gameplayCamera = camera;
         camera.orthographic = true;
         camera.transform.position = new Vector3(0, 0, -10);
-        camera.orthographicSize = Mathf.Max(9f, (HalfSize.x + 0.7f) / camera.aspect);
+        camera.orthographicSize = 9f;
         camera.backgroundColor = new Color(0.025f, 0.035f, 0.05f);
-        Block("Floor", Vector2.zero, HalfSize * 2, new Color(0.1f, 0.12f, 0.15f), -10);
-        Block("TopBoundary", new Vector2(0, HalfSize.y), new Vector2(HalfSize.x * 2 + 0.2f, 0.15f), Color.gray, -5);
-        Block("BottomBoundary", new Vector2(0, -HalfSize.y), new Vector2(HalfSize.x * 2 + 0.2f, 0.15f), Color.gray, -5);
-        Block("LeftBoundary", new Vector2(-HalfSize.x, 0), new Vector2(0.15f, HalfSize.y * 2), Color.gray, -5);
-        Block("RightBoundary", new Vector2(HalfSize.x, 0), new Vector2(0.15f, HalfSize.y * 2), Color.gray, -5);
+        floor = Block("Floor", Vector2.zero, Vector2.one, new Color(0.075f, 0.09f, 0.1f), -10).transform;
+        var edgeColor = new Color(0.2f, 0.24f, 0.25f);
+        topEdge = Block("TopBoundary", Vector2.zero, Vector2.one, edgeColor, -5).transform;
+        bottomEdge = Block("BottomBoundary", Vector2.zero, Vector2.one, edgeColor, -5).transform;
+        leftEdge = Block("LeftBoundary", Vector2.zero, Vector2.one, edgeColor, -5).transform;
+        rightEdge = Block("RightBoundary", Vector2.zero, Vector2.one, edgeColor, -5).transform;
         playerRenderer = Block("Player", Vector2.zero, Vector2.one * 0.45f, new Color(0.2f, 0.7f, 1f), 5);
         Player = playerRenderer.transform;
+        var healthBack = Block("HealthBar", new Vector2(0, 0.42f), new Vector2(0.85f, 0.08f), new Color(0.15f, 0.19f, 0.2f), 8);
+        healthBack.transform.SetParent(Player, true);
+        var healthFront = Block("HealthFill", Vector2.zero, Vector2.one, new Color(0.48f, 0.76f, 0.58f), 9);
+        healthFront.transform.SetParent(healthBack.transform, false);
+        healthFill = healthFront.transform;
         for (int i = 0; i < shots.Length; i++)
         {
             var renderer = Block("PistolShot", Vector2.zero, Vector2.one * 0.13f, new Color(1, 0.85f, 0.3f), 6);
@@ -80,6 +98,7 @@ public class GreyboxLane : MonoBehaviour
         }
         CreateAudio();
         CreateUI();
+        FitArena();
         RefreshHUD();
     }
 
@@ -105,13 +124,42 @@ public class GreyboxLane : MonoBehaviour
     void CreateUI()
     {
         var ui = GreyboxUI.Canvas("GameplayCanvas", -1);
-        status = GreyboxUI.Label(ui, "RunStatus", "", new Vector2(0.5f, 1), new Vector2(0, -65), new Vector2(680, 95), 26);
-        instruction = GreyboxUI.Label(ui, "Instructions", "Drag the blue player to survive. Auto-fire is on.", new Vector2(0.5f, 1), new Vector2(0, -145), new Vector2(660, 80), 23);
+        hud = ui;
+        GreyboxUI.Band(ui, "RunHeader", true, 124);
+        timer = GreyboxUI.Label(ui, "Timer", "", new Vector2(0.5f, 1), new Vector2(0, -43), new Vector2(230, 58), 38);
+        status = GreyboxUI.Label(ui, "RunStatus", "", new Vector2(0.5f, 1), new Vector2(0, -91), new Vector2(470, 35), 20);
+        status.color = GreyboxUI.Muted;
+        instruction = GreyboxUI.Label(ui, "Instructions", "Drag to move", new Vector2(0.5f, 0), new Vector2(0, 170), new Vector2(400, 50), 24);
+        instruction.color = GreyboxUI.Muted;
         GreyboxUI.PauseButton(ui, manager.PauseGame);
+    }
+
+    void FitArena()
+    {
+        Canvas.ForceUpdateCanvases();
+        viewportSize = new Vector2(Screen.width, Screen.height);
+        safeArea = Screen.safeArea;
+        float scale = hud.GetComponentInParent<Canvas>().scaleFactor;
+        Vector2 lower = PointerWorldPosition(new Vector2(safeArea.xMin, safeArea.yMin + 140 * scale));
+        Vector2 upper = PointerWorldPosition(new Vector2(safeArea.xMax, safeArea.yMax - 132 * scale));
+        ArenaBounds = Rect.MinMaxRect(lower.x + 0.08f, lower.y, upper.x - 0.08f, upper.y);
+        floor.localScale = new Vector3(gameplayCamera.orthographicSize * gameplayCamera.aspect * 2, gameplayCamera.orthographicSize * 2, 1);
+        SetEdge(topEdge, new Vector2(ArenaCenter.x, ArenaBounds.yMax), new Vector2(ArenaBounds.width, 0.04f));
+        SetEdge(bottomEdge, new Vector2(ArenaCenter.x, ArenaBounds.yMin), new Vector2(ArenaBounds.width, 0.04f));
+        SetEdge(leftEdge, new Vector2(ArenaBounds.xMin, ArenaCenter.y), new Vector2(0.04f, ArenaBounds.height));
+        SetEdge(rightEdge, new Vector2(ArenaBounds.xMax, ArenaCenter.y), new Vector2(0.04f, ArenaBounds.height));
+        SetPlayerPosition(Player.position);
+    }
+
+    static void SetEdge(Transform edge, Vector2 position, Vector2 size)
+    {
+        edge.position = position;
+        edge.localScale = new Vector3(size.x, size.y, 1);
     }
 
     void Update()
     {
+        if (hud != null && (viewportSize != new Vector2(Screen.width, Screen.height) || safeArea != Screen.safeArea)) FitArena();
         if (!Playing)
         {
             ResetDrag();
@@ -149,8 +197,8 @@ public class GreyboxLane : MonoBehaviour
 
     void SetPlayerPosition(Vector2 position)
     {
-        position.x = Mathf.Clamp(position.x, -HalfSize.x + 0.3f, HalfSize.x - 0.3f);
-        position.y = Mathf.Clamp(position.y, -HalfSize.y + 0.3f, HalfSize.y - 0.3f);
+        position.x = Mathf.Clamp(position.x, ArenaBounds.xMin + 0.3f, ArenaBounds.xMax - 0.3f);
+        position.y = Mathf.Clamp(position.y, ArenaBounds.yMin + 0.3f, ArenaBounds.yMax - 0.3f);
         Player.position = position;
     }
 
@@ -265,7 +313,11 @@ public class GreyboxLane : MonoBehaviour
         if (status == null) return;
         lastSecond = Mathf.FloorToInt(elapsed);
         int remaining = Mathf.CeilToInt(duration - elapsed);
-        status.text = $"HP {health}/{maxHealth}    Kills {kills}\nWave {Wave}/3    Survive {remaining / 60:00}:{remaining % 60:00}";
+        timer.text = $"{remaining / 60:00}:{remaining % 60:00}";
+        status.text = $"Wave {Wave} / 3     {kills} kills";
+        float fraction = Mathf.Clamp01((float)health / maxHealth);
+        healthFill.localScale = new Vector3(fraction, 1, 1);
+        healthFill.localPosition = new Vector3((fraction - 1) * 0.5f, 0, 0);
     }
 
     void Finish(bool won)

@@ -329,3 +329,13 @@ Added main-thread, event-based local Telemetry with an eight-character session I
 Validation: project C# build passed with zero errors/warnings using an isolated intermediate output directory. A standalone harness compiled the actual logger source with Unity metadata/logging stubs and passed checks for session deduplication/reset, invariant formatting under Turkish locale, encoded metadata, append persistence, and non-fatal file errors. These checks do not replace Unity/Android runtime verification; Android logcat/file verification remains pending.
 
 Async Pack 1 deadline supplied by the lab: Sunday 1 November 2026, 23:59. The Moodle brief and reading links have not yet been provided or reviewed here. Event wiring, event map and wallet persistence evidence remain subsequent lab checkpoints.
+
+### Gameplay UI and arena follow-up
+
+At the project owner's request, replaced the crowded gameplay/economy presentation with a restrained HUD: top-centred timer, wave/kills below, coins at top-right, pause icon at top-left and a compact lower upgrade strip. The upgrade now states Pistol damage, previews current -> next damage per hit and displays its coin cost. HP is shown as a small bar above the player. Text still uses the existing text-scale preference.
+
+The floor fills the camera viewport. Playable bounds adapt to the display and safe area, with space reserved for the header/footer controls. Edge spawning uses the new arena centre/bounds. Drag speed, wallet prices/rewards and wave tuning are unchanged.
+
+Validation: C# build passed with zero errors/warnings. The attempted separate Unity batch smoke-test process exited before running the test; no runtime or visual pass is claimed. Temporary smoke-test assets were removed. Play Mode, text-size layouts, touch controls and new arena pacing still need user verification.
+
+Future progression preference: after a kill threshold, level up, pause gameplay and present upgrade choices in a Vampire Survivors-style run progression. This is recorded for a later design step; today's lab retains the coin-purchase upgrade flow.
