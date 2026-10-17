@@ -365,3 +365,23 @@ Player animation follow-up: horizontal movement now sets sprite facing using fli
 ### Runtime feedback and GitHub checkpoint
 
 The project owner reported that the current presentation and player animation now look good. Included the owner's saved Player prefab scale adjustment from 5 to 4. This is general owner runtime feedback; specific Android telemetry event/file checks and wallet lifecycle proof remain pending. The completed checkpoints are being pushed to origin/main at the owner's request.
+
+### Part D — owner-reported wallet lifecycle verification
+
+The project owner confirmed that the wallet was preserved in all three Android lifecycle scenarios: Home/background and resume, force-stop/relaunch, and background am kill/relaunch. Record each as an owner-reported PASS. The assistant did not independently observe the before/after balances or upgrade levels, and no numerical values are invented. Telemetry file retrieval and five-event validation are the next evidence checks.
+
+| Scenario | Result | Evidence type |
+| --- | --- | --- |
+| Home/background -> resume | PASS | Owner report |
+| Force-stop -> relaunch | PASS | Owner report |
+| Background am kill -> relaunch | PASS | Owner report |
+
+### Week 6 Lab B — technical completion and evidence
+
+Pulled telemetry.log from the Android 16 emulator's app persistent-data directory. All five event names are present: session_start, level_start, level_fail, level_complete and upgrade_purchased. Example verified purchase: damage level 1, cost 100, coins_left 830. A completed run reports time_s=120.02, coins_earned=950 and score=95. The log includes two session IDs and attempts progressing within a session. Raw device evidence is included in docs/CA2/telemetry/telemetry.log as part of the combined lab-completion commit, not as a separate evidence-only commit.
+
+Wallet persistence passed Home/resume, force-stop/relaunch and background am kill/relaunch according to the project owner's testing (see the Part D table). These are owner-reported lifecycle results; the assistant independently verified event contents in the exported log. Existing logger/event logic checks and project compilation passed earlier.
+
+Audio issue remains open: the owner reported a one-time ring/stutter followed by loss of all audio while gameplay continued near the arena's upper boundary. A repeat attempt did not reproduce it. Logs contained focus/audio-stream stop/start records but no definitive cause; no speculative audio code change was made.
+
+The coding, event map, privacy update and telemetry/lifecycle verification for this lab are complete. Async Pack 1 is separate reading/reflection work due Sunday 1 November 2026 at 23:59. Its actual Moodle brief and linked readings have not yet been supplied or reviewed, so the lab's Moodle brief-review step remains outstanding. Do not mark the reflection or brief review as completed. This completion checkpoint will be tagged v0.4.0-economy; the application version remains 0.4.0.
