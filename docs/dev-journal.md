@@ -321,3 +321,11 @@ Lab E result: the external playtest lasted two minutes; no comprehension confusi
 The upgrade increases player damage, so the effect is immediately noticeable because enemies require fewer hits after upgrading.
 
 The economy was tuned by reducing the coin reward and increasing enemy health so upgrades remained useful without making enemies feel completely harmless.
+
+## 17 October 2026 — Week 6 Lab B, Part A
+
+Added main-thread, event-based local Telemetry with an eight-character session ID, invariant timestamps/numbers, and percent-encoded metadata values. Bootstrap logs session_start once with app_version, device_model and android. Records are appended to telemetry.log in Application.persistentDataPath and sent to Debug.Log for logcat. File write/access failures warn without interrupting gameplay. SubsystemRegistration resets static session state for Editor sessions with Domain Reload disabled. No SDK or upload was added. Updated the privacy statement to disclose the new local file.
+
+Validation: project C# build passed with zero errors/warnings using an isolated intermediate output directory. A standalone harness compiled the actual logger source with Unity metadata/logging stubs and passed checks for session deduplication/reset, invariant formatting under Turkish locale, encoded metadata, append persistence, and non-fatal file errors. These checks do not replace Unity/Android runtime verification; Android logcat/file verification remains pending.
+
+Async Pack 1 deadline supplied by the lab: Sunday 1 November 2026, 23:59. The Moodle brief and reading links have not yet been provided or reviewed here. Event wiring, event map and wallet persistence evidence remain subsequent lab checkpoints.

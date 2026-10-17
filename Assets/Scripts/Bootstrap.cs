@@ -5,6 +5,7 @@ public class Bootstrap : MonoBehaviour
     void Awake()
     {
         Application.targetFrameRate = 60;
+        Telemetry.StartSession();
         DontDestroyOnLoad(gameObject);
     }
 

@@ -14,7 +14,7 @@ The current prototype does not intentionally collect, process, transmit or share
 
 The game does not require account registration, email addresses, location information or access to personal files.
 
-No advertising, analytics or user-tracking features have been implemented.
+No advertising, third-party analytics SDK or user-tracking service has been implemented. Local diagnostic telemetry records app startup for coursework testing.
 
 ## 3. Local Data Storage
 
@@ -26,6 +26,8 @@ The prototype also uses Unity PlayerPrefs to store limited gameplay progress loc
 - `wallet.level` — stores the player's current upgrade level.
 
 These values persist between application sessions and are not transmitted to a server.
+
+Local diagnostic telemetry is also written to Unity logs/logcat and `telemetry.log` in `Application.persistentDataPath`. Startup records include app version, device model, operating system, elapsed runtime and a random session ID generated for each application session. This ID is not a permanent user or device identifier. The game does not upload these records. The developer may manually export the file for coursework evidence. The log currently appends across launches without automatic rotation; it can be removed by clearing app data or uninstalling the app.
 
 ## 4. Network Communication
 
