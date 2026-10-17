@@ -13,6 +13,7 @@ public class GreyboxLane : MonoBehaviour
     [SerializeField] Material spriteMaterialTemplate;
     [SerializeField] float duration = 120f;
     [SerializeField] float movementSpeed = 3f;
+    [SerializeField, Range(0.1f, 2f)] float walkAnimationSpeed = 0.8f;
     [SerializeField] int maxHealth = 5;
     [SerializeField] float shotInterval = 0.4f;
     public Rect ArenaBounds { get; private set; }
@@ -30,6 +31,7 @@ public class GreyboxLane : MonoBehaviour
     Material spriteMaterial;
     SpriteRenderer playerRenderer;
     Color playerColor;
+    bool facingLeft;
     Camera gameplayCamera;
     int dragTouchId = -1;
     bool draggingMouse;
@@ -97,6 +99,9 @@ public class GreyboxLane : MonoBehaviour
         Player = playerObject.transform;
         playerRenderer = playerObject.GetComponentInChildren<SpriteRenderer>();
         playerColor = playerRenderer.color;
+        facingLeft = playerRenderer.flipX;
+        var animator = playerObject.GetComponentInChildren<Animator>();
+        if (animator != null) animator.speed = walkAnimationSpeed;
         if (playerRenderer.sharedMaterial == null) playerRenderer.sharedMaterial = spriteMaterial;
         playerRenderer.sortingOrder = 5;
         CreatePlayerHealthBar();
@@ -239,7 +244,15 @@ public class GreyboxLane : MonoBehaviour
         Vector3 padding = playerRenderer.bounds.extents + Vector3.one * 0.05f;
         position.x = Mathf.Clamp(position.x, ArenaBounds.xMin + padding.x, ArenaBounds.xMax - padding.x);
         position.y = Mathf.Clamp(position.y, ArenaBounds.yMin + padding.y, ArenaBounds.yMax - padding.y);
+        float horizontalMovement = position.x - Player.position.x;
+        if (Mathf.Abs(horizontalMovement) > 0.0001f) facingLeft = horizontalMovement < 0;
         Player.position = position;
+    }
+
+    void LateUpdate()
+    {
+        // Apply after Animator evaluation; vertical movement keeps the last facing.
+        if (playerRenderer != null) playerRenderer.flipX = facingLeft;
     }
 
     bool TryDragPosition(out Vector2 position)
