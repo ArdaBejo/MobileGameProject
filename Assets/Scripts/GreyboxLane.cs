@@ -9,6 +9,7 @@ public class GreyboxLane : MonoBehaviour
     public static GreyboxLane Instance { get; private set; }
     [SerializeField] GameManager manager;
     [SerializeField] EnemyPool pool;
+    [SerializeField] GameObject playerPrefab;
     [SerializeField] Material spriteMaterialTemplate;
     [SerializeField] float duration = 120f;
     [SerializeField] float movementSpeed = 3f;
@@ -28,6 +29,7 @@ public class GreyboxLane : MonoBehaviour
     Sprite square;
     Material spriteMaterial;
     SpriteRenderer playerRenderer;
+    Color playerColor;
     Camera gameplayCamera;
     int dragTouchId = -1;
     bool draggingMouse;
@@ -84,13 +86,20 @@ public class GreyboxLane : MonoBehaviour
         bottomEdge = Block("BottomBoundary", Vector2.zero, Vector2.one, edgeColor, -5).transform;
         leftEdge = Block("LeftBoundary", Vector2.zero, Vector2.one, edgeColor, -5).transform;
         rightEdge = Block("RightBoundary", Vector2.zero, Vector2.one, edgeColor, -5).transform;
-        playerRenderer = Block("Player", Vector2.zero, Vector2.one * 0.45f, new Color(0.2f, 0.7f, 1f), 5);
-        Player = playerRenderer.transform;
-        var healthBack = Block("HealthBar", new Vector2(0, 0.42f), new Vector2(0.85f, 0.08f), new Color(0.15f, 0.19f, 0.2f), 8);
-        healthBack.transform.SetParent(Player, true);
-        var healthFront = Block("HealthFill", Vector2.zero, Vector2.one, new Color(0.48f, 0.76f, 0.58f), 9);
-        healthFront.transform.SetParent(healthBack.transform, false);
-        healthFill = healthFront.transform;
+        if (playerPrefab == null)
+        {
+            Debug.LogError("Assign Assets/Prefabs/Player to GreyboxLane's Player Prefab field.", this);
+            enabled = false;
+            return;
+        }
+        var playerObject = Instantiate(playerPrefab, Vector3.zero, Quaternion.identity, transform);
+        playerObject.name = playerPrefab.name;
+        Player = playerObject.transform;
+        playerRenderer = playerObject.GetComponentInChildren<SpriteRenderer>();
+        playerColor = playerRenderer.color;
+        if (playerRenderer.sharedMaterial == null) playerRenderer.sharedMaterial = spriteMaterial;
+        playerRenderer.sortingOrder = 5;
+        CreatePlayerHealthBar();
         for (int i = 0; i < shots.Length; i++)
         {
             var renderer = Block("PistolShot", Vector2.zero, Vector2.one * 0.13f, new Color(1, 0.85f, 0.3f), 6);
@@ -101,6 +110,35 @@ public class GreyboxLane : MonoBehaviour
         CreateUI();
         FitArena();
         RefreshHUD();
+    }
+
+    void CreatePlayerHealthBar()
+    {
+        // Runtime-generated square sprites cannot be saved in a prefab. Rebind the
+        // existing bar's graphics rather than creating a duplicate HealthBar.
+        var bar = Player.Find("HealthBar");
+        if (bar == null)
+            bar = Block("HealthBar", Vector2.zero, Vector2.one, Color.white, 8).transform;
+        bar.SetParent(transform, true);
+        bar.position = new Vector3(playerRenderer.bounds.center.x, playerRenderer.bounds.max.y + 0.16f, Player.position.z);
+        bar.localScale = new Vector3(0.85f, 0.08f, 1);
+        var background = bar.GetComponent<SpriteRenderer>();
+        background.sprite = square;
+        background.sharedMaterial = spriteMaterial;
+        background.sortingOrder = 8;
+        background.color = new Color(0.15f, 0.19f, 0.2f);
+        bar.SetParent(Player, true);
+        healthFill = bar.Find("HealthFill");
+        if (healthFill == null)
+            healthFill = Block("HealthFill", Vector2.zero, Vector2.one, Color.white, 9).transform;
+        healthFill.SetParent(bar, false);
+        healthFill.localPosition = Vector3.zero;
+        healthFill.localScale = Vector3.one;
+        var fill = healthFill.GetComponent<SpriteRenderer>();
+        fill.sprite = square;
+        fill.sharedMaterial = spriteMaterial;
+        fill.sortingOrder = 9;
+        fill.color = new Color(0.48f, 0.76f, 0.58f);
     }
 
     SpriteRenderer Block(string name, Vector2 position, Vector2 size, Color color, int order)
@@ -169,7 +207,7 @@ public class GreyboxLane : MonoBehaviour
         elapsed = Mathf.Min(duration, elapsed + Time.deltaTime);
         if (elapsed >= duration) { Finish(true); return; }
         MovePlayer();
-        playerRenderer.color = Time.time < immunityUntil && Mathf.FloorToInt(Time.time * 12) % 2 == 0 ? Color.white : new Color(0.2f, 0.7f, 1f);
+        playerRenderer.color = Time.time < immunityUntil && Mathf.FloorToInt(Time.time * 12) % 2 == 0 ? new Color(1, 0.35f, 0.35f) : playerColor;
         if (Time.time >= nextShot)
         {
             Fire();
@@ -198,8 +236,9 @@ public class GreyboxLane : MonoBehaviour
 
     void SetPlayerPosition(Vector2 position)
     {
-        position.x = Mathf.Clamp(position.x, ArenaBounds.xMin + 0.3f, ArenaBounds.xMax - 0.3f);
-        position.y = Mathf.Clamp(position.y, ArenaBounds.yMin + 0.3f, ArenaBounds.yMax - 0.3f);
+        Vector3 padding = playerRenderer.bounds.extents + Vector3.one * 0.05f;
+        position.x = Mathf.Clamp(position.x, ArenaBounds.xMin + padding.x, ArenaBounds.xMax - padding.x);
+        position.y = Mathf.Clamp(position.y, ArenaBounds.yMin + padding.y, ArenaBounds.yMax - padding.y);
         Player.position = position;
     }
 
@@ -234,7 +273,8 @@ public class GreyboxLane : MonoBehaviour
 
     bool CanStartDrag(Vector2 screenPosition)
     {
-        if ((PointerWorldPosition(screenPosition) - (Vector2)Player.position).sqrMagnitude > 0.65f * 0.65f) return false;
+        float grabRadius = Mathf.Max(0.65f, playerRenderer.bounds.extents.magnitude);
+        if ((PointerWorldPosition(screenPosition) - (Vector2)Player.position).sqrMagnitude > grabRadius * grabRadius) return false;
         if (EventSystem.current != null)
         {
             uiHits.Clear();

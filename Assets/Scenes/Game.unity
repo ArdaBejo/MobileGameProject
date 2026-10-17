@@ -485,6 +485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GreyboxLane
   manager: {fileID: 1274864675}
   pool: {fileID: 692534474}
+  playerPrefab: {fileID: 1328991615653082677, guid: a69ab89abdc7f6b4980538e6688ea37d, type: 3}
   spriteMaterialTemplate: {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   duration: 120
   movementSpeed: 3

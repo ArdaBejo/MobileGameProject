@@ -353,3 +353,9 @@ Added docs/CA2/Economy_Telemetry_Map.md with the five events, typed parameters, 
 Validation: project C# build passed with zero errors/warnings. A standalone harness compiled the actual Telemetry, Wallet and GameManager source against Unity/lifecycle stubs. It passed checks for all five events, one start across repeated pause/resume, one terminal event, failed purchases not logging, pre-increment purchase cost, earned credits independent of spending, retry increment and session attempt reset. Unity lifecycle timing and Android file/logcat behaviour remain runtime verification work.
 
 Next device checkpoint: build/install, observe session_start plus level_start, purchase an upgrade, complete and fail attempts, and pull telemetry.log. Then verify the same coin balance and upgrade level after Home/resume, force-stop and background am kill. No device pass or telemetry evidence has been fabricated. Do not create v0.4.0-economy until the required device proof is collected. Async Pack 1 Moodle review is still pending.
+
+### Player prefab integration
+
+Replaced the runtime blue square with the supplied Assets/Prefabs/Player.prefab, referenced explicitly from Game/GreyboxLane. Kept its sprite, Animator, colour and authored scale. Reused the prefab's existing HealthBar/HealthFill hierarchy and rebound their transient square graphics at runtime, with a world-size bar above the character. Hurt feedback restores the prefab colour instead of forcing blue. Movement boundaries and drag acquisition account for the displayed sprite size. Included the prefab and its referenced Sprite-0002.aseprite source in this checkpoint.
+
+Validation: C# compilation passed with zero errors/warnings. Checked the prefab's root fileID and asset GUID against the scene reference. Play Mode visual/animation and touch verification remain pending.
