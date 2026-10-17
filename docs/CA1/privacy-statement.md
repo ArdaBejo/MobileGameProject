@@ -14,7 +14,7 @@ The current prototype does not intentionally collect, process, transmit or share
 
 The game does not require account registration, email addresses, location information or access to personal files.
 
-No advertising, third-party analytics SDK or user-tracking service has been implemented. Local diagnostic telemetry records app startup for coursework testing.
+No advertising, third-party analytics SDK or user-tracking service has been implemented. Local diagnostic telemetry records startup, gameplay outcomes and successful upgrades for coursework balancing tests.
 
 ## 3. Local Data Storage
 
@@ -28,6 +28,8 @@ The prototype also uses Unity PlayerPrefs to store limited gameplay progress loc
 These values persist between application sessions and are not transmitted to a server.
 
 Local diagnostic telemetry is also written to Unity logs/logcat and `telemetry.log` in `Application.persistentDataPath`. Startup records include app version, device model, operating system, elapsed runtime and a random session ID generated for each application session. This ID is not a permanent user or device identifier. The game does not upload these records. The developer may manually export the file for coursework evidence. The log currently appends across launches without automatic rotation; it can be removed by clearing app data or uninstalling the app.
+
+The event names are `session_start`, `level_start`, `level_complete`, `level_fail` and `upgrade_purchased`. Gameplay parameters include lane and attempt numbers, run duration, a fixed failure-cause ID, coin balances/credits, kill score, upgrade ID/level and the amount spent. No player-entered free text is logged. The event definitions are documented in `docs/CA2/Economy_Telemetry_Map.md`.
 
 ## 4. Network Communication
 

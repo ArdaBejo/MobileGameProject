@@ -8,6 +8,7 @@ public class Wallet : MonoBehaviour
     public int Level { get; private set; }
 
     public event System.Action Changed;
+    public event System.Action<int> Earned;
 
     public int NextCost => (int)(100 * Mathf.Pow(1.5f, Level));
 
@@ -19,6 +20,7 @@ public class Wallet : MonoBehaviour
     public void Earn(int n)
     {
         Coins += n;
+        Earned?.Invoke(n);
         Changed?.Invoke();
     }
 
@@ -31,11 +33,14 @@ public class Wallet : MonoBehaviour
 
     public bool TryUpgrade()
     {
-        if (Coins < NextCost)
+        int cost = NextCost;
+        if (Coins < cost)
             return false;
 
-        Coins -= NextCost;
+        Coins -= cost;
         Level++;
+        Telemetry.Log("upgrade_purchased", ("upgrade_id", "damage"),
+            ("level", Level), ("cost", cost), ("coins_left", Coins));
         Changed?.Invoke();
 
         return true;

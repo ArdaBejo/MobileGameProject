@@ -18,6 +18,7 @@ public class GreyboxLane : MonoBehaviour
     public Vector2 HalfSize => ArenaBounds.size * 0.5f;
     public Vector2 ArenaCenter => ArenaBounds.center;
     public Transform Player { get; private set; }
+    public int Kills => kills;
     public bool Playing => Player != null && manager.CurrentState == GameManager.State.Playing && !LifecycleGuard.IsPaused && !finished
         && (SceneLoader.Instance == null || !SceneLoader.Instance.IsLoading);
     public int Wave => Mathf.Min(3, 1 + Mathf.FloorToInt(elapsed / 40f));

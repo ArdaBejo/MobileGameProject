@@ -343,3 +343,13 @@ Future progression preference: after a kill threshold, level up, pause gameplay 
 ### OST checkpoint
 
 Connected the supplied Assets/Resources/Sound/Void Runer.mp3 soundtrack to a BackgroundMusic component on persistent Boot/App. It loops at a low default volume and is not restarted by scene transitions. Playback pauses on gameplay pause, application backgrounding or focus loss and resumes when appropriate. Imported the long track as streaming audio with background loading. Source C# compilation passed; actual audibility, loop transition and Android lifecycle behaviour are pending user testing.
+
+## Week 6 Lab B — Parts B and C implementation
+
+Wired level_start after the loading overlay closes and the lane first enters Playing; pause/resume does not start another attempt. Per-lane attempts reset each application/Editor session. Won/Lost each emit one outcome event, with scaled run time, gross Wallet.Earn credits during the run and kills as the completion score. Current failure cause is hp. Wallet.TryUpgrade captures the actual cost before incrementing Level and logs upgrade_purchased only on success, using upgrade_id=damage to match the implemented mechanic.
+
+Added docs/CA2/Economy_Telemetry_Map.md with the five events, typed parameters, trigger points and balancing questions. Updated the local-only privacy disclosure for the full event set. Coins from a fake pack would count in run credits if that stub is used during an attempt; the map states this explicitly.
+
+Validation: project C# build passed with zero errors/warnings. A standalone harness compiled the actual Telemetry, Wallet and GameManager source against Unity/lifecycle stubs. It passed checks for all five events, one start across repeated pause/resume, one terminal event, failed purchases not logging, pre-increment purchase cost, earned credits independent of spending, retry increment and session attempt reset. Unity lifecycle timing and Android file/logcat behaviour remain runtime verification work.
+
+Next device checkpoint: build/install, observe session_start plus level_start, purchase an upgrade, complete and fail attempts, and pull telemetry.log. Then verify the same coin balance and upgrade level after Home/resume, force-stop and background am kill. No device pass or telemetry evidence has been fabricated. Do not create v0.4.0-economy until the required device proof is collected. Async Pack 1 Moodle review is still pending.
