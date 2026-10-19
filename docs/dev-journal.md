@@ -441,3 +441,7 @@ Validation: inspected both supplied screenshots, preserved their original image 
 The project owner confirmed that the lecturer permits emulator testing. Treat the documented Android Emulator run as the accepted platform for this lab; physical-phone verification is no longer a pending requirement. This supersedes earlier entries listing physical-device checks as mandatory outstanding work. The results remain explicitly labelled emulator measurements and do not demonstrate physical-device heating, thermal throttling or 120 Hz performance. No physical thermal soak was performed or claimed.
 
 Lab A implementation and emulator evidence are complete. The owner-submitted Moodle exit ticket remains pending; release signing/Development Build configuration of the tested APK has not been independently verified. Updated perf-modes.md with the lecturer-permission context, attributed to the owner report.
+
+### Week 7 Lab A — exit ticket submitted
+
+The project owner confirmed that the Moodle exit ticket was submitted. Record submission as owner-reported completion; the assistant did not independently inspect the post. This supersedes earlier pending exit-ticket notes. Week 7 Lab A implementation, accepted emulator testing, evidence documentation and owner-reported submission are complete. The existing note that the installed APK signing/Development Build configuration was not independently verified remains unchanged.

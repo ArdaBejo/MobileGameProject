@@ -31,4 +31,4 @@ The original Settings screenshots show the toggle states. Subsequent gameplay sc
 
 Persistence is independently supported by a fresh process: PID 25744 starts at 22:18:15.209 with perf_mode=HighFps high=True targetFrameRate=120 renderScale=0.8. Both processes report AP active and NoWarning; emulator thermal values are not evidence of real device heat. AP logging remains enabled for Lab B, with scalers disabled.
 
-Moodle exit ticket is pending: submit an actual AP event line and the two mode screenshots. Example from this test: `10-19 22:18:19.700 I/Unity (25744): [AP] bottleneck=TargetFrameRate`. No forum post has been submitted by the assistant.
+Moodle exit ticket: the project owner confirmed submission. This is an owner-reported completion; the assistant did not inspect or submit the forum post. The prepared evidence includes both mode screenshots and this actual event line: `10-19 22:18:19.700 I/Unity (25744): [AP] bottleneck=TargetFrameRate`.
