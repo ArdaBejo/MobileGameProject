@@ -2,6 +2,8 @@
 
 **Test environment: Android Emulator (emulator-5554), not a physical phone.** All measurements, AP events and screenshots below belong to this emulator run.
 
+**Accepted test platform:** the project owner reports that the lecturer permits emulator testing. Physical-phone verification is therefore not a remaining requirement for this lab submission. This permission does not make emulator thermal readings evidence of physical-device heating.
+
 Test date: 19 October 2026. Device: Android Emulator, Google sdk_gphone64_x86_64, Android 16 / API 36, OpenGLES3, 1080 x 2400. ADB display diagnostics report a single supported refresh rate of approximately 60 Hz. These are emulator results, not physical-phone thermal or battery measurements.
 
 | Mode | targetFrameRate | Render scale | Frame time avg (ms) | 99th (ms)* | Bottleneck | Virtual display Hz |
@@ -25,7 +27,7 @@ The emulator remains near 60 FPS in both modes. Logs verify the requested target
 - [High FPS gameplay overlay](perf-modes/high-fps-overlay.png): 60 FPS, 16.8 ms, target 120 and render scale 0.8, captured on the Android Emulator after the overlay was added.
 - [Logcat excerpt](logcat-ap-events.txt): both mode applications, AP active/thermal/bottleneck messages and frame-time samples.
 
-The original Settings screenshots show the toggle states. Subsequent gameplay screenshots supply visible FPS/frame-time and render-scale evidence for both modes. These are separate instantaneous readouts captured at different stages of gameplay (High FPS in Wave 1, Balanced in Wave 3), not a controlled performance comparison. The table above still reports the earlier logcat sampling windows, not new measurements derived from the overlay screenshots. Physical-phone verification remains outstanding.
+The original Settings screenshots show the toggle states. Subsequent gameplay screenshots supply visible FPS/frame-time and render-scale evidence for both modes. These are separate instantaneous readouts captured at different stages of gameplay (High FPS in Wave 1, Balanced in Wave 3), not a controlled performance comparison. The table above still reports the earlier logcat sampling windows, not new measurements derived from the overlay screenshots. Physical-phone testing is outside this accepted emulator submission.
 
 Persistence is independently supported by a fresh process: PID 25744 starts at 22:18:15.209 with perf_mode=HighFps high=True targetFrameRate=120 renderScale=0.8. Both processes report AP active and NoWarning; emulator thermal values are not evidence of real device heat. AP logging remains enabled for Lab B, with scalers disabled.
 

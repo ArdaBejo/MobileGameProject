@@ -435,3 +435,9 @@ The owner supplied a new Android Emulator gameplay screenshot showing the overla
 Saved the owner's Balanced gameplay screenshot as docs/CA2/baseline/perf-modes/balanced-overlay.png: 58 FPS / 17.3 ms, target 60 and render scale 1.0 during Wave 3. Both modes now have Settings-state screenshots and overlay-visible gameplay screenshots. Updated perf-modes.md; the original logcat table remains unchanged. The gameplay screenshots are instantaneous samples at different wave stages and do not establish a controlled performance improvement. This entry supersedes earlier notes that overlay screenshots were pending.
 
 Validation: inspected both supplied screenshots, preserved their original image files, and ran git diff --check. Emulator implementation/evidence is complete for this checkpoint. Physical-phone verification, installed APK signing/Development Build verification and the owner-submitted Moodle exit ticket remain outstanding. Week 7 Lab B thermal soak remains separate work.
+
+### Week 7 Lab A — lecturer permits emulator submission
+
+The project owner confirmed that the lecturer permits emulator testing. Treat the documented Android Emulator run as the accepted platform for this lab; physical-phone verification is no longer a pending requirement. This supersedes earlier entries listing physical-device checks as mandatory outstanding work. The results remain explicitly labelled emulator measurements and do not demonstrate physical-device heating, thermal throttling or 120 Hz performance. No physical thermal soak was performed or claimed.
+
+Lab A implementation and emulator evidence are complete. The owner-submitted Moodle exit ticket remains pending; release signing/Development Build configuration of the tested APK has not been independently verified. Updated perf-modes.md with the lecturer-permission context, attributed to the owner report.
