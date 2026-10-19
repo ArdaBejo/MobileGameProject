@@ -20,10 +20,12 @@ The emulator remains near 60 FPS in both modes. Logs verify the requested target
 ## Evidence
 
 - [Balanced Settings screenshot](perf-modes/balanced.png): High FPS OFF (Balanced).
+- [Balanced gameplay overlay](perf-modes/balanced-overlay.png): 58 FPS, 17.3 ms, target 60 and render scale 1.0, captured on the Android Emulator during Wave 3.
 - [High FPS Settings screenshot](perf-modes/high-fps.png): High FPS ON.
+- [High FPS gameplay overlay](perf-modes/high-fps-overlay.png): 60 FPS, 16.8 ms, target 120 and render scale 0.8, captured on the Android Emulator after the overlay was added.
 - [Logcat excerpt](logcat-ap-events.txt): both mode applications, AP active/thermal/bottleneck messages and frame-time samples.
 
-Screenshots supplied by the owner show the Settings toggle states; they do not contain a frame-time overlay and therefore do not fulfil the lab's overlay-visible screenshot requirement. Numeric measurements are supported by logcat instead. Physical-phone verification and overlay-visible screenshots remain outstanding if strict lab evidence is required.
+The original Settings screenshots show the toggle states. Subsequent gameplay screenshots supply visible FPS/frame-time and render-scale evidence for both modes. These are separate instantaneous readouts captured at different stages of gameplay (High FPS in Wave 1, Balanced in Wave 3), not a controlled performance comparison. The table above still reports the earlier logcat sampling windows, not new measurements derived from the overlay screenshots. Physical-phone verification remains outstanding.
 
 Persistence is independently supported by a fresh process: PID 25744 starts at 22:18:15.209 with perf_mode=HighFps high=True targetFrameRate=120 renderScale=0.8. Both processes report AP active and NoWarning; emulator thermal values are not evidence of real device heat. AP logging remains enabled for Lab B, with scalers disabled.
 

@@ -425,3 +425,13 @@ Current status: Parts A–C are implemented; Part D has emulator verification an
 Added a non-interactive overlay to the persistent PerformanceMode controller, visible only in Game. It uses the existing safe-area canvas layout and shows a half-second real-time frame average (FPS and milliseconds), selected mode, requested target and active URP render scale. Pause/loading/background intervals are excluded from new samples; pausing preserves the last gameplay readout for screenshots. Changing mode clears the sample and requests Resume before measuring the new mode. Existing FrameTimeSampler logcat evidence is unchanged.
 
 Validation: git diff --check passed and source/API references were inspected. A separate Unity batch validation could not run with the project already open in the owner's Editor; no new compilation or Android runtime success is claimed. Next: let the open Editor import/compile, build Android, play briefly after each mode switch and capture fresh overlay-visible screenshots.
+
+### Week 7 Lab A — High FPS overlay screenshot verified
+
+The owner supplied a new Android Emulator gameplay screenshot showing the overlay at 60 FPS / 16.8 ms, High FPS target 120 and render scale 0.8. Saved it as docs/CA2/baseline/perf-modes/high-fps-overlay.png. This confirms that the overlay is visible in the owner's running build; no separate batch-compilation result is claimed. Updated perf-modes.md to distinguish the new screenshot from the earlier logcat table. Balanced overlay evidence, physical-phone verification and the Moodle exit ticket remain pending. This documentation/evidence addition will be included with the next combined checkpoint.
+
+### Week 7 Lab A — both overlay modes captured
+
+Saved the owner's Balanced gameplay screenshot as docs/CA2/baseline/perf-modes/balanced-overlay.png: 58 FPS / 17.3 ms, target 60 and render scale 1.0 during Wave 3. Both modes now have Settings-state screenshots and overlay-visible gameplay screenshots. Updated perf-modes.md; the original logcat table remains unchanged. The gameplay screenshots are instantaneous samples at different wave stages and do not establish a controlled performance improvement. This entry supersedes earlier notes that overlay screenshots were pending.
+
+Validation: inspected both supplied screenshots, preserved their original image files, and ran git diff --check. Emulator implementation/evidence is complete for this checkpoint. Physical-phone verification, installed APK signing/Development Build verification and the owner-submitted Moodle exit ticket remain outstanding. Week 7 Lab B thermal soak remains separate work.
