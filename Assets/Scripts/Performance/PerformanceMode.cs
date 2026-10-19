@@ -23,6 +23,7 @@ public sealed class PerformanceMode : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
         Apply(PlayerPrefs.GetInt(PreferenceKey, 0) == 1 ? PerfMode.HighFps : PerfMode.Balanced, false);
+        if (GetComponent<PerformanceOverlay>() == null) gameObject.AddComponent<PerformanceOverlay>();
     }
 
     public void SetHighFps(bool on) => Apply(on ? PerfMode.HighFps : PerfMode.Balanced);
