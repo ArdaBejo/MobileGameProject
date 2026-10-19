@@ -1,0 +1,43 @@
+10-19 22:16:05.922 I/Unity   (25592): perf_mode=Balanced high=False targetFrameRate=60 renderScale=1.0
+10-19 22:16:06.978 I/Unity   (25592): [AP] active warning=NoWarning level=0.90
+10-19 22:16:07.029 I/Unity   (25592): [AP] thermal warning=NoWarning level=0.90 trend=0.00
+10-19 22:16:10.631 I/Unity   (25592): [AP] bottleneck=GPU
+10-19 22:16:10.763 I/Unity   (25592): [AP] bottleneck=TargetFrameRate
+10-19 22:16:41.639 I/Unity   (25592): [AP] bottleneck=GPU
+10-19 22:16:42.244 I/Unity   (25592): [Boot] Google sdk_gphone64_x86_64 | Android OS 16 / API-36 (BE2A.250530.026.D1/13818094) | OpenGLES3 | 1080x2400 @ 420 dpi
+10-19 22:16:42.851 I/Unity   (25592): [AP] bottleneck=Unknown
+10-19 22:16:44.569 I/Unity   (25592): [AP] bottleneck=GPU
+10-19 22:16:45.503 I/Unity   (25592): [AP] bottleneck=TargetFrameRate
+10-19 22:16:46.705 I/Unity   (25592): perf_mode=HighFps high=True targetFrameRate=120 renderScale=0.8
+10-19 22:16:48.384 I/Unity   (25592): perf_mode=Balanced high=False targetFrameRate=60 renderScale=1.0
+10-19 22:16:52.960 I/Unity   (25592): [Baseline] avg 18.50 ms  p99 33.33 ms
+10-19 22:17:03.002 I/Unity   (25592): [Baseline] avg 16.75 ms  p99 16.67 ms
+10-19 22:17:11.117 I/Unity   (25592): [AP] bottleneck=GPU
+10-19 22:17:12.254 I/Unity   (25592): [AP] bottleneck=TargetFrameRate
+10-19 22:17:13.092 I/Unity   (25592): [Baseline] avg 16.81 ms  p99 16.67 ms
+10-19 22:17:23.079 I/Unity   (25592): [Baseline] avg 16.67 ms  p99 16.67 ms
+10-19 22:17:33.149 I/Unity   (25592): [Baseline] avg 16.78 ms  p99 16.67 ms
+10-19 22:17:43.217 I/Unity   (25592): [Baseline] avg 16.78 ms  p99 16.67 ms
+10-19 22:17:45.868 I/Unity   (25592): perf_mode=HighFps high=True targetFrameRate=120 renderScale=0.8
+10-19 22:17:48.689 I/Unity   (25592): [AP] bottleneck=GPU
+10-19 22:17:52.635 I/Unity   (25592): [AP] bottleneck=TargetFrameRate
+10-19 22:17:53.049 I/Unity   (25592): [AP] bottleneck=GPU
+10-19 22:17:53.537 I/Unity   (25592): [Baseline] avg 17.19 ms  p99 33.33 ms
+10-19 22:17:54.734 I/Unity   (25592): [AP] bottleneck=TargetFrameRate
+10-19 22:18:02.208 I/Unity   (25592): [AP] bottleneck=GPU
+10-19 22:18:03.724 I/Unity   (25592): [Baseline] avg 16.97 ms  p99 33.33 ms
+10-19 22:18:04.583 I/Unity   (25592): [AP] bottleneck=TargetFrameRate
+10-19 22:18:05.291 I/Unity   (25592): [AP] bottleneck=GPU
+10-19 22:18:15.209 I/Unity   (25744): perf_mode=HighFps high=True targetFrameRate=120 renderScale=0.8
+10-19 22:18:15.463 I/Unity   (25744): [AP] active warning=NoWarning level=0.90
+10-19 22:18:15.482 I/Unity   (25744): [AP] thermal warning=NoWarning level=0.90 trend=0.00
+10-19 22:18:17.080 I/Unity   (25744): [Boot] Google sdk_gphone64_x86_64 | Android OS 16 / API-36 (BE2A.250530.026.D1/13818094) | OpenGLES3 | 1080x2400 @ 420 dpi
+10-19 22:18:18.313 I/Unity   (25744): [AP] bottleneck=CPU
+10-19 22:18:18.329 I/Unity   (25744): [AP] bottleneck=Unknown
+10-19 22:18:18.496 I/Unity   (25744): [AP] bottleneck=GPU
+10-19 22:18:19.700 I/Unity   (25744): [AP] bottleneck=TargetFrameRate
+10-19 22:18:27.416 I/Unity   (25744): [Baseline] avg 17.47 ms  p99 33.33 ms
+10-19 22:18:37.489 I/Unity   (25744): [Baseline] avg 16.78 ms  p99 16.67 ms
+10-19 22:18:47.566 I/Unity   (25744): [Baseline] avg 16.81 ms  p99 16.67 ms
+10-19 22:18:57.696 I/Unity   (25744): [Baseline] avg 16.89 ms  p99 33.33 ms
+10-19 22:19:07.697 I/Unity   (25744): [Baseline] avg 16.67 ms  p99 16.67 ms
