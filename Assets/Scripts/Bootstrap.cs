@@ -4,7 +4,7 @@ public class Bootstrap : MonoBehaviour
 {
     void Awake()
     {
-        Application.targetFrameRate = 60;
+        PerformanceMode.EnsureOn(gameObject);
         Telemetry.StartSession();
         DontDestroyOnLoad(gameObject);
         if (GetComponent<AdaptiveBootstrap>() == null) gameObject.AddComponent<AdaptiveBootstrap>();

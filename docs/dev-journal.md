@@ -401,3 +401,11 @@ Validation: two Unity batch runs resolved/compiled the actual installed packages
 Added AdaptiveBootstrap on the persistent Boot/App object through Bootstrap.Awake, matching the existing music-component setup without modifying an open scene. Start reads Holder.Instance and subscribes to thermal and performance-bottleneck changes only when the provider is active. Startup, thermal and bottleneck messages use the lab's [AP] prefix; numeric thermal values use invariant formatting. OnDestroy removes the subscriptions. Unsupported runtimes report provider inactive instead of dereferencing a missing provider.
 
 Validation: Unity 6000.6.0f1 batch compilation and AdaptivePerformanceSetup.Validate passed with exit code 0. This verifies the installed Unity 6.6 API and configuration, not device thermal support. Android startup/activity and event evidence remain pending; the Balanced/High FPS controller and settings toggle are the next checkpoint.
+
+### Week 7 Lab A — Part C performance mode and settings toggle
+
+Added persistent PerformanceMode on Boot/App. It restores perf_mode before Menu loads, applies Balanced (60 fps, render scale 1.0) or HighFps (120 fps, 0.8), saves explicit changes, disables vSync and logs each application. Removed the scene-local forced 60 fps assignment; direct Game-scene testing creates a separate persistent controller. Editor teardown restores the original URP asset scale. Set the authored URP render scale from 0.5 to the lab's Balanced default 1.0.
+
+Settings navigation creates a High FPS uGUI Toggle row at runtime inside the existing panel (650 x 64 reference pixels, between text-size choices and Back). It displays ON/OFF, connects the dynamic bool to SetHighFps and uses SetIsOnWithoutNotify on opening. Existing scenes require no saved-file edits. Added the local perf_mode preference and diagnostic logs to the privacy statement.
+
+Validation: Unity batch compilation and AdaptivePerformanceSetup.Validate passed, exit code 0. Static inspection confirms only PerformanceMode assigns targetFrameRate. Runtime UI layout, touch interaction, preference persistence and actual Android frame rate/render-scale evidence still require Play Mode/device checks. A 120 fps target is a request; device refresh rate and system policy can cap the result.

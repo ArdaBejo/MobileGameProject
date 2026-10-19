@@ -20,6 +20,8 @@ No advertising, third-party analytics SDK or user-tracking service has been impl
 
 The current prototype uses Unity PlayerPrefs to store three accessibility preferences locally on the device: Haptics (on/off), Text Size (Small, Normal or Large), and Reduce Motion (on/off). These preferences persist between application sessions and are not intentionally transmitted to a server. The Reduce Motion preference is saved, but motion-reduction effects have not yet been implemented.
 
+The performance preference is also saved locally as `perf_mode` (0 = Balanced, 1 = High FPS). Mode changes and Adaptive Performance thermal/bottleneck diagnostics appear in Unity logs/logcat and are not uploaded by the game.
+
 The prototype also uses Unity PlayerPrefs to store limited gameplay progress locally on the device:
 
 - `wallet.coins` — stores the player's current soft-currency balance.

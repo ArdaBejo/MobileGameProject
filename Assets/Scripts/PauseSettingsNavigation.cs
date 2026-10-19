@@ -5,6 +5,12 @@ public class PauseSettingsNavigation : MonoBehaviour
     public GameObject pausePanel;
     public GameObject settingsPanel;
 
+    void Awake()
+    {
+        if (settingsPanel != null && settingsPanel.GetComponent<PerformanceSettingsUI>() == null)
+            settingsPanel.AddComponent<PerformanceSettingsUI>();
+    }
+
     public void ShowPauseState(bool paused)
     {
         if (!paused)
