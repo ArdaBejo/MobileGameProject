@@ -7,6 +7,7 @@ public class Bootstrap : MonoBehaviour
         Application.targetFrameRate = 60;
         Telemetry.StartSession();
         DontDestroyOnLoad(gameObject);
+        if (GetComponent<AdaptiveBootstrap>() == null) gameObject.AddComponent<AdaptiveBootstrap>();
         if (GetComponent<BackgroundMusic>() == null) gameObject.AddComponent<BackgroundMusic>();
     }
 

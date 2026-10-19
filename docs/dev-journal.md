@@ -395,3 +395,9 @@ Created the provider configuration under Assets/Settings/AdaptivePerformance and
 Added explicit Tools/Performance setup and validation menu commands. These do not run automatically or overwrite later release logging choices on every import. The assets and configuration references travel with Git; a clone does not depend on editor-local selection state.
 
 Validation: two Unity batch runs resolved/compiled the actual installed packages and executed setup. The final run exited 0 and logged [AP Setup] PASS after verifying the global feature switch, Frame Timing Stats, Android loader/startup, logging, Indexer and disabled scalers. Batch shutdown emitted a provider StopSubsystems-before-initialization warning because the Android loader was configured but no Android runtime was started; no provider-active or thermal-device claim is made. Optional Desktop Simulator setup has not been added. Next: Part B runtime thermal/bottleneck event hooks and Android provider-activity validation.
+
+### Week 7 Lab A — Part B event hooks
+
+Added AdaptiveBootstrap on the persistent Boot/App object through Bootstrap.Awake, matching the existing music-component setup without modifying an open scene. Start reads Holder.Instance and subscribes to thermal and performance-bottleneck changes only when the provider is active. Startup, thermal and bottleneck messages use the lab's [AP] prefix; numeric thermal values use invariant formatting. OnDestroy removes the subscriptions. Unsupported runtimes report provider inactive instead of dereferencing a missing provider.
+
+Validation: Unity 6000.6.0f1 batch compilation and AdaptivePerformanceSetup.Validate passed with exit code 0. This verifies the installed Unity 6.6 API and configuration, not device thermal support. Android startup/activity and event evidence remain pending; the Balanced/High FPS controller and settings toggle are the next checkpoint.
