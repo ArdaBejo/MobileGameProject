@@ -1,8 +1,10 @@
-# Week 7 Lab A — performance modes
+# Week 7 Lab A — performance modes (Android Emulator)
+
+**Test environment: Android Emulator (emulator-5554), not a physical phone.** All measurements, AP events and screenshots below belong to this emulator run.
 
 Test date: 19 October 2026. Device: Android Emulator, Google sdk_gphone64_x86_64, Android 16 / API 36, OpenGLES3, 1080 x 2400. ADB display diagnostics report a single supported refresh rate of approximately 60 Hz. These are emulator results, not physical-phone thermal or battery measurements.
 
-| Mode | targetFrameRate | Render scale | Frame time avg (ms) | 99th (ms)* | Bottleneck | Panel Hz |
+| Mode | targetFrameRate | Render scale | Frame time avg (ms) | 99th (ms)* | Bottleneck | Virtual display Hz |
 | --- | --- | --- | --- | --- | --- | --- |
 | Balanced (default) | 60 | 1.0 | 16.74 | 16.67 | TargetFrameRate, occasional GPU | 60 |
 | High FPS | 120 | 0.8 | 16.83 | 33.33 | TargetFrameRate after startup GPU/CPU transitions | 60 |

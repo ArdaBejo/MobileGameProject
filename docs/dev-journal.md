@@ -412,6 +412,10 @@ Validation: Unity batch compilation and AdaptivePerformanceSetup.Validate passed
 
 ### Week 7 Lab A — emulator verification and evidence checkpoint
 
+**Test environment: Android Emulator (emulator-5554), Google sdk_gphone64_x86_64, Android 16 / API 36, 1080 x 2400, 60 Hz virtual display.** All Week 7 measurements, AP events and mode screenshots in this checkpoint were captured on the emulator.
+
 Saved owner-supplied Settings screenshots for High FPS ON/OFF and an ADB logcat excerpt from test PIDs 25592/25744. Both target/render-scale combinations are logged, AP reports active and thermal/bottleneck events, and a new process restores HighFps. Added perf-modes.md with approximately 30 seconds of samples per mode: Balanced 16.74 ms mean, highest window p99 16.67 ms; High FPS 16.83 ms mean, highest window p99 33.33 ms. Window choices, pause-sampling limitations and the distinction from a pooled p99 are documented.
 
 The connected emulator has a 60 Hz display; this is not physical-phone thermal or 120 Hz verification. Settings screenshots prove toggle states but contain no performance overlay, so the lab's overlay-visible screenshot requirement remains open. Installed APK signing/Development Build status was not verified. Moodle exit ticket remains pending. Include Unity-generated Basic/Simulator settings assets and their registrations plus Android provider preloaded references so the current project configuration has no missing GUID references on a fresh checkout; no new provider selection was made in this checkpoint.
+
+Current status: Parts A–C are implemented; Part D has emulator verification and Part E has the emulator comparison, log excerpt and Settings screenshots. The latest evidence supersedes earlier entries that described runtime checks as pending. Next steps are overlay-visible evidence, physical-phone verification when available, and the owner-submitted Moodle exit ticket. Week 7 Lab B's thermal soak is a separate next lab; emulator AP readings do not demonstrate physical thermal behaviour.
