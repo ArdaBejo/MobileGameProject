@@ -445,3 +445,11 @@ Lab A implementation and emulator evidence are complete. The owner-submitted Moo
 ### Week 7 Lab A — exit ticket submitted
 
 The project owner confirmed that the Moodle exit ticket was submitted. Record submission as owner-reported completion; the assistant did not independently inspect the post. This supersedes earlier pending exit-ticket notes. Week 7 Lab A implementation, accepted emulator testing, evidence documentation and owner-reported submission are complete. The existing note that the installed APK signing/Development Build configuration was not independently verified remains unchanged.
+
+### Week 7 Lab B — thermal readout and evidence preparation (3 November 2026)
+
+Added ThermalLabel to the Game safe-area overlay beside the Lab A FPS/frame-time readout. It polls Adaptive Performance twice per second, displays warning, normalized level and trend, and reports AP inactive when the provider is unavailable. No gameplay or scaler settings changed.
+
+Prepared the Thermals section and capture checklist. Sustained budget remains unmeasured. After collecting comparable before/after samples, use the observed p99 to decide whether to reduce render scale or keep the current Balanced budget. Emulator readings must be labelled and do not establish physical-device heating.
+
+Coursework dates from the lab sheet: Reading Week was 26–30 October; Week 8 resumed 2 November. Async Pack 1 (Monetisation Models & Ethics; one-page reflection plus five mapping bullets) was due 1 November on Moodle; submission is not verified. CA2 is due 15 November 2026 at 23:59. Prepare reflective journal bullets for Weeks 5–7 from actual project evidence.

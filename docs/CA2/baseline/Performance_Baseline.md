@@ -55,3 +55,22 @@
 `TotalTime` ends at Android's first drawn frame, before the Unity menu is necessarily usable. `MenuReady` logs `Time.realtimeSinceStartup` at the first Menu Update after the loading overlay stops blocking input; this is the lab's Unity-runtime marker, not an independently timed icon-tap-to-interactive wall-clock measurement. SceneLoader Stopwatch durations include drawing the overlay, scene loading/activation and the destination initialization frame. No artificial loading delay was enabled.
 
 The earlier 844 ms Week 3 figure came from a different build/test configuration and is retained as historical evidence, not a like-for-like regression claim. The current release misses the interactive budget. Next investigation: profile startup and Boot -> Menu activation on a comparable configuration, separating initialization work from emulator/host effects before attributing a cause.
+
+## Week 7 Lab B: Thermals
+
+Planned test: Balanced (60 FPS target, render scale 1.0), same arena route and workload before and after. Use a Development Build with Profiler attachment. Existing Week 7 Lab A emulator captures are a separate experiment and are not reused as soak evidence.
+
+| Field | Value |
+| --- | --- |
+| Build ID and mode | Pending installed build verification; Balanced planned |
+| Start temperature (C) and timestamp | Not measured |
+| End temperature (C), timestamp and 10-minute delta | Not measured |
+| AP temperature level at minutes 0 / 5 / 10 | Not captured |
+| First ThrottlingImminent | Not measured |
+| Throttling observed | Not measured |
+| Maximum AP temperature level | Not measured |
+| Before frame time: mean / p99 (ms) | No capture yet |
+| After frame time: mean / p99 (ms) | No capture yet |
+| Conditions | Record actual device, run interruptions and test conditions |
+
+For an emulator run, report guest battery and AP values as virtual readings. A sustained emulator frame-time result is useful; it does not establish a physical phone thermal delta or throttling budget. The game's normal arena run lasts two minutes, so document any restarts rather than calling repeated runs uninterrupted gameplay. Keep captures and logcat in the [thermal soak evidence folder](thermal-soak/).

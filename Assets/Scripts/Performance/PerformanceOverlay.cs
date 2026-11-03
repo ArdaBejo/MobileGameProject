@@ -31,6 +31,15 @@ public sealed class PerformanceOverlay : MonoBehaviour
             new Vector2(0, 17), new Vector2(312, 42), 24);
         modeLabel = GreyboxUI.Label(panel, "Mode", "", Vector2.one * 0.5f,
             new Vector2(0, -25), new Vector2(312, 38), 18);
+        var topLeft = new Vector2(0, 1);
+        var thermalPanel = GreyboxUI.Rect("ThermalReadout", safeArea, topLeft, topLeft,
+            new Vector2(182, -187), new Vector2(340, 102));
+        var thermalBackground = thermalPanel.gameObject.AddComponent<Image>();
+        thermalBackground.color = background.color;
+        thermalBackground.raycastTarget = false;
+        var thermalLabel = GreyboxUI.Label(thermalPanel, "ThermalLabel", "", Vector2.one * 0.5f,
+            Vector2.zero, new Vector2(328, 96), 20);
+        thermalPanel.gameObject.AddComponent<ThermalOverlay>().Bind(thermalLabel);
         sampledMode = PerformanceMode.Instance.Current;
         RefreshMode();
     }
