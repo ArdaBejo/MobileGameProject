@@ -1,0 +1,51 @@
+2026-11-03T19:50:41.9930858+00:00 Test pid=27708; repeat center-position arena with auto fire, no upgrades or manual movement.
+2026-11-03T19:50:42.0131192+00:00 Profiler stop requested
+2026-11-03T19:50:42.5255320+00:00 Retry tapped on Result
+2026-11-03T19:50:56.3973901+00:00 11-03 19:50:53.463 I/Unity   (27708): [telemetry] 1269.86 6128023a level_start level_id=1 attempt=6 coins=550
+2026-11-03T19:50:56.4055522+00:00 Profiler before requested
+2026-11-03T19:52:09.3099436+00:00 Captured minute-00
+2026-11-03T19:52:09.3112280+00:00 Soak clock started
+2026-11-03T19:52:17.6505077+00:00 11-03 19:52:14.936 I/Unity   (27708): [perf] scene Result loaded in 4567 ms
+2026-11-03T19:52:18.1080546+00:00 Retry tapped on Result
+2026-11-03T19:52:26.3908186+00:00 11-03 19:52:23.848 I/Unity   (27708): [telemetry] 1360.23 6128023a level_start level_id=1 attempt=7 coins=600
+2026-11-03T19:53:00.3418884+00:00 11-03 19:52:57.131 I/Unity   (27708): [perf] scene Result loaded in 3074 ms
+2026-11-03T19:53:00.7017029+00:00 Retry tapped on Result
+2026-11-03T19:53:09.9141918+00:00 11-03 19:53:07.154 I/Unity   (27708): [telemetry] 1403.55 6128023a level_start level_id=1 attempt=8 coins=690
+2026-11-03T19:53:43.8886628+00:00 11-03 19:53:41.063 I/Unity   (27708): [perf] scene Result loaded in 3848 ms
+2026-11-03T19:53:44.6155448+00:00 Retry tapped on Result
+2026-11-03T19:53:53.8808829+00:00 11-03 19:53:50.854 I/Unity   (27708): [telemetry] 1447.25 6128023a level_start level_id=1 attempt=9 coins=750
+2026-11-03T19:54:39.7996593+00:00 11-03 19:54:36.707 I/Unity   (27708): [perf] scene Result loaded in 6344 ms
+2026-11-03T19:54:40.4388968+00:00 Retry tapped on Result
+2026-11-03T19:54:52.4554602+00:00 11-03 19:54:49.775 I/Unity   (27708): [telemetry] 1506.18 6128023a level_start level_id=1 attempt=10 coins=800
+2026-11-03T19:55:20.0042841+00:00 11-03 19:55:17.100 I/Unity   (27708): [perf] scene Result loaded in 1817 ms
+2026-11-03T19:55:20.5339472+00:00 Retry tapped on Result
+2026-11-03T19:55:31.6314018+00:00 11-03 19:55:28.911 I/Unity   (27708): [telemetry] 1545.31 6128023a level_start level_id=1 attempt=11 coins=870
+2026-11-03T19:56:09.2899706+00:00 11-03 19:56:06.359 I/Unity   (27708): [perf] scene Result loaded in 4063 ms
+2026-11-03T19:56:09.6162304+00:00 Retry tapped on Result
+2026-11-03T19:56:20.7087920+00:00 11-03 19:56:17.738 I/Unity   (27708): [telemetry] 1594.14 6128023a level_start level_id=1 attempt=12 coins=970
+2026-11-03T19:56:52.7619136+00:00 11-03 19:56:50.248 I/Unity   (27708): [perf] scene Result loaded in 1107 ms
+2026-11-03T19:56:53.0951421+00:00 Retry tapped on Result
+2026-11-03T19:57:04.1044142+00:00 11-03 19:57:00.918 I/Unity   (27708): [telemetry] 1637.32 6128023a level_start level_id=1 attempt=13 coins=1050
+2026-11-03T19:57:21.5516232+00:00 Captured minute-05
+2026-11-03T19:57:33.5054100+00:00 11-03 19:57:30.527 I/Unity   (27708): [perf] scene Result loaded in 2009 ms
+2026-11-03T19:57:33.9593994+00:00 Retry tapped on Result
+2026-11-03T19:57:52.3611418+00:00 11-03 19:57:49.587 I/Unity   (27708): [telemetry] 1686.00 6128023a level_start level_id=1 attempt=14 coins=1100
+2026-11-03T19:58:29.9798303+00:00 11-03 19:58:27.075 I/Unity   (27708): [perf] scene Result loaded in 2793 ms
+2026-11-03T19:58:30.4826414+00:00 Retry tapped on Result
+2026-11-03T19:58:39.6979563+00:00 11-03 19:58:36.663 I/Unity   (27708): [telemetry] 1733.04 6128023a level_start level_id=1 attempt=15 coins=1190
+2026-11-03T19:59:40.4047691+00:00 11-03 19:59:37.719 I/Unity   (27708): [perf] scene Result loaded in 3748 ms
+2026-11-03T19:59:40.7377155+00:00 Retry tapped on Result
+2026-11-03T19:59:59.1233695+00:00 11-03 19:59:56.463 I/Unity   (27708): [telemetry] 1813.04 6128023a level_start level_id=1 attempt=16 coins=1260
+2026-11-03T20:00:31.1739066+00:00 11-03 20:00:28.793 I/Unity   (27708): [perf] scene Result loaded in 2956 ms
+2026-11-03T20:00:31.6827013+00:00 Retry tapped on Result
+2026-11-03T20:00:43.6294205+00:00 11-03 20:00:40.701 I/Unity   (27708): [telemetry] 1857.32 6128023a level_start level_id=1 attempt=17 coins=1310
+2026-11-03T20:01:12.0955374+00:00 11-03 20:01:09.516 I/Unity   (27708): [perf] scene Result loaded in 2038 ms
+2026-11-03T20:01:12.5755062+00:00 Retry tapped on Result
+2026-11-03T20:01:30.9506889+00:00 11-03 20:01:28.452 I/Unity   (27708): [telemetry] 1905.00 6128023a level_start level_id=1 attempt=18 coins=1380
+2026-11-03T20:02:07.6081527+00:00 11-03 20:02:04.727 I/Unity   (27708): [perf] scene Result loaded in 3758 ms
+2026-11-03T20:02:08.4606989+00:00 Retry tapped on Result
+2026-11-03T20:02:09.3927459+00:00 Soak clock ended; reading battery
+2026-11-03T20:02:19.4414335+00:00 Captured minute-10
+2026-11-03T20:02:20.3692222+00:00 11-03 20:02:15.706 I/Unity   (27708): [telemetry] 1952.33 6128023a level_start level_id=1 attempt=19 coins=1470
+2026-11-03T20:02:20.3762735+00:00 Profiler after requested
+2026-11-03T20:03:21.7537048+00:00 Both Profiler captures saved

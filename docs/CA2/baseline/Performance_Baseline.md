@@ -63,16 +63,20 @@ Planned test: Balanced (60 FPS target, render scale 1.0), same arena route and w
 | Field | Value |
 | --- | --- |
 | Build ID and mode | 0.4.0 (4), Development IL2CPP arm64, source d1ffeb0 + 164fdff documentation, package com.ardabecanim.mobilegame.soak; Balanced 60 FPS target / 1.0 scale |
-| Start temperature (C) and timestamp | Not measured |
-| End temperature (C), timestamp and 10-minute delta | Not measured |
-| AP temperature level at minutes 0 / 5 / 10 | Not captured |
-| First ThrottlingImminent | Not measured |
-| Throttling observed | Not measured |
-| Maximum AP temperature level | Not measured |
-| Before frame time: mean / p99 (ms) | No capture yet |
-| After frame time: mean / p99 (ms) | No capture yet |
-| Conditions | Record actual device, run interruptions and test conditions |
+| Start temperature (C) and timestamp | 25.0 °C virtual, 19:51:46.966 Dublin (about 22 s before the timer; app already running) |
+| End temperature (C), timestamp and 10-minute delta | 25.0 °C virtual; read requested at 20:02:09.393; delta 0.0 °C |
+| AP temperature level at minutes 0 / 5 / 10 | 0.90 / 0.90 / no overlay during scene transition; subsequent arena overlay 0.90 |
+| First ThrottlingImminent | Not observed during recorded emulator run |
+| Throttling observed | No warning reported by virtual AP provider |
+| Maximum AP temperature level | 0.90 normalized, virtual |
+| Before frame time: mean / p99 (ms) | 3076.94 / 5394.11, 18 frames |
+| After frame time: mean / p99 (ms) | 5257.00 / 14207.69, 10 frames |
+| Conditions | Pixel 8 Android 16 emulator; automated center-position auto-fire with Retry and scene transitions; host also ran Fortnite during part of the session |
 
 For an emulator run, report guest battery and AP values as virtual readings. A sustained emulator frame-time result is useful; it does not establish a physical phone thermal delta or throttling budget. The game's normal arena run lasts two minutes, so document any restarts rather than calling repeated runs uninterrupted gameplay. Keep captures and logcat in the [thermal soak evidence folder](thermal-soak/).
 
-Android smoke check (3 November): Unity successfully built and ADB installed the separate development APK. SHA-256: `2b3f19e4471f71203a817b2d5ac1596b8db361b403648c89305aa09cb51e4b8c`. The [smoke screenshot](thermal-soak/overlay-smoke.png) shows both readouts in the arena, including AP NoWarning, level 0.90 and trend 0.00. The instantaneous 23 FPS / 44.0 ms reading is a startup smoke sample, not a sustained result or before capture. The 10-minute measurement and two Profiler captures have not begun.
+Android smoke check (3 November): Unity successfully built and ADB installed the separate development APK. SHA-256: `2b3f19e4471f71203a817b2d5ac1596b8db361b403648c89305aa09cb51e4b8c`. The [smoke screenshot](thermal-soak/overlay-smoke.png) shows both readouts in the arena, including AP NoWarning, level 0.90 and trend 0.00. The instantaneous 23 FPS / 44.0 ms reading is a startup smoke sample, not a sustained result or before capture. The timed run below is separate from this smoke check.
+
+The resumed run lasted 600.08 s by the host timeline (19:52:09.311–20:02:09.393 Dublin, 3 November 2026). The earlier interrupted run is excluded. Repeated arena attempts included Result and loading intervals, so this is not an uninterrupted fixed-route gameplay trial. Minute 5 image finished writing about 12 s after its trigger; the minute 10 image shows the actual loading transition. The separate post-soak screenshot (file written 20:02:57) shows NoWarning, level 0.90 and trend 0.00 in the next arena. The original pre-launch battery reading was also 25.0 °C at 19:29:26.283; the comparison uses the more recent near-start reading.
+
+Raw Android Player Profiler captures and frame-time CSVs are in the [evidence folder](thermal-soak/). Each recording was enabled for approximately 60 seconds; the exported frame durations cover 55.38 s before and 52.57 s after. Mean is arithmetic; p99 is nearest rank and equals the maximum in these small samples. These are real recorded frames, but the emulator was very slow with the Development build and attached Profiler, and host workload was uncontrolled. The difference does not establish a thermal regression or a usable sustained FPS budget. Repeat under stable host load with a repeatable gameplay route before using these figures for tuning. Moodle exit ticket not submitted.

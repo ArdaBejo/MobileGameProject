@@ -1,0 +1,1228 @@
+--------- beginning of main
+11-03 19:50:30.816 D/Unity   (27708): Curl error 35: Send failure: Broken pipe
+11-03 19:50:40.843 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 2, quality: 2
+11-03 19:50:41.312 D/Unity   (27708): Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+11-03 19:50:46.088 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:50:46.088 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:50:46.088 I/Unity   (27708): Average GPU frametime = 154.64 ms (Current = 152.41 ms)
+11-03 19:50:46.088 I/Unity   (27708): Average CPU frametime = 272.66 ms (Current = 244.20 ms)
+11-03 19:50:46.088 I/Unity   (27708): Average frametime = 322.83 ms (Current = 200.00 ms)
+11-03 19:50:46.088 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:50:46.088 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:50:46.088 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:50:46.088 I/Unity   (27708): FPS = 3.10
+11-03 19:50:46.088 I/Unity   (27708): Performance Mode = Standard
+11-03 19:50:46.088 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:50:46.088 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:50:46.088 I/Unity   (27708):
+11-03 19:50:50.883 D/Unity   (27708): UnloadTime: 70.772600 ms
+11-03 19:50:51.234 I/Unity   (27708): [Boot] Google sdk_gphone64_x86_64 | Android OS 16 / API-36 (BE2A.250530.026.D1/13818094) | OpenGLES3 | 1080x2400 @ 420 dpi
+11-03 19:50:51.234 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:50:51.234 I/Unity   (27708): MobileBootstrap:Awake()
+11-03 19:50:51.234 I/Unity   (27708):
+11-03 19:50:51.298 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 2, quality: 2
+11-03 19:50:53.046 D/Unity   (27708): Unloading 12 unused Assets / (Unknown). Loaded Objects now: 3762.
+11-03 19:50:53.046 D/Unity   (27708): Memory consumption went from 100.6 MB to 100.6 MB.
+11-03 19:50:53.047 D/Unity   (27708): Total: 484.543800 ms (FindLiveObjects: 42.124800 ms CreateObjectMapping: 0.194200 ms MarkObjects: 317.279000 ms  DeleteObjects: 120.047900 ms)
+11-03 19:50:53.047 D/Unity   (27708):
+11-03 19:50:53.440 I/Unity   (27708): [perf] scene Game loaded in 12707 ms
+11-03 19:50:53.440 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:50:53.440 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 19:50:53.440 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 19:50:53.440 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:50:53.440 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:50:53.440 I/Unity   (27708):
+11-03 19:50:53.463 I/Unity   (27708): [telemetry] 1269.86 6128023a level_start level_id=1 attempt=6 coins=550
+11-03 19:50:53.463 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:50:53.463 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 19:50:53.463 I/Unity   (27708): GameManager:BeginRun()
+11-03 19:50:53.463 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:50:53.463 I/Unity   (27708): <Start>d__17:MoveNext()
+11-03 19:50:53.463 I/Unity   (27708): System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+11-03 19:50:53.463 I/Unity   (27708): System.Runtime.CompilerServices.MoveNextRunner:Run()
+11-03 19:50:53.463 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:50:53.463 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:50:53.463 I/Unity   (27708):
+11-03 19:51:55.874 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:51:55.874 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:51:55.874 I/Unity   (27708): Average GPU frametime = 123.18 ms (Current = 114.88 ms)
+11-03 19:51:55.874 I/Unity   (27708): Average CPU frametime = 293.83 ms (Current = 466.96 ms)
+11-03 19:51:55.874 I/Unity   (27708): Average frametime = 341.50 ms (Current = 433.33 ms)
+11-03 19:51:55.874 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:51:55.874 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:51:55.874 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:51:55.874 I/Unity   (27708): FPS = 2.93
+11-03 19:51:55.874 I/Unity   (27708): Performance Mode = Standard
+11-03 19:51:55.874 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:51:55.874 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:51:55.874 I/Unity   (27708):
+11-03 19:52:10.224 I/Unity   (27708): [telemetry] 1346.59 6128023a level_fail level_id=1 time_s=17.18665 cause=hp coins_earned=50
+11-03 19:52:10.224 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:52:10.224 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 19:52:10.224 I/Unity   (27708): GameManager:EndRun(State)
+11-03 19:52:10.224 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:52:10.224 I/Unity   (27708): GameManager:LoseGame()
+11-03 19:52:10.224 I/Unity   (27708):
+11-03 19:52:10.356 I/Unity   (27708): Game state changed to: Lost
+11-03 19:52:10.356 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:52:10.356 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:52:10.356 I/Unity   (27708): GameManager:LoseGame()
+11-03 19:52:10.356 I/Unity   (27708):
+11-03 19:52:10.662 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 3, quality: 2
+11-03 19:52:10.978 D/Unity   (27708): Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+11-03 19:52:11.646 D/Unity   (27708): UnloadTime: 293.499600 ms
+11-03 19:52:12.404 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 3, quality: 2
+11-03 19:52:14.892 D/Unity   (27708): Unloading 55 unused Assets / (0.5 MB). Loaded Objects now: 3034.
+11-03 19:52:14.892 D/Unity   (27708): Memory consumption went from 100.0 MB to 99.5 MB.
+11-03 19:52:14.896 D/Unity   (27708): Total: 580.426700 ms (FindLiveObjects: 33.024500 ms CreateObjectMapping: 1.078500 ms MarkObjects: 488.091000 ms  DeleteObjects: 56.495500 ms)
+11-03 19:52:14.896 D/Unity   (27708):
+11-03 19:52:14.924 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:52:14.924 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:52:14.924 I/Unity   (27708): Average GPU frametime = 134.34 ms (Current = 26.19 ms)
+11-03 19:52:14.924 I/Unity   (27708): Average CPU frametime = 219.35 ms (Current = 54.84 ms)
+11-03 19:52:14.924 I/Unity   (27708): Average frametime = 249.50 ms (Current = 216.67 ms)
+11-03 19:52:14.924 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:52:14.924 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:52:14.924 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:52:14.924 I/Unity   (27708): FPS = 4.01
+11-03 19:52:14.924 I/Unity   (27708): Performance Mode = Standard
+11-03 19:52:14.924 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:52:14.924 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:52:14.924 I/Unity   (27708):
+11-03 19:52:14.936 I/Unity   (27708): [perf] scene Result loaded in 4567 ms
+11-03 19:52:14.936 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:52:14.936 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 19:52:14.936 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 19:52:14.936 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:52:14.936 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:52:14.936 I/Unity   (27708):
+11-03 19:52:16.232 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 2, quality: 2
+11-03 19:52:17.271 D/Unity   (27708): Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+11-03 19:52:21.255 D/Unity   (27708): UnloadTime: 16.720600 ms
+11-03 19:52:21.632 I/Unity   (27708): [Boot] Google sdk_gphone64_x86_64 | Android OS 16 / API-36 (BE2A.250530.026.D1/13818094) | OpenGLES3 | 1080x2400 @ 420 dpi
+11-03 19:52:21.632 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:52:21.632 I/Unity   (27708): MobileBootstrap:Awake()
+11-03 19:52:21.632 I/Unity   (27708):
+11-03 19:52:21.867 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 2, quality: 2
+11-03 19:52:23.599 D/Unity   (27708): Unloading 12 unused Assets / (4.7 KB). Loaded Objects now: 3762.
+11-03 19:52:23.599 D/Unity   (27708): Memory consumption went from 100.6 MB to 100.6 MB.
+11-03 19:52:23.606 D/Unity   (27708): Total: 248.278900 ms (FindLiveObjects: 0.421800 ms CreateObjectMapping: 1.212700 ms MarkObjects: 224.027600 ms  DeleteObjects: 1.908400 ms)
+11-03 19:52:23.606 D/Unity   (27708):
+11-03 19:52:23.815 I/Unity   (27708): [perf] scene Game loaded in 7702 ms
+11-03 19:52:23.815 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:52:23.815 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 19:52:23.815 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 19:52:23.815 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:52:23.815 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:52:23.815 I/Unity   (27708):
+11-03 19:52:23.848 I/Unity   (27708): [telemetry] 1360.23 6128023a level_start level_id=1 attempt=7 coins=600
+11-03 19:52:23.848 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:52:23.848 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 19:52:23.848 I/Unity   (27708): GameManager:BeginRun()
+11-03 19:52:23.848 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:52:23.848 I/Unity   (27708): <Start>d__17:MoveNext()
+11-03 19:52:23.848 I/Unity   (27708): System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+11-03 19:52:23.848 I/Unity   (27708): System.Runtime.CompilerServices.MoveNextRunner:Run()
+11-03 19:52:23.848 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:52:23.848 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:52:23.848 I/Unity   (27708):
+11-03 19:52:27.172 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:52:27.172 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:52:27.172 I/Unity   (27708): Average GPU frametime = 104.19 ms (Current = 90.10 ms)
+11-03 19:52:27.172 I/Unity   (27708): Average CPU frametime = 207.81 ms (Current = 464.16 ms)
+11-03 19:52:27.172 I/Unity   (27708): Average frametime = 229.33 ms (Current = 233.33 ms)
+11-03 19:52:27.172 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:52:27.172 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:52:27.172 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:52:27.172 I/Unity   (27708): FPS = 4.36
+11-03 19:52:27.172 I/Unity   (27708): Performance Mode = Standard
+11-03 19:52:27.172 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:52:27.172 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:52:27.172 I/Unity   (27708):
+11-03 19:52:40.445 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:52:40.445 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:52:40.445 I/Unity   (27708): Average GPU frametime = 101.15 ms (Current = 74.84 ms)
+11-03 19:52:40.445 I/Unity   (27708): Average CPU frametime = 202.38 ms (Current = 107.77 ms)
+11-03 19:52:40.445 I/Unity   (27708): Average frametime = 233.00 ms (Current = 100.00 ms)
+11-03 19:52:40.445 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:52:40.445 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:52:40.445 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:52:40.445 I/Unity   (27708): FPS = 4.29
+11-03 19:52:40.445 I/Unity   (27708): Performance Mode = Standard
+11-03 19:52:40.445 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:52:40.445 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:52:40.445 I/Unity   (27708):
+11-03 19:52:53.908 I/Unity   (27708): [telemetry] 1390.26 6128023a level_fail level_id=1 time_s=24.35333 cause=hp coins_earned=90
+11-03 19:52:53.908 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:52:53.908 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 19:52:53.908 I/Unity   (27708): GameManager:EndRun(State)
+11-03 19:52:53.908 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:52:53.908 I/Unity   (27708): GameManager:LoseGame()
+11-03 19:52:53.908 I/Unity   (27708):
+11-03 19:52:54.004 I/Unity   (27708): Game state changed to: Lost
+11-03 19:52:54.004 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:52:54.004 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:52:54.004 I/Unity   (27708): GameManager:LoseGame()
+11-03 19:52:54.004 I/Unity   (27708):
+11-03 19:52:54.555 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 3, quality: 2
+11-03 19:52:54.721 D/Unity   (27708): Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+11-03 19:52:56.522 D/Unity   (27708): UnloadTime: 234.470800 ms
+11-03 19:52:56.635 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 3, quality: 2
+11-03 19:52:57.097 D/Unity   (27708): Unloading 54 unused Assets / (203.5 KB). Loaded Objects now: 3034.
+11-03 19:52:57.097 D/Unity   (27708): Memory consumption went from 100.0 MB to 99.8 MB.
+11-03 19:52:57.110 D/Unity   (27708): Total: 144.334400 ms (FindLiveObjects: 2.469800 ms CreateObjectMapping: 0.964300 ms MarkObjects: 121.905400 ms  DeleteObjects: 3.977300 ms)
+11-03 19:52:57.110 D/Unity   (27708):
+11-03 19:52:57.131 I/Unity   (27708): [perf] scene Result loaded in 3074 ms
+11-03 19:52:57.131 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:52:57.131 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 19:52:57.131 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 19:52:57.131 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:52:57.131 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:52:57.131 I/Unity   (27708):
+11-03 19:52:57.243 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:52:57.243 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:52:57.243 I/Unity   (27708): Average GPU frametime = 113.49 ms (Current = 256.13 ms)
+11-03 19:52:57.243 I/Unity   (27708): Average CPU frametime = 234.62 ms (Current = 243.53 ms)
+11-03 19:52:57.243 I/Unity   (27708): Average frametime = 274.00 ms (Current = 266.67 ms)
+11-03 19:52:57.243 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:52:57.243 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:52:57.243 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:52:57.243 I/Unity   (27708): FPS = 3.65
+11-03 19:52:57.243 I/Unity   (27708): Performance Mode = Standard
+11-03 19:52:57.243 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:52:57.243 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:52:57.243 I/Unity   (27708):
+11-03 19:52:58.663 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 2, quality: 2
+11-03 19:52:58.799 D/Unity   (27708): Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+11-03 19:53:05.987 D/Unity   (27708): UnloadTime: 14.868800 ms
+11-03 19:53:06.081 I/Unity   (27708): [Boot] Google sdk_gphone64_x86_64 | Android OS 16 / API-36 (BE2A.250530.026.D1/13818094) | OpenGLES3 | 1080x2400 @ 420 dpi
+11-03 19:53:06.081 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:53:06.081 I/Unity   (27708): MobileBootstrap:Awake()
+11-03 19:53:06.081 I/Unity   (27708):
+11-03 19:53:06.264 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 2, quality: 2
+11-03 19:53:06.965 D/Unity   (27708): Unloading 12 unused Assets / (Unknown). Loaded Objects now: 3762.
+11-03 19:53:06.965 D/Unity   (27708): Memory consumption went from 100.6 MB to 100.6 MB.
+11-03 19:53:06.966 D/Unity   (27708): Total: 47.903700 ms (FindLiveObjects: 0.640400 ms CreateObjectMapping: 2.783000 ms MarkObjects: 40.495600 ms  DeleteObjects: 3.196100 ms)
+11-03 19:53:06.966 D/Unity   (27708):
+11-03 19:53:07.111 I/Unity   (27708): [perf] scene Game loaded in 8507 ms
+11-03 19:53:07.111 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:53:07.111 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 19:53:07.111 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 19:53:07.111 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:53:07.111 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:53:07.111 I/Unity   (27708):
+11-03 19:53:07.154 I/Unity   (27708): [telemetry] 1403.55 6128023a level_start level_id=1 attempt=8 coins=690
+11-03 19:53:07.154 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:53:07.154 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 19:53:07.154 I/Unity   (27708): GameManager:BeginRun()
+11-03 19:53:07.154 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:53:07.154 I/Unity   (27708): <Start>d__17:MoveNext()
+11-03 19:53:07.154 I/Unity   (27708): System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+11-03 19:53:07.154 I/Unity   (27708): System.Runtime.CompilerServices.MoveNextRunner:Run()
+11-03 19:53:07.154 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:53:07.154 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:53:07.154 I/Unity   (27708):
+11-03 19:53:09.111 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:53:09.111 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:53:09.111 I/Unity   (27708): Average GPU frametime = 100.38 ms (Current = 107.56 ms)
+11-03 19:53:09.111 I/Unity   (27708): Average CPU frametime = 232.10 ms (Current = 82.92 ms)
+11-03 19:53:09.111 I/Unity   (27708): Average frametime = 263.83 ms (Current = 283.33 ms)
+11-03 19:53:09.111 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:53:09.111 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:53:09.111 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:53:09.111 I/Unity   (27708): FPS = 3.79
+11-03 19:53:09.111 I/Unity   (27708): Performance Mode = Standard
+11-03 19:53:09.111 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:53:09.111 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:53:09.111 I/Unity   (27708):
+11-03 19:53:25.368 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:53:25.368 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:53:25.368 I/Unity   (27708): Average GPU frametime = 104.09 ms (Current = 68.10 ms)
+11-03 19:53:25.368 I/Unity   (27708): Average CPU frametime = 245.28 ms (Current = 159.89 ms)
+11-03 19:53:25.368 I/Unity   (27708): Average frametime = 265.33 ms (Current = 266.67 ms)
+11-03 19:53:25.368 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:53:25.368 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:53:25.368 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:53:25.368 I/Unity   (27708): FPS = 3.77
+11-03 19:53:25.368 I/Unity   (27708): Performance Mode = Standard
+11-03 19:53:25.368 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:53:25.368 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:53:25.368 I/Unity   (27708):
+11-03 19:53:37.073 I/Unity   (27708): [telemetry] 1433.44 6128023a level_fail level_id=1 time_s=21.88666 cause=hp coins_earned=60
+11-03 19:53:37.073 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:53:37.073 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 19:53:37.073 I/Unity   (27708): GameManager:EndRun(State)
+11-03 19:53:37.073 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:53:37.073 I/Unity   (27708): GameManager:LoseGame()
+11-03 19:53:37.073 I/Unity   (27708):
+11-03 19:53:37.211 I/Unity   (27708): Game state changed to: Lost
+11-03 19:53:37.211 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:53:37.211 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:53:37.211 I/Unity   (27708): GameManager:LoseGame()
+11-03 19:53:37.211 I/Unity   (27708):
+11-03 19:53:38.071 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 3, quality: 2
+11-03 19:53:38.263 D/Unity   (27708): Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+11-03 19:53:40.063 D/Unity   (27708): UnloadTime: 426.276800 ms
+11-03 19:53:40.217 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 3, quality: 2
+11-03 19:53:40.976 D/Unity   (27708): Unloading 54 unused Assets / (0.5 MB). Loaded Objects now: 3034.
+11-03 19:53:40.976 D/Unity   (27708): Memory consumption went from 100.0 MB to 99.5 MB.
+11-03 19:53:40.976 D/Unity   (27708): Total: 196.430700 ms (FindLiveObjects: 0.520000 ms CreateObjectMapping: 0.169500 ms MarkObjects: 192.603000 ms  DeleteObjects: 2.663700 ms)
+11-03 19:53:40.976 D/Unity   (27708):
+11-03 19:53:41.063 I/Unity   (27708): [perf] scene Result loaded in 3848 ms
+11-03 19:53:41.063 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:53:41.063 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 19:53:41.063 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 19:53:41.063 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:53:41.063 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:53:41.063 I/Unity   (27708):
+11-03 19:53:43.714 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 2, quality: 2
+11-03 19:53:44.466 D/Unity   (27708): Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+11-03 19:53:45.469 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:53:45.469 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:53:45.469 I/Unity   (27708): Average GPU frametime = 120.43 ms (Current = 63.86 ms)
+11-03 19:53:45.469 I/Unity   (27708): Average CPU frametime = 299.98 ms (Current = 251.99 ms)
+11-03 19:53:45.469 I/Unity   (27708): Average frametime = 317.83 ms (Current = 300.00 ms)
+11-03 19:53:45.469 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:53:45.469 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:53:45.469 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:53:45.469 I/Unity   (27708): FPS = 3.15
+11-03 19:53:45.469 I/Unity   (27708): Performance Mode = Standard
+11-03 19:53:45.469 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:53:45.469 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:53:45.469 I/Unity   (27708):
+11-03 19:53:49.328 D/Unity   (27708): UnloadTime: 1.393600 ms
+11-03 19:53:49.619 I/Unity   (27708): [Boot] Google sdk_gphone64_x86_64 | Android OS 16 / API-36 (BE2A.250530.026.D1/13818094) | OpenGLES3 | 1080x2400 @ 420 dpi
+11-03 19:53:49.619 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:53:49.619 I/Unity   (27708): MobileBootstrap:Awake()
+11-03 19:53:49.619 I/Unity   (27708):
+11-03 19:53:49.815 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 2, quality: 2
+11-03 19:53:50.767 D/Unity   (27708): Unloading 12 unused Assets / (4.7 KB). Loaded Objects now: 3762.
+11-03 19:53:50.767 D/Unity   (27708): Memory consumption went from 100.6 MB to 100.6 MB.
+11-03 19:53:50.767 D/Unity   (27708): Total: 208.235700 ms (FindLiveObjects: 1.202600 ms CreateObjectMapping: 11.951200 ms MarkObjects: 182.996300 ms  DeleteObjects: 3.884100 ms)
+11-03 19:53:50.767 D/Unity   (27708):
+11-03 19:53:50.835 I/Unity   (27708): [perf] scene Game loaded in 7519 ms
+11-03 19:53:50.835 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:53:50.835 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 19:53:50.835 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 19:53:50.835 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:53:50.835 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:53:50.835 I/Unity   (27708):
+11-03 19:53:50.854 I/Unity   (27708): [telemetry] 1447.25 6128023a level_start level_id=1 attempt=9 coins=750
+11-03 19:53:50.854 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:53:50.854 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 19:53:50.854 I/Unity   (27708): GameManager:BeginRun()
+11-03 19:53:50.854 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:53:50.854 I/Unity   (27708): <Start>d__17:MoveNext()
+11-03 19:53:50.854 I/Unity   (27708): System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+11-03 19:53:50.854 I/Unity   (27708): System.Runtime.CompilerServices.MoveNextRunner:Run()
+11-03 19:53:50.854 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:53:50.854 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:53:50.854 I/Unity   (27708):
+11-03 19:53:59.764 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:53:59.764 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:53:59.764 I/Unity   (27708): Average GPU frametime = 113.10 ms (Current = 138.37 ms)
+11-03 19:53:59.764 I/Unity   (27708): Average CPU frametime = 284.56 ms (Current = 275.37 ms)
+11-03 19:53:59.764 I/Unity   (27708): Average frametime = 317.67 ms (Current = 266.67 ms)
+11-03 19:53:59.764 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:53:59.764 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:53:59.764 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:53:59.764 I/Unity   (27708): FPS = 3.15
+11-03 19:53:59.764 I/Unity   (27708): Performance Mode = Standard
+11-03 19:53:59.764 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:53:59.764 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:53:59.764 I/Unity   (27708):
+11-03 19:54:30.179 I/Unity   (27708): [telemetry] 1486.50 6128023a level_fail level_id=1 time_s=18.18677 cause=hp coins_earned=50
+11-03 19:54:30.179 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:54:30.179 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 19:54:30.179 I/Unity   (27708): GameManager:EndRun(State)
+11-03 19:54:30.179 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:54:30.179 I/Unity   (27708): GameManager:LoseGame()
+11-03 19:54:30.179 I/Unity   (27708):
+11-03 19:54:30.246 I/Unity   (27708): Game state changed to: Lost
+11-03 19:54:30.246 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:54:30.246 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:54:30.246 I/Unity   (27708): GameManager:LoseGame()
+11-03 19:54:30.246 I/Unity   (27708):
+11-03 19:54:30.915 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 3, quality: 2
+11-03 19:54:31.215 D/Unity   (27708): Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+11-03 19:54:33.831 D/Unity   (27708): UnloadTime: 143.548300 ms
+11-03 19:54:34.456 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 3, quality: 2
+11-03 19:54:36.312 D/Unity   (27708): Unloading 54 unused Assets / (0.5 MB). Loaded Objects now: 3034.
+11-03 19:54:36.312 D/Unity   (27708): Memory consumption went from 100.1 MB to 99.5 MB.
+11-03 19:54:36.362 D/Unity   (27708): Total: 571.910300 ms (FindLiveObjects: 26.866200 ms CreateObjectMapping: 0.200800 ms MarkObjects: 491.024800 ms  DeleteObjects: 52.815900 ms)
+11-03 19:54:36.362 D/Unity   (27708):
+11-03 19:54:36.707 I/Unity   (27708): [perf] scene Result loaded in 6344 ms
+11-03 19:54:36.707 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:54:36.707 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 19:54:36.707 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 19:54:36.707 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:54:36.707 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:54:36.707 I/Unity   (27708):
+11-03 19:54:38.841 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 2, quality: 2
+11-03 19:54:38.931 D/Unity   (27708): Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+11-03 19:54:39.644 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:54:39.644 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:54:39.644 I/Unity   (27708): Average GPU frametime = 173.13 ms (Current = 66.40 ms)
+11-03 19:54:39.644 I/Unity   (27708): Average CPU frametime = 344.89 ms (Current = 141.66 ms)
+11-03 19:54:39.644 I/Unity   (27708): Average frametime = 362.33 ms (Current = 150.00 ms)
+11-03 19:54:39.644 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:54:39.644 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:54:39.644 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:54:39.644 I/Unity   (27708): FPS = 2.76
+11-03 19:54:39.644 I/Unity   (27708): Performance Mode = Standard
+11-03 19:54:39.644 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:54:39.644 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:54:39.644 I/Unity   (27708):
+11-03 19:54:47.928 D/Unity   (27708): UnloadTime: 271.463800 ms
+11-03 19:54:48.194 I/Unity   (27708): [Boot] Google sdk_gphone64_x86_64 | Android OS 16 / API-36 (BE2A.250530.026.D1/13818094) | OpenGLES3 | 1080x2400 @ 420 dpi
+11-03 19:54:48.194 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:54:48.194 I/Unity   (27708): MobileBootstrap:Awake()
+11-03 19:54:48.194 I/Unity   (27708):
+11-03 19:54:48.268 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 2, quality: 2
+11-03 19:54:49.597 D/Unity   (27708): Unloading 12 unused Assets / (Unknown). Loaded Objects now: 3762.
+11-03 19:54:49.597 D/Unity   (27708): Memory consumption went from 100.6 MB to 100.6 MB.
+11-03 19:54:49.597 D/Unity   (27708): Total: 188.566700 ms (FindLiveObjects: 2.163900 ms CreateObjectMapping: 7.975100 ms MarkObjects: 169.627700 ms  DeleteObjects: 8.246800 ms)
+11-03 19:54:49.597 D/Unity   (27708):
+11-03 19:54:49.639 I/Unity   (27708): [perf] scene Game loaded in 10952 ms
+11-03 19:54:49.639 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:54:49.639 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 19:54:49.639 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 19:54:49.639 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:54:49.639 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:54:49.639 I/Unity   (27708):
+11-03 19:54:49.775 I/Unity   (27708): [telemetry] 1506.18 6128023a level_start level_id=1 attempt=10 coins=800
+11-03 19:54:49.775 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:54:49.775 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 19:54:49.775 I/Unity   (27708): GameManager:BeginRun()
+11-03 19:54:49.775 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:54:49.775 I/Unity   (27708): <Start>d__17:MoveNext()
+11-03 19:54:49.775 I/Unity   (27708): System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+11-03 19:54:49.775 I/Unity   (27708): System.Runtime.CompilerServices.MoveNextRunner:Run()
+11-03 19:54:49.775 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:54:49.775 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:54:49.775 I/Unity   (27708):
+11-03 19:54:58.010 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:54:58.010 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:54:58.010 I/Unity   (27708): Average GPU frametime = 190.17 ms (Current = 87.89 ms)
+11-03 19:54:58.010 I/Unity   (27708): Average CPU frametime = 359.97 ms (Current = 189.93 ms)
+11-03 19:54:58.010 I/Unity   (27708): Average frametime = 379.00 ms (Current = 216.67 ms)
+11-03 19:54:58.010 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:54:58.010 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:54:58.010 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:54:58.010 I/Unity   (27708): FPS = 2.64
+11-03 19:54:58.010 I/Unity   (27708): Performance Mode = Standard
+11-03 19:54:58.010 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:54:58.010 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:54:58.010 I/Unity   (27708):
+11-03 19:55:12.120 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:55:12.120 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:55:12.120 I/Unity   (27708): Average GPU frametime = 126.17 ms (Current = 45.59 ms)
+11-03 19:55:12.120 I/Unity   (27708): Average CPU frametime = 259.11 ms (Current = 245.13 ms)
+11-03 19:55:12.120 I/Unity   (27708): Average frametime = 296.33 ms (Current = 250.00 ms)
+11-03 19:55:12.120 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:55:12.120 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:55:12.120 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:55:12.120 I/Unity   (27708): FPS = 3.37
+11-03 19:55:12.120 I/Unity   (27708): Performance Mode = Standard
+11-03 19:55:12.120 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:55:12.120 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:55:12.120 I/Unity   (27708):
+11-03 19:55:15.246 I/Unity   (27708): [telemetry] 1531.63 6128023a level_fail level_id=1 time_s=20.37 cause=hp coins_earned=70
+11-03 19:55:15.246 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:55:15.246 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 19:55:15.246 I/Unity   (27708): GameManager:EndRun(State)
+11-03 19:55:15.246 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:55:15.246 I/Unity   (27708): GameManager:LoseGame()
+11-03 19:55:15.246 I/Unity   (27708):
+11-03 19:55:15.281 I/Unity   (27708): Game state changed to: Lost
+11-03 19:55:15.281 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:55:15.281 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:55:15.281 I/Unity   (27708): GameManager:LoseGame()
+11-03 19:55:15.281 I/Unity   (27708):
+11-03 19:55:15.418 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 3, quality: 2
+11-03 19:55:15.672 D/Unity   (27708): Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+11-03 19:55:16.455 D/Unity   (27708): UnloadTime: 149.003500 ms
+11-03 19:55:16.529 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 3, quality: 2
+11-03 19:55:17.047 D/Unity   (27708): Unloading 54 unused Assets / (491.1 KB). Loaded Objects now: 3034.
+11-03 19:55:17.047 D/Unity   (27708): Memory consumption went from 100.0 MB to 99.5 MB.
+11-03 19:55:17.047 D/Unity   (27708): Total: 169.482100 ms (FindLiveObjects: 8.365100 ms CreateObjectMapping: 0.336900 ms MarkObjects: 120.638400 ms  DeleteObjects: 26.057300 ms)
+11-03 19:55:17.047 D/Unity   (27708):
+11-03 19:55:17.100 I/Unity   (27708): [perf] scene Result loaded in 1817 ms
+11-03 19:55:17.100 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:55:17.100 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 19:55:17.100 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 19:55:17.100 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:55:17.100 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:55:17.100 I/Unity   (27708):
+11-03 19:55:18.552 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 2, quality: 2
+11-03 19:55:19.228 D/Unity   (27708): Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+11-03 19:55:26.616 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:55:26.616 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:55:26.616 I/Unity   (27708): Average GPU frametime = 114.58 ms (Current = 74.72 ms)
+11-03 19:55:26.616 I/Unity   (27708): Average CPU frametime = 246.87 ms (Current = 202.08 ms)
+11-03 19:55:26.616 I/Unity   (27708): Average frametime = 277.83 ms (Current = 233.33 ms)
+11-03 19:55:26.616 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:55:26.616 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:55:26.616 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:55:26.616 I/Unity   (27708): FPS = 3.60
+11-03 19:55:26.616 I/Unity   (27708): Performance Mode = Standard
+11-03 19:55:26.616 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:55:26.616 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:55:26.616 I/Unity   (27708):
+11-03 19:55:27.484 D/Unity   (27708): UnloadTime: 64.330100 ms
+11-03 19:55:27.660 I/Unity   (27708): [Boot] Google sdk_gphone64_x86_64 | Android OS 16 / API-36 (BE2A.250530.026.D1/13818094) | OpenGLES3 | 1080x2400 @ 420 dpi
+11-03 19:55:27.660 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:55:27.660 I/Unity   (27708): MobileBootstrap:Awake()
+11-03 19:55:27.660 I/Unity   (27708):
+11-03 19:55:27.694 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 2, quality: 2
+11-03 19:55:28.809 D/Unity   (27708): Unloading 12 unused Assets / (Unknown). Loaded Objects now: 3762.
+11-03 19:55:28.809 D/Unity   (27708): Memory consumption went from 100.6 MB to 100.6 MB.
+11-03 19:55:28.810 D/Unity   (27708): Total: 64.983300 ms (FindLiveObjects: 2.168900 ms CreateObjectMapping: 0.173600 ms MarkObjects: 58.478000 ms  DeleteObjects: 2.688600 ms)
+11-03 19:55:28.810 D/Unity   (27708):
+11-03 19:55:28.860 I/Unity   (27708): [perf] scene Game loaded in 10550 ms
+11-03 19:55:28.860 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:55:28.860 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 19:55:28.860 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 19:55:28.860 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:55:28.860 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:55:28.860 I/Unity   (27708):
+11-03 19:55:28.911 I/Unity   (27708): [telemetry] 1545.31 6128023a level_start level_id=1 attempt=11 coins=870
+11-03 19:55:28.911 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:55:28.911 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 19:55:28.911 I/Unity   (27708): GameManager:BeginRun()
+11-03 19:55:28.911 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:55:28.911 I/Unity   (27708): <Start>d__17:MoveNext()
+11-03 19:55:28.911 I/Unity   (27708): System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+11-03 19:55:28.911 I/Unity   (27708): System.Runtime.CompilerServices.MoveNextRunner:Run()
+11-03 19:55:28.911 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:55:28.911 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:55:28.911 I/Unity   (27708):
+11-03 19:55:41.015 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:55:41.015 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:55:41.015 I/Unity   (27708): Average GPU frametime = 116.68 ms (Current = 60.62 ms)
+11-03 19:55:41.015 I/Unity   (27708): Average CPU frametime = 247.03 ms (Current = 259.32 ms)
+11-03 19:55:41.015 I/Unity   (27708): Average frametime = 272.67 ms (Current = 183.33 ms)
+11-03 19:55:41.015 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:55:41.015 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:55:41.015 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:55:41.015 I/Unity   (27708): FPS = 3.67
+11-03 19:55:41.015 I/Unity   (27708): Performance Mode = Standard
+11-03 19:55:41.015 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:55:41.015 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:55:41.015 I/Unity   (27708):
+11-03 19:55:55.742 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:55:55.742 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:55:55.742 I/Unity   (27708): Average GPU frametime = 119.06 ms (Current = 71.80 ms)
+11-03 19:55:55.742 I/Unity   (27708): Average CPU frametime = 228.74 ms (Current = 407.04 ms)
+11-03 19:55:55.742 I/Unity   (27708): Average frametime = 262.33 ms (Current = 283.33 ms)
+11-03 19:55:55.742 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:55:55.742 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:55:55.742 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:55:55.742 I/Unity   (27708): FPS = 3.81
+11-03 19:55:55.742 I/Unity   (27708): Performance Mode = Standard
+11-03 19:55:55.742 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:55:55.742 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:55:55.742 I/Unity   (27708):
+11-03 19:56:02.289 I/Unity   (27708): [telemetry] 1578.69 6128023a level_fail level_id=1 time_s=27.35339 cause=hp coins_earned=100
+11-03 19:56:02.289 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:56:02.289 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 19:56:02.289 I/Unity   (27708): GameManager:EndRun(State)
+11-03 19:56:02.289 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:56:02.289 I/Unity   (27708): GameManager:LoseGame()
+11-03 19:56:02.289 I/Unity   (27708):
+11-03 19:56:02.291 I/Unity   (27708): Game state changed to: Lost
+11-03 19:56:02.291 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:56:02.291 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:56:02.291 I/Unity   (27708): GameManager:LoseGame()
+11-03 19:56:02.291 I/Unity   (27708):
+11-03 19:56:03.341 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 3, quality: 2
+11-03 19:56:03.666 D/Unity   (27708): Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+11-03 19:56:05.460 D/Unity   (27708): UnloadTime: 179.043000 ms
+11-03 19:56:05.530 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 3, quality: 2
+11-03 19:56:06.292 D/Unity   (27708): Unloading 54 unused Assets / (203.5 KB). Loaded Objects now: 3034.
+11-03 19:56:06.292 D/Unity   (27708): Memory consumption went from 100.0 MB to 99.8 MB.
+11-03 19:56:06.302 D/Unity   (27708): Total: 316.291800 ms (FindLiveObjects: 20.485600 ms CreateObjectMapping: 1.386400 ms MarkObjects: 284.201800 ms  DeleteObjects: 9.327800 ms)
+11-03 19:56:06.302 D/Unity   (27708):
+11-03 19:56:06.359 I/Unity   (27708): [perf] scene Result loaded in 4063 ms
+11-03 19:56:06.359 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:56:06.359 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 19:56:06.359 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 19:56:06.359 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:56:06.359 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:56:06.359 I/Unity   (27708):
+11-03 19:56:07.878 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 2, quality: 2
+11-03 19:56:08.218 D/Unity   (27708): Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+11-03 19:56:12.811 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:56:12.811 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:56:12.811 I/Unity   (27708): Average GPU frametime = 123.99 ms (Current = 66.59 ms)
+11-03 19:56:12.811 I/Unity   (27708): Average CPU frametime = 248.60 ms (Current = 235.11 ms)
+11-03 19:56:12.811 I/Unity   (27708): Average frametime = 299.67 ms (Current = 350.00 ms)
+11-03 19:56:12.811 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:56:12.811 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:56:12.811 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:56:12.811 I/Unity   (27708): FPS = 3.34
+11-03 19:56:12.811 I/Unity   (27708): Performance Mode = Standard
+11-03 19:56:12.811 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:56:12.811 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:56:12.811 I/Unity   (27708):
+11-03 19:56:16.004 D/Unity   (27708): UnloadTime: 95.587800 ms
+11-03 19:56:16.172 I/Unity   (27708): [Boot] Google sdk_gphone64_x86_64 | Android OS 16 / API-36 (BE2A.250530.026.D1/13818094) | OpenGLES3 | 1080x2400 @ 420 dpi
+11-03 19:56:16.172 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:56:16.172 I/Unity   (27708): MobileBootstrap:Awake()
+11-03 19:56:16.172 I/Unity   (27708):
+11-03 19:56:16.332 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 2, quality: 2
+11-03 19:56:17.632 D/Unity   (27708): Unloading 12 unused Assets / (4.6 KB). Loaded Objects now: 3762.
+11-03 19:56:17.632 D/Unity   (27708): Memory consumption went from 100.6 MB to 100.6 MB.
+11-03 19:56:17.636 D/Unity   (27708): Total: 285.629100 ms (FindLiveObjects: 0.953700 ms CreateObjectMapping: 0.240900 ms MarkObjects: 274.543200 ms  DeleteObjects: 0.250200 ms)
+11-03 19:56:17.636 D/Unity   (27708):
+11-03 19:56:17.707 I/Unity   (27708): [perf] scene Game loaded in 10043 ms
+11-03 19:56:17.707 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:56:17.707 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 19:56:17.707 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 19:56:17.707 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:56:17.707 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:56:17.707 I/Unity   (27708):
+11-03 19:56:17.738 I/Unity   (27708): [telemetry] 1594.14 6128023a level_start level_id=1 attempt=12 coins=970
+11-03 19:56:17.738 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:56:17.738 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 19:56:17.738 I/Unity   (27708): GameManager:BeginRun()
+11-03 19:56:17.738 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:56:17.738 I/Unity   (27708): <Start>d__17:MoveNext()
+11-03 19:56:17.738 I/Unity   (27708): System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+11-03 19:56:17.738 I/Unity   (27708): System.Runtime.CompilerServices.MoveNextRunner:Run()
+11-03 19:56:17.738 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:56:17.738 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:56:17.738 I/Unity   (27708):
+11-03 19:56:29.882 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:56:29.882 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:56:29.882 I/Unity   (27708): Average GPU frametime = 130.89 ms (Current = 47.75 ms)
+11-03 19:56:29.882 I/Unity   (27708): Average CPU frametime = 271.26 ms (Current = 213.87 ms)
+11-03 19:56:29.882 I/Unity   (27708): Average frametime = 322.50 ms (Current = 216.67 ms)
+11-03 19:56:29.882 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:56:29.882 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:56:29.882 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:56:29.882 I/Unity   (27708): FPS = 3.10
+11-03 19:56:29.882 I/Unity   (27708): Performance Mode = Standard
+11-03 19:56:29.882 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:56:29.882 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:56:29.882 I/Unity   (27708):
+11-03 19:56:49.064 I/Unity   (27708): [telemetry] 1625.46 6128023a level_fail level_id=1 time_s=22.80322 cause=hp coins_earned=80
+11-03 19:56:49.064 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:56:49.064 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 19:56:49.064 I/Unity   (27708): GameManager:EndRun(State)
+11-03 19:56:49.064 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:56:49.064 I/Unity   (27708): GameManager:LoseGame()
+11-03 19:56:49.064 I/Unity   (27708):
+11-03 19:56:49.132 I/Unity   (27708): Game state changed to: Lost
+11-03 19:56:49.132 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:56:49.132 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:56:49.132 I/Unity   (27708): GameManager:LoseGame()
+11-03 19:56:49.132 I/Unity   (27708):
+11-03 19:56:49.259 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 3, quality: 2
+11-03 19:56:49.343 D/Unity   (27708): Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+11-03 19:56:49.747 D/Unity   (27708): UnloadTime: 38.329000 ms
+11-03 19:56:49.783 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 3, quality: 2
+11-03 19:56:49.978 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:56:49.978 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:56:49.978 I/Unity   (27708): Average GPU frametime = 141.85 ms (Current = 126.49 ms)
+11-03 19:56:49.978 I/Unity   (27708): Average CPU frametime = 275.41 ms (Current = 176.22 ms)
+11-03 19:56:49.978 I/Unity   (27708): Average frametime = 344.17 ms (Current = 166.67 ms)
+11-03 19:56:49.978 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:56:49.978 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:56:49.978 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:56:49.978 I/Unity   (27708): FPS = 2.91
+11-03 19:56:49.978 I/Unity   (27708): Performance Mode = Standard
+11-03 19:56:49.978 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:56:49.978 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:56:49.978 I/Unity   (27708):
+11-03 19:56:50.160 D/Unity   (27708): Unloading 54 unused Assets / (143.6 KB). Loaded Objects now: 3034.
+11-03 19:56:50.160 D/Unity   (27708): Memory consumption went from 100.0 MB to 99.9 MB.
+11-03 19:56:50.193 D/Unity   (27708): Total: 118.478300 ms (FindLiveObjects: 0.475000 ms CreateObjectMapping: 0.035700 ms MarkObjects: 99.763700 ms  DeleteObjects: 4.406100 ms)
+11-03 19:56:50.193 D/Unity   (27708):
+11-03 19:56:50.248 I/Unity   (27708): [perf] scene Result loaded in 1107 ms
+11-03 19:56:50.248 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:56:50.248 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 19:56:50.248 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 19:56:50.248 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:56:50.248 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:56:50.248 I/Unity   (27708):
+11-03 19:56:51.195 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 2, quality: 2
+11-03 19:56:51.567 D/Unity   (27708): Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+11-03 19:56:59.574 D/Unity   (27708): UnloadTime: 96.997600 ms
+11-03 19:56:59.712 I/Unity   (27708): [Boot] Google sdk_gphone64_x86_64 | Android OS 16 / API-36 (BE2A.250530.026.D1/13818094) | OpenGLES3 | 1080x2400 @ 420 dpi
+11-03 19:56:59.712 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:56:59.712 I/Unity   (27708): MobileBootstrap:Awake()
+11-03 19:56:59.712 I/Unity   (27708):
+11-03 19:56:59.755 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 2, quality: 2
+11-03 19:57:00.839 D/Unity   (27708): Unloading 12 unused Assets / (5.0 KB). Loaded Objects now: 3762.
+11-03 19:57:00.839 D/Unity   (27708): Memory consumption went from 100.6 MB to 100.6 MB.
+11-03 19:57:00.844 D/Unity   (27708): Total: 269.417300 ms (FindLiveObjects: 0.606100 ms CreateObjectMapping: 0.160000 ms MarkObjects: 263.166900 ms  DeleteObjects: 4.903400 ms)
+11-03 19:57:00.844 D/Unity   (27708):
+11-03 19:57:00.914 I/Unity   (27708): [perf] scene Game loaded in 9843 ms
+11-03 19:57:00.914 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:57:00.914 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 19:57:00.914 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 19:57:00.914 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:57:00.914 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:57:00.914 I/Unity   (27708):
+11-03 19:57:00.918 I/Unity   (27708): [telemetry] 1637.32 6128023a level_start level_id=1 attempt=13 coins=1050
+11-03 19:57:00.918 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:57:00.918 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 19:57:00.918 I/Unity   (27708): GameManager:BeginRun()
+11-03 19:57:00.918 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:57:00.918 I/Unity   (27708): <Start>d__17:MoveNext()
+11-03 19:57:00.918 I/Unity   (27708): System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+11-03 19:57:00.918 I/Unity   (27708): System.Runtime.CompilerServices.MoveNextRunner:Run()
+11-03 19:57:00.918 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:57:00.918 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:57:00.918 I/Unity   (27708):
+11-03 19:57:05.732 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:57:05.732 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:57:05.732 I/Unity   (27708): Average GPU frametime = 132.10 ms (Current = 187.36 ms)
+11-03 19:57:05.732 I/Unity   (27708): Average CPU frametime = 276.50 ms (Current = 238.62 ms)
+11-03 19:57:05.732 I/Unity   (27708): Average frametime = 333.50 ms (Current = 166.67 ms)
+11-03 19:57:05.732 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:57:05.732 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:57:05.732 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:57:05.732 I/Unity   (27708): FPS = 3.00
+11-03 19:57:05.732 I/Unity   (27708): Performance Mode = Standard
+11-03 19:57:05.732 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:57:05.732 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:57:05.732 I/Unity   (27708):
+11-03 19:57:28.355 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:57:28.355 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:57:28.355 I/Unity   (27708): Average GPU frametime = 154.99 ms (Current = 98.02 ms)
+11-03 19:57:28.355 I/Unity   (27708): Average CPU frametime = 293.45 ms (Current = 130.68 ms)
+11-03 19:57:28.355 I/Unity   (27708): Average frametime = 329.17 ms (Current = 200.00 ms)
+11-03 19:57:28.355 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:57:28.355 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:57:28.355 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:57:28.355 I/Unity   (27708): FPS = 3.04
+11-03 19:57:28.355 I/Unity   (27708): Performance Mode = Standard
+11-03 19:57:28.355 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:57:28.355 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:57:28.355 I/Unity   (27708):
+11-03 19:57:28.440 I/Unity   (27708): [telemetry] 1664.79 6128023a level_fail level_id=1 time_s=17.15344 cause=hp coins_earned=50
+11-03 19:57:28.440 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:57:28.440 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 19:57:28.440 I/Unity   (27708): GameManager:EndRun(State)
+11-03 19:57:28.440 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:57:28.440 I/Unity   (27708): GameManager:LoseGame()
+11-03 19:57:28.440 I/Unity   (27708):
+11-03 19:57:28.511 I/Unity   (27708): Game state changed to: Lost
+11-03 19:57:28.511 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:57:28.511 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:57:28.511 I/Unity   (27708): GameManager:LoseGame()
+11-03 19:57:28.511 I/Unity   (27708):
+11-03 19:57:29.026 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 3, quality: 2
+11-03 19:57:29.279 D/Unity   (27708): Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+11-03 19:57:29.736 D/Unity   (27708): UnloadTime: 36.098500 ms
+11-03 19:57:29.832 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 3, quality: 2
+11-03 19:57:30.458 D/Unity   (27708): Unloading 54 unused Assets / (194.4 KB). Loaded Objects now: 3034.
+11-03 19:57:30.458 D/Unity   (27708): Memory consumption went from 100.0 MB to 99.9 MB.
+11-03 19:57:30.463 D/Unity   (27708): Total: 207.506200 ms (FindLiveObjects: 4.558600 ms CreateObjectMapping: 0.338300 ms MarkObjects: 194.861800 ms  DeleteObjects: 6.439600 ms)
+11-03 19:57:30.463 D/Unity   (27708):
+11-03 19:57:30.527 I/Unity   (27708): [perf] scene Result loaded in 2009 ms
+11-03 19:57:30.527 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:57:30.527 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 19:57:30.527 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 19:57:30.527 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:57:30.527 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:57:30.527 I/Unity   (27708):
+11-03 19:57:33.222 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 2, quality: 2
+11-03 19:57:33.640 D/Unity   (27708): Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+11-03 19:57:45.868 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:57:45.868 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:57:45.868 I/Unity   (27708): Average GPU frametime = 156.50 ms (Current = 133.80 ms)
+11-03 19:57:45.868 I/Unity   (27708): Average CPU frametime = 301.40 ms (Current = 229.24 ms)
+11-03 19:57:45.868 I/Unity   (27708): Average frametime = 354.50 ms (Current = 216.67 ms)
+11-03 19:57:45.868 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:57:45.868 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:57:45.868 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:57:45.868 I/Unity   (27708): FPS = 2.82
+11-03 19:57:45.868 I/Unity   (27708): Performance Mode = Standard
+11-03 19:57:45.868 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:57:45.868 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:57:45.868 I/Unity   (27708):
+11-03 19:57:47.579 D/Unity   (27708): UnloadTime: 53.652600 ms
+11-03 19:57:48.021 I/Unity   (27708): [Boot] Google sdk_gphone64_x86_64 | Android OS 16 / API-36 (BE2A.250530.026.D1/13818094) | OpenGLES3 | 1080x2400 @ 420 dpi
+11-03 19:57:48.021 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:57:48.021 I/Unity   (27708): MobileBootstrap:Awake()
+11-03 19:57:48.021 I/Unity   (27708):
+11-03 19:57:48.159 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 2, quality: 2
+11-03 19:57:49.481 D/Unity   (27708): Unloading 12 unused Assets / (5.0 KB). Loaded Objects now: 3762.
+11-03 19:57:49.481 D/Unity   (27708): Memory consumption went from 100.6 MB to 100.6 MB.
+11-03 19:57:49.484 D/Unity   (27708): Total: 200.130300 ms (FindLiveObjects: 0.699400 ms CreateObjectMapping: 0.189800 ms MarkObjects: 175.962300 ms  DeleteObjects: 20.731200 ms)
+11-03 19:57:49.484 D/Unity   (27708):
+11-03 19:57:49.572 I/Unity   (27708): [perf] scene Game loaded in 17675 ms
+11-03 19:57:49.572 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:57:49.572 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 19:57:49.572 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 19:57:49.572 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:57:49.572 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:57:49.572 I/Unity   (27708):
+11-03 19:57:49.587 I/Unity   (27708): [telemetry] 1686.00 6128023a level_start level_id=1 attempt=14 coins=1100
+11-03 19:57:49.587 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:57:49.587 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 19:57:49.587 I/Unity   (27708): GameManager:BeginRun()
+11-03 19:57:49.587 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:57:49.587 I/Unity   (27708): <Start>d__17:MoveNext()
+11-03 19:57:49.587 I/Unity   (27708): System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+11-03 19:57:49.587 I/Unity   (27708): System.Runtime.CompilerServices.MoveNextRunner:Run()
+11-03 19:57:49.587 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:57:49.587 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:57:49.587 I/Unity   (27708):
+11-03 19:58:04.292 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:58:04.292 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:58:04.292 I/Unity   (27708): Average GPU frametime = 129.95 ms (Current = 496.21 ms)
+11-03 19:58:04.292 I/Unity   (27708): Average CPU frametime = 258.13 ms (Current = 260.08 ms)
+11-03 19:58:04.292 I/Unity   (27708): Average frametime = 328.17 ms (Current = 783.33 ms)
+11-03 19:58:04.292 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:58:04.292 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:58:04.292 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:58:04.292 I/Unity   (27708): FPS = 3.05
+11-03 19:58:04.292 I/Unity   (27708): Performance Mode = Standard
+11-03 19:58:04.292 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:58:04.292 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:58:04.292 I/Unity   (27708):
+11-03 19:58:20.464 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:58:20.464 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:58:20.464 I/Unity   (27708): Average GPU frametime = 153.16 ms (Current = 180.12 ms)
+11-03 19:58:20.464 I/Unity   (27708): Average CPU frametime = 283.01 ms (Current = 122.24 ms)
+11-03 19:58:20.464 I/Unity   (27708): Average frametime = 330.83 ms (Current = 116.67 ms)
+11-03 19:58:20.464 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:58:20.464 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:58:20.464 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:58:20.464 I/Unity   (27708): FPS = 3.02
+11-03 19:58:20.464 I/Unity   (27708): Performance Mode = Standard
+11-03 19:58:20.464 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:58:20.464 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:58:20.464 I/Unity   (27708):
+11-03 19:58:24.242 I/Unity   (27708): [telemetry] 1720.64 6128023a level_fail level_id=1 time_s=26.60327 cause=hp coins_earned=90
+11-03 19:58:24.242 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:58:24.242 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 19:58:24.242 I/Unity   (27708): GameManager:EndRun(State)
+11-03 19:58:24.242 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:58:24.242 I/Unity   (27708): GameManager:LoseGame()
+11-03 19:58:24.242 I/Unity   (27708):
+11-03 19:58:24.250 I/Unity   (27708): Game state changed to: Lost
+11-03 19:58:24.250 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:58:24.250 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:58:24.250 I/Unity   (27708): GameManager:LoseGame()
+11-03 19:58:24.250 I/Unity   (27708):
+11-03 19:58:24.767 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 3, quality: 2
+11-03 19:58:24.980 D/Unity   (27708): Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+11-03 19:58:26.545 D/Unity   (27708): UnloadTime: 222.101100 ms
+11-03 19:58:26.616 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 3, quality: 2
+11-03 19:58:27.004 D/Unity   (27708): Unloading 54 unused Assets / (203.4 KB). Loaded Objects now: 3034.
+11-03 19:58:27.004 D/Unity   (27708): Memory consumption went from 100.0 MB to 99.8 MB.
+11-03 19:58:27.022 D/Unity   (27708): Total: 159.926800 ms (FindLiveObjects: 0.669500 ms CreateObjectMapping: 0.548100 ms MarkObjects: 146.246600 ms  DeleteObjects: 10.358500 ms)
+11-03 19:58:27.022 D/Unity   (27708):
+11-03 19:58:27.075 I/Unity   (27708): [perf] scene Result loaded in 2793 ms
+11-03 19:58:27.075 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:58:27.075 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 19:58:27.075 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 19:58:27.075 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:58:27.075 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:58:27.075 I/Unity   (27708):
+11-03 19:58:28.742 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 2, quality: 2
+11-03 19:58:28.956 D/Unity   (27708): Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+11-03 19:58:34.619 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:58:34.619 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:58:34.619 I/Unity   (27708): Average GPU frametime = 141.47 ms (Current = 54.01 ms)
+11-03 19:58:34.619 I/Unity   (27708): Average CPU frametime = 265.27 ms (Current = 536.36 ms)
+11-03 19:58:34.619 I/Unity   (27708): Average frametime = 307.33 ms (Current = 183.33 ms)
+11-03 19:58:34.619 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:58:34.619 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:58:34.619 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:58:34.619 I/Unity   (27708): FPS = 3.25
+11-03 19:58:34.619 I/Unity   (27708): Performance Mode = Standard
+11-03 19:58:34.619 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:58:34.619 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:58:34.619 I/Unity   (27708):
+11-03 19:58:35.120 D/Unity   (27708): UnloadTime: 5.396200 ms
+11-03 19:58:35.499 I/Unity   (27708): [Boot] Google sdk_gphone64_x86_64 | Android OS 16 / API-36 (BE2A.250530.026.D1/13818094) | OpenGLES3 | 1080x2400 @ 420 dpi
+11-03 19:58:35.499 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:58:35.499 I/Unity   (27708): MobileBootstrap:Awake()
+11-03 19:58:35.499 I/Unity   (27708):
+11-03 19:58:35.578 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 2, quality: 2
+11-03 19:58:36.542 D/Unity   (27708): Unloading 12 unused Assets / (Unknown). Loaded Objects now: 3762.
+11-03 19:58:36.542 D/Unity   (27708): Memory consumption went from 100.6 MB to 100.6 MB.
+11-03 19:58:36.544 D/Unity   (27708): Total: 75.630100 ms (FindLiveObjects: 0.433700 ms CreateObjectMapping: 0.139800 ms MarkObjects: 73.649900 ms  DeleteObjects: 0.634500 ms)
+11-03 19:58:36.544 D/Unity   (27708):
+11-03 19:58:36.598 I/Unity   (27708): [perf] scene Game loaded in 8088 ms
+11-03 19:58:36.598 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:58:36.598 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 19:58:36.598 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 19:58:36.598 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:58:36.598 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:58:36.598 I/Unity   (27708):
+11-03 19:58:36.663 I/Unity   (27708): [telemetry] 1733.04 6128023a level_start level_id=1 attempt=15 coins=1190
+11-03 19:58:36.663 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:58:36.663 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 19:58:36.663 I/Unity   (27708): GameManager:BeginRun()
+11-03 19:58:36.663 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:58:36.663 I/Unity   (27708): <Start>d__17:MoveNext()
+11-03 19:58:36.663 I/Unity   (27708): System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+11-03 19:58:36.663 I/Unity   (27708): System.Runtime.CompilerServices.MoveNextRunner:Run()
+11-03 19:58:36.663 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:58:36.663 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:58:36.663 I/Unity   (27708):
+11-03 19:58:50.663 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:58:50.663 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:58:50.663 I/Unity   (27708): Average GPU frametime = 126.55 ms (Current = 192.21 ms)
+11-03 19:58:50.663 I/Unity   (27708): Average CPU frametime = 232.26 ms (Current = 227.55 ms)
+11-03 19:58:50.663 I/Unity   (27708): Average frametime = 287.50 ms (Current = 266.67 ms)
+11-03 19:58:50.663 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:58:50.663 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:58:50.663 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:58:50.663 I/Unity   (27708): FPS = 3.48
+11-03 19:58:50.663 I/Unity   (27708): Performance Mode = Standard
+11-03 19:58:50.663 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:58:50.663 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:58:50.663 I/Unity   (27708):
+11-03 19:59:33.947 I/Unity   (27708): [telemetry] 1790.51 6128023a level_fail level_id=1 time_s=23.13672 cause=hp coins_earned=70
+11-03 19:59:33.947 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:59:33.947 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 19:59:33.947 I/Unity   (27708): GameManager:EndRun(State)
+11-03 19:59:33.947 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:59:33.947 I/Unity   (27708): GameManager:LoseGame()
+11-03 19:59:33.947 I/Unity   (27708):
+11-03 19:59:33.969 I/Unity   (27708): Game state changed to: Lost
+11-03 19:59:33.969 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:59:33.969 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:59:33.969 I/Unity   (27708): GameManager:LoseGame()
+11-03 19:59:33.969 I/Unity   (27708):
+11-03 19:59:34.839 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 3, quality: 2
+11-03 19:59:34.925 D/Unity   (27708): Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+11-03 19:59:36.438 D/Unity   (27708): UnloadTime: 87.590200 ms
+11-03 19:59:36.624 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 3, quality: 2
+11-03 19:59:37.661 D/Unity   (27708): Unloading 54 unused Assets / (0.6 MB). Loaded Objects now: 3034.
+11-03 19:59:37.661 D/Unity   (27708): Memory consumption went from 100.0 MB to 99.4 MB.
+11-03 19:59:37.661 D/Unity   (27708): Total: 335.278100 ms (FindLiveObjects: 3.615500 ms CreateObjectMapping: 0.180500 ms MarkObjects: 266.509500 ms  DeleteObjects: 62.448000 ms)
+11-03 19:59:37.661 D/Unity   (27708):
+11-03 19:59:37.719 I/Unity   (27708): [perf] scene Result loaded in 3748 ms
+11-03 19:59:37.719 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:59:37.719 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 19:59:37.719 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 19:59:37.719 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:59:37.719 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:59:37.719 I/Unity   (27708):
+11-03 19:59:39.439 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 2, quality: 2
+11-03 19:59:39.968 D/Unity   (27708): Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+11-03 19:59:40.544 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 19:59:40.544 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 19:59:40.544 I/Unity   (27708): Average GPU frametime = 197.06 ms (Current = 168.40 ms)
+11-03 19:59:40.544 I/Unity   (27708): Average CPU frametime = 297.89 ms (Current = 113.18 ms)
+11-03 19:59:40.544 I/Unity   (27708): Average frametime = 347.17 ms (Current = 100.00 ms)
+11-03 19:59:40.544 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 19:59:40.544 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 19:59:40.544 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 19:59:40.544 I/Unity   (27708): FPS = 2.88
+11-03 19:59:40.544 I/Unity   (27708): Performance Mode = Standard
+11-03 19:59:40.544 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:59:40.544 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 19:59:40.544 I/Unity   (27708):
+11-03 19:59:51.582 D/Unity   (27708): UnloadTime: 348.879400 ms
+11-03 19:59:52.606 I/Unity   (27708): [Boot] Google sdk_gphone64_x86_64 | Android OS 16 / API-36 (BE2A.250530.026.D1/13818094) | OpenGLES3 | 1080x2400 @ 420 dpi
+11-03 19:59:52.606 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:59:52.606 I/Unity   (27708): MobileBootstrap:Awake()
+11-03 19:59:52.606 I/Unity   (27708):
+11-03 19:59:52.817 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 2, quality: 2
+11-03 19:59:56.331 D/Unity   (27708): Unloading 12 unused Assets / (Unknown). Loaded Objects now: 3762.
+11-03 19:59:56.331 D/Unity   (27708): Memory consumption went from 100.6 MB to 100.6 MB.
+11-03 19:59:56.345 D/Unity   (27708): Total: 268.714100 ms (FindLiveObjects: 0.743100 ms CreateObjectMapping: 39.002700 ms MarkObjects: 209.188900 ms  DeleteObjects: 0.809500 ms)
+11-03 19:59:56.345 D/Unity   (27708):
+11-03 19:59:56.409 I/Unity   (27708): [perf] scene Game loaded in 17467 ms
+11-03 19:59:56.409 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:59:56.409 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 19:59:56.409 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 19:59:56.409 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:59:56.409 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:59:56.409 I/Unity   (27708):
+11-03 19:59:56.463 I/Unity   (27708): [telemetry] 1813.04 6128023a level_start level_id=1 attempt=16 coins=1260
+11-03 19:59:56.463 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 19:59:56.463 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 19:59:56.463 I/Unity   (27708): GameManager:BeginRun()
+11-03 19:59:56.463 I/Unity   (27708): GameManager:SetState(State)
+11-03 19:59:56.463 I/Unity   (27708): <Start>d__17:MoveNext()
+11-03 19:59:56.463 I/Unity   (27708): System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+11-03 19:59:56.463 I/Unity   (27708): System.Runtime.CompilerServices.MoveNextRunner:Run()
+11-03 19:59:56.463 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 19:59:56.463 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 19:59:56.463 I/Unity   (27708):
+11-03 20:00:07.826 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 20:00:07.826 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 20:00:07.826 I/Unity   (27708): Average GPU frametime = 213.94 ms (Current = 87.75 ms)
+11-03 20:00:07.826 I/Unity   (27708): Average CPU frametime = 327.13 ms (Current = 396.15 ms)
+11-03 20:00:07.826 I/Unity   (27708): Average frametime = 374.33 ms (Current = 333.33 ms)
+11-03 20:00:07.826 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 20:00:07.826 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 20:00:07.826 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 20:00:07.826 I/Unity   (27708): FPS = 2.67
+11-03 20:00:07.826 I/Unity   (27708): Performance Mode = Standard
+11-03 20:00:07.826 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:00:07.826 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 20:00:07.826 I/Unity   (27708):
+11-03 20:00:25.787 I/Unity   (27708): [telemetry] 1842.41 6128023a level_fail level_id=1 time_s=16.13672 cause=hp coins_earned=50
+11-03 20:00:25.787 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:00:25.787 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 20:00:25.787 I/Unity   (27708): GameManager:EndRun(State)
+11-03 20:00:25.787 I/Unity   (27708): GameManager:SetState(State)
+11-03 20:00:25.787 I/Unity   (27708): GameManager:LoseGame()
+11-03 20:00:25.787 I/Unity   (27708):
+11-03 20:00:25.824 I/Unity   (27708): Game state changed to: Lost
+11-03 20:00:25.824 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:00:25.824 I/Unity   (27708): GameManager:SetState(State)
+11-03 20:00:25.824 I/Unity   (27708): GameManager:LoseGame()
+11-03 20:00:25.824 I/Unity   (27708):
+11-03 20:00:26.602 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 3, quality: 2
+11-03 20:00:26.783 D/Unity   (27708): Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+11-03 20:00:28.244 D/Unity   (27708): UnloadTime: 184.446300 ms
+11-03 20:00:28.346 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 3, quality: 2
+11-03 20:00:28.715 D/Unity   (27708): Unloading 54 unused Assets / (143.4 KB). Loaded Objects now: 3034.
+11-03 20:00:28.715 D/Unity   (27708): Memory consumption went from 100.0 MB to 99.9 MB.
+11-03 20:00:28.715 D/Unity   (27708): Total: 118.906700 ms (FindLiveObjects: 0.552900 ms CreateObjectMapping: 1.705300 ms MarkObjects: 112.274900 ms  DeleteObjects: 0.979400 ms)
+11-03 20:00:28.715 D/Unity   (27708):
+11-03 20:00:28.793 I/Unity   (27708): [perf] scene Result loaded in 2956 ms
+11-03 20:00:28.793 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:00:28.793 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 20:00:28.793 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 20:00:28.793 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 20:00:28.793 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 20:00:28.793 I/Unity   (27708):
+11-03 20:00:29.887 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 2, quality: 2
+11-03 20:00:30.159 D/Unity   (27708): Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+11-03 20:00:31.756 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 20:00:31.756 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 20:00:31.756 I/Unity   (27708): Average GPU frametime = 187.49 ms (Current = 57.08 ms)
+11-03 20:00:31.756 I/Unity   (27708): Average CPU frametime = 355.05 ms (Current = 290.84 ms)
+11-03 20:00:31.756 I/Unity   (27708): Average frametime = 387.67 ms (Current = 116.67 ms)
+11-03 20:00:31.756 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 20:00:31.756 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 20:00:31.756 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 20:00:31.756 I/Unity   (27708): FPS = 2.58
+11-03 20:00:31.756 I/Unity   (27708): Performance Mode = Standard
+11-03 20:00:31.756 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:00:31.756 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 20:00:31.756 I/Unity   (27708):
+11-03 20:00:38.932 D/Unity   (27708): UnloadTime: 6.529200 ms
+11-03 20:00:39.160 I/Unity   (27708): [Boot] Google sdk_gphone64_x86_64 | Android OS 16 / API-36 (BE2A.250530.026.D1/13818094) | OpenGLES3 | 1080x2400 @ 420 dpi
+11-03 20:00:39.160 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:00:39.160 I/Unity   (27708): MobileBootstrap:Awake()
+11-03 20:00:39.160 I/Unity   (27708):
+11-03 20:00:39.246 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 2, quality: 2
+11-03 20:00:40.612 D/Unity   (27708): Unloading 12 unused Assets / (104 B). Loaded Objects now: 3762.
+11-03 20:00:40.612 D/Unity   (27708): Memory consumption went from 100.6 MB to 100.6 MB.
+11-03 20:00:40.612 D/Unity   (27708): Total: 189.455400 ms (FindLiveObjects: 0.831800 ms CreateObjectMapping: 0.096400 ms MarkObjects: 163.809600 ms  DeleteObjects: 24.242900 ms)
+11-03 20:00:40.612 D/Unity   (27708):
+11-03 20:00:40.696 I/Unity   (27708): [perf] scene Game loaded in 10987 ms
+11-03 20:00:40.696 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:00:40.696 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 20:00:40.696 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 20:00:40.696 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 20:00:40.696 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 20:00:40.696 I/Unity   (27708):
+11-03 20:00:40.701 I/Unity   (27708): [telemetry] 1857.32 6128023a level_start level_id=1 attempt=17 coins=1310
+11-03 20:00:40.701 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:00:40.701 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 20:00:40.701 I/Unity   (27708): GameManager:BeginRun()
+11-03 20:00:40.701 I/Unity   (27708): GameManager:SetState(State)
+11-03 20:00:40.701 I/Unity   (27708): <Start>d__17:MoveNext()
+11-03 20:00:40.701 I/Unity   (27708): System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+11-03 20:00:40.701 I/Unity   (27708): System.Runtime.CompilerServices.MoveNextRunner:Run()
+11-03 20:00:40.701 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 20:00:40.701 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 20:00:40.701 I/Unity   (27708):
+11-03 20:00:48.736 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 20:00:48.736 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 20:00:48.736 I/Unity   (27708): Average GPU frametime = 171.57 ms (Current = 166.91 ms)
+11-03 20:00:48.736 I/Unity   (27708): Average CPU frametime = 336.19 ms (Current = 319.85 ms)
+11-03 20:00:48.736 I/Unity   (27708): Average frametime = 370.83 ms (Current = 250.00 ms)
+11-03 20:00:48.736 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 20:00:48.736 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 20:00:48.736 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 20:00:48.736 I/Unity   (27708): FPS = 2.70
+11-03 20:00:48.736 I/Unity   (27708): Performance Mode = Standard
+11-03 20:00:48.736 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:00:48.736 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 20:00:48.736 I/Unity   (27708):
+11-03 20:01:05.364 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 20:01:05.364 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 20:01:05.364 I/Unity   (27708): Average GPU frametime = 139.84 ms (Current = 330.74 ms)
+11-03 20:01:05.364 I/Unity   (27708): Average CPU frametime = 254.77 ms (Current = 763.81 ms)
+11-03 20:01:05.364 I/Unity   (27708): Average frametime = 313.17 ms (Current = 200.00 ms)
+11-03 20:01:05.364 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 20:01:05.364 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 20:01:05.364 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 20:01:05.364 I/Unity   (27708): FPS = 3.19
+11-03 20:01:05.364 I/Unity   (27708): Performance Mode = Standard
+11-03 20:01:05.364 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:01:05.364 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 20:01:05.364 I/Unity   (27708):
+11-03 20:01:07.421 I/Unity   (27708): [telemetry] 1884.03 6128023a level_fail level_id=1 time_s=21.28662 cause=hp coins_earned=70
+11-03 20:01:07.421 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:01:07.421 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 20:01:07.421 I/Unity   (27708): GameManager:EndRun(State)
+11-03 20:01:07.421 I/Unity   (27708): GameManager:SetState(State)
+11-03 20:01:07.421 I/Unity   (27708): GameManager:LoseGame()
+11-03 20:01:07.421 I/Unity   (27708):
+11-03 20:01:07.475 I/Unity   (27708): Game state changed to: Lost
+11-03 20:01:07.475 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:01:07.475 I/Unity   (27708): GameManager:SetState(State)
+11-03 20:01:07.475 I/Unity   (27708): GameManager:LoseGame()
+11-03 20:01:07.475 I/Unity   (27708):
+11-03 20:01:07.729 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 3, quality: 2
+11-03 20:01:07.916 D/Unity   (27708): Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+11-03 20:01:08.835 D/Unity   (27708): UnloadTime: 127.923500 ms
+11-03 20:01:08.903 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 3, quality: 2
+11-03 20:01:09.413 D/Unity   (27708): Unloading 54 unused Assets / (143.4 KB). Loaded Objects now: 3034.
+11-03 20:01:09.413 D/Unity   (27708): Memory consumption went from 100.0 MB to 99.9 MB.
+11-03 20:01:09.414 D/Unity   (27708): Total: 207.902500 ms (FindLiveObjects: 0.272500 ms CreateObjectMapping: 12.037400 ms MarkObjects: 193.774000 ms  DeleteObjects: 1.370000 ms)
+11-03 20:01:09.414 D/Unity   (27708):
+11-03 20:01:09.516 I/Unity   (27708): [perf] scene Result loaded in 2038 ms
+11-03 20:01:09.516 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:01:09.516 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 20:01:09.516 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 20:01:09.516 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 20:01:09.516 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 20:01:09.516 I/Unity   (27708):
+11-03 20:01:10.544 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 2, quality: 2
+11-03 20:01:10.938 D/Unity   (27708): Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+11-03 20:01:25.391 D/Unity   (27708): UnloadTime: 27.289000 ms
+11-03 20:01:25.941 I/Unity   (27708): [Boot] Google sdk_gphone64_x86_64 | Android OS 16 / API-36 (BE2A.250530.026.D1/13818094) | OpenGLES3 | 1080x2400 @ 420 dpi
+11-03 20:01:25.941 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:01:25.941 I/Unity   (27708): MobileBootstrap:Awake()
+11-03 20:01:25.941 I/Unity   (27708):
+11-03 20:01:26.065 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 2, quality: 2
+11-03 20:01:28.152 D/Unity   (27708): Unloading 12 unused Assets / (3.2 KB). Loaded Objects now: 3762.
+11-03 20:01:28.152 D/Unity   (27708): Memory consumption went from 100.9 MB to 100.9 MB.
+11-03 20:01:28.153 D/Unity   (27708): Total: 239.594800 ms (FindLiveObjects: 0.621000 ms CreateObjectMapping: 0.223500 ms MarkObjects: 226.112500 ms  DeleteObjects: 3.275500 ms)
+11-03 20:01:28.153 D/Unity   (27708):
+11-03 20:01:28.350 I/Unity   (27708): [perf] scene Game loaded in 17902 ms
+11-03 20:01:28.350 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:01:28.350 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 20:01:28.350 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 20:01:28.350 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 20:01:28.350 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 20:01:28.350 I/Unity   (27708):
+11-03 20:01:28.452 I/Unity   (27708): [telemetry] 1905.00 6128023a level_start level_id=1 attempt=18 coins=1380
+11-03 20:01:28.452 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:01:28.452 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 20:01:28.452 I/Unity   (27708): GameManager:BeginRun()
+11-03 20:01:28.452 I/Unity   (27708): GameManager:SetState(State)
+11-03 20:01:28.452 I/Unity   (27708): <Start>d__17:MoveNext()
+11-03 20:01:28.452 I/Unity   (27708): System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+11-03 20:01:28.452 I/Unity   (27708): System.Runtime.CompilerServices.MoveNextRunner:Run()
+11-03 20:01:28.452 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 20:01:28.452 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 20:01:28.452 I/Unity   (27708):
+11-03 20:01:28.858 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 20:01:28.858 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 20:01:28.858 I/Unity   (27708): Average GPU frametime = 146.50 ms (Current = 188.98 ms)
+11-03 20:01:28.858 I/Unity   (27708): Average CPU frametime = 274.37 ms (Current = 411.94 ms)
+11-03 20:01:28.858 I/Unity   (27708): Average frametime = 345.50 ms (Current = 833.33 ms)
+11-03 20:01:28.858 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 20:01:28.858 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 20:01:28.858 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 20:01:28.858 I/Unity   (27708): FPS = 2.89
+11-03 20:01:28.858 I/Unity   (27708): Performance Mode = Standard
+11-03 20:01:28.858 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:01:28.858 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 20:01:28.858 I/Unity   (27708):
+11-03 20:01:47.279 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 20:01:47.279 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 20:01:47.279 I/Unity   (27708): Average GPU frametime = 153.98 ms (Current = 137.48 ms)
+11-03 20:01:47.279 I/Unity   (27708): Average CPU frametime = 313.19 ms (Current = 232.61 ms)
+11-03 20:01:47.279 I/Unity   (27708): Average frametime = 372.33 ms (Current = 133.33 ms)
+11-03 20:01:47.279 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 20:01:47.279 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 20:01:47.279 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 20:01:47.279 I/Unity   (27708): FPS = 2.69
+11-03 20:01:47.279 I/Unity   (27708): Performance Mode = Standard
+11-03 20:01:47.279 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:01:47.279 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 20:01:47.279 I/Unity   (27708):
+11-03 20:01:59.092 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 20:01:59.092 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 20:01:59.092 I/Unity   (27708): Average GPU frametime = 126.65 ms (Current = 101.29 ms)
+11-03 20:01:59.092 I/Unity   (27708): Average CPU frametime = 254.74 ms (Current = 135.00 ms)
+11-03 20:01:59.092 I/Unity   (27708): Average frametime = 303.33 ms (Current = 183.33 ms)
+11-03 20:01:59.092 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 20:01:59.092 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 20:01:59.092 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 20:01:59.092 I/Unity   (27708): FPS = 3.30
+11-03 20:01:59.092 I/Unity   (27708): Performance Mode = Standard
+11-03 20:01:59.092 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:01:59.092 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 20:01:59.092 I/Unity   (27708):
+11-03 20:02:00.957 I/Unity   (27708): [telemetry] 1937.57 6128023a level_fail level_id=1 time_s=25.0199 cause=hp coins_earned=90
+11-03 20:02:00.957 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:02:00.957 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 20:02:00.957 I/Unity   (27708): GameManager:EndRun(State)
+11-03 20:02:00.957 I/Unity   (27708): GameManager:SetState(State)
+11-03 20:02:00.957 I/Unity   (27708): GameManager:LoseGame()
+11-03 20:02:00.957 I/Unity   (27708):
+11-03 20:02:00.967 I/Unity   (27708): Game state changed to: Lost
+11-03 20:02:00.967 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:02:00.967 I/Unity   (27708): GameManager:SetState(State)
+11-03 20:02:00.967 I/Unity   (27708): GameManager:LoseGame()
+11-03 20:02:00.967 I/Unity   (27708):
+11-03 20:02:01.255 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 3, quality: 2
+11-03 20:02:01.430 D/Unity   (27708): Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+11-03 20:02:03.054 D/Unity   (27708): UnloadTime: 98.003600 ms
+11-03 20:02:03.444 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 3, quality: 2
+11-03 20:02:04.682 D/Unity   (27708): Unloading 54 unused Assets / (0.6 MB). Loaded Objects now: 3034.
+11-03 20:02:04.682 D/Unity   (27708): Memory consumption went from 100.3 MB to 99.7 MB.
+11-03 20:02:04.682 D/Unity   (27708): Total: 392.941000 ms (FindLiveObjects: 23.109100 ms CreateObjectMapping: 0.146000 ms MarkObjects: 342.465500 ms  DeleteObjects: 20.967900 ms)
+11-03 20:02:04.682 D/Unity   (27708):
+11-03 20:02:04.727 I/Unity   (27708): [perf] scene Result loaded in 3758 ms
+11-03 20:02:04.727 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:02:04.727 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 20:02:04.727 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 20:02:04.727 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 20:02:04.727 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 20:02:04.727 I/Unity   (27708):
+11-03 20:02:06.609 I/Unity   (27708): SetGameState: isLoading: true, mode: UNKNOWN, label: 2, quality: 2
+11-03 20:02:06.860 D/Unity   (27708): Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+11-03 20:02:11.770 D/Unity   (27708): UnloadTime: 31.885300 ms
+11-03 20:02:12.278 I/Unity   (27708): [Boot] Google sdk_gphone64_x86_64 | Android OS 16 / API-36 (BE2A.250530.026.D1/13818094) | OpenGLES3 | 1080x2400 @ 420 dpi
+11-03 20:02:12.278 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:02:12.278 I/Unity   (27708): MobileBootstrap:Awake()
+11-03 20:02:12.278 I/Unity   (27708):
+11-03 20:02:12.450 I/Unity   (27708): SetGameState: isLoading: false, mode: UNKNOWN, label: 2, quality: 2
+11-03 20:02:15.002 D/Unity   (27708): Unloading 12 unused Assets / (Unknown). Loaded Objects now: 3762.
+11-03 20:02:15.002 D/Unity   (27708): Memory consumption went from 100.9 MB to 100.9 MB.
+11-03 20:02:15.003 D/Unity   (27708): Total: 123.785700 ms (FindLiveObjects: 24.382200 ms CreateObjectMapping: 0.625800 ms MarkObjects: 95.334300 ms  DeleteObjects: 0.174500 ms)
+11-03 20:02:15.003 D/Unity   (27708):
+11-03 20:02:15.667 I/Unity   (27708): [perf] scene Game loaded in 9242 ms
+11-03 20:02:15.667 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:02:15.667 I/Unity   (27708): <Load>d__14:MoveNext()
+11-03 20:02:15.667 I/Unity   (27708): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-03 20:02:15.667 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 20:02:15.667 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 20:02:15.667 I/Unity   (27708):
+11-03 20:02:15.706 I/Unity   (27708): [telemetry] 1952.33 6128023a level_start level_id=1 attempt=19 coins=1470
+11-03 20:02:15.706 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:02:15.706 I/Unity   (27708): Telemetry:Log(String, ValueTuple`2[])
+11-03 20:02:15.706 I/Unity   (27708): GameManager:BeginRun()
+11-03 20:02:15.706 I/Unity   (27708): GameManager:SetState(State)
+11-03 20:02:15.706 I/Unity   (27708): <Start>d__17:MoveNext()
+11-03 20:02:15.706 I/Unity   (27708): System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+11-03 20:02:15.706 I/Unity   (27708): System.Runtime.CompilerServices.MoveNextRunner:Run()
+11-03 20:02:15.706 I/Unity   (27708): TMPro.Examples.CameraController:.ctor()
+11-03 20:02:15.706 I/Unity   (27708): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-03 20:02:15.706 I/Unity   (27708):
+11-03 20:02:19.943 I/Unity   (27708): [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-03 20:02:19.943 I/Unity   (27708): Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-03 20:02:19.943 I/Unity   (27708): Average GPU frametime = 106.97 ms (Current = 108.19 ms)
+11-03 20:02:19.943 I/Unity   (27708): Average CPU frametime = 202.31 ms (Current = 260.39 ms)
+11-03 20:02:19.943 I/Unity   (27708): Average frametime = 251.67 ms (Current = 83.33 ms)
+11-03 20:02:19.943 I/Unity   (27708): Bottleneck CPU, ThermalTrend 0.000
+11-03 20:02:19.943 I/Unity   (27708): CPU Boost Mode False, GPU Boost Mode False
+11-03 20:02:19.943 I/Unity   (27708): Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-03 20:02:19.943 I/Unity   (27708): FPS = 3.97
+11-03 20:02:19.943 I/Unity   (27708): Performance Mode = Standard
+11-03 20:02:19.943 I/Unity   (27708): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-03 20:02:19.943 I/Unity   (27708): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-03 20:02:19.943 I/Unity   (27708):

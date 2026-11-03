@@ -461,3 +461,7 @@ The Android Development APK built successfully and installed as com.ardabecanim.
 ### Script folder cleanup
 
 Grouped root scripts under Core, Gameplay, UI, Accessibility, Audio and Performance. Moved each Unity .meta alongside its script so GUID references remain intact. Script contents and gameplay behaviour are unchanged.
+
+### Week 7 Lab B — resumed emulator soak recorded (3 November 2026)
+
+Completed a new 600.08-second Balanced emulator window with automated Retry, after excluding the interrupted attempt. Saved logcat, battery readings, timed screenshots and both Android Player Profiler captures. Virtual battery stayed at 25.0 °C (delta 0.0 °C); AP reported NoWarning, maximum normalized level 0.90. The minute 10 screenshot landed on loading; the later arena overlay is stored separately. Before p99 was 5394.11 ms (18 frames); after p99 was 14207.69 ms (10 frames). Tiny samples, profiler overhead, scene transitions and concurrent host workload prevent a reliable sustained budget. Next change: repeat on a quiet host using a consistent arena route before adjusting Balanced settings. Moodle exit ticket remains pending.
