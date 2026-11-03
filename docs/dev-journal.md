@@ -457,3 +457,7 @@ Coursework dates from the lab sheet: Reading Week was 26–30 October; Week 8 re
 Unity batch compilation completed successfully and the AP validation command passed. The Pixel 8 Android 16 emulator was connected; ADB screen capture returned a valid PNG and the guest battery service exposed a temperature reading. This was a tooling smoke check, not the start of the timed soak. Added an optional ADB collector for timestamped 0/5/10-minute screenshots, Unity logs and the end battery dump while the owner plays; the two Profiler captures remain separate.
 
 The Android Development APK built successfully and installed as com.ardabecanim.mobilegame.soak beside the release. Runtime log verified Development/IL2CPP arm64, Balanced 60/1.0 and AP active. The arena screenshot verifies both HUD panels and NoWarning/level 0.90/trend 0.00. Saved as overlay-smoke.png, separate from the still-pending timed screenshots. No sustained budget or before/after measurements are claimed.
+
+### Script folder cleanup
+
+Grouped root scripts under Core, Gameplay, UI, Accessibility, Audio and Performance. Moved each Unity .meta alongside its script so GUID references remain intact. Script contents and gameplay behaviour are unchanged.
