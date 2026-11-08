@@ -8,6 +8,13 @@ public class PauseSettingsNavigation : MonoBehaviour
 
     void Awake()
     {
+        if (pausePanel != null)
+        {
+            var restart = GreyboxUI.Button(pausePanel.transform, "Restart", new Vector2(0.5f, 0.5f),
+                new Vector2(0, -320), () => SceneLoader.RequestLoad("Game"), 40);
+            ((RectTransform)restart.transform).sizeDelta = new Vector2(500, 100);
+        }
+
         if (settingsPanel != null && settingsPanel.GetComponent<PerformanceSettingsUI>() == null)
             settingsPanel.AddComponent<PerformanceSettingsUI>();
         if (settingsPanel != null)

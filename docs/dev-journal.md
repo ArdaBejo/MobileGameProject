@@ -475,3 +475,7 @@ Created the anonymous Google Form directly in the owner’s signed-in Forms edit
 ### Week 8 Lab A — signed release and distribution verification (8 November 2026)
 
 Built the ARM64 IL2CPP release APK, version 0.8.0 / code 5, with the previous release signer and Development Build off. Build ID is 49ea902f. The Drive copy was downloaded while signed out and matched the local APK byte count and SHA-256. The QR decoded to the exact viewer URL. The anonymous responder page opened while signed out. The Pixel 8 Android 16 emulator installed the APK as an update, then showed a Unity Graphics API initialization error on its first startup. About and session_start require a successful launch before they can be matched. Android form submission and removal of a marked smoke response, two peer installs and reciprocal tests, and the Moodle exit ticket remain pending.
+
+The project owner reported that P1 installed and launched build 49ea902f on Android 16 / API 36 and liked the game. This was verbal feedback. A separately marked synthetic desktop submission reached the Google Forms confirmation screen and is excluded from peer results.
+
+The project owner flagged the title-screen coin purchase button and said the current game felt too easy. Removed the purchase button from Menu and added Restart to the in-game Pause panel using the existing asynchronous scene loader. The difficulty observation is recorded as owner feedback. Reciprocal build testing and the Moodle exit ticket were omitted at the owner's request.
