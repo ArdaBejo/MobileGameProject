@@ -4,10 +4,15 @@ using UnityEngine;
 public class BackgroundMusic : MonoBehaviour
 {
     public static BackgroundMusic Instance { get; private set; }
+    const string EnabledKey = "music_enabled";
+    const string VolumeKey = "music_volume";
     [SerializeField, Range(0, 1)] float volume = 0.18f;
     AudioSource source;
     bool backgrounded;
     bool focused = true;
+
+    public bool MusicEnabled { get; private set; }
+    public float MusicVolume { get; private set; }
 
     void Awake()
     {
@@ -17,7 +22,10 @@ public class BackgroundMusic : MonoBehaviour
         source.playOnAwake = false;
         source.loop = true;
         source.spatialBlend = 0;
-        source.volume = volume;
+        MusicEnabled = PlayerPrefs.GetInt(EnabledKey, 1) != 0;
+        MusicVolume = Mathf.Clamp01(PlayerPrefs.GetFloat(VolumeKey, volume));
+        source.volume = MusicVolume;
+        source.mute = !MusicEnabled;
         source.clip = Resources.Load<AudioClip>("Sound/Void Runer");
         if (source.clip == null)
         {
@@ -26,6 +34,20 @@ public class BackgroundMusic : MonoBehaviour
         }
         source.Play();
         RefreshPlayback();
+    }
+
+    public void SetMusicEnabled(bool enabled)
+    {
+        MusicEnabled = enabled;
+        source.mute = !enabled;
+        PlayerPrefs.SetInt(EnabledKey, enabled ? 1 : 0);
+    }
+
+    public void SetMusicVolume(float value)
+    {
+        MusicVolume = Mathf.Clamp01(value);
+        source.volume = MusicVolume;
+        PlayerPrefs.SetFloat(VolumeKey, MusicVolume);
     }
 
     void OnEnable() => LifecycleGuard.PausedChanged += OnGamePause;
