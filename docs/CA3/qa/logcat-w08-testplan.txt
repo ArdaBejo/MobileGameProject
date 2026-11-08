@@ -1337,3 +1337,69 @@
 11-08 16:07:59.867 I/Unity   ( 5697): FrameTimeSampler:Update()
 11-08 16:07:59.867 I/Unity   ( 5697):
 11-08 16:08:00.863 I/W08QA   ( 6229): END_TRIM
+11-08 16:25:12.303 I/W08QA   ( 6326): BEGIN_RESUME_SERIES
+11-08 16:25:50.581 I/W08QA   ( 6372): RESUME_CYCLE_1_PID_5697
+11-08 16:25:53.511 I/Unity   ( 5697): [Baseline] avg 77.58 ms  p99 133.33 ms
+11-08 16:26:27.079 I/W08QA   ( 6407): RESUME_CYCLE_2_PID_5697
+11-08 16:27:05.841 I/W08QA   ( 6441): RESUME_CYCLE_3_PID_5697
+11-08 16:27:44.699 I/Unity   ( 5697): [Baseline] avg 185.28 ms  p99 133.33 ms
+11-08 16:27:47.015 I/W08QA   ( 6479): RESUME_CYCLE_4_PID_5697
+11-08 16:28:25.488 I/W08QA   ( 6513): RESUME_CYCLE_5_PID_5697
+11-08 16:29:00.492 I/Unity   ( 5697): [Baseline] avg 126.36 ms  p99 83.33 ms
+11-08 16:29:02.080 I/W08QA   ( 6546): RESUME_CYCLE_6_PID_5697
+11-08 16:29:39.664 I/W08QA   ( 6579): RESUME_CYCLE_7_PID_5697
+11-08 16:30:17.887 I/W08QA   ( 6613): RESUME_CYCLE_8_PID_5697
+11-08 16:30:19.791 I/Unity   ( 5697): [Baseline] avg 132.17 ms  p99 83.33 ms
+11-08 16:30:57.767 I/W08QA   ( 6674): RESUME_CYCLE_9_PID_5697
+11-08 16:31:37.250 I/W08QA   ( 6721): RESUME_CYCLE_10_PID_5697
+11-08 16:31:47.449 I/ActivityTaskManager(  722): Displayed com.ardabecanim.mobilegame/com.unity3d.player.UnityPlayerGameActivity for user 0: +8s993ms
+11-08 16:31:49.252 E/Unity   ( 6736): java.lang.ClassNotFoundException: Didn't find class "com.google.android.play.core.assetpacks.AssetPackManager" on path: DexPathList[[zip file "/data/app/~~ueSAzk2_F1jeQ_pwLYWSMA==/com.ardabecanim.mobilegame-74N-W0i6DPmupnaKrpC58Q==/base.apk"],nativeLibraryDirectories=[/data/app/~~ueSAzk2_F1jeQ_pwLYWSMA==/com.ardabecanim.mobilegame-74N-W0i6DPmupnaKrpC58Q==/lib/arm64, /data/app/~~ueSAzk2_F1jeQ_pwLYWSMA==/com.ardabecanim.mobilegame-74N-W0i6DPmupnaKrpC58Q==/base.apk!/lib/arm64-v8a, /system/lib64, /system_ext/lib64]]
+11-08 16:32:06.834 I/Unity   ( 6736): perf_mode=HighFps high=True targetFrameRate=120 renderScale=0.8
+11-08 16:32:06.864 I/Unity   ( 6736): [telemetry] file /storage/emulated/0/Android/data/com.ardabecanim.mobilegame/files/telemetry.log
+11-08 16:32:06.918 I/Unity   ( 6736): [telemetry] 6.92 0105ac35 session_start version=0.8.0 build=49ea902f device=Google%20sdk_gphone64_x86_64 app_version=0.8.0 device_model=Google%20sdk_gphone64_x86_64 android=Android%20OS%2016%20%2F%20API-36%20%28BE2A.250530.026.D1%2F13818094%29
+11-08 16:32:12.702 I/W08QA   ( 6818): END_RESUME_SERIES
+11-08 16:32:18.652 I/Unity   ( 6736): [perf] scene Menu loaded in 10643 ms
+11-08 16:32:18.743 I/Unity   ( 6736): [perf] interactive 18.79s
+11-08 16:32:19.387 I/W08QA   ( 6829): BEGIN_FULL_TRIM
+11-08 16:33:44.897 I/W08QA   ( 7040): FULL_TRIM_PID_6736_6736
+11-08 16:33:45.115 I/W08QA   ( 7042): END_FULL_TRIM
+11-08 16:33:47.973 I/W08QA   ( 7055): BEGIN_BATTERY
+11-08 16:34:09.753 I/W08QA   ( 7107): POST_RELAUNCH_START_TAPPED
+11-08 16:34:16.356 I/Unity   ( 6736): [perf] scene Game loaded in 6400 ms
+11-08 16:34:16.399 I/Unity   ( 6736): [telemetry] 136.43 0105ac35 level_start level_id=1 attempt=1 coins=2423
+11-08 16:34:38.756 I/Unity   ( 6736): [Baseline] avg 45.06 ms  p99 216.67 ms
+11-08 16:34:57.677 I/Unity   ( 6736): [Baseline] avg 31.56 ms  p99 83.33 ms
+11-08 16:35:17.543 I/Unity   ( 6736): [Baseline] avg 33.17 ms  p99 100.00 ms
+11-08 16:35:38.829 I/Unity   ( 6736): [Baseline] avg 35.50 ms  p99 83.33 ms
+11-08 16:35:55.960 I/Unity   ( 6736): [Baseline] avg 28.53 ms  p99 66.67 ms
+11-08 16:36:02.657 I/W08QA   ( 7427): END_BATTERY
+11-08 16:36:03.352 I/W08QA   ( 7439): BEGIN_PSS_CONTINUATION
+11-08 16:36:16.680 I/Unity   ( 6736): [Baseline] avg 34.53 ms  p99 150.00 ms
+11-08 16:36:16.723 I/Unity   ( 6736): [telemetry] 256.75 0105ac35 level_complete level_id=1 time_s=120.02 coins_earned=930 score=93
+11-08 16:36:18.016 I/Unity   ( 6736): [perf] scene Result loaded in 1248 ms
+11-08 16:37:13.448 I/W08QA   ( 7541): PSS_RETRY_CORRECTED
+11-08 16:37:14.006 I/Unity   ( 6736): [perf] scene Game loaded in 600 ms
+11-08 16:37:14.015 I/Unity   ( 6736): [telemetry] 314.06 0105ac35 level_start level_id=1 attempt=2 coins=3353
+11-08 16:37:24.461 I/Unity   ( 6736): [Baseline] avg 18.03 ms  p99 33.33 ms
+11-08 16:37:34.880 I/Unity   ( 6736): [Baseline] avg 17.36 ms  p99 33.33 ms
+11-08 16:37:45.248 I/Unity   ( 6736): [Baseline] avg 17.28 ms  p99 33.33 ms
+11-08 16:37:55.894 I/Unity   ( 6736): [Baseline] avg 17.75 ms  p99 33.33 ms
+11-08 16:38:06.378 I/Unity   ( 6736): [Baseline] avg 17.47 ms  p99 33.33 ms
+11-08 16:38:16.624 I/Unity   ( 6736): [Baseline] avg 17.08 ms  p99 33.33 ms
+11-08 16:38:27.032 I/Unity   ( 6736): [Baseline] avg 17.33 ms  p99 33.33 ms
+11-08 16:38:37.252 I/Unity   ( 6736): [Baseline] avg 17.03 ms  p99 33.33 ms
+11-08 16:38:48.421 I/Unity   ( 6736): [Baseline] avg 18.61 ms  p99 33.33 ms
+11-08 16:38:59.163 I/Unity   ( 6736): [Baseline] avg 17.92 ms  p99 33.33 ms
+11-08 16:39:11.085 I/Unity   ( 6736): [Baseline] avg 19.86 ms  p99 50.00 ms
+11-08 16:39:14.078 I/Unity   ( 6736): [telemetry] 434.10 0105ac35 level_complete level_id=1 time_s=120.0033 coins_earned=950 score=95
+11-08 16:39:14.672 I/Unity   ( 6736): [perf] scene Result loaded in 487 ms
+11-08 16:39:18.491 I/Unity   ( 6736): [perf] scene Game loaded in 332 ms
+11-08 16:39:18.496 I/Unity   ( 6736): [telemetry] 438.54 0105ac35 level_start level_id=1 attempt=3 coins=4303
+11-08 16:39:20.426 I/W08QA   ( 7716): BEGIN_PSS_FINAL_ARENA
+11-08 16:39:28.943 I/Unity   ( 6736): [Baseline] avg 17.75 ms  p99 33.33 ms
+11-08 16:39:38.853 I/W08QA   ( 7785): END_PSS_CONTINUATION
+11-08 16:39:42.077 I/Unity   ( 6736): [Baseline] avg 21.86 ms  p99 83.33 ms
+11-08 16:39:52.781 I/Unity   ( 6736): [Baseline] avg 17.86 ms  p99 33.33 ms
+11-08 16:40:03.046 I/Unity   ( 6736): [Baseline] avg 17.11 ms  p99 33.33 ms
+11-08 16:40:13.361 I/Unity   ( 6736): [Baseline] avg 17.19 ms  p99 33.33 ms
+11-08 16:40:21.340 I/W08QA   ( 7828): END_PSS_FINAL_ARENA

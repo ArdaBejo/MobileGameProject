@@ -92,7 +92,9 @@ Raw Android Player Profiler captures and frame-time CSVs are in the [evidence fo
 | Menu interactive | 13.30 s Unity process uptime |
 | Menu to arena scene load | 1564 ms |
 | Early arena TOTAL PSS | 420086 KiB (about 410 MiB), sampled about 13 seconds after arena load |
-| PSS after five minutes of play | Pending |
-| 60-second frame-time stability | Pending |
+| PSS after about 302 seconds of accumulated arena play | 409367 KiB (399.8 MiB) |
+| 60-second presentation stability with Battery Saver on | 1858 intervals, p99 82.40 ms, 14.3% within 16.7 ms |
 
-The early memory sample is a smoke reading. The full run and evidence are tracked in the [Week 8 Lab B test plan](../../CA3/qa/test-plan.md).
+The early memory sample is a smoke reading. The later sample followed two completed 120-second runs and about 62 seconds in the third run. Time on result and loading screens was excluded. See the [PSS output](../../CA3/qa/pss-five-minutes.txt) and [arena screenshot](../../CA3/qa/screens/pss-five-minutes.png). The full run and evidence are tracked in the [Week 8 Lab B test plan](../../CA3/qa/test-plan.md).
+
+Presentation intervals were derived from distinct actual-present timestamps for the Unity SurfaceView via SurfaceFlinger. These are emulator display intervals during the Battery Saver probe. [Frame data](../../CA3/qa/frame-presentation.csv).

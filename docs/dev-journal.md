@@ -489,3 +489,9 @@ Closed Week 8 Lab A within the agreed scope. Both peer sessions used Lenovo TB36
 Tested signed release 0.8.0 build 49ea902f on the Pixel 8 emulator. Recorded launch timings and an early arena PSS sample in the CA2 baseline. Offline launch and the in-game airplane-mode transition passed. A landscape request preserved the portrait HUD. One 30-second Home cycle resumed the arena, and a short memory-trim return reached the pause menu. Filed the repeatable Play Asset Delivery class lookup error. The raw emulator capture stays local, and the QA folder contains the relevant Logcat excerpt and screenshots.
 
 Added a persistent soundtrack toggle and volume slider to the title menu and Pause Settings. Unity C# compilation passed. Play Mode audio interaction and a new Android build were not verified in this checkpoint.
+
+### Week 8 Lab B — release resilience follow-up
+
+The original 49ea902f release passed offline and portrait-lock checks, ten 30-second Home cycles, force-stop wallet recovery, and the exercised memory-pressure returns on the Pixel 8 Android emulator. Cold launch was 1048 ms and Android classified the 193 ms Home relaunch as HOT. PSS after roughly 302 seconds of accumulated arena play was 409367 KiB. The 60-second SurfaceFlinger sample under Battery Saver produced p99 82.40 ms with 14.3% of frame intervals within 16.7 ms. Android reported Saver ON, while the app still targeted 120 FPS. The failing release result is preserved in KnownIssues.
+
+Moved Music controls into the Pause Settings panel and tuned early waves after peer feedback. These source changes are newer than the original release evidence.
