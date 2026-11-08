@@ -9,7 +9,12 @@ public sealed class PerformanceMode : MonoBehaviour
     public const string PreferenceKey = "perf_mode";
     public static PerformanceMode Instance { get; private set; }
     public PerfMode Current { get; private set; }
+    public bool BatterySaver { get; private set; }
     readonly Dictionary<UniversalRenderPipelineAsset, float> originalScales = new();
+#if UNITY_ANDROID && !UNITY_EDITOR
+    AndroidJavaObject powerManager;
+    float nextPowerCheck;
+#endif
 
     public static void EnsureOn(GameObject owner)
     {
@@ -22,9 +27,27 @@ public sealed class PerformanceMode : MonoBehaviour
         if (Instance != null && Instance != this) { Destroy(this); return; }
         Instance = this;
         DontDestroyOnLoad(gameObject);
+#if UNITY_ANDROID && !UNITY_EDITOR
+        using var unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+        using var activity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
+        powerManager = activity?.Call<AndroidJavaObject>("getSystemService", "power");
+        BatterySaver = powerManager?.Call<bool>("isPowerSaveMode") == true;
+#endif
         Apply(PlayerPrefs.GetInt(PreferenceKey, 0) == 1 ? PerfMode.HighFps : PerfMode.Balanced, false);
         if (GetComponent<PerformanceOverlay>() == null) gameObject.AddComponent<PerformanceOverlay>();
     }
+
+#if UNITY_ANDROID && !UNITY_EDITOR
+    void Update()
+    {
+        if (powerManager == null || Time.unscaledTime < nextPowerCheck) return;
+        nextPowerCheck = Time.unscaledTime + 2f;
+        bool enabled = powerManager.Call<bool>("isPowerSaveMode");
+        if (BatterySaver == enabled) return;
+        BatterySaver = enabled;
+        Apply(Current, false);
+    }
+#endif
 
     public void SetHighFps(bool on) => Apply(on ? PerfMode.HighFps : PerfMode.Balanced);
 
@@ -35,24 +58,27 @@ public sealed class PerformanceMode : MonoBehaviour
         Current = mode;
         bool high = mode == PerfMode.HighFps;
         QualitySettings.vSyncCount = 0;
-        Application.targetFrameRate = high ? 120 : 60;
+        Application.targetFrameRate = high && !BatterySaver ? 120 : 60;
         var asset = UniversalRenderPipeline.asset;
         if (asset != null)
         {
             if (!originalScales.ContainsKey(asset)) originalScales.Add(asset, asset.renderScale);
-            asset.renderScale = high ? 0.8f : 1f;
+            asset.renderScale = high || BatterySaver ? 0.8f : 1f;
         }
         if (save)
         {
             PlayerPrefs.SetInt(PreferenceKey, high ? 1 : 0);
             PlayerPrefs.Save();
         }
-        Debug.Log($"perf_mode={mode} high={high} targetFrameRate={Application.targetFrameRate} renderScale={(asset != null ? asset.renderScale.ToString("0.0", System.Globalization.CultureInfo.InvariantCulture) : "unavailable")}");
+        Debug.Log($"perf_mode={mode} high={high} batterySaver={BatterySaver} targetFrameRate={Application.targetFrameRate} renderScale={(asset != null ? asset.renderScale.ToString("0.0", System.Globalization.CultureInfo.InvariantCulture) : "unavailable")}");
     }
 
     void OnDestroy()
     {
         if (Instance != this) return;
+#if UNITY_ANDROID && !UNITY_EDITOR
+        powerManager?.Dispose();
+#endif
         // URP assets are shared with the Editor: leave their authored values intact.
         if (Application.isEditor)
             foreach (var entry in originalScales)

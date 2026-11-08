@@ -11,6 +11,7 @@ public sealed class PerformanceOverlay : MonoBehaviour
     TMP_Text timing;
     TMP_Text modeLabel;
     PerfMode sampledMode;
+    bool sampledBatterySaver;
     double previousTime;
     double windowSeconds;
     int frames;
@@ -41,6 +42,7 @@ public sealed class PerformanceOverlay : MonoBehaviour
             Vector2.zero, new Vector2(328, 96), 20);
         thermalPanel.gameObject.AddComponent<ThermalOverlay>().Bind(thermalLabel);
         sampledMode = PerformanceMode.Instance.Current;
+        sampledBatterySaver = PerformanceMode.Instance.BatterySaver;
         RefreshMode();
     }
 
@@ -51,9 +53,10 @@ public sealed class PerformanceOverlay : MonoBehaviour
         safeArea.gameObject.SetActive(inGame);
         if (!inGame) { ResetWindow(); return; }
 
-        if (sampledMode != PerformanceMode.Instance.Current)
+        if (sampledMode != PerformanceMode.Instance.Current || sampledBatterySaver != PerformanceMode.Instance.BatterySaver)
         {
             sampledMode = PerformanceMode.Instance.Current;
+            sampledBatterySaver = PerformanceMode.Instance.BatterySaver;
             ResetWindow();
             timing.text = LifecycleGuard.IsPaused ? "Resume to measure" : "Measuring...";
             RefreshMode();
@@ -86,7 +89,7 @@ public sealed class PerformanceOverlay : MonoBehaviour
     void RefreshMode()
     {
         var asset = UniversalRenderPipeline.asset;
-        string name = sampledMode == PerfMode.HighFps ? "High FPS" : "Balanced";
+        string name = sampledBatterySaver ? "Battery Saver" : sampledMode == PerfMode.HighFps ? "High FPS" : "Balanced";
         string scale = asset != null
             ? asset.renderScale.ToString("0.0", System.Globalization.CultureInfo.InvariantCulture) : "n/a";
         modeLabel.text = $"{name} | target {Application.targetFrameRate}\nRender scale: {scale}";
