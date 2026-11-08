@@ -1,0 +1,1339 @@
+11-08 16:02:46.604 I/W08QA   ( 5334): BEGIN_COLD
+11-08 16:02:47.889 I/Unity   ( 5347): UnityApplication::CreateInstance
+11-08 16:02:47.889 I/Unity   ( 5347): GameActivity Package Version '4.4.0'
+11-08 16:02:47.891 I/Unity   ( 5347): Starting Game Loop
+11-08 16:02:47.896 I/Unity   ( 5347): Handle cmd APP_CMD_START(11)
+11-08 16:02:47.901 I/Unity   ( 5347): Handle cmd APP_CMD_RESUME(12)
+11-08 16:02:47.948 I/Unity   ( 5347): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-08 16:02:47.952 I/Unity   ( 5347): Handle cmd APP_CMD_CONTENT_RECT_CHANGED(5)
+11-08 16:02:47.954 I/Unity   ( 5347): Handle cmd APP_CMD_INIT_WINDOW(1)
+11-08 16:02:47.996 I/Unity   ( 5347): MemoryManager: Using 'Dynamic Heap' Allocator.
+11-08 16:02:47.996 I/Unity   ( 5347): Mimalloc is enabled and will override the Dynamic Heap and Dual Thread (Main and MainThread) allocators.
+11-08 16:02:48.028 I/ActivityTaskManager(  722): Displayed com.ardabecanim.mobilegame/com.unity3d.player.UnityPlayerGameActivity for user 0: +1s48ms
+11-08 16:02:48.145 E/Unity   ( 5347): java.lang.ClassNotFoundException: Didn't find class "com.google.android.play.core.assetpacks.AssetPackManager" on path: DexPathList[[zip file "/data/app/~~ueSAzk2_F1jeQ_pwLYWSMA==/com.ardabecanim.mobilegame-74N-W0i6DPmupnaKrpC58Q==/base.apk"],nativeLibraryDirectories=[/data/app/~~ueSAzk2_F1jeQ_pwLYWSMA==/com.ardabecanim.mobilegame-74N-W0i6DPmupnaKrpC58Q==/lib/arm64, /data/app/~~ueSAzk2_F1jeQ_pwLYWSMA==/com.ardabecanim.mobilegame-74N-W0i6DPmupnaKrpC58Q==/base.apk!/lib/arm64-v8a, /system/lib64, /system_ext/lib64]]
+11-08 16:02:48.160 I/Unity   ( 5347): SystemInfo CPU = x86-64 SSE3 SSE4.1 AVX, Cores = 2, Memory = 2472mb
+11-08 16:02:48.162 I/Unity   ( 5347): SystemInfo ARM big.LITTLE configuration: 2 big (mask: 0x3), 0 little (mask: 0x0)
+11-08 16:02:48.166 I/Unity   ( 5347): ApplicationInfo 'com.ardabecanim.mobilegame', Version '0.8.0', Min API Level '26', Target API Level '36'
+11-08 16:02:48.166 I/Unity   ( 5347): Built from '6000.6/respin/6000.6.0f1-fa21a270ab12' branch, Version '6000.6.0f1 (f7f8ed4d1e24)', Build type 'Release', Scripting Backend 'il2cpp', CPU 'arm64-v8a', Stripping 'Enabled'
+11-08 16:02:48.166 I/Unity   ( 5347): Device Model 'Google sdk_gphone64_x86_64', OS 'Android OS 16 (API 36)'
+11-08 16:02:49.507 I/Unity   ( 5347): Company Name: DefaultCompany
+11-08 16:02:49.507 I/Unity   ( 5347): Product Name: MobileGameProject
+11-08 16:02:51.259 I/Unity   ( 5347):     HasWindow = 1, HasFocus = 0
+11-08 16:02:51.260 I/Unity   ( 5347): Handle cmd APP_CMD_WINDOW_RESIZED(3)
+11-08 16:02:51.260 I/Unity   ( 5347): Handle cmd APP_CMD_WINDOW_REDRAW_NEEDED(4)
+11-08 16:02:51.260 I/Unity   ( 5347): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-08 16:02:51.263 I/Unity   ( 5347): Handle cmd APP_CMD_PAUSE(14)
+11-08 16:02:52.075 I/Unity   ( 5347): Handle cmd APP_CMD_TERM_WINDOW(2)
+11-08 16:02:52.299 I/Unity   ( 5347): Handle cmd APP_CMD_STOP(15)
+11-08 16:02:52.300 I/Unity   ( 5347): Handle cmd APP_CMD_SAVE_STATE(13)
+11-08 16:02:52.308 I/Unity   ( 5347): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-08 16:02:52.314 I/Unity   ( 5347): Handle cmd APP_CMD_LOW_MEMORY(10)
+11-08 16:02:58.825 I/W08QA   ( 5527): BEGIN_HOME_RELAUNCH
+11-08 16:02:58.979 I/Unity   ( 5347): Handle cmd APP_CMD_START(11)
+11-08 16:02:58.990 I/Unity   ( 5347): Handle cmd APP_CMD_RESUME(12)
+11-08 16:02:59.002 I/Unity   ( 5347): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-08 16:02:59.007 I/Unity   ( 5347): Handle cmd APP_CMD_INIT_WINDOW(1)
+11-08 16:02:59.120 I/Unity   ( 5347):     HasWindow = 1, HasFocus = 0
+11-08 16:02:59.122 I/Unity   ( 5347): Handle cmd APP_CMD_WINDOW_REDRAW_NEEDED(4)
+11-08 16:02:59.200 I/Unity   ( 5347): Handle cmd APP_CMD_GAINED_FOCUS(7)
+11-08 16:03:00.319 I/W08QA   ( 5549): END_LAUNCH_PROBE
+11-08 16:03:01.939 I/Unity   ( 5347): perf_mode=HighFps high=True targetFrameRate=120 renderScale=0.8
+11-08 16:03:01.939 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:01.939 I/Unity   ( 5347): PerformanceMode:Apply(PerfMode, Boolean)
+11-08 16:03:01.939 I/Unity   ( 5347): PerformanceMode:Awake()
+11-08 16:03:01.939 I/Unity   ( 5347): UnityEngine.GameObject:Internal_AddComponentWithType(Type)
+11-08 16:03:01.939 I/Unity   ( 5347): UnityEngine.GameObject:AddComponent()
+11-08 16:03:01.939 I/Unity   ( 5347): Bootstrap:Awake()
+11-08 16:03:01.939 I/Unity   ( 5347):
+11-08 16:03:01.944 I/Unity   ( 5347): [telemetry] file /storage/emulated/0/Android/data/com.ardabecanim.mobilegame/files/telemetry.log
+11-08 16:03:01.944 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:01.944 I/Unity   ( 5347): Telemetry:StartSession()
+11-08 16:03:01.944 I/Unity   ( 5347): Bootstrap:Awake()
+11-08 16:03:01.944 I/Unity   ( 5347):
+11-08 16:03:01.960 I/Unity   ( 5347): [telemetry] 10.29 26154151 session_start version=0.8.0 build=49ea902f device=Google%20sdk_gphone64_x86_64 app_version=0.8.0 device_model=Google%20sdk_gphone64_x86_64 android=Android%20OS%2016%20%2F%20API-36%20%28BE2A.250530.026.D1%2F13818094%29
+11-08 16:03:01.960 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:01.960 I/Unity   ( 5347): Telemetry:Log(String, ValueTuple`2[])
+11-08 16:03:01.960 I/Unity   ( 5347): Telemetry:StartSession()
+11-08 16:03:01.960 I/Unity   ( 5347): Bootstrap:Awake()
+11-08 16:03:01.960 I/Unity   ( 5347):
+11-08 16:03:02.980 I/Unity   ( 5347): [AP] active warning=NoWarning level=0.90
+11-08 16:03:02.980 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:02.980 I/Unity   ( 5347): AdaptiveBootstrap:Start()
+11-08 16:03:02.980 I/Unity   ( 5347):
+11-08 16:03:03.111 I/Unity   ( 5347): [AP] thermal warning=NoWarning level=0.90 trend=0.00
+11-08 16:03:03.111 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.111 I/Unity   ( 5347): AdaptiveBootstrap:OnThermal(ThermalMetrics)
+11-08 16:03:03.111 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:03:03.111 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:03:03.111 I/Unity   ( 5347):
+11-08 16:03:03.778 I/Unity   ( 5347): Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'DepthOfFieldGaussianPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:03:03.778 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.778 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:03:03.778 I/Unity   ( 5347): UnityEngine.Rendering.Universal.DepthOfFieldGaussianPostProcessPass:.ctor(Shader)
+11-08 16:03:03.778 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:03:03.778 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:03:03.778 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:03:03.778 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:03:03.778 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:03:03.778 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:03:03.778 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:03:03.778 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:03:03.778 I/Unity   ( 5347):
+11-08 16:03:03.779 I/Unity   ( 5347): Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'DepthOfFieldGaussianPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:03:03.779 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.779 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:03:03.779 I/Unity   ( 5347): UnityEngine.Rendering.Universal.DepthOfFieldGaussianPostProcessPass:.ctor(Shader)
+11-08 16:03:03.779 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:03:03.779 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:03:03.779 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:03:03.779 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:03:03.779 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:03:03.779 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:03:03.779 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:03:03.779 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:03:03.779 I/Unity   ( 5347):
+11-08 16:03:03.779 I/Unity   ( 5347): Shader 'Hidden/Universal Render Pipeline/BokehDepthOfField' is not supported or has been stripped from the build (in 'DepthOfFieldBokehPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:03:03.779 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.779 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:03:03.779 I/Unity   ( 5347): UnityEngine.Rendering.Universal.DepthOfFieldBokehPostProcessPass:.ctor(Shader)
+11-08 16:03:03.779 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:03:03.779 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:03:03.779 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:03:03.779 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:03:03.779 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:03:03.779 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:03:03.779 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:03:03.779 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:03:03.779 I/Unity   ( 5347):
+11-08 16:03:03.780 I/Unity   ( 5347): Shader 'Hidden/Universal Render Pipeline/CameraMotionBlur' is not supported or has been stripped from the build (in 'MotionBlurPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:03:03.780 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.780 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:03:03.780 I/Unity   ( 5347): UnityEngine.Rendering.Universal.MotionBlurPostProcessPass:.ctor(Shader)
+11-08 16:03:03.780 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:03:03.780 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:03:03.780 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:03:03.780 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:03:03.780 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:03:03.780 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:03:03.780 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:03:03.780 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:03:03.780 I/Unity   ( 5347):
+11-08 16:03:03.780 I/Unity   ( 5347): Shader 'Hidden/Universal Render Pipeline/PaniniProjection' is not supported or has been stripped from the build (in 'PaniniProjectionPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:03:03.780 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.780 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:03:03.780 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PaniniProjectionPostProcessPass:.ctor(Shader)
+11-08 16:03:03.780 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:03:03.780 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:03:03.780 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:03:03.780 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:03:03.780 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:03:03.780 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:03:03.780 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:03:03.780 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:03:03.780 I/Unity   ( 5347):
+11-08 16:03:03.781 I/Unity   ( 5347): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:03:03.781 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.781 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:03:03.781 I/Unity   ( 5347): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:03:03.781 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:03:03.781 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:03:03.781 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:03:03.781 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:03:03.781 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:03:03.781 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:03:03.781 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:03:03.781 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:03:03.781 I/Unity   ( 5347):
+11-08 16:03:03.782 I/Unity   ( 5347): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:03:03.782 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.782 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:03:03.782 I/Unity   ( 5347): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:03:03.782 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:03:03.782 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:03:03.782 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:03:03.782 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:03:03.782 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:03:03.782 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:03:03.782 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:03:03.782 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:03:03.782 I/Unity   ( 5347):
+11-08 16:03:03.782 I/Unity   ( 5347): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:03:03.782 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.782 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:03:03.782 I/Unity   ( 5347): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:03:03.782 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:03:03.782 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:03:03.782 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:03:03.782 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:03:03.782 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:03:03.782 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:03:03.782 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:03:03.782 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:03:03.782 I/Unity   ( 5347):
+11-08 16:03:03.783 I/Unity   ( 5347): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:03:03.783 I/Unity   ( 5347):
+11-08 16:03:03.783 I/Unity   ( 5347): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:03:03.783 I/Unity   ( 5347):
+11-08 16:03:03.783 I/Unity   ( 5347): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:03:03.783 I/Unity   ( 5347):
+11-08 16:03:03.783 I/Unity   ( 5347): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:03:03.783 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:03:03.783 I/Unity   ( 5347):
+11-08 16:03:03.784 I/Unity   ( 5347): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:03:03.784 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.784 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:03:03.784 I/Unity   ( 5347): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:03:03.784 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:03:03.784 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:03:03.784 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:03:03.784 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:03:03.784 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:03:03.784 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:03:03.784 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:03:03.784 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:03:03.784 I/Unity   ( 5347):
+11-08 16:03:03.784 I/Unity   ( 5347): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:03:03.784 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.784 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:03:03.784 I/Unity   ( 5347): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:03:03.784 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:03:03.784 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:03:03.784 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:03:03.784 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:03:03.784 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:03:03.784 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:03:03.784 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:03:03.784 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:03:03.784 I/Unity   ( 5347):
+11-08 16:03:03.787 I/Unity   ( 5347): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:03:03.787 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.787 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:03:03.787 I/Unity   ( 5347): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:03:03.787 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:03:03.787 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:03:03.787 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:03:03.787 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:03:03.787 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:03:03.787 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:03:03.787 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:03:03.787 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:03:03.787 I/Unity   ( 5347):
+11-08 16:03:03.789 I/Unity   ( 5347): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:03:03.789 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.789 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:03:03.789 I/Unity   ( 5347): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:03:03.789 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:03:03.789 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:03:03.789 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:03:03.789 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:03:03.789 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:03:03.789 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:03:03.789 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:03:03.789 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:03:03.789 I/Unity   ( 5347):
+11-08 16:03:03.789 I/Unity   ( 5347): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:03:03.789 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.789 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:03:03.789 I/Unity   ( 5347): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:03:03.789 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:03:03.789 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:03:03.789 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:03:03.789 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:03:03.789 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:03:03.789 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:03:03.789 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:03:03.789 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:03:03.789 I/Unity   ( 5347):
+11-08 16:03:03.791 I/Unity   ( 5347): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:03:03.791 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.791 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:03:03.791 I/Unity   ( 5347): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:03:03.791 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:03:03.791 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:03:03.791 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:03:03.791 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:03:03.791 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:03:03.791 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:03:03.791 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:03:03.791 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:03:03.791 I/Unity   ( 5347):
+11-08 16:03:03.792 I/Unity   ( 5347): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:03:03.792 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.792 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:03:03.792 I/Unity   ( 5347): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:03:03.792 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:03:03.792 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:03:03.792 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:03:03.792 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:03:03.792 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:03:03.792 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:03:03.792 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:03:03.792 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:03:03.792 I/Unity   ( 5347):
+11-08 16:03:03.792 I/Unity   ( 5347): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:03:03.792 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.792 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:03:03.792 I/Unity   ( 5347): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:03:03.792 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:03:03.792 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:03:03.792 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:03:03.792 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:03:03.792 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:03:03.792 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:03:03.792 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:03:03.792 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:03:03.792 I/Unity   ( 5347):
+11-08 16:03:03.793 I/Unity   ( 5347): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:03:03.793 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.793 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:03:03.793 I/Unity   ( 5347): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:03:03.793 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:03:03.793 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:03:03.793 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:03:03.793 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:03:03.793 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:03:03.793 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:03:03.793 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:03:03.793 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:03:03.793 I/Unity   ( 5347):
+11-08 16:03:03.793 I/Unity   ( 5347): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:03:03.793 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:03.793 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:03:03.793 I/Unity   ( 5347): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:03:03.793 I/Unity   ( 5347): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:03:03.793 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:03:03.793 I/Unity   ( 5347): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:03:03.793 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:03:03.793 I/Unity   ( 5347): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:03:03.793 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:03:03.793 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:03:03.793 I/Unity   ( 5347): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:03:03.793 I/Unity   ( 5347):
+11-08 16:03:04.920 I/Unity   ( 5347): [perf] scene Menu loaded in 2371 ms
+11-08 16:03:04.920 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:04.920 I/Unity   ( 5347): <Load>d__14:MoveNext()
+11-08 16:03:04.920 I/Unity   ( 5347): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-08 16:03:04.920 I/Unity   ( 5347): TMPro.Examples.Benchmark02:.ctor()
+11-08 16:03:04.920 I/Unity   ( 5347): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-08 16:03:04.920 I/Unity   ( 5347):
+11-08 16:03:04.964 I/Unity   ( 5347): [perf] interactive 13.30s
+11-08 16:03:04.964 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:04.964 I/Unity   ( 5347): MenuReady:Update()
+11-08 16:03:04.964 I/Unity   ( 5347):
+11-08 16:03:06.834 I/Unity   ( 5347): [AP] bottleneck=GPU
+11-08 16:03:06.834 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:06.834 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:03:06.834 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:03:06.834 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:03:06.834 I/Unity   ( 5347):
+11-08 16:03:06.978 I/Unity   ( 5347): [AP] bottleneck=TargetFrameRate
+11-08 16:03:06.978 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:06.978 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:03:06.978 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:03:06.978 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:03:06.978 I/Unity   ( 5347):
+11-08 16:03:16.331 I/Unity   ( 5347): [AP] bottleneck=GPU
+11-08 16:03:16.331 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:16.331 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:03:16.331 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:03:16.331 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:03:16.331 I/Unity   ( 5347):
+11-08 16:03:19.646 I/Unity   ( 5347): [AP] bottleneck=Unknown
+11-08 16:03:19.646 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:19.646 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:03:19.646 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:03:19.646 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:03:19.646 I/Unity   ( 5347):
+11-08 16:03:20.897 I/Unity   ( 5347): [AP] bottleneck=GPU
+11-08 16:03:20.897 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:20.897 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:03:20.897 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:03:20.897 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:03:20.897 I/Unity   ( 5347):
+11-08 16:03:21.583 I/Unity   ( 5347): [AP] bottleneck=TargetFrameRate
+11-08 16:03:21.583 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:21.583 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:03:21.583 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:03:21.583 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:03:21.583 I/Unity   ( 5347):
+11-08 16:03:22.319 I/Unity   ( 5347): [AP] bottleneck=GPU
+11-08 16:03:22.319 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:22.319 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:03:22.319 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:03:22.319 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:03:22.319 I/Unity   ( 5347):
+11-08 16:03:24.197 I/Unity   ( 5347): [AP] bottleneck=Unknown
+11-08 16:03:24.197 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:24.197 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:03:24.197 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:03:24.197 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:03:24.197 I/Unity   ( 5347):
+11-08 16:03:24.370 I/Unity   ( 5347): [AP] bottleneck=GPU
+11-08 16:03:24.370 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:24.370 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:03:24.370 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:03:24.370 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:03:24.370 I/Unity   ( 5347):
+11-08 16:03:24.524 I/Unity   ( 5347): [AP] bottleneck=Unknown
+11-08 16:03:24.524 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:24.524 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:03:24.524 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:03:24.524 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:03:24.524 I/Unity   ( 5347):
+11-08 16:03:24.901 I/Unity   ( 5347): [AP] bottleneck=GPU
+11-08 16:03:24.901 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:24.901 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:03:24.901 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:03:24.901 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:03:24.901 I/Unity   ( 5347):
+11-08 16:03:25.199 I/Unity   ( 5347): [AP] bottleneck=Unknown
+11-08 16:03:25.199 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:25.199 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:03:25.199 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:03:25.199 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:03:25.199 I/Unity   ( 5347):
+11-08 16:03:25.212 I/Unity   ( 5347): [AP] bottleneck=GPU
+11-08 16:03:25.212 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:25.212 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:03:25.212 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:03:25.212 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:03:25.212 I/Unity   ( 5347):
+11-08 16:03:29.933 I/Unity   ( 5347): [AP] bottleneck=Unknown
+11-08 16:03:29.933 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:29.933 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:03:29.933 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:03:29.933 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:03:29.933 I/Unity   ( 5347):
+11-08 16:03:33.851 I/Unity   ( 5347): [AP] bottleneck=GPU
+11-08 16:03:33.851 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:33.851 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:03:33.851 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:03:33.851 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:03:33.851 I/Unity   ( 5347):
+11-08 16:03:42.582 I/Unity   ( 5347): [AP] bottleneck=TargetFrameRate
+11-08 16:03:42.582 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:42.582 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:03:42.582 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:03:42.582 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:03:42.582 I/Unity   ( 5347):
+11-08 16:03:44.564 I/Unity   ( 5347): [AP] bottleneck=GPU
+11-08 16:03:44.564 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:44.564 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:03:44.564 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:03:44.564 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:03:44.564 I/Unity   ( 5347):
+11-08 16:03:58.929 I/Unity   ( 5347): [AP] bottleneck=TargetFrameRate
+11-08 16:03:58.929 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:58.929 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:03:58.929 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:03:58.929 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:03:58.929 I/Unity   ( 5347):
+11-08 16:03:59.449 I/Unity   ( 5347): [AP] bottleneck=GPU
+11-08 16:03:59.449 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:03:59.449 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:03:59.449 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:03:59.449 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:03:59.449 I/Unity   ( 5347):
+11-08 16:04:12.191 I/Unity   ( 5347): [AP] bottleneck=TargetFrameRate
+11-08 16:04:12.191 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:12.191 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:04:12.191 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:04:12.191 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:04:12.191 I/Unity   ( 5347):
+11-08 16:04:12.951 I/Unity   ( 5347): [AP] bottleneck=GPU
+11-08 16:04:12.951 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:12.951 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:04:12.951 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:04:12.951 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:04:12.951 I/Unity   ( 5347):
+11-08 16:04:17.444 I/Unity   ( 5347): [AP] bottleneck=TargetFrameRate
+11-08 16:04:17.444 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:17.444 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:04:17.444 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:04:17.444 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:04:17.444 I/Unity   ( 5347):
+11-08 16:04:20.577 I/Unity   ( 5347): [AP] bottleneck=GPU
+11-08 16:04:20.577 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:20.577 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:04:20.577 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:04:20.577 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:04:20.577 I/Unity   ( 5347):
+11-08 16:04:26.110 I/Unity   ( 5347): [AP] bottleneck=TargetFrameRate
+11-08 16:04:26.110 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:26.110 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:04:26.110 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:04:26.110 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:04:26.110 I/Unity   ( 5347):
+11-08 16:04:33.516 I/Unity   ( 5347): [AP] bottleneck=GPU
+11-08 16:04:33.516 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:33.516 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:04:33.516 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:04:33.516 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:04:33.516 I/Unity   ( 5347):
+11-08 16:04:35.578 I/Unity   ( 5347): [AP] bottleneck=TargetFrameRate
+11-08 16:04:35.578 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:35.578 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:04:35.578 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:04:35.578 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:04:35.578 I/Unity   ( 5347):
+11-08 16:04:36.943 I/Unity   ( 5347): [AP] bottleneck=GPU
+11-08 16:04:36.943 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:36.943 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:04:36.943 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:04:36.943 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:04:36.943 I/Unity   ( 5347):
+11-08 16:04:40.213 I/Unity   ( 5347): [AP] bottleneck=TargetFrameRate
+11-08 16:04:40.213 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:40.213 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:04:40.213 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:04:40.213 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:04:40.213 I/Unity   ( 5347):
+11-08 16:04:40.744 I/Unity   ( 5347): [AP] bottleneck=GPU
+11-08 16:04:40.744 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:40.744 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:04:40.744 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:04:40.744 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:04:40.744 I/Unity   ( 5347):
+11-08 16:04:45.779 I/Unity   ( 5347): [AP] bottleneck=TargetFrameRate
+11-08 16:04:45.779 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:45.779 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:04:45.779 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:04:45.779 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:04:45.779 I/Unity   ( 5347):
+11-08 16:04:46.583 I/W08QA   ( 5575): BEGIN_GAMEPLAY
+11-08 16:04:47.232 I/Unity   ( 5347): Start Game clicked
+11-08 16:04:47.232 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:47.232 I/Unity   ( 5347): MainMenuManager:StartGame()
+11-08 16:04:47.232 I/Unity   ( 5347): UnityEngine.Events.UnityEvent:Invoke()
+11-08 16:04:47.232 I/Unity   ( 5347): UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+11-08 16:04:47.232 I/Unity   ( 5347): UnityEngine.InputSystem.UI.InputSystemUIInputModule:ProcessPointerButton(ButtonState&, PointerEventData)
+11-08 16:04:47.232 I/Unity   ( 5347): UnityEngine.InputSystem.UI.InputSystemUIInputModule:ProcessPointer(PointerModel&)
+11-08 16:04:47.232 I/Unity   ( 5347): UnityEngine.InputSystem.UI.InputSystemUIInputModule:Process()
+11-08 16:04:47.232 I/Unity   ( 5347):
+11-08 16:04:47.282 I/Unity   ( 5347): [AP] bottleneck=GPU
+11-08 16:04:47.282 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:47.282 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:04:47.282 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:04:47.282 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:04:47.282 I/Unity   ( 5347):
+11-08 16:04:48.086 I/Unity   ( 5347): [Boot] Google sdk_gphone64_x86_64 | Android OS 16 / API-36 (BE2A.250530.026.D1/13818094) | OpenGLES3 | 1080x2400 @ 420 dpi
+11-08 16:04:48.086 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:48.086 I/Unity   ( 5347): MobileBootstrap:Awake()
+11-08 16:04:48.086 I/Unity   ( 5347):
+11-08 16:04:48.792 I/Unity   ( 5347): [AP] bottleneck=Unknown
+11-08 16:04:48.792 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:48.792 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:04:48.792 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:04:48.792 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:04:48.792 I/Unity   ( 5347):
+11-08 16:04:48.803 I/Unity   ( 5347): [perf] scene Game loaded in 1564 ms
+11-08 16:04:48.803 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:48.803 I/Unity   ( 5347): <Load>d__14:MoveNext()
+11-08 16:04:48.803 I/Unity   ( 5347): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-08 16:04:48.803 I/Unity   ( 5347): TMPro.Examples.Benchmark02:.ctor()
+11-08 16:04:48.803 I/Unity   ( 5347): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-08 16:04:48.803 I/Unity   ( 5347):
+11-08 16:04:48.811 I/Unity   ( 5347): [telemetry] 117.15 26154151 level_start level_id=1 attempt=1 coins=1733
+11-08 16:04:48.811 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:48.811 I/Unity   ( 5347): Telemetry:Log(String, ValueTuple`2[])
+11-08 16:04:48.811 I/Unity   ( 5347): GameManager:BeginRun()
+11-08 16:04:48.811 I/Unity   ( 5347): GameManager:SetState(State)
+11-08 16:04:48.811 I/Unity   ( 5347): <Start>d__17:MoveNext()
+11-08 16:04:48.811 I/Unity   ( 5347): System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+11-08 16:04:48.811 I/Unity   ( 5347): System.Runtime.CompilerServices.MoveNextRunner:Run()
+11-08 16:04:48.811 I/Unity   ( 5347): TMPro.Examples.Benchmark02:.ctor()
+11-08 16:04:48.811 I/Unity   ( 5347): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-08 16:04:48.811 I/Unity   ( 5347):
+11-08 16:04:50.040 I/Unity   ( 5347): [AP] bottleneck=CPU
+11-08 16:04:50.040 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:50.040 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:04:50.040 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:04:50.040 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:04:50.040 I/Unity   ( 5347):
+11-08 16:04:50.291 I/Unity   ( 5347): [AP] bottleneck=Unknown
+11-08 16:04:50.291 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:50.291 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:04:50.291 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:04:50.291 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:04:50.291 I/Unity   ( 5347):
+11-08 16:04:50.622 I/Unity   ( 5347): [AP] bottleneck=GPU
+11-08 16:04:50.622 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:50.622 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:04:50.622 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:04:50.622 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:04:50.622 I/Unity   ( 5347):
+11-08 16:04:51.356 I/Unity   ( 5347): [AP] bottleneck=TargetFrameRate
+11-08 16:04:51.356 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:51.356 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:04:51.356 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:04:51.356 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:04:51.356 I/Unity   ( 5347):
+11-08 16:04:58.026 I/Unity   ( 5347): [AP] bottleneck=GPU
+11-08 16:04:58.026 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:58.026 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:04:58.026 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:04:58.026 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:04:58.026 I/Unity   ( 5347):
+11-08 16:04:59.087 I/Unity   ( 5347): [Baseline] avg 18.86 ms  p99 33.33 ms
+11-08 16:04:59.087 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:59.087 I/Unity   ( 5347): FrameTimeSampler:Update()
+11-08 16:04:59.087 I/Unity   ( 5347):
+11-08 16:04:59.364 I/Unity   ( 5347): [AP] bottleneck=TargetFrameRate
+11-08 16:04:59.364 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:04:59.364 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:04:59.364 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:04:59.364 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:04:59.364 I/Unity   ( 5347):
+11-08 16:05:01.792 I/Unity   ( 5347): [AP] bottleneck=GPU
+11-08 16:05:01.792 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:01.792 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:05:01.792 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:05:01.792 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:05:01.792 I/Unity   ( 5347):
+11-08 16:05:05.115 I/Unity   ( 5347): [AP] bottleneck=Unknown
+11-08 16:05:05.115 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:05.115 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:05:05.115 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:05:05.115 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:05:05.115 I/Unity   ( 5347):
+11-08 16:05:05.795 I/Unity   ( 5347): [AP] bottleneck=CPU
+11-08 16:05:05.795 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:05.795 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:05:05.795 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:05:05.795 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:05:05.795 I/Unity   ( 5347):
+11-08 16:05:08.020 I/Unity   ( 5347): [AP] bottleneck=Unknown
+11-08 16:05:08.020 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:08.020 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:05:08.020 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:05:08.020 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:05:08.020 I/Unity   ( 5347):
+11-08 16:05:08.580 I/Unity   ( 5347): [AP] bottleneck=CPU
+11-08 16:05:08.580 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:08.580 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:05:08.580 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:05:08.580 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:05:08.580 I/Unity   ( 5347):
+11-08 16:05:09.086 I/Unity   ( 5347): [AP] bottleneck=Unknown
+11-08 16:05:09.086 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:09.086 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:05:09.086 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:05:09.086 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:05:09.086 I/Unity   ( 5347):
+11-08 16:05:09.811 I/Unity   ( 5347): [AP] bottleneck=CPU
+11-08 16:05:09.811 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:09.811 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:05:09.811 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:05:09.811 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:05:09.811 I/Unity   ( 5347):
+11-08 16:05:10.561 I/Unity   ( 5347): [AP] bottleneck=Unknown
+11-08 16:05:10.561 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:10.561 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:05:10.561 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:05:10.561 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:05:10.561 I/Unity   ( 5347):
+11-08 16:05:11.260 I/Unity   ( 5347): [AP] bottleneck=GPU
+11-08 16:05:11.260 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:11.260 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:05:11.260 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:05:11.260 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:05:11.260 I/Unity   ( 5347):
+11-08 16:05:12.047 I/Unity   ( 5347): [Baseline] avg 21.61 ms  p99 66.67 ms
+11-08 16:05:12.047 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:12.047 I/Unity   ( 5347): FrameTimeSampler:Update()
+11-08 16:05:12.047 I/Unity   ( 5347):
+11-08 16:05:12.224 I/Unity   ( 5347): [AP] bottleneck=TargetFrameRate
+11-08 16:05:12.224 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:12.224 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:05:12.224 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:05:12.224 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:05:12.224 I/Unity   ( 5347):
+11-08 16:05:22.115 I/Unity   ( 5347): [Baseline] avg 16.78 ms  p99 16.67 ms
+11-08 16:05:22.115 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:22.115 I/Unity   ( 5347): FrameTimeSampler:Update()
+11-08 16:05:22.115 I/Unity   ( 5347):
+11-08 16:05:29.427 I/Unity   ( 5347): [AP] bottleneck=GPU
+11-08 16:05:29.427 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:29.427 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:05:29.427 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:05:29.427 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:05:29.427 I/Unity   ( 5347):
+11-08 16:05:31.059 I/Unity   ( 5347): [AP] bottleneck=TargetFrameRate
+11-08 16:05:31.059 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:31.059 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:05:31.059 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:05:31.059 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:05:31.059 I/Unity   ( 5347):
+11-08 16:05:32.290 I/Unity   ( 5347): [Baseline] avg 16.94 ms  p99 33.33 ms
+11-08 16:05:32.290 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:32.290 I/Unity   ( 5347): FrameTimeSampler:Update()
+11-08 16:05:32.290 I/Unity   ( 5347):
+11-08 16:05:32.691 I/W08QA   ( 5654): BEGIN_OFFLINE
+11-08 16:05:32.928 I/Unity   ( 5347): [AP] bottleneck=GPU
+11-08 16:05:32.928 I/Unity   ( 5347): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:32.928 I/Unity   ( 5347): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:05:32.928 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:05:32.928 I/Unity   ( 5347): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:05:32.928 I/Unity   ( 5347):
+11-08 16:05:39.743 I/Unity   ( 5697): UnityApplication::CreateInstance
+11-08 16:05:39.743 I/Unity   ( 5697): GameActivity Package Version '4.4.0'
+11-08 16:05:39.749 I/Unity   ( 5697): Starting Game Loop
+11-08 16:05:39.781 I/Unity   ( 5697): Handle cmd APP_CMD_START(11)
+11-08 16:05:39.817 I/Unity   ( 5697): Handle cmd APP_CMD_RESUME(12)
+11-08 16:05:39.912 I/Unity   ( 5697): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-08 16:05:39.934 I/Unity   ( 5697): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-08 16:05:39.934 I/Unity   ( 5697): Handle cmd APP_CMD_CONTENT_RECT_CHANGED(5)
+11-08 16:05:39.940 I/Unity   ( 5697): Handle cmd APP_CMD_INIT_WINDOW(1)
+11-08 16:05:40.024 I/Unity   ( 5697): MemoryManager: Using 'Dynamic Heap' Allocator.
+11-08 16:05:40.024 I/Unity   ( 5697): Mimalloc is enabled and will override the Dynamic Heap and Dual Thread (Main and MainThread) allocators.
+11-08 16:05:40.276 I/ActivityTaskManager(  722): Displayed com.ardabecanim.mobilegame/com.unity3d.player.UnityPlayerGameActivity for user 0: +5s883ms
+11-08 16:05:41.240 E/Unity   ( 5697): java.lang.ClassNotFoundException: Didn't find class "com.google.android.play.core.assetpacks.AssetPackManager" on path: DexPathList[[zip file "/data/app/~~ueSAzk2_F1jeQ_pwLYWSMA==/com.ardabecanim.mobilegame-74N-W0i6DPmupnaKrpC58Q==/base.apk"],nativeLibraryDirectories=[/data/app/~~ueSAzk2_F1jeQ_pwLYWSMA==/com.ardabecanim.mobilegame-74N-W0i6DPmupnaKrpC58Q==/lib/arm64, /data/app/~~ueSAzk2_F1jeQ_pwLYWSMA==/com.ardabecanim.mobilegame-74N-W0i6DPmupnaKrpC58Q==/base.apk!/lib/arm64-v8a, /system/lib64, /system_ext/lib64]]
+11-08 16:05:41.266 I/Unity   ( 5697): SystemInfo CPU = x86-64 SSE3 SSE4.1 AVX, Cores = 2, Memory = 2472mb
+11-08 16:05:41.267 I/Unity   ( 5697): SystemInfo ARM big.LITTLE configuration: 2 big (mask: 0x3), 0 little (mask: 0x0)
+11-08 16:05:41.272 I/Unity   ( 5697): ApplicationInfo 'com.ardabecanim.mobilegame', Version '0.8.0', Min API Level '26', Target API Level '36'
+11-08 16:05:41.272 I/Unity   ( 5697): Built from '6000.6/respin/6000.6.0f1-fa21a270ab12' branch, Version '6000.6.0f1 (f7f8ed4d1e24)', Build type 'Release', Scripting Backend 'il2cpp', CPU 'arm64-v8a', Stripping 'Enabled'
+11-08 16:05:41.273 I/Unity   ( 5697): Device Model 'Google sdk_gphone64_x86_64', OS 'Android OS 16 (API 36)'
+11-08 16:05:42.245 I/Unity   ( 5697): Company Name: DefaultCompany
+11-08 16:05:42.245 I/Unity   ( 5697): Product Name: MobileGameProject
+11-08 16:05:44.123 I/Unity   ( 5697):     HasWindow = 1, HasFocus = 0
+11-08 16:05:44.124 I/Unity   ( 5697): Handle cmd APP_CMD_WINDOW_RESIZED(3)
+11-08 16:05:44.125 I/Unity   ( 5697): Handle cmd APP_CMD_WINDOW_REDRAW_NEEDED(4)
+11-08 16:05:44.125 I/Unity   ( 5697): Handle cmd APP_CMD_GAINED_FOCUS(7)
+11-08 16:05:44.125 I/Unity   ( 5697): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-08 16:05:47.789 I/Unity   ( 5697): perf_mode=HighFps high=True targetFrameRate=120 renderScale=0.8
+11-08 16:05:47.789 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:47.789 I/Unity   ( 5697): PerformanceMode:Apply(PerfMode, Boolean)
+11-08 16:05:47.789 I/Unity   ( 5697): PerformanceMode:Awake()
+11-08 16:05:47.789 I/Unity   ( 5697): UnityEngine.GameObject:Internal_AddComponentWithType(Type)
+11-08 16:05:47.789 I/Unity   ( 5697): UnityEngine.GameObject:AddComponent()
+11-08 16:05:47.789 I/Unity   ( 5697): Bootstrap:Awake()
+11-08 16:05:47.789 I/Unity   ( 5697):
+11-08 16:05:47.795 I/Unity   ( 5697): [telemetry] file /storage/emulated/0/Android/data/com.ardabecanim.mobilegame/files/telemetry.log
+11-08 16:05:47.795 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:47.795 I/Unity   ( 5697): Telemetry:StartSession()
+11-08 16:05:47.795 I/Unity   ( 5697): Bootstrap:Awake()
+11-08 16:05:47.795 I/Unity   ( 5697):
+11-08 16:05:47.802 I/Unity   ( 5697): [telemetry] 3.38 6a4085a8 session_start version=0.8.0 build=49ea902f device=Google%20sdk_gphone64_x86_64 app_version=0.8.0 device_model=Google%20sdk_gphone64_x86_64 android=Android%20OS%2016%20%2F%20API-36%20%28BE2A.250530.026.D1%2F13818094%29
+11-08 16:05:47.802 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:47.802 I/Unity   ( 5697): Telemetry:Log(String, ValueTuple`2[])
+11-08 16:05:47.802 I/Unity   ( 5697): Telemetry:StartSession()
+11-08 16:05:47.802 I/Unity   ( 5697): Bootstrap:Awake()
+11-08 16:05:47.802 I/Unity   ( 5697):
+11-08 16:05:48.932 I/Unity   ( 5697): [AP] active warning=NoWarning level=0.90
+11-08 16:05:48.932 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:48.932 I/Unity   ( 5697): AdaptiveBootstrap:Start()
+11-08 16:05:48.932 I/Unity   ( 5697):
+11-08 16:05:49.049 I/Unity   ( 5697): [AP] thermal warning=NoWarning level=0.90 trend=0.00
+11-08 16:05:49.049 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.049 I/Unity   ( 5697): AdaptiveBootstrap:OnThermal(ThermalMetrics)
+11-08 16:05:49.049 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:05:49.049 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:05:49.049 I/Unity   ( 5697):
+11-08 16:05:49.528 I/Unity   ( 5697): Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'DepthOfFieldGaussianPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:05:49.528 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.528 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:05:49.528 I/Unity   ( 5697): UnityEngine.Rendering.Universal.DepthOfFieldGaussianPostProcessPass:.ctor(Shader)
+11-08 16:05:49.528 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:05:49.528 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:05:49.528 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:05:49.528 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:05:49.528 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:05:49.528 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:05:49.528 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:05:49.528 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:05:49.528 I/Unity   ( 5697):
+11-08 16:05:49.529 I/Unity   ( 5697): Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'DepthOfFieldGaussianPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:05:49.529 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.529 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:05:49.529 I/Unity   ( 5697): UnityEngine.Rendering.Universal.DepthOfFieldGaussianPostProcessPass:.ctor(Shader)
+11-08 16:05:49.529 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:05:49.529 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:05:49.529 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:05:49.529 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:05:49.529 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:05:49.529 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:05:49.529 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:05:49.529 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:05:49.529 I/Unity   ( 5697):
+11-08 16:05:49.530 I/Unity   ( 5697): Shader 'Hidden/Universal Render Pipeline/BokehDepthOfField' is not supported or has been stripped from the build (in 'DepthOfFieldBokehPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:05:49.530 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.530 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:05:49.530 I/Unity   ( 5697): UnityEngine.Rendering.Universal.DepthOfFieldBokehPostProcessPass:.ctor(Shader)
+11-08 16:05:49.530 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:05:49.530 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:05:49.530 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:05:49.530 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:05:49.530 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:05:49.530 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:05:49.530 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:05:49.530 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:05:49.530 I/Unity   ( 5697):
+11-08 16:05:49.530 I/Unity   ( 5697): Shader 'Hidden/Universal Render Pipeline/CameraMotionBlur' is not supported or has been stripped from the build (in 'MotionBlurPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:05:49.530 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.530 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:05:49.530 I/Unity   ( 5697): UnityEngine.Rendering.Universal.MotionBlurPostProcessPass:.ctor(Shader)
+11-08 16:05:49.530 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:05:49.530 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:05:49.530 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:05:49.530 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:05:49.530 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:05:49.530 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:05:49.530 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:05:49.530 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:05:49.530 I/Unity   ( 5697):
+11-08 16:05:49.531 I/Unity   ( 5697): Shader 'Hidden/Universal Render Pipeline/PaniniProjection' is not supported or has been stripped from the build (in 'PaniniProjectionPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:05:49.531 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.531 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:05:49.531 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PaniniProjectionPostProcessPass:.ctor(Shader)
+11-08 16:05:49.531 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:05:49.531 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:05:49.531 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:05:49.531 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:05:49.531 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:05:49.531 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:05:49.531 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:05:49.531 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:05:49.531 I/Unity   ( 5697):
+11-08 16:05:49.533 I/Unity   ( 5697): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:05:49.533 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.533 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:05:49.533 I/Unity   ( 5697): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:05:49.533 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:05:49.533 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:05:49.533 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:05:49.533 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:05:49.533 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:05:49.533 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:05:49.533 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:05:49.533 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:05:49.533 I/Unity   ( 5697):
+11-08 16:05:49.533 I/Unity   ( 5697): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:05:49.533 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.533 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:05:49.533 I/Unity   ( 5697): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:05:49.533 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:05:49.533 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:05:49.533 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:05:49.533 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:05:49.533 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:05:49.533 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:05:49.533 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:05:49.533 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:05:49.533 I/Unity   ( 5697):
+11-08 16:05:49.534 I/Unity   ( 5697): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:05:49.534 I/Unity   ( 5697):
+11-08 16:05:49.534 I/Unity   ( 5697): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:05:49.534 I/Unity   ( 5697):
+11-08 16:05:49.534 I/Unity   ( 5697): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:05:49.534 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:05:49.534 I/Unity   ( 5697):
+11-08 16:05:49.535 I/Unity   ( 5697): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:05:49.535 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.535 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:05:49.535 I/Unity   ( 5697): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:05:49.535 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:05:49.535 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:05:49.535 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:05:49.535 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:05:49.535 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:05:49.535 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:05:49.535 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:05:49.535 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:05:49.535 I/Unity   ( 5697):
+11-08 16:05:49.535 I/Unity   ( 5697): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:05:49.535 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.535 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:05:49.535 I/Unity   ( 5697): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:05:49.535 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:05:49.535 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:05:49.535 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:05:49.535 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:05:49.535 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:05:49.535 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:05:49.535 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:05:49.535 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:05:49.535 I/Unity   ( 5697):
+11-08 16:05:49.536 I/Unity   ( 5697): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:05:49.536 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.536 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:05:49.536 I/Unity   ( 5697): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:05:49.536 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:05:49.536 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:05:49.536 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:05:49.536 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:05:49.536 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:05:49.536 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:05:49.536 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:05:49.536 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:05:49.536 I/Unity   ( 5697):
+11-08 16:05:49.536 I/Unity   ( 5697): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:05:49.536 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.536 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:05:49.536 I/Unity   ( 5697): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:05:49.536 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:05:49.536 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:05:49.536 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:05:49.536 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:05:49.536 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:05:49.536 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:05:49.536 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:05:49.536 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:05:49.536 I/Unity   ( 5697):
+11-08 16:05:49.537 I/Unity   ( 5697): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:05:49.537 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.537 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:05:49.537 I/Unity   ( 5697): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:05:49.537 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:05:49.537 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:05:49.537 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:05:49.537 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:05:49.537 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:05:49.537 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:05:49.537 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:05:49.537 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:05:49.537 I/Unity   ( 5697):
+11-08 16:05:49.540 I/Unity   ( 5697): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:05:49.540 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.540 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:05:49.540 I/Unity   ( 5697): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:05:49.540 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:05:49.540 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:05:49.540 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:05:49.540 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:05:49.540 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:05:49.540 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:05:49.540 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:05:49.540 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:05:49.540 I/Unity   ( 5697):
+11-08 16:05:49.541 I/Unity   ( 5697): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:05:49.541 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.541 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:05:49.541 I/Unity   ( 5697): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:05:49.541 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:05:49.541 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:05:49.541 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:05:49.541 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:05:49.541 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:05:49.541 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:05:49.541 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:05:49.541 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:05:49.541 I/Unity   ( 5697):
+11-08 16:05:49.543 I/Unity   ( 5697): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:05:49.543 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.543 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:05:49.543 I/Unity   ( 5697): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:05:49.543 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:05:49.543 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:05:49.543 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:05:49.543 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:05:49.543 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:05:49.543 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:05:49.543 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:05:49.543 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:05:49.543 I/Unity   ( 5697):
+11-08 16:05:49.544 I/Unity   ( 5697): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:05:49.544 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.544 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:05:49.544 I/Unity   ( 5697): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:05:49.544 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:05:49.544 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:05:49.544 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:05:49.544 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:05:49.544 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:05:49.544 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:05:49.544 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:05:49.544 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:05:49.544 I/Unity   ( 5697):
+11-08 16:05:49.544 I/Unity   ( 5697): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:05:49.544 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.544 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:05:49.544 I/Unity   ( 5697): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:05:49.544 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:05:49.544 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:05:49.544 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:05:49.544 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:05:49.544 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:05:49.544 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:05:49.544 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:05:49.544 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:05:49.544 I/Unity   ( 5697):
+11-08 16:05:49.545 I/Unity   ( 5697): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:05:49.545 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.545 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:05:49.545 I/Unity   ( 5697): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:05:49.545 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:05:49.545 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:05:49.545 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:05:49.545 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:05:49.545 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:05:49.545 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:05:49.545 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:05:49.545 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:05:49.545 I/Unity   ( 5697):
+11-08 16:05:49.545 I/Unity   ( 5697): Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'BloomPostProcessPass'). PostProcessing render passes will not execute.
+11-08 16:05:49.545 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:49.545 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-08 16:05:49.545 I/Unity   ( 5697): UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-08 16:05:49.545 I/Unity   ( 5697): UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-08 16:05:49.545 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-08 16:05:49.545 I/Unity   ( 5697): UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-08 16:05:49.545 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-08 16:05:49.545 I/Unity   ( 5697): UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-08 16:05:49.545 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-08 16:05:49.545 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-08 16:05:49.545 I/Unity   ( 5697): UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-08 16:05:49.545 I/Unity   ( 5697):
+11-08 16:05:50.485 I/Unity   ( 5697): [perf] scene Menu loaded in 2264 ms
+11-08 16:05:50.485 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:50.485 I/Unity   ( 5697): <Load>d__14:MoveNext()
+11-08 16:05:50.485 I/Unity   ( 5697): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-08 16:05:50.485 I/Unity   ( 5697): TMPro.Examples.Benchmark02:.ctor()
+11-08 16:05:50.485 I/Unity   ( 5697): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-08 16:05:50.485 I/Unity   ( 5697):
+11-08 16:05:50.520 I/Unity   ( 5697): [perf] interactive 6.10s
+11-08 16:05:50.520 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:50.520 I/Unity   ( 5697): MenuReady:Update()
+11-08 16:05:50.520 I/Unity   ( 5697):
+11-08 16:05:54.963 I/Unity   ( 5697): [AP] bottleneck=GPU
+11-08 16:05:54.963 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:54.963 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:05:54.963 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:05:54.963 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:05:54.963 I/Unity   ( 5697):
+11-08 16:05:59.057 I/Unity   ( 5697): Start Game clicked
+11-08 16:05:59.057 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:59.057 I/Unity   ( 5697): MainMenuManager:StartGame()
+11-08 16:05:59.057 I/Unity   ( 5697): UnityEngine.Events.UnityEvent:Invoke()
+11-08 16:05:59.057 I/Unity   ( 5697): UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+11-08 16:05:59.057 I/Unity   ( 5697): UnityEngine.InputSystem.UI.InputSystemUIInputModule:ProcessPointerButton(ButtonState&, PointerEventData)
+11-08 16:05:59.057 I/Unity   ( 5697): UnityEngine.InputSystem.UI.InputSystemUIInputModule:ProcessPointer(PointerModel&)
+11-08 16:05:59.057 I/Unity   ( 5697): UnityEngine.InputSystem.UI.InputSystemUIInputModule:Process()
+11-08 16:05:59.057 I/Unity   ( 5697):
+11-08 16:05:59.819 I/Unity   ( 5697): [Boot] Google sdk_gphone64_x86_64 | Android OS 16 / API-36 (BE2A.250530.026.D1/13818094) | OpenGLES3 | 1080x2400 @ 420 dpi
+11-08 16:05:59.819 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:05:59.819 I/Unity   ( 5697): MobileBootstrap:Awake()
+11-08 16:05:59.819 I/Unity   ( 5697):
+11-08 16:06:00.550 I/Unity   ( 5697): [perf] scene Game loaded in 1490 ms
+11-08 16:06:00.550 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:06:00.550 I/Unity   ( 5697): <Load>d__14:MoveNext()
+11-08 16:06:00.550 I/Unity   ( 5697): UnityEngine.StateMachineBox`1:DoMoveNext()
+11-08 16:06:00.550 I/Unity   ( 5697): TMPro.Examples.Benchmark02:.ctor()
+11-08 16:06:00.550 I/Unity   ( 5697): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-08 16:06:00.550 I/Unity   ( 5697):
+11-08 16:06:00.559 I/Unity   ( 5697): [telemetry] 16.14 6a4085a8 level_start level_id=1 attempt=1 coins=1953
+11-08 16:06:00.559 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:06:00.559 I/Unity   ( 5697): Telemetry:Log(String, ValueTuple`2[])
+11-08 16:06:00.559 I/Unity   ( 5697): GameManager:BeginRun()
+11-08 16:06:00.559 I/Unity   ( 5697): GameManager:SetState(State)
+11-08 16:06:00.559 I/Unity   ( 5697): <Start>d__17:MoveNext()
+11-08 16:06:00.559 I/Unity   ( 5697): System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+11-08 16:06:00.559 I/Unity   ( 5697): System.Runtime.CompilerServices.MoveNextRunner:Run()
+11-08 16:06:00.559 I/Unity   ( 5697): TMPro.Examples.Benchmark02:.ctor()
+11-08 16:06:00.559 I/Unity   ( 5697): UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-08 16:06:00.559 I/Unity   ( 5697):
+11-08 16:06:07.559 I/Unity   ( 5697): [AP] bottleneck=Unknown
+11-08 16:06:07.559 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:06:07.559 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:06:07.559 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:06:07.559 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:06:07.559 I/Unity   ( 5697):
+11-08 16:06:10.266 I/Unity   ( 5697): [AP] bottleneck=CPU
+11-08 16:06:10.266 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:06:10.266 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:06:10.266 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:06:10.266 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:06:10.266 I/Unity   ( 5697):
+11-08 16:06:13.934 I/W08QA   ( 5984): END_OFFLINE
+11-08 16:06:14.103 I/W08QA   ( 5986): BEGIN_ROTATION
+11-08 16:06:15.693 I/Unity   ( 5697): [AP] bottleneck=Unknown
+11-08 16:06:15.693 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:06:15.693 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:06:15.693 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:06:15.693 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:06:15.693 I/Unity   ( 5697):
+11-08 16:06:16.204 I/Unity   ( 5697): [Baseline] avg 27.97 ms  p99 100.00 ms
+11-08 16:06:16.204 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:06:16.204 I/Unity   ( 5697): FrameTimeSampler:Update()
+11-08 16:06:16.204 I/Unity   ( 5697):
+11-08 16:06:16.601 I/Unity   ( 5697): [AP] bottleneck=GPU
+11-08 16:06:16.601 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:06:16.601 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:06:16.601 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:06:16.601 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:06:16.601 I/Unity   ( 5697):
+11-08 16:06:18.237 I/W08QA   ( 6004): END_ROTATION
+11-08 16:06:19.265 I/Unity   ( 5697): [AP] bottleneck=Unknown
+11-08 16:06:19.265 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:06:19.265 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:06:19.265 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:06:19.265 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:06:19.265 I/Unity   ( 5697):
+11-08 16:06:21.398 I/Unity   ( 5697): [AP] bottleneck=CPU
+11-08 16:06:21.398 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:06:21.398 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:06:21.398 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:06:21.398 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:06:21.398 I/Unity   ( 5697):
+11-08 16:06:33.571 I/Unity   ( 5697): [AP] bottleneck=Unknown
+11-08 16:06:33.571 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:06:33.571 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:06:33.571 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:06:33.571 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:06:33.571 I/Unity   ( 5697):
+11-08 16:06:36.520 I/Unity   ( 5697): [Baseline] avg 33.89 ms  p99 133.33 ms
+11-08 16:06:36.520 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:06:36.520 I/Unity   ( 5697): FrameTimeSampler:Update()
+11-08 16:06:36.520 I/Unity   ( 5697):
+11-08 16:06:37.283 I/Unity   ( 5697): [AP] bottleneck=GPU
+11-08 16:06:37.283 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:06:37.283 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:06:37.283 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:06:37.283 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:06:37.283 I/Unity   ( 5697):
+11-08 16:06:37.668 I/Unity   ( 5697): [AP] bottleneck=Unknown
+11-08 16:06:37.668 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:06:37.668 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:06:37.668 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:06:37.668 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:06:37.668 I/Unity   ( 5697):
+11-08 16:06:39.250 I/W08QA   ( 6161): BEGIN_RESUME
+11-08 16:06:40.427 I/Unity   ( 5697): Handle cmd APP_CMD_PAUSE(14)
+11-08 16:06:40.613 I/Unity   ( 5697): Game state changed to: Paused
+11-08 16:06:40.613 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:06:40.613 I/Unity   ( 5697): GameManager:SetState(State)
+11-08 16:06:40.613 I/Unity   ( 5697):
+11-08 16:06:40.748 I/Unity   ( 5697): Handle cmd APP_CMD_LOST_FOCUS(8)
+11-08 16:06:41.695 I/Unity   ( 5697): Handle cmd APP_CMD_TERM_WINDOW(2)
+11-08 16:06:41.866 I/Unity   ( 5697): Handle cmd APP_CMD_LOW_MEMORY(10)
+11-08 16:06:41.869 I/Unity   ( 5697): Handle cmd APP_CMD_STOP(15)
+11-08 16:06:41.874 I/Unity   ( 5697): Handle cmd APP_CMD_SAVE_STATE(13)
+11-08 16:07:10.923 I/Unity   ( 5697): Handle cmd APP_CMD_START(11)
+11-08 16:07:11.017 I/Unity   ( 5697): Handle cmd APP_CMD_RESUME(12)
+11-08 16:07:11.096 I/Unity   ( 5697): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-08 16:07:11.108 I/Unity   ( 5697): Handle cmd APP_CMD_INIT_WINDOW(1)
+11-08 16:07:11.431 I/Unity   ( 5697):     HasWindow = 1, HasFocus = 0
+11-08 16:07:11.432 I/Unity   ( 5697): Handle cmd APP_CMD_WINDOW_REDRAW_NEEDED(4)
+11-08 16:07:11.563 I/Unity   ( 5697): Handle cmd APP_CMD_GAINED_FOCUS(7)
+11-08 16:07:12.635 I/Unity   ( 5697): [AP] thermal warning=NoWarning level=0.90 trend=0.00
+11-08 16:07:12.635 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:12.635 I/Unity   ( 5697): AdaptiveBootstrap:OnThermal(ThermalMetrics)
+11-08 16:07:12.635 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:07:12.635 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:07:12.635 I/Unity   ( 5697):
+11-08 16:07:15.025 I/Unity   ( 5697): [AP] bottleneck=CPU
+11-08 16:07:15.025 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:15.025 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:07:15.025 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:07:15.025 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:07:15.025 I/Unity   ( 5697):
+11-08 16:07:15.040 I/Unity   ( 5697): [AP] bottleneck=Unknown
+11-08 16:07:15.040 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:15.040 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:07:15.040 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:07:15.040 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:07:15.040 I/Unity   ( 5697):
+11-08 16:07:17.319 I/W08QA   ( 6186): END_RESUME
+11-08 16:07:20.332 I/Unity   ( 5697): [AP] bottleneck=GPU
+11-08 16:07:20.332 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:20.332 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:07:20.332 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:07:20.332 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:07:20.332 I/Unity   ( 5697):
+11-08 16:07:22.380 I/Unity   ( 5697): [Baseline] avg 76.49 ms  p99 66.67 ms
+11-08 16:07:22.380 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:22.380 I/Unity   ( 5697): FrameTimeSampler:Update()
+11-08 16:07:22.380 I/Unity   ( 5697):
+11-08 16:07:22.704 I/Unity   ( 5697): [AP] bottleneck=Unknown
+11-08 16:07:22.704 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:22.704 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:07:22.704 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:07:22.704 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:07:22.704 I/Unity   ( 5697):
+11-08 16:07:25.347 I/Unity   ( 5697): [AP] bottleneck=GPU
+11-08 16:07:25.347 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:25.347 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:07:25.347 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:07:25.347 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:07:25.347 I/Unity   ( 5697):
+11-08 16:07:27.449 I/Unity   ( 5697): [AP] bottleneck=Unknown
+11-08 16:07:27.449 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:27.449 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:07:27.449 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:07:27.449 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:07:27.449 I/Unity   ( 5697):
+11-08 16:07:33.514 I/Unity   ( 5697): [Baseline] avg 18.58 ms  p99 33.33 ms
+11-08 16:07:33.514 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:33.514 I/Unity   ( 5697): FrameTimeSampler:Update()
+11-08 16:07:33.514 I/Unity   ( 5697):
+11-08 16:07:33.711 I/Unity   ( 5697): [AP] bottleneck=TargetFrameRate
+11-08 16:07:33.711 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:33.711 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:07:33.711 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:07:33.711 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:07:33.711 I/Unity   ( 5697):
+11-08 16:07:34.018 I/Unity   ( 5697): [AP] bottleneck=Unknown
+11-08 16:07:34.018 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:34.018 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:07:34.018 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:07:34.018 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:07:34.018 I/Unity   ( 5697):
+11-08 16:07:37.311 I/Unity   ( 5697): [AP] bottleneck=GPU
+11-08 16:07:37.311 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:37.311 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:07:37.311 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:07:37.311 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:07:37.311 I/Unity   ( 5697):
+11-08 16:07:38.731 I/Unity   ( 5697): [AP] bottleneck=TargetFrameRate
+11-08 16:07:38.731 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:38.731 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:07:38.731 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:07:38.731 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:07:38.731 I/Unity   ( 5697):
+11-08 16:07:40.133 I/Unity   ( 5697): [AP] bottleneck=GPU
+11-08 16:07:40.133 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:40.133 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:07:40.133 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:07:40.133 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:07:40.133 I/Unity   ( 5697):
+11-08 16:07:44.517 I/Unity   ( 5697): [Baseline] avg 18.33 ms  p99 50.00 ms
+11-08 16:07:44.517 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:44.517 I/Unity   ( 5697): FrameTimeSampler:Update()
+11-08 16:07:44.517 I/Unity   ( 5697):
+11-08 16:07:44.764 I/Unity   ( 5697): [AP] bottleneck=TargetFrameRate
+11-08 16:07:44.764 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:44.764 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:07:44.764 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:07:44.764 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:07:44.764 I/Unity   ( 5697):
+11-08 16:07:47.181 I/Unity   ( 5697): [AP] bottleneck=GPU
+11-08 16:07:47.181 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:47.181 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:07:47.181 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:07:47.181 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:07:47.181 I/Unity   ( 5697):
+11-08 16:07:48.998 I/Unity   ( 5697): Game state changed to: Playing
+11-08 16:07:48.998 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:48.998 I/Unity   ( 5697): GameManager:SetState(State)
+11-08 16:07:48.998 I/Unity   ( 5697): UnityEngine.Events.UnityEvent:Invoke()
+11-08 16:07:48.998 I/Unity   ( 5697): UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+11-08 16:07:48.998 I/Unity   ( 5697): UnityEngine.InputSystem.UI.InputSystemUIInputModule:ProcessPointerButton(ButtonState&, PointerEventData)
+11-08 16:07:48.998 I/Unity   ( 5697): UnityEngine.InputSystem.UI.InputSystemUIInputModule:ProcessPointer(PointerModel&)
+11-08 16:07:48.998 I/Unity   ( 5697): UnityEngine.InputSystem.UI.InputSystemUIInputModule:Process()
+11-08 16:07:48.998 I/Unity   ( 5697):
+11-08 16:07:49.439 I/Unity   ( 5697): [AP] bottleneck=Unknown
+11-08 16:07:49.439 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:49.439 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:07:49.439 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:07:49.439 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:07:49.439 I/Unity   ( 5697):
+11-08 16:07:50.963 I/Unity   ( 5697): [AP] bottleneck=GPU
+11-08 16:07:50.963 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:50.963 I/Unity   ( 5697): AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-08 16:07:50.963 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:07:50.963 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:07:50.963 I/Unity   ( 5697):
+11-08 16:07:52.668 I/W08QA   ( 6205): BEGIN_TRIM
+11-08 16:07:52.853 I/Unity   ( 5697): Handle cmd APP_CMD_LOW_MEMORY(10)
+11-08 16:07:53.203 I/Unity   ( 5697): Handle cmd APP_CMD_PAUSE(14)
+11-08 16:07:53.277 I/Unity   ( 5697): Game state changed to: Paused
+11-08 16:07:53.277 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:53.277 I/Unity   ( 5697): GameManager:SetState(State)
+11-08 16:07:53.277 I/Unity   ( 5697):
+11-08 16:07:53.339 I/Unity   ( 5697): Handle cmd APP_CMD_LOST_FOCUS(8)
+11-08 16:07:54.490 I/Unity   ( 5697): Handle cmd APP_CMD_TERM_WINDOW(2)
+11-08 16:07:54.815 I/Unity   ( 5697): Handle cmd APP_CMD_LOW_MEMORY(10)
+11-08 16:07:54.816 I/Unity   ( 5697): Handle cmd APP_CMD_STOP(15)
+11-08 16:07:54.821 I/Unity   ( 5697): Handle cmd APP_CMD_SAVE_STATE(13)
+11-08 16:07:56.227 I/Unity   ( 5697): Handle cmd APP_CMD_START(11)
+11-08 16:07:56.237 I/Unity   ( 5697): Handle cmd APP_CMD_RESUME(12)
+11-08 16:07:56.252 I/Unity   ( 5697): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-08 16:07:56.263 I/Unity   ( 5697): Handle cmd APP_CMD_INIT_WINDOW(1)
+11-08 16:07:56.898 I/Unity   ( 5697):     HasWindow = 1, HasFocus = 0
+11-08 16:07:56.898 I/Unity   ( 5697): Handle cmd APP_CMD_WINDOW_REDRAW_NEEDED(4)
+11-08 16:07:57.048 I/Unity   ( 5697): Handle cmd APP_CMD_GAINED_FOCUS(7)
+11-08 16:07:57.197 I/Unity   ( 5697): [AP] thermal warning=NoWarning level=0.90 trend=0.00
+11-08 16:07:57.197 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:57.197 I/Unity   ( 5697): AdaptiveBootstrap:OnThermal(ThermalMetrics)
+11-08 16:07:57.197 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-08 16:07:57.197 I/Unity   ( 5697): UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-08 16:07:57.197 I/Unity   ( 5697):
+11-08 16:07:59.867 I/Unity   ( 5697): [Baseline] avg 25.57 ms  p99 66.67 ms
+11-08 16:07:59.867 I/Unity   ( 5697): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-08 16:07:59.867 I/Unity   ( 5697): FrameTimeSampler:Update()
+11-08 16:07:59.867 I/Unity   ( 5697):
+11-08 16:08:00.863 I/W08QA   ( 6229): END_TRIM

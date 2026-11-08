@@ -483,3 +483,9 @@ The project owner flagged the title-screen coin purchase button and said the cur
 Two peers tested build 49ea902f on Lenovo devices. Both installed it on their first attempt and played for approximately 2–3 minutes. The owner confirmed consent to anonymous use. Google Forms confirmed both proxy submissions. P1 found the game too easy and P2 requested Restart in the Pause menu. Unreported ratings were left blank. The synthetic smoke response remains excluded from peer counts.
 
 Closed Week 8 Lab A within the agreed scope. Both peer sessions used Lenovo TB361FU tablets with 7807 MB RAM as reported by the owner. The device matrix records the two submitted responses. Reciprocal build testing and the Moodle exit ticket were outside the agreed scope.
+
+### Week 8 Lab B — initial Android QA and music controls (8 November 2026)
+
+Tested signed release 0.8.0 build 49ea902f on the Pixel 8 emulator. Recorded launch timings and an early arena PSS sample in the CA2 baseline. Offline launch and the in-game airplane-mode transition passed. A landscape request preserved the portrait HUD. One 30-second Home cycle resumed the arena, and a short memory-trim return reached the pause menu. Filed the repeatable Play Asset Delivery class lookup error. The raw emulator capture stays local, and the QA folder contains the relevant Logcat excerpt and screenshots.
+
+Added a persistent soundtrack toggle and volume slider to the title menu and Pause Settings. Unity C# compilation passed. Play Mode audio interaction and a new Android build were not verified in this checkpoint.

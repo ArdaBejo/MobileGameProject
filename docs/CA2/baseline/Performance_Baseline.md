@@ -80,3 +80,19 @@ Android smoke check (3 November): Unity successfully built and ADB installed the
 The resumed run lasted 600.08 s by the host timeline (19:52:09.311–20:02:09.393 Dublin, 3 November 2026). The earlier interrupted run is excluded. Repeated arena attempts included Result and loading intervals, so this is not an uninterrupted fixed-route gameplay trial. Minute 5 image finished writing about 12 s after its trigger; the minute 10 image shows the actual loading transition. The separate post-soak screenshot (file written 20:02:57) shows NoWarning, level 0.90 and trend 0.00 in the next arena. The original pre-launch battery reading was also 25.0 °C at 19:29:26.283; the comparison uses the more recent near-start reading.
 
 Raw Android Player Profiler captures and frame-time CSVs are in the [evidence folder](thermal-soak/). Each recording was enabled for approximately 60 seconds; the exported frame durations cover 55.38 s before and 52.57 s after. Mean is arithmetic; p99 is nearest rank and equals the maximum in these small samples. These are real recorded frames, but the emulator was very slow with the Development build and attached Profiler, and host workload was uncontrolled. The difference does not establish a thermal regression or a usable sustained FPS budget. Repeat under stable host load with a repeatable gameplay route before using these figures for tuning. Moodle exit ticket not submitted.
+
+## Week 8 Lab B: Release startup and memory
+
+8 November 2026, Pixel 8 Android 16 emulator. Signed ARM64 IL2CPP build 0.8.0 (5), ID 49ea902f.
+
+| Metric | Measured |
+| --- | --- |
+| Android cold launch TotalTime | 1048 ms for the marked run |
+| Home relaunch TotalTime | 193 ms, classified HOT by Android with the original process retained |
+| Menu interactive | 13.30 s Unity process uptime |
+| Menu to arena scene load | 1564 ms |
+| Early arena TOTAL PSS | 420086 KiB (about 410 MiB), sampled about 13 seconds after arena load |
+| PSS after five minutes of play | Pending |
+| 60-second frame-time stability | Pending |
+
+The early memory sample is a smoke reading. The full run and evidence are tracked in the [Week 8 Lab B test plan](../../CA3/qa/test-plan.md).
