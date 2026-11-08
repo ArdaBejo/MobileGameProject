@@ -481,3 +481,5 @@ The project owner reported that P1 installed and launched build 49ea902f on Andr
 The project owner flagged the title-screen coin purchase button and said the current game felt too easy. Removed the purchase button from Menu and added Restart to the in-game Pause panel using the existing asynchronous scene loader. The difficulty observation is recorded as owner feedback. Reciprocal build testing and the Moodle exit ticket were omitted at the owner's request.
 
 Two peers tested build 49ea902f on Lenovo devices. Both installed it on their first attempt and played for approximately 2–3 minutes. The owner confirmed consent to anonymous use. Google Forms confirmed both proxy submissions. P1 found the game too easy and P2 requested Restart in the Pause menu. Unreported ratings were left blank. The synthetic smoke response remains excluded from peer counts.
+
+Closed Week 8 Lab A within the agreed scope. Both peer sessions used Lenovo TB361FU tablets with 7807 MB RAM as reported by the owner. The device matrix records the two submitted responses. Reciprocal build testing and the Moodle exit ticket were outside the agreed scope.
