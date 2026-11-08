@@ -5,7 +5,6 @@ public class PauseSettingsNavigation : MonoBehaviour
     public GameObject pausePanel;
     public GameObject settingsPanel;
     BuildStamp about;
-    MusicSettings music;
 
     void Awake()
     {
@@ -21,15 +20,13 @@ public class PauseSettingsNavigation : MonoBehaviour
         if (settingsPanel != null)
         {
             about = BuildStamp.Create(transform);
-            music = MusicSettings.Create(transform);
+            MusicSettings.AddTo(settingsPanel.transform);
             GreyboxUI.Button(settingsPanel.transform, "About", new Vector2(0.5f, 0.5f),
-                new Vector2(-160, -437), about.Open, 24);
-            GreyboxUI.Button(settingsPanel.transform, "Music", new Vector2(0.5f, 0.5f),
-                new Vector2(160, -437), music.Open, 24);
+                new Vector2(0, -540), about.Open, 24);
         }
     }
 
-    public bool TryCloseSettingsOverlay() => music?.TryClose() == true || about?.TryClose() == true;
+    public bool TryCloseSettingsOverlay() => about?.TryClose() == true;
 
     public void ShowPauseState(bool paused)
     {
