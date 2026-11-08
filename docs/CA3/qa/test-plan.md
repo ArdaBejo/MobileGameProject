@@ -17,3 +17,5 @@
 ## Battery Saver retest
 
 Android QA build 0cdfdb9f, v0.8.0 (code 5), ARM64 IL2CPP, separate QA package and signing key. On the Pixel 8 emulator, enabled High FPS, entered the arena and toggled Android Battery Saver on and off. The app target changed 120 → 60 → 120 in one process, retaining the High FPS preference and 0.8 render scale. The overlay displayed [Battery Saver on](screens/qa-saver-on.png) and then [High FPS restored](screens/qa-saver-off-after.png). The [filtered retest Logcat](qa-battery-logcat.txt) records all three settings. This was a targeted transition retest. The 60-second baseline capture remains attached to the original release.
+
+Week 8 Lab B is closed with Android emulator evidence. The agreed scope excludes physical-device testing and Moodle submission.

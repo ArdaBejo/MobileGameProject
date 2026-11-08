@@ -497,3 +497,5 @@ The original 49ea902f release passed offline and portrait-lock checks, ten 30-se
 Moved Music controls into the Pause Settings panel and tuned early waves after peer feedback. These source changes are newer than the original release evidence.
 
 Battery Saver fix verified on local Android QA build 0cdfdb9f. Toggling Android Saver changed the game target 120 → 60 → 120 in the same arena and changed the overlay label. The original signed peer release remains the source of the baseline and initial failure. The QA build also confirmed that the Music controls appear within Pause Settings and accept toggle and slider input. Music Off and volume 80% remained visible after force-stop and relaunch. The slider handle height was corrected after this capture and passed Android C# compilation.
+
+Week 8 Lab B is closed with Android emulator evidence. The agreed scope excludes physical-device testing and Moodle submission.
