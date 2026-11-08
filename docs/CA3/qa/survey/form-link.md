@@ -1,6 +1,6 @@
 # No Stars Remain closed test, build 0.8.0
 
-Status: Google Forms published, responder access set to anyone with the link, email collection off, and sign-in restriction off. Verified the responder screen and all question types. The live responder link is stored locally in the ignored Assets/Resources/PeerFeedbackUrl.txt and must be shared only with the closed test. The editor URL is never distributed.
+Status: Google Forms published, responder access set to anyone with the link, email collection off, and sign-in restriction off. Verified the responder screen and all question types. The signed-out responder page returned HTTP 200 and exposed the consent and free-text fix questions. Android submission and removal of a marked smoke response remain pending. The live responder link is stored locally in the ignored Assets/Resources/PeerFeedbackUrl.txt and must be shared only with the closed test. The editor URL is never distributed.
 
 The form must accept anonymous responses without collecting names or emails. Validate the respondent page while signed out and on an Android test device. Use a marked smoke response, remove it before peer collection, and record both checks.
 

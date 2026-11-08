@@ -2,7 +2,7 @@
 
 | Phone / test target | SoC | RAM | Android | Panel Hz | Tier | Owner | Builds tested |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Android Emulator, Pixel 8 profile | Virtual x86-64 host CPU | Verify in About | 16 / API 36 | 60 virtual | N/A (emulator) | Self | 0.8.0 pending |
+| Android Emulator, Pixel 8 profile | Virtual x86-64 host CPU | Unverified | 16 / API 36 | 60 virtual | N/A (emulator) | Self | 0.8.0 installed. Startup showed a Unity Graphics API error. |
 | Peer 1 | Pending | Pending | Pending | Pending | Pending | Anonymous P1 | Pending |
 | Peer 2 | Pending | Pending | Pending | Pending | Pending | Anonymous P2 | Pending |
 
