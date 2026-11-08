@@ -4,7 +4,7 @@
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Android Emulator, Pixel 8 profile | Virtual x86-64 host CPU | Unverified | 16 / API 36 | 60 virtual | N/A (emulator) | Self | 0.8.0 installed. Startup showed a Unity Graphics API error. |
 | Lenovo TB361FU | MediaTek Dimensity 6400 | 7807 MB (reported) | 16 / API 36 | 90 (rated) | Mid (estimated) | Anonymous P1 | 0.8.0 installed and launched (owner report) |
-| Lenovo TB361FU | MediaTek Dimensity 6400 | 7807 MB (reported) | Not reported | 90 (rated) | Mid (estimated) | Anonymous P2 | 0.8.0 tested (owner report) |
+| Lenovo TB361FU | MediaTek Dimensity 6400 | 7807 MB (reported) | 16 / API 36 (assumed from P1) | 90 (rated) | Mid (estimated) | Anonymous P2 | 0.8.0 tested (owner report) |
 
 The owner confirmed both peers used the same Lenovo model and reported 7807 MB of RAM for both. SoC and rated refresh rate come from [Lenovo PSREF](https://psref.lenovo.com/syspool/Sys/PDF/Lenovo_Tablets/Idea_Tab_Plus/Idea_Tab_Plus_Spec.PDF). The Mid tier is a project estimate based on the SoC.
 
