@@ -8,10 +8,12 @@
 - Observed — Unity logged `java.lang.ClassNotFoundException: Didn't find class "com.google.android.play.core.assetpacks.AssetPackManager"`. The same release subsequently reached the menu and arena. Player impact beyond the logged error is unconfirmed.
 - Evidence — [Week 8 Lab B Logcat excerpt](docs/CA3/qa/logcat-w08-testplan.txt), lines at 16:02:48.145 and 16:05:41.240 in the emulator clock.
 
-## Battery Saver leaves High FPS enabled
+## Battery Saver leaves High FPS enabled in release 49ea902f
 
 - Build and device — v0.8.0 (code 5), ID 49ea902f. Pixel 8 Android Emulator, Android 16 / API 36.
 - Repro — leave High FPS enabled, enable Android Battery Saver, confirm that Android reports it on, then enter the arena.
 - Expected — the FPS cap and overlay reflect Battery Saver.
 - Observed — the overlay still reported High FPS, target 120, render scale 0.8. Gameplay continued. A physical-device check is pending.
 - Evidence — [Android Battery Saver state](docs/CA3/qa/battery-state.txt) and [arena overlay](docs/CA3/qa/screens/battery-end.png).
+
+- Fix and verification — the game now reads Android PowerManager Battery Saver state. QA build 0cdfdb9f switched 120 → 60 → 120 when Saver was toggled. See the [retest Logcat](docs/CA3/qa/qa-battery-logcat.txt).

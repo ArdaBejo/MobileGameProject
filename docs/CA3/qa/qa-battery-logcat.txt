@@ -1,0 +1,6 @@
+11-08 16:58:40.515 I/Unity   ( 8163): perf_mode=Balanced high=False batterySaver=False targetFrameRate=60 renderScale=1.0
+11-08 16:58:40.532 I/Unity   ( 8163): [telemetry] 2.87 ac3d07df session_start version=0.8.0 build=0cdfdb9f device=Google%20sdk_gphone64_x86_64 app_version=0.8.0 device_model=Google%20sdk_gphone64_x86_64 android=Android%20OS%2016%20%2F%20API-36%20%28BE2A.250530.026.D1%2F13818094%29
+11-08 16:59:12.374 I/Unity   ( 8163): [telemetry] 34.73 ac3d07df level_start level_id=1 attempt=1 coins=0
+11-08 16:59:51.153 I/Unity   ( 8163): perf_mode=HighFps high=True batterySaver=False targetFrameRate=120 renderScale=0.8
+11-08 16:59:58.782 I/Unity   ( 8163): perf_mode=HighFps high=True batterySaver=True targetFrameRate=60 renderScale=0.8
+11-08 17:00:04.773 I/Unity   ( 8163): perf_mode=HighFps high=True batterySaver=False targetFrameRate=120 renderScale=0.8
