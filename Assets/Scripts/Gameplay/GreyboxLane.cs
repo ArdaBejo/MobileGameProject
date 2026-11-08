@@ -24,8 +24,8 @@ public class GreyboxLane : MonoBehaviour
     public bool Playing => Player != null && manager.CurrentState == GameManager.State.Playing && !LifecycleGuard.IsPaused && !finished
         && (SceneLoader.Instance == null || !SceneLoader.Instance.IsLoading);
     public int Wave => Mathf.Min(3, 1 + Mathf.FloorToInt(elapsed / 40f));
-    public float SpawnInterval => Wave == 1 ? 2f : Wave == 2 ? 1.35f : 0.85f;
-    public float EnemySpeed => Wave == 1 ? 1f : Wave == 2 ? 1.25f : 1.5f;
+    public float SpawnInterval => Wave == 1 ? 1.75f : Wave == 2 ? 1.23f : 0.8f;
+    public float EnemySpeed => Wave == 1 ? 1.08f : Wave == 2 ? 1.3f : 1.5f;
 
     Sprite square;
     Material spriteMaterial;
