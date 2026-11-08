@@ -108,3 +108,6 @@ InitTestScene*.unity*
 .utmp/
 *.keystore
 *.jks
+/Assets/Resources/PeerFeedbackUrl.txt
+/Assets/Resources/PeerFeedbackUrl.txt.meta
+/docs/CA3/qa/qr-*.png
