@@ -10,6 +10,7 @@ public static class Telemetry
     static string session;
     static string filePath;
     static bool sessionStarted;
+    static bool sessionEnded;
 
     public static string SessionId => session ??= Guid.NewGuid().ToString("N").Substring(0, 8);
     public static string FilePath => filePath ??= Path.Combine(Application.persistentDataPath, "telemetry.log");
@@ -21,6 +22,7 @@ public static class Telemetry
         session = null;
         filePath = null;
         sessionStarted = false;
+        sessionEnded = false;
     }
 
     public static void StartSession()
@@ -28,8 +30,16 @@ public static class Telemetry
         if (sessionStarted) return;
         sessionStarted = true;
         Debug.Log($"[telemetry] file {FilePath}");
-        Log("session_start", ("app_version", Application.version),
+        Log("session_start", ("version", Application.version), ("build", BuildStamp.Id),
+            ("device", SystemInfo.deviceModel), ("app_version", Application.version),
             ("device_model", SystemInfo.deviceModel), ("android", SystemInfo.operatingSystem));
+    }
+
+    public static void EndSession()
+    {
+        if (!sessionStarted || sessionEnded) return;
+        sessionEnded = true;
+        Log("session_end", ("reason", "application_quit"));
     }
 
     public static void Log(string eventName, params (string k, object v)[] parameters)

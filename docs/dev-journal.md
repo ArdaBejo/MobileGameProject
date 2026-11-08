@@ -465,3 +465,7 @@ Grouped root scripts under Core, Gameplay, UI, Accessibility, Audio and Performa
 ### Week 7 Lab B — resumed emulator soak recorded (3 November 2026)
 
 Completed a new 600.08-second Balanced emulator window with automated Retry, after excluding the interrupted attempt. Saved logcat, battery readings, timed screenshots and both Android Player Profiler captures. Virtual battery stayed at 25.0 °C (delta 0.0 °C); AP reported NoWarning, maximum normalized level 0.90. The minute 10 screenshot landed on loading; the later arena overlay is stored separately. Before p99 was 5394.11 ms (18 frames); after p99 was 14207.69 ms (10 frames). Tiny samples, profiler overhead, scene transitions and concurrent host workload prevent a reliable sustained budget. Next change: repeat on a quiet host using a consistent arena route before adjusting Balanced settings. Moodle exit ticket remains pending.
+
+### Week 8 Lab A — peer release preparation (8 November 2026)
+
+Prepared version 0.8.0 / Android version code 5, with an About panel on the title screen and under Pause Settings. About and session_start share the Unity build GUID prefix. A normal Unity quit can log session_end; missing end events are not proof of a crash. Added a signed ARM64 release build command that requires the responder URL and existing signing credentials in the Editor. The QA matrix and survey plan distinguish the emulator from real peer phones. Async Pack 3 requires at least 10 real responses, an anonymous CSV and 5–8 evidence-based insights by 29 November 2026; those results are not yet available.

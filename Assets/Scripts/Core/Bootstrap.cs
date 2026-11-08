@@ -12,4 +12,6 @@ public class Bootstrap : MonoBehaviour
     }
 
     async Awaitable Start() => await SceneLoader.Instance.Load("Menu", Application.exitCancellationToken);
+
+    void OnApplicationQuit() => Telemetry.EndSession();
 }

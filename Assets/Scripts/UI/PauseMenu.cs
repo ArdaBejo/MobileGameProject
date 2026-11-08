@@ -32,6 +32,7 @@ public class PauseMenu : MonoBehaviour
         var kb = Keyboard.current;
         if (kb == null || !kb.escapeKey.wasPressedThisFrame) return;
 
+        if (guard.GetComponent<PauseSettingsNavigation>()?.TryCloseAbout() == true) return;
         guard.SetPaused(!LifecycleGuard.IsPaused);
     }
 
