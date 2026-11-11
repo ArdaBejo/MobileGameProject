@@ -1,0 +1,6 @@
+11-11 18:05:33.246  8369  8425 I Unity   : Handle cmd APP_CMD_RESUME(12)
+11-11 18:05:41.366  8369  8425 I Unity   : tier=Low
+11-11 18:05:41.419  8369  8425 I Unity   : [telemetry] 3.63 05a18445 session_start version=0.8.0 build=620b79a5 device=Google%20sdk_gphone64_x86_64 app_version=0.8.0 device_model=Google%20sdk_gphone64_x86_64 android=Android%20OS%2016%20%2F%20API-36%20%28BE2A.250530.026.D1%2F13818094%29 tier=Low
+11-11 18:05:43.425  8369  8425 I Unity   : [perf] interactive 5.65s
+11-11 18:05:50.590  8369  8425 I Unity   : [telemetry] 12.81 05a18445 level_start level_id=1 attempt=1 coins=4673
+11-11 18:05:55.902  8369  8425 I Unity   : Game state changed to: Paused

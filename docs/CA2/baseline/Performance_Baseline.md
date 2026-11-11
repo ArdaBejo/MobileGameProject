@@ -119,3 +119,15 @@ Week 3's full-scale 17.92 ms and half-scale 16.72 ms came from a different captu
 [Gameplay screenshot](week9-art-pass/arena.png) · [Unity log](week9-art-pass/capture-log.txt) · [Frame intervals](week9-art-pass/frame-ms.txt) · [Snapshot totals](week9-art-pass/memory-totals.json)
 
 Pause Settings override was verified across force-stop and relaunch. [Mid](week9-art-pass/mid-log.txt) started at target 60 and scale 0.9. Selecting [Low](week9-art-pass/low-log.txt) returned the app to target 30 and configured scale 0.75.
+
+### Signed release candidate
+
+Build `620b79a5` (0.8.0 / code 5) was built from commit `9b09d48`. APK: 36,583,978 bytes. SHA-256: `5a21c50f96a331f631bec2565cff56d5020f79f68cab762d3091d12b2033d409`. Verification confirmed ARM64 IL2CPP, non-debuggable manifest and the same certificate as the previous signed release. It installed over the previous release on the Pixel 8 emulator using ADB. Cold launch, Menu → Game, wallet retention and ten consecutive Pause → Resume cycles passed. The lifecycle test logged Android first frame at 1,283 ms and Unity interactive at 4.60 s.
+
+[Pause screenshot](week9-art-pass/rc1-pause.png) · [Resumed arena](week9-art-pass/rc1-resume.png) · [Lifecycle log](week9-art-pass/rc1-lifecycle.txt)
+
+### Android Rendering module retest
+
+Attached Unity 6.6 Profiler to the Pixel 8 emulator Development player through ADB and recorded for 60 seconds. The trace contained 1,784 frames. The Draw Calls Count series had no samples, the Batches Count series was zero throughout, and the Rendering overview also reported zero triangles and vertices on inspected frames. These are unusable rendering counters for the visible arena. GC reported one non-missing sample, which is insufficient for a per-frame baseline. The original active-gameplay timings remain the frame-time evidence. The raw Profiler trace stays local.
+
+[Rendering overview](week9-art-pass/render-profiler-overview.txt) · [Unity Android Profiler connection guide](https://docs.unity3d.com/Manual/android-profile-on-an-android-device.html)

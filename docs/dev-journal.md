@@ -513,3 +513,7 @@ Packed Arena, Menu, HUD and InGameUI Sprite Atlas v2 assets with Android ASTC 4Ã
 The CA2 handout adds a signed candidate, physical-device proof, a gameplay video, the reflective journal and a final submission ZIP. Updated the README, baseline and checklist against those deliverables. The captured numbers are for the emulator Development build.
 
 Verified Pause Settings tier persistence by selecting Mid, force-stopping and relaunching, then repeating with Low. Logcat confirmed the 60 and 30 FPS targets. Drafted the CA2 reflection from recorded project history for owner review.
+
+Signed ARM64 IL2CPP candidate 620b79a5 was built from 9b09d48, verified against the previous signing certificate and tested on the Pixel 8 emulator. It retained the wallet through the update, reached Game and completed ten Pause â†’ Resume cycles. The Week 9 baseline contains the build hash and lifecycle evidence.
+
+Pushed v0.2-rc1 at the exact source commit for the signed APK. A 60-second attached Android Profiler retest collected 1,784 frames but returned unavailable draw calls and zero batches, so the baseline marks both counters unverified. The Week 9 checklist includes the emulator exit-ticket figures. Moodle posting and showcase confirmation remain pending.

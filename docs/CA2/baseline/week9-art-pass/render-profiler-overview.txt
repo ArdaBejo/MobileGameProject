@@ -1,0 +1,31 @@
+frames 0–1783
+Rendering Batches Count: min=0 max=0 avg=0
+Memory Batches Count: min=-1 max=-1 avg=-1
+Rendering GC Allocated In Frame: min=-1 max=-1 avg=-1
+Memory GC Allocated In Frame: min=-1 max=12097 avg=5.78139
+Rendering Batches: min=-1 max=-1 avg=-1
+Memory Batches: min=-1 max=-1 avg=-1
+Frame 10: Batches Count: 0
+SetPass Calls Count: 0
+Triangles Count: 0
+Vertices Count: 0
+
+Frame 150: Batches Count: 0
+SetPass Calls Count: 0
+Triangles Count: 0
+Vertices Count: 0
+
+Frame 300: Batches Count: 0
+SetPass Calls Count: 0
+Triangles Count: 0
+Vertices Count: 0
+
+Frame 600: Batches Count: 0
+SetPass Calls Count: 0
+Triangles Count: 0
+Vertices Count: 0
+
+Frame 900: Batches Count: 0
+SetPass Calls Count: 0
+Triangles Count: 0
+Vertices Count: 0

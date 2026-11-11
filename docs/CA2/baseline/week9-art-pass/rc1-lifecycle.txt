@@ -1,0 +1,23 @@
+11-11 18:06:30.998  8582  8603 I Unity   : [telemetry] 3.05 57b9606c session_start version=0.8.0 build=620b79a5 device=Google%20sdk_gphone64_x86_64 app_version=0.8.0 device_model=Google%20sdk_gphone64_x86_64 android=Android%20OS%2016%20%2F%20API-36%20%28BE2A.250530.026.D1%2F13818094%29 tier=Low
+11-11 18:06:32.544  8582  8603 I Unity   : [perf] interactive 4.60s
+11-11 18:06:35.273  8582  8603 I Unity   : [telemetry] 7.33 57b9606c level_start level_id=1 attempt=1 coins=4843
+11-11 18:06:40.678  8582  8603 I Unity   : Game state changed to: Paused
+11-11 18:06:41.138  8582  8603 I Unity   : Game state changed to: Playing
+11-11 18:06:41.637  8582  8603 I Unity   : Game state changed to: Paused
+11-11 18:06:42.099  8582  8603 I Unity   : Game state changed to: Playing
+11-11 18:06:42.598  8582  8603 I Unity   : Game state changed to: Paused
+11-11 18:06:43.064  8582  8603 I Unity   : Game state changed to: Playing
+11-11 18:06:43.549  8582  8603 I Unity   : Game state changed to: Paused
+11-11 18:06:44.050  8582  8603 I Unity   : Game state changed to: Playing
+11-11 18:06:44.516  8582  8603 I Unity   : Game state changed to: Paused
+11-11 18:06:45.016  8582  8603 I Unity   : Game state changed to: Playing
+11-11 18:06:45.483  8582  8603 I Unity   : Game state changed to: Paused
+11-11 18:06:45.949  8582  8603 I Unity   : Game state changed to: Playing
+11-11 18:06:46.415  8582  8603 I Unity   : Game state changed to: Paused
+11-11 18:06:46.915  8582  8603 I Unity   : Game state changed to: Playing
+11-11 18:06:47.416  8582  8603 I Unity   : Game state changed to: Paused
+11-11 18:06:47.882  8582  8603 I Unity   : Game state changed to: Playing
+11-11 18:06:48.382  8582  8603 I Unity   : Game state changed to: Paused
+11-11 18:06:48.854  8582  8603 I Unity   : Game state changed to: Playing
+11-11 18:06:49.340  8582  8603 I Unity   : Game state changed to: Paused
+11-11 18:06:49.820  8582  8603 I Unity   : Game state changed to: Playing
