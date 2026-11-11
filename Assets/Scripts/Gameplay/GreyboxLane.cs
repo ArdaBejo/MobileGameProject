@@ -2,6 +2,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 using System.Collections.Generic;
 
 public class GreyboxLane : MonoBehaviour
@@ -28,8 +30,11 @@ public class GreyboxLane : MonoBehaviour
     public float EnemySpeed => Wave == 1 ? 1.08f : Wave == 2 ? 1.3f : 1.5f;
 
     Sprite square;
+    Sprite deckSprite;
+    VolumeProfile arenaEffects;
     Material spriteMaterial;
     SpriteRenderer playerRenderer;
+    Animator playerAnimator;
     Color playerColor;
     bool facingLeft;
     Camera gameplayCamera;
@@ -40,7 +45,7 @@ public class GreyboxLane : MonoBehaviour
     TMP_Text timer;
     TMP_Text instruction;
     RectTransform hud;
-    Transform floor;
+    SpriteRenderer floor;
     Transform topEdge;
     Transform bottomEdge;
     Transform leftEdge;
@@ -82,8 +87,18 @@ public class GreyboxLane : MonoBehaviour
         camera.transform.position = new Vector3(0, 0, -10);
         camera.orthographicSize = 9f;
         camera.backgroundColor = new Color(0.025f, 0.035f, 0.05f);
-        floor = Block("Floor", Vector2.zero, Vector2.one, new Color(0.075f, 0.09f, 0.1f), -10).transform;
-        var edgeColor = new Color(0.2f, 0.24f, 0.25f);
+        ConfigureCameraEffects(camera);
+        floor = Block("Deck", Vector2.zero, Vector2.one, new Color(0.075f, 0.09f, 0.1f), -10);
+        var deck = Resources.Load<Texture2D>("ArenaDeck");
+        if (deck != null)
+        {
+            deckSprite = Sprite.Create(deck, new Rect(0, 0, deck.width, deck.height), Vector2.one * 0.5f,
+                32, 0, SpriteMeshType.FullRect);
+            floor.sprite = deckSprite;
+            floor.drawMode = SpriteDrawMode.Tiled;
+            floor.color = Color.white;
+        }
+        var edgeColor = new Color(0.25f, 0.42f, 0.48f);
         topEdge = Block("TopBoundary", Vector2.zero, Vector2.one, edgeColor, -5).transform;
         bottomEdge = Block("BottomBoundary", Vector2.zero, Vector2.one, edgeColor, -5).transform;
         leftEdge = Block("LeftBoundary", Vector2.zero, Vector2.one, edgeColor, -5).transform;
@@ -100,8 +115,8 @@ public class GreyboxLane : MonoBehaviour
         playerRenderer = playerObject.GetComponentInChildren<SpriteRenderer>();
         playerColor = playerRenderer.color;
         facingLeft = playerRenderer.flipX;
-        var animator = playerObject.GetComponentInChildren<Animator>();
-        if (animator != null) animator.speed = walkAnimationSpeed;
+        playerAnimator = playerObject.GetComponentInChildren<Animator>();
+        SetWalking(false);
         if (playerRenderer.sharedMaterial == null) playerRenderer.sharedMaterial = spriteMaterial;
         playerRenderer.sortingOrder = 5;
         CreatePlayerHealthBar();
@@ -187,7 +202,9 @@ public class GreyboxLane : MonoBehaviour
         Vector2 lower = PointerWorldPosition(new Vector2(safeArea.xMin, safeArea.yMin + 140 * scale));
         Vector2 upper = PointerWorldPosition(new Vector2(safeArea.xMax, safeArea.yMax - 132 * scale));
         ArenaBounds = Rect.MinMaxRect(lower.x + 0.08f, lower.y, upper.x - 0.08f, upper.y);
-        floor.localScale = new Vector3(gameplayCamera.orthographicSize * gameplayCamera.aspect * 2, gameplayCamera.orthographicSize * 2, 1);
+        var floorSize = new Vector2(gameplayCamera.orthographicSize * gameplayCamera.aspect * 2, gameplayCamera.orthographicSize * 2);
+        if (deckSprite != null) floor.size = floorSize;
+        else floor.transform.localScale = new Vector3(floorSize.x, floorSize.y, 1);
         SetEdge(topEdge, new Vector2(ArenaCenter.x, ArenaBounds.yMax), new Vector2(ArenaBounds.width, 0.04f));
         SetEdge(bottomEdge, new Vector2(ArenaCenter.x, ArenaBounds.yMin), new Vector2(ArenaBounds.width, 0.04f));
         SetEdge(leftEdge, new Vector2(ArenaBounds.xMin, ArenaCenter.y), new Vector2(0.04f, ArenaBounds.height));
@@ -207,11 +224,14 @@ public class GreyboxLane : MonoBehaviour
         if (!Playing)
         {
             ResetDrag();
+            SetWalking(false);
             return;
         }
         elapsed = Mathf.Min(duration, elapsed + Time.deltaTime);
         if (elapsed >= duration) { Finish(true); return; }
+        Vector3 previousPosition = Player.position;
         MovePlayer();
+        SetWalking((Player.position - previousPosition).sqrMagnitude > 0.00000001f);
         playerRenderer.color = Time.time < immunityUntil && Mathf.FloorToInt(Time.time * 12) % 2 == 0 ? new Color(1, 0.35f, 0.35f) : playerColor;
         if (Time.time >= nextShot)
         {
@@ -237,6 +257,30 @@ public class GreyboxLane : MonoBehaviour
                 (keyboard.wKey.isPressed || keyboard.upArrowKey.isPressed ? 1 : 0) - (keyboard.sKey.isPressed || keyboard.downArrowKey.isPressed ? 1 : 0));
         Vector2 position = (Vector2)Player.position + Vector2.ClampMagnitude(input, 1) * movementSpeed * Time.deltaTime;
         SetPlayerPosition(position);
+    }
+
+    void SetWalking(bool moving)
+    {
+        if (playerAnimator != null) playerAnimator.speed = moving ? walkAnimationSpeed : 0f;
+    }
+
+    void ConfigureCameraEffects(Camera camera)
+    {
+        var cameraData = camera.GetUniversalAdditionalCameraData();
+        camera.allowMSAA = DeviceTier.Current != DeviceTier.Low;
+        cameraData.renderPostProcessing = DeviceTier.Current != DeviceTier.Low;
+        if (!cameraData.renderPostProcessing) return;
+
+        arenaEffects = ScriptableObject.CreateInstance<VolumeProfile>();
+        var bloom = arenaEffects.Add<Bloom>();
+        bloom.threshold.Override(1f);
+        bloom.intensity.Override(0.18f);
+        if (DeviceTier.Current == DeviceTier.High)
+            arenaEffects.Add<Vignette>().intensity.Override(0.18f);
+
+        var volume = gameObject.AddComponent<Volume>();
+        volume.isGlobal = true;
+        volume.sharedProfile = arenaEffects;
     }
 
     void SetPlayerPosition(Vector2 position)
@@ -396,6 +440,8 @@ public class GreyboxLane : MonoBehaviour
     {
         if (Instance == this) Instance = null;
         if (square != null) Destroy(square);
+        if (deckSprite != null) Destroy(deckSprite);
+        if (arenaEffects != null) Destroy(arenaEffects);
         if (spriteMaterial != null) Destroy(spriteMaterial);
         if (click != null) Destroy(click);
     }

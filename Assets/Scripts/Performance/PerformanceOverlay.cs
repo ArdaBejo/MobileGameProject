@@ -89,7 +89,8 @@ public sealed class PerformanceOverlay : MonoBehaviour
     void RefreshMode()
     {
         var asset = UniversalRenderPipeline.asset;
-        string name = sampledBatterySaver ? "Battery Saver" : sampledMode == PerfMode.HighFps ? "High FPS" : "Balanced";
+        string name = sampledBatterySaver ? "Battery Saver" :
+            sampledMode == PerfMode.HighFps && PerformanceMode.HighFpsAvailable ? "High FPS" : DeviceTier.CurrentName;
         string scale = asset != null
             ? asset.renderScale.ToString("0.0", System.Globalization.CultureInfo.InvariantCulture) : "n/a";
         modeLabel.text = $"{name} | target {Application.targetFrameRate}\nRender scale: {scale}";

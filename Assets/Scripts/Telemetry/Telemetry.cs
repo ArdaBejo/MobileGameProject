@@ -32,7 +32,8 @@ public static class Telemetry
         Debug.Log($"[telemetry] file {FilePath}");
         Log("session_start", ("version", Application.version), ("build", BuildStamp.Id),
             ("device", SystemInfo.deviceModel), ("app_version", Application.version),
-            ("device_model", SystemInfo.deviceModel), ("android", SystemInfo.operatingSystem));
+            ("device_model", SystemInfo.deviceModel), ("android", SystemInfo.operatingSystem),
+            ("tier", DeviceTier.CurrentName));
     }
 
     public static void EndSession()

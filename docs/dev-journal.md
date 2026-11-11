@@ -499,3 +499,9 @@ Moved Music controls into the Pause Settings panel and tuned early waves after p
 Battery Saver fix verified on local Android QA build 0cdfdb9f. Toggling Android Saver changed the game target 120 → 60 → 120 in the same arena and changed the overlay label. The original signed peer release remains the source of the baseline and initial failure. The QA build also confirmed that the Music controls appear within Pause Settings and accept toggle and slider input. Music Off and volume 80% remained visible after force-stop and relaunch. The slider handle height was corrected after this capture and passed Android C# compilation.
 
 Week 8 Lab B is closed with Android emulator evidence. The agreed scope excludes physical-device testing and Moodle submission.
+
+### Week 9 Lab A — device tiers and arena art
+
+Added distinct Low, Mid and High URP profiles and set Android's default to Mid. Boot selects a tier from RAM and CPU core count, and the Settings dropdown saves an override for the next launch. Session telemetry records the active tier. High FPS remains available on High, and Battery Saver respects the Low tier's 30 FPS cap.
+
+Started the arena art pass with a tiled spacecraft deck, muted cyan boundary accents and tier-dependent camera effects. Added an Android ASTC 6×6 override for the deck texture and set the streamed Vorbis soundtrack to mono. The player walk animation now stops when the player does not move. Android C# compilation passed. In-game Android verification, sprite atlas work, Memory Profiler measurements and the release-candidate tag are pending.
