@@ -131,3 +131,11 @@ Build `620b79a5` (0.8.0 / code 5) was built from commit `9b09d48`. APK: 36,583,9
 Attached Unity 6.6 Profiler to the Pixel 8 emulator Development player through ADB and recorded for 60 seconds. The trace contained 1,784 frames. The Draw Calls Count series had no samples, the Batches Count series was zero throughout, and the Rendering overview also reported zero triangles and vertices on inspected frames. These are unusable rendering counters for the visible arena. GC reported one non-missing sample, which is insufficient for a per-frame baseline. The original active-gameplay timings remain the frame-time evidence. The raw Profiler trace stays local.
 
 [Rendering overview](week9-art-pass/render-profiler-overview.txt) · [Unity Android Profiler connection guide](https://docs.unity3d.com/Manual/android-profile-on-an-android-device.html)
+
+### Editor draw-call measurement
+
+Unity 6.6 Game View, Windows Direct3D 12, Low tier, 1080 × 2160. One arena attempt was sampled through the normal Boot → Menu → Game flow. Over 60.17 active seconds, 7,186 frames had **23.08 mean draw calls** (21–25 per frame). Wave 1 averaged 23.17 across 4,797 frames and Wave 2 averaged 22.90 across 2,389 frames. The Editor batch counter was zero on every sample. A valid batch measurement and Android draw-call measurement remain open.
+
+[Per-frame Editor sample](week9-art-pass/editor-render.csv) · [Unity Editor statistics API](https://github.com/Unity-Technologies/UnityCsReference/blob/master/Editor/Mono/UnityStats.bindings.cs)
+
+A follow-up Android Frame Debugger attempt connected to the Development player through ADB but timed out before returning frame events. The Android Rendering module results above remain the device-side evidence.

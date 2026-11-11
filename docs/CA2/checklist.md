@@ -10,6 +10,6 @@
 - [x] Create and push the v0.2-rc1 tag after emulator smoke verification. The tag points to the source for build 620b79a5.
 
 
-Week 9 Lab A exit ticket draft: Pixel 8 Android emulator, Auto selected Low. Unity Memory Profiler measured 4.80 MB Texture2D and 0.17 MB AudioClip with Music Off. Moodle posting and showcase-list confirmation are pending.
+Week 9 Lab A exit ticket draft: Pixel 8 Android emulator, Auto selected Low. Unity Memory Profiler measured 4.80 MB Texture2D and 0.17 MB AudioClip with Music Off. Week 9 scope excludes Moodle posting and the showcase.
 
 CA2 is due Sunday, 15 November 2026 at 23:59 Dublin time. Submit one ZIP containing the signed APK under `APK/`, the gameplay video under `Video/`, the baseline, event map and reflection under `Docs/`, and top-level `README.md`, `KnownIssues.md` and `LINKS.txt`. The links file identifies the repository and final CA2 tag. Bring a five-minute demo for the showcase.

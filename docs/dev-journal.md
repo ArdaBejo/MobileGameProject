@@ -517,3 +517,5 @@ Verified Pause Settings tier persistence by selecting Mid, force-stopping and re
 Signed ARM64 IL2CPP candidate 620b79a5 was built from 9b09d48, verified against the previous signing certificate and tested on the Pixel 8 emulator. It retained the wallet through the update, reached Game and completed ten Pause → Resume cycles. The Week 9 baseline contains the build hash and lifecycle evidence.
 
 Pushed v0.2-rc1 at the exact source commit for the signed APK. A 60-second attached Android Profiler retest collected 1,784 frames but returned unavailable draw calls and zero batches, so the baseline marks both counters unverified. The Week 9 checklist includes the emulator exit-ticket figures. Moodle posting and showcase confirmation remain pending.
+
+The Windows Editor Game View captured 7,186 active arena frames over 60.17 seconds at Low. Draw calls averaged 23.08 per frame (21–25). The Editor batch counter returned zero throughout. Android draw calls and a valid batch count remain open.
