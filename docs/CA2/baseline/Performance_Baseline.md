@@ -98,3 +98,24 @@ Raw Android Player Profiler captures and frame-time CSVs are in the [evidence fo
 The early memory sample is a smoke reading. The later sample followed two completed 120-second runs and about 62 seconds in the third run. Time on result and loading screens was excluded. See the [PSS output](../../CA3/qa/pss-five-minutes.txt) and [arena screenshot](../../CA3/qa/screens/pss-five-minutes.png). The full run and evidence are tracked in the [Week 8 Lab B test plan](../../CA3/qa/test-plan.md).
 
 Presentation intervals were derived from distinct actual-present timestamps for the Unity SurfaceView via SurfaceFlinger. These are emulator display intervals during the Battery Saver probe. [Frame data](../../CA3/qa/frame-presentation.csv).
+
+## Week 9 Lab A: Art pass and memory budgets
+
+11 November 2026. Pixel 8 Android emulator, Android 16 / API 36, four virtual CPU cores, 2,531,832 KiB guest RAM. Unity Development APK 0.8.0 build `6c888a0f`, 47,805,244 bytes. Auto selected Low, targeting 30 FPS with the configured 0.75 URP scale. The overlay rounds this value to 0.8. Emulator display resolution: 1080 × 2400.
+
+| Category | Budget | Measured | Assessment |
+| --- | ---: | ---: | --- |
+| Texture2D, including loaded atlases | 64 MB | 4.80 MB across 65 objects | Within budget for captured objects |
+| AudioClip | 16 MB | 0.17 MB across 2 objects | Within budget for captured objects |
+| Managed heap | 64 MB | 7.37 MB used / 8.80 MB reserved | Within budget |
+| Week 8 release PSS | 600 MB total | 409,367 KiB / 419.19 MB | Within budget at sample time |
+
+The first two rows sum native object sizes in the snapshot. The QA profile had Music Off; soundtrack streaming allocations during playback were outside the measurement. These figures cover captured loaded objects and do not quantify every graphics-driver or audio-stream buffer allocation. PSS includes the wider Android process, so it is measured separately. Week 9 post-snapshot PSS was 473,158 KiB / 484.51 MB in a separate spot check. Peak PSS was not collected.
+
+The Development build recorded 1,225 active gameplay frames over 60.05 seconds across three arena attempts, excluding results and loading screens. Mean was **49.02 ms** and nearest-rank p99 was **166.67 ms**. Both Unity rendering counters returned zero throughout despite visible draws, so draw calls and batches remain unverified. CPU/GPU split and GC allocations per frame were not captured for this build. Unity reported menu interactive at 10.71 s in the successful launch.
+
+Week 3's full-scale 17.92 ms and half-scale 16.72 ms came from a different capture. Week 7's before/after soak traces had few frames and variable host load. This Week 9 sample demonstrates substantial frame-time spikes on the emulator and is not a controlled trend against either earlier run.
+
+[Gameplay screenshot](week9-art-pass/arena.png) · [Unity log](week9-art-pass/capture-log.txt) · [Frame intervals](week9-art-pass/frame-ms.txt) · [Snapshot totals](week9-art-pass/memory-totals.json)
+
+Pause Settings override was verified across force-stop and relaunch. [Mid](week9-art-pass/mid-log.txt) started at target 60 and scale 0.9. Selecting [Low](week9-art-pass/low-log.txt) returned the app to target 30 and configured scale 0.75.

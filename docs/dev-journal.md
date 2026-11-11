@@ -505,3 +505,11 @@ Week 8 Lab B is closed with Android emulator evidence. The agreed scope excludes
 Added distinct Low, Mid and High URP profiles and set Android's default to Mid. Boot selects a tier from RAM and CPU core count, and the Settings dropdown saves an override for the next launch. Session telemetry records the active tier. High FPS remains available on High, and Battery Saver respects the Low tier's 30 FPS cap.
 
 Started the arena art pass with a tiled spacecraft deck, muted cyan boundary accents and tier-dependent camera effects. Added an Android ASTC 6×6 override for the deck texture and set the streamed Vorbis soundtrack to mono. The player walk animation now stops when the player does not move. Android C# compilation passed. In-game Android verification, sprite atlas work, Memory Profiler measurements and the release-candidate tag are pending.
+
+### Week 9 Lab A — Android art and budget capture (11 November 2026)
+
+Packed Arena, Menu, HUD and InGameUI Sprite Atlas v2 assets with Android ASTC 4×4. The Development APK installed on the Pixel 8 Android 16 emulator, selected Low automatically and rendered the new deck and HUD in Game. Logcat captured session_start, level_start and level_fail. After 60.05 active arena seconds across three attempts, the snapshot recorded 4.80 MB of Texture2D objects and 0.17 MB of AudioClip objects. Managed heap was 7.37 MB used and 8.80 MB reserved. All three captured categories are inside the budgets. Frame time was 49.02 ms mean and 166.67 ms p99 across 1,225 frames. Rendering counters returned zero despite visible draws, so they cannot establish draw counts. The raw snapshot stays local and the compact evidence is in the CA2 baseline.
+
+The CA2 handout adds a signed candidate, physical-device proof, a gameplay video, the reflective journal and a final submission ZIP. Updated the README, baseline and checklist against those deliverables. The captured numbers are for the emulator Development build.
+
+Verified Pause Settings tier persistence by selecting Mid, force-stopping and relaunching, then repeating with Low. Logcat confirmed the 60 and 30 FPS targets. Drafted the CA2 reflection from recorded project history for owner review.

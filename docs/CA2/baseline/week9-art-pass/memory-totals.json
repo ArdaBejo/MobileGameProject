@@ -1,0 +1,8 @@
+{
+  "build_id": "6c888a0f",
+  "source": "Unity Memory Profiler snapshot native object sizes",
+  "Texture2D": { "count": 65, "bytes": 4798477 },
+  "AudioClip": { "count": 2, "bytes": 171384 },
+  "managed_heap_used_bytes": 7372800,
+  "managed_heap_reserved_bytes": 8798208
+}

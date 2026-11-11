@@ -1,0 +1,41 @@
+# CA2 reflective development journal — review draft
+
+This draft follows Description, Evaluation, Analysis and Action. It uses the project journal, the peer feedback recorded by the project owner and the profiling evidence in the repository. The project owner should review the reflection and confirm it represents their own learning before submission.
+
+## Description
+
+- **Week 5 — greybox and async loading.** The vertical slice took shape as a bounded, two-minute survival arena with three waves and an upgrade between attempts. Direct drag replaced the joystick after it sometimes opened Android's navigation area. The first drag implementation could cross the arena too quickly, so movement was capped. A separate loading scene handled transitions. On the Week 5 emulator build, median Android cold launch was 3,209 ms and the median Unity interactive marker was 8.05 s.
+- **Week 6 — economy and telemetry.** Coin rewards and weapon upgrades gave successive attempts a reason to exist. Local telemetry made the loop visible in Logcat. The owner verified that the wallet persisted across the scenarios exercised that week. The player prefab was wired into the arena and changed to face its movement direction. A reported audio dropout did not reproduce on a subsequent attempt.
+- **Week 7 — performance modes and thermals.** Balanced and High FPS separated a requested frame-rate target from a measured result. The gameplay overlay exposed both values alongside render scale. The emulator showed around 60 FPS while High FPS requested 120. The Week 7 soak added thermal readouts and captured before and after traces, with limits described below.
+- **Week 8 — distribution and resilience.** Signed build 49ea902f was shared with peers, and feedback identified easy gameplay and the absence of a Restart button in Pause. The title-screen coin button was removed, the early waves were tuned, and Restart was added. Android emulator QA covered offline launch, portrait orientation, backgrounding and wallet recovery. Music controls moved to Pause Settings, and Battery Saver behaviour was corrected.
+- **Week 9 — art and tiering.** A low-contrast spacecraft deck replaced the plain arena floor. Low, Mid and High URP profiles let the game select a starting quality level, and Settings provided a saved override. UI and gameplay sprites were packed into four atlases. The player walk animation was stopped when movement stopped. A Development build captured the first post-art memory sample.
+
+## Evaluation
+
+Keeping one fixed arena gave the project a clear target for touch controls, progression, visual readability and profiling. A finite run also made repeated tests practical: the same Menu, Game and Result screens could be exercised without progressing through unrelated content. The direct-drag change illustrates how a feature can work in Unity and still compete with an Android system gesture. Capping movement after the first revision preserved direct control while restoring a reason to plan a path around enemies. An eventual boss and kill-based upgrade choices were deferred so this slice could focus on the run already in the game.
+
+Peer comments were more informative when they pointed to specific moments. The request to restart from Pause exposed the extra navigation needed to recover from a poor start. It led to a Restart action using the existing asynchronous scene loader. The observation that the game felt easy justified revisiting the wave settings, but the short sessions leave room for a more structured difficulty test. The economy telemetry helps frame that test because outcomes and upgrade purchases can be read alongside time survived. It still requires observing when a player decides to move, spend, or retry.
+
+The Week 5 startup figures also showed why two timings were necessary. Android could draw the app before Unity's Menu was ready for input. With an 8.05 s median Unity interactive marker, reporting only the Android first-frame measurement would hide a meaningful part of the wait. The two markers give the next profiling session a way to distinguish process startup from scene activation and menu readiness.
+
+## Analysis
+
+The clearest measured fix was Android Battery Saver. In signed build 49ea902f the app continued to request 120 FPS even when the Android setting was enabled. A 60-second SurfaceFlinger sample in that state had a p99 presentation interval of 82.40 ms and only 14.3% of intervals within 16.7 ms. The later QA build 0cdfdb9f changed the requested target from 120 to 60 when Battery Saver was enabled and restored 120 when disabled in the same arena. That verifies the app's response to the system signal. A matched post-fix presentation capture is still needed to estimate the improvement in pacing, because the Android target and observed presentation rate describe different measurements.
+
+The earlier profiler work shows how easily context can affect an interpretation. Week 3's full-scale frame time of 17.92 ms fell to 16.72 ms at half scale, about 6.7%. That small change supported looking at CPU-side work in that capture. The Week 7 emulator soak collected very few frames in its before and after traces, and the host workload varied. Its virtual battery remained at 25 °C and the provider reported NoWarning. Those observations describe the virtual device and leave physical heat and throttling open. Week 9 used a separate Development build on Auto Low and accumulated 1,225 active frames over 60.05 seconds across three attempts. The mean was 49.02 ms and p99 was 166.67 ms. The gap shows visible potential for uneven pacing on that setup. The captures used different conditions, so a controlled repeated route is needed to locate the cause of the Week 9 spikes.
+
+The post-art memory snapshot measured 4.80 MB of loaded Texture2D objects and 0.17 MB of loaded AudioClip objects. Managed heap was 7.37 MB used and 8.80 MB reserved. These were within their respective budgets, with music disabled in the QA profile. The earlier signed build's 409,367 KiB PSS sample gives a wider process-level reference. The object totals, managed heap and Android PSS have different scopes. Keeping those scopes visible avoids treating the texture total as the cost of all graphics memory or the audio total as the cost of streaming music during play.
+
+## Action
+
+For CA3, the first experiment should capture the same 60-second arena route on a physical Android device, with consistent tier, battery setting, build configuration and music state. Record present intervals and Unity Profiler CPU, GPU, GC and rendering counters. Compare repeated runs at the same tier before testing a quality change. If slow frames cluster around spawns, inspect the spawn and animation work before changing render scale. If costs track the render scale across otherwise matched runs, inspect GPU timings and passes. Recheck PSS at several points and capture a ten-minute thermal run with the device and room conditions recorded.
+
+For difficulty, track time survived and the wave reached on a first attempt, then repeat after a normal upgrade. Keep a short note about where the player ran out of space or lost health. That would test the feedback on the easy opening and hard final wave with a clear outcome before introducing the larger kill-based progression system. It would also make it easier to explain which design change came from observation and which one is still a hypothesis.
+
+## References
+
+- SETU (2026) *CA2 Handout and Rubric: Vertical Slice Playable*. Mobile Game Development module, course handout.
+- SETU (2026) *Week 9 Lab A: Art pass, asset budgets and device tiers*. Mobile Game Development module, lab sheet.
+- No Stars Remain project (2026) *Development journal*, Weeks 5–9. [Repository evidence](../dev-journal.md).
+- No Stars Remain project (2026) *Performance Baseline and Android QA*. [Measurements](baseline/Performance_Baseline.md), [QA test plan](../CA3/qa/test-plan.md).
+- OpenAI (2026) *Codex*. Used to draft this reflection from project evidence and assist with implementation and verification. [Project AI assistance note](../../README.md).
