@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 9428b5229e8c4944af13738d7f55a64a
+TextureImporter:
+  serializedVersion: 13
+  mipmaps:
+    enableMipMap: 0
+    sRGBTexture: 1
+  isReadable: 0
+  textureType: 8
+  textureShape: 1
+  spriteMode: 1
+  spriteMeshType: 0
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 4, y: 4, z: 4, w: 4}
+  alphaIsTransparency: 1
+  nPOTScale: 0
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 1024
+    textureFormat: 48
+    textureCompression: 1
+    compressionQuality: 50
+    overridden: 1

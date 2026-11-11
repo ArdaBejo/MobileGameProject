@@ -15,6 +15,12 @@ public static class GreyboxUI
         var rect = Rect(name, parent, new Vector2(0, top ? 1 : 0), new Vector2(1, top ? 1 : 0),
             new Vector2(0, top ? -height * 0.5f : height * 0.5f), new Vector2(0, height));
         var image = rect.gameObject.AddComponent<Image>();
+        var sprite = Resources.Load<Sprite>("HudBand");
+        if (sprite != null)
+        {
+            image.sprite = sprite;
+            image.type = Image.Type.Sliced;
+        }
         image.color = new Color(0.035f, 0.045f, 0.055f, 0.96f);
         image.raycastTarget = false;
     }
