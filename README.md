@@ -188,7 +188,3 @@ Profiling records and screenshots remain in `docs/CA2/`, including the baseline,
 - `docs/dev-journal.md` — development decisions, testing and reflections
 
 No app-store upload is required for CA1.
-
-## AI assistance
-
-OpenAI Codex helped implement the device tiers, Android asset import settings and arena presentation, and draft QA documentation. The project uses Unity import checks, Android builds, emulator screenshots and Logcat to verify changes. The QA and baseline documents record the exact build and device used for each result.
