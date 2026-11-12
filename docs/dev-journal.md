@@ -519,3 +519,7 @@ Signed ARM64 IL2CPP candidate 620b79a5 was built from 9b09d48, verified against 
 Pushed v0.2-rc1 at the exact source commit for the signed APK. A 60-second attached Android Profiler retest collected 1,784 frames but returned unavailable draw calls and zero batches, so the baseline marks both counters unverified. The Week 9 checklist includes the emulator exit-ticket figures. Moodle posting and showcase confirmation remain pending.
 
 The Windows Editor Game View captured 7,186 active arena frames over 60.17 seconds at Low. Draw calls averaged 23.08 per frame (21–25). The Editor batch counter returned zero throughout. Android draw calls and a valid batch count remain open.
+
+### Week 9 Lab B — final-sprint setup (12 November 2026)
+
+The project owner excluded the live showcase, so this lab produced no showcase survey or ranked showcase fixes. Existing Week 8 peer feedback documents a request for Restart and an observation that the opening felt easy. Restart was implemented and the early waves were tuned before this lab. The CA3 targets use the measured performance baseline and resilience plan. The Async Pack 2 checklist records the 17 November deadline. The CA2 video plan covers the signed Android candidate from the launcher through a complete run and relaunch. Recording is pending.

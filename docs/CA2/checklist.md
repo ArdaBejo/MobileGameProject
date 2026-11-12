@@ -6,10 +6,10 @@
 - [x] Document telemetry events and their expected call sites. [Event map](Economy_Telemetry_Map.md)
 - [ ] Review the README build steps, controls, device targets and Known Issues against the release candidate.
 - [ ] Finish the 1,000–1,500 word reflective journal with Weeks 5–9 bullets, a structured reflection and references. [Review draft](Reflective_Journal.md)
-- [ ] Record 3–5 minutes of gameplay including boot, menu, one run, pause/resume and relaunch.
+- [ ] Record 3–5 minutes of gameplay including boot, menu, one run, pause/resume and relaunch. [Recording plan](gameplay-capture.md)
 - [x] Create and push the v0.2-rc1 tag after emulator smoke verification. The tag points to the source for build 620b79a5.
 
 
 Week 9 Lab A exit ticket draft: Pixel 8 Android emulator, Auto selected Low. Unity Memory Profiler measured 4.80 MB Texture2D and 0.17 MB AudioClip with Music Off. Week 9 scope excludes Moodle posting and the showcase.
 
-CA2 is due Sunday, 15 November 2026 at 23:59 Dublin time. Submit one ZIP containing the signed APK under `APK/`, the gameplay video under `Video/`, the baseline, event map and reflection under `Docs/`, and top-level `README.md`, `KnownIssues.md` and `LINKS.txt`. The links file identifies the repository and final CA2 tag. Bring a five-minute demo for the showcase.
+CA2 is due Sunday, 15 November 2026 at 23:59 Dublin time. Submit one ZIP containing the signed APK under `APK/`, the gameplay video under `Video/`, the baseline, event map and reflection under `Docs/`, and top-level `README.md`, `KnownIssues.md` and `LINKS.txt`. The links file identifies the repository and final CA2 tag.
