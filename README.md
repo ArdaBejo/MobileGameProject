@@ -32,7 +32,7 @@ The loader logs `[perf] scene <name> loaded in <milliseconds> ms`, including its
 
 ## Project overview
 
-No Stars Remain is a portrait-oriented arena-survivor roguelite for Android. Touch the player and drag to move. The pistol attacks automatically. Open Pause → Settings to adjust audio, accessibility and the device tier. The current planned weapons are:
+No Stars Remain is a portrait-oriented arena-survivor roguelite for Android. Touch the player and drag to move. The pistol attacks automatically. Open Pause → Settings to adjust audio, accessibility and the device tier. Pause → Restart starts a fresh run and clears coins and pistol upgrades. The current planned weapons are:
 
 - Pistol
 - Laser Sword

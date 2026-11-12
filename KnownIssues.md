@@ -17,3 +17,7 @@
 - Evidence — [Android Battery Saver state](docs/CA3/qa/battery-state.txt) and [arena overlay](docs/CA3/qa/screens/battery-end.png).
 
 - Fix and verification — the game now reads Android PowerManager Battery Saver state. QA build 0cdfdb9f switched 120 → 60 → 120 when Saver was toggled. See the [retest Logcat](docs/CA3/qa/qa-battery-logcat.txt).
+
+## CA2 final Android build
+
+The Android Rendering Profiler did not expose a usable draw-call or batch count on the Pixel 8 emulator. The Frame Debugger timed out. Windows Editor draw-call samples and emulator performance measurements are documented in the [CA2 baseline](docs/CA2/Performance_Baseline.md).

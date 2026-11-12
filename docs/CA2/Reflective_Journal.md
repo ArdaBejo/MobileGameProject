@@ -1,6 +1,4 @@
-# CA2 reflective development journal — review draft
-
-This draft follows Description, Evaluation, Analysis and Action. It uses the project journal, the peer feedback recorded by the project owner and the profiling evidence in the repository. The project owner should review the reflection and confirm it represents their own learning before submission.
+# CA2 reflective development journal
 
 ## Description
 
@@ -14,7 +12,7 @@ This draft follows Description, Evaluation, Analysis and Action. It uses the pro
 
 Keeping one fixed arena gave the project a clear target for touch controls, progression, visual readability and profiling. A finite run also made repeated tests practical: the same Menu, Game and Result screens could be exercised without progressing through unrelated content. The direct-drag change illustrates how a feature can work in Unity and still compete with an Android system gesture. Capping movement after the first revision preserved direct control while restoring a reason to plan a path around enemies. An eventual boss and kill-based upgrade choices were deferred so this slice could focus on the run already in the game.
 
-Peer comments were more informative when they pointed to specific moments. The request to restart from Pause exposed the extra navigation needed to recover from a poor start. It led to a Restart action using the existing asynchronous scene loader. The observation that the game felt easy justified revisiting the wave settings, but the short sessions leave room for a more structured difficulty test. The economy telemetry helps frame that test because outcomes and upgrade purchases can be read alongside time survived. It still requires observing when a player decides to move, spend, or retry.
+Peer comments were more informative when they pointed to specific moments. The request to restart from Pause exposed the extra navigation needed to recover from a poor start. It led to a Restart action using the existing asynchronous scene loader. The final revision clears coins and pistol upgrades when the player explicitly restarts, so a fresh attempt begins with the default weapon. Settings also gained an opaque background after its text was hard to read over the arena. The observation that the game felt easy justified revisiting the wave settings, but the short sessions leave room for a more structured difficulty test. The economy telemetry helps frame that test because outcomes and upgrade purchases can be read alongside time survived. It still requires observing when a player decides to move, spend, or retry.
 
 The Week 5 startup figures also showed why two timings were necessary. Android could draw the app before Unity's Menu was ready for input. With an 8.05 s median Unity interactive marker, reporting only the Android first-frame measurement would hide a meaningful part of the wait. The two markers give the next profiling session a way to distinguish process startup from scene activation and menu readiness.
 
