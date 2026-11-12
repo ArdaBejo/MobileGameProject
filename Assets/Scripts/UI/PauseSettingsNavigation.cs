@@ -11,7 +11,7 @@ public class PauseSettingsNavigation : MonoBehaviour
         if (pausePanel != null)
         {
             var restart = GreyboxUI.Button(pausePanel.transform, "Restart", new Vector2(0.5f, 0.5f),
-                new Vector2(0, -320), () => SceneLoader.RequestLoad("Game"), 40);
+                new Vector2(0, -320), RestartRun, 40);
             ((RectTransform)restart.transform).sizeDelta = new Vector2(500, 100);
         }
 
@@ -24,6 +24,14 @@ public class PauseSettingsNavigation : MonoBehaviour
             GreyboxUI.Button(settingsPanel.transform, "About", new Vector2(0.5f, 0.5f),
                 new Vector2(0, -540), about.Open, 24);
         }
+    }
+
+    static void RestartRun()
+    {
+        SceneLoader.RequestLoad("Game", () =>
+        {
+            Wallet.Instance?.Restore(0, 0);
+        });
     }
 
     public bool TryCloseSettingsOverlay() => about?.TryClose() == true;

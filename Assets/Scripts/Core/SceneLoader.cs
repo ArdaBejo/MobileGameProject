@@ -31,17 +31,17 @@ public class SceneLoader : MonoBehaviour
         loadingScreen.SetActive(false);
     }
 
-    public static void RequestLoad(string scene)
+    public static void RequestLoad(string scene, Action beforeActivation = null)
     {
         if (Instance == null)
         {
             Debug.LogError("SceneLoader is missing. Start Play Mode from the Boot scene.");
             return;
         }
-        _ = Instance.Load(scene, Application.exitCancellationToken);
+        _ = Instance.Load(scene, Application.exitCancellationToken, beforeActivation);
     }
 
-    public async Awaitable Load(string scene, CancellationToken ct)
+    public async Awaitable Load(string scene, CancellationToken ct, Action beforeActivation = null)
     {
         // The lock is taken before the first await, so double clicks cannot queue loads.
         if (IsLoading) return;
@@ -73,6 +73,7 @@ public class SceneLoader : MonoBehaviour
 
             SetProgress(1);
             ct.ThrowIfCancellationRequested();
+            beforeActivation?.Invoke();
             operation.allowSceneActivation = true;
             await operation;
             // Let the destination scene initialize before revealing it.
