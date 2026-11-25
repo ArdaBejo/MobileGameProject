@@ -10,6 +10,7 @@ public class WalletHud : MonoBehaviour
 
     Wallet wallet;
     TMP_Text damageLabel;
+    int displayedDamage = -1;
 
     void Start()
     {
@@ -58,12 +59,24 @@ public class WalletHud : MonoBehaviour
             wallet.Changed -= Refresh;
     }
 
+    void Update() => RefreshDamage();
+
+    void RefreshDamage()
+    {
+        if (damageLabel == null || wallet == null) return;
+        var run = RunProgression.Instance;
+        int damage = wallet.Level + (run != null ? run.PistolLevel + run.BonusDamage : 1);
+        if (damage == displayedDamage) return;
+        displayedDamage = damage;
+        damageLabel.SetText("{0} to {1} per hit", (float)damage, (float)(damage + 1));
+    }
+
     void Refresh()
     {
         if (wallet == null) return;
         coinsLabel.SetText("{0} coins", wallet.Coins);
         upgradeLabel.SetText("Upgrade\n{0} coins", wallet.NextCost);
-        if (damageLabel != null) damageLabel.SetText("{0} to {1} per hit", (float)(1 + wallet.Level), (float)(2 + wallet.Level));
+        RefreshDamage();
         upgradeButton.interactable = wallet.Coins >= wallet.NextCost;
         upgradeButton.GetComponent<Image>().color = upgradeButton.interactable
             ? new Color(0.29f, 0.25f, 0.16f) : new Color(0.1f, 0.12f, 0.13f);

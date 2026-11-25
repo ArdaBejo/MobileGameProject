@@ -40,16 +40,13 @@ public class Enemy : MonoBehaviour
             spriteRenderer.color = originalColor;
     }
 
-    public async void Hit()
+    public void Hit() => Hit(1 + (Wallet.Instance != null ? Wallet.Instance.Level : 0));
+
+    public async void Hit(int damage)
     {
         if (!isActiveAndEnabled || health <= 0) return;
 
-        int damage = 1;
-
-        if (Wallet.Instance != null)
-            damage += Wallet.Instance.Level;
-
-        health -= damage;
+        health -= Mathf.Max(0, damage);
 
         if (health <= 0)
         {

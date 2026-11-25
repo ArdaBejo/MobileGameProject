@@ -1,0 +1,27 @@
+11-25 15:47:32.166  7881  7929 I Unity   : [RunTest] PASS fresh arsenal
+11-25 15:47:32.173  7881  7929 I Unity   : [telemetry] 6.97 ca320b26 level_up level=2 kills=5
+11-25 15:47:32.202  7881  7929 I Unity   : [RunTest] PASS five kills pause for a choice
+11-25 15:47:32.202  7881  7929 I Unity   : [RunTest] WAITING_BACK_CHECK
+11-25 15:47:38.214  7881  7929 I Unity   : [RunTest] PASS choice survives Back input
+11-25 15:47:38.220  7881  7929 I Unity   : [telemetry] 13.02 ca320b26 upgrade_selected upgrade_id=Sword run_level=2 next_kills=13
+11-25 15:47:38.223  7881  7929 I Unity   : [RunTest] PASS sword unlock resumes gameplay
+11-25 15:47:38.252  7881  7929 I Unity   : [telemetry] 13.05 ca320b26 level_up level=3 kills=13
+11-25 15:47:38.253  7881  7929 I Unity   : [telemetry] 13.05 ca320b26 upgrade_selected upgrade_id=Rocket run_level=3 next_kills=24
+11-25 15:47:38.254  7881  7929 I Unity   : [RunTest] PASS rocket unlock
+11-25 15:47:38.256  7881  7929 I Unity   : [telemetry] 13.06 ca320b26 level_up level=4 kills=13
+11-25 15:47:38.257  7881  7929 I Unity   : [telemetry] 13.06 ca320b26 upgrade_selected upgrade_id=Damage run_level=4 next_kills=38
+11-25 15:47:38.258  7881  7929 I Unity   : [RunTest] PASS global damage passive
+11-25 15:47:38.259  7881  7929 I Unity   : [telemetry] 13.06 ca320b26 level_up level=5 kills=13
+11-25 15:47:38.261  7881  7929 I Unity   : [telemetry] 13.06 ca320b26 upgrade_selected upgrade_id=Speed run_level=5 next_kills=55
+11-25 15:47:38.262  7881  7929 I Unity   : [RunTest] PASS speed passive
+11-25 15:47:38.263  7881  7929 I Unity   : [telemetry] 13.06 ca320b26 level_up level=6 kills=13
+11-25 15:47:38.264  7881  7929 I Unity   : [telemetry] 13.07 ca320b26 upgrade_selected upgrade_id=Shield run_level=6 next_kills=75
+11-25 15:47:38.265  7881  7929 I Unity   : [RunTest] PASS shield consumes one charge
+11-25 15:47:38.266  7881  7929 I Unity   : [telemetry] 13.07 ca320b26 level_up level=7 kills=13
+11-25 15:47:38.267  7881  7929 I Unity   : [telemetry] 13.07 ca320b26 upgrade_selected upgrade_id=Pistol run_level=7 next_kills=98
+11-25 15:47:38.271  7881  7929 I Unity   : [RunTest] PASS pistol level
+11-25 15:47:38.296  7881  7929 I Unity   : [RunTest] PASS area damage safely kills two pooled enemies
+11-25 15:47:42.275  7881  7929 I Unity   : [RunTest] PASS automatic weapons hit live targets
+11-25 15:47:47.316  7881  7929 I Unity   : [RunTest] PASS restart resets arsenal
+11-25 15:47:47.316  7881  7929 I Unity   : [RunTest] PASS restart clears saved upgrades and previous wallet
+11-25 15:47:47.317  7881  7929 I Unity   : [RunTest] ALL_CHECKS_PASSED

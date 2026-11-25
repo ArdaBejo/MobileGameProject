@@ -8,6 +8,7 @@ public class EnemyPool : MonoBehaviour
 
     readonly Stack<Enemy> pool = new();
     readonly HashSet<Enemy> activeEnemies = new();
+    readonly List<Enemy> areaTargets = new(64);
     public int ActiveCount => activeEnemies.Count;
 
     public Enemy Nearest(Vector2 position)
@@ -39,6 +40,19 @@ public class EnemyPool : MonoBehaviour
             }
         }
         return hit;
+    }
+
+    public void DamageInRadius(Vector2 center, float radius, int damage)
+    {
+        areaTargets.Clear();
+        float squaredRadius = radius * radius;
+        foreach (var enemy in activeEnemies)
+        {
+            if (((Vector2)enemy.transform.position - center).sqrMagnitude <= squaredRadius)
+                areaTargets.Add(enemy);
+        }
+        foreach (var enemy in areaTargets)
+            enemy.Hit(damage);
     }
 
     void Awake()

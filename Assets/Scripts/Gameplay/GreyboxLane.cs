@@ -61,6 +61,7 @@ public class GreyboxLane : MonoBehaviour
     float nextShot;
     float immunityUntil;
     bool finished;
+    RunProgression progression;
     int lastSecond = -1;
     readonly Shot[] shots = new Shot[32];
 
@@ -69,6 +70,7 @@ public class GreyboxLane : MonoBehaviour
         public SpriteRenderer Renderer;
         public Vector2 Velocity;
         public float Life;
+        public int Damage;
     }
 
     void Awake()
@@ -128,6 +130,8 @@ public class GreyboxLane : MonoBehaviour
         }
         CreateAudio();
         CreateUI();
+        progression = gameObject.AddComponent<RunProgression>();
+        gameObject.AddComponent<RunWeapons>().Initialize(this, pool, progression);
         FitArena();
         RefreshHUD();
     }
@@ -161,7 +165,7 @@ public class GreyboxLane : MonoBehaviour
         fill.color = new Color(0.48f, 0.76f, 0.58f);
     }
 
-    SpriteRenderer Block(string name, Vector2 position, Vector2 size, Color color, int order)
+    internal SpriteRenderer Block(string name, Vector2 position, Vector2 size, Color color, int order)
     {
         var obj = new GameObject(name, typeof(SpriteRenderer));
         obj.transform.SetParent(transform, false);
@@ -236,7 +240,7 @@ public class GreyboxLane : MonoBehaviour
         if (Time.time >= nextShot)
         {
             Fire();
-            nextShot = Time.time + shotInterval;
+            nextShot = Time.time + shotInterval / (1 + (progression.PistolLevel - 1) * 0.15f);
         }
         UpdateShots();
         if (lastSecond != Mathf.FloorToInt(elapsed)) RefreshHUD();
@@ -247,7 +251,7 @@ public class GreyboxLane : MonoBehaviour
     {
         if (TryDragPosition(out var draggedPosition))
         {
-            SetPlayerPosition(Vector2.MoveTowards(Player.position, draggedPosition, movementSpeed * Time.deltaTime));
+            SetPlayerPosition(Vector2.MoveTowards(Player.position, draggedPosition, movementSpeed * progression.SpeedMultiplier * Time.deltaTime));
             return;
         }
         Vector2 input = Vector2.zero;
@@ -255,7 +259,7 @@ public class GreyboxLane : MonoBehaviour
         if (keyboard != null)
             input += new Vector2((keyboard.dKey.isPressed || keyboard.rightArrowKey.isPressed ? 1 : 0) - (keyboard.aKey.isPressed || keyboard.leftArrowKey.isPressed ? 1 : 0),
                 (keyboard.wKey.isPressed || keyboard.upArrowKey.isPressed ? 1 : 0) - (keyboard.sKey.isPressed || keyboard.downArrowKey.isPressed ? 1 : 0));
-        Vector2 position = (Vector2)Player.position + Vector2.ClampMagnitude(input, 1) * movementSpeed * Time.deltaTime;
+        Vector2 position = (Vector2)Player.position + Vector2.ClampMagnitude(input, 1) * movementSpeed * progression.SpeedMultiplier * Time.deltaTime;
         SetPlayerPosition(position);
     }
 
@@ -368,6 +372,8 @@ public class GreyboxLane : MonoBehaviour
             shot.Renderer.transform.position = Player.position;
             shot.Velocity = ((Vector2)nearest.transform.position - (Vector2)Player.position).normalized * 9f;
             shot.Life = 1.5f;
+            shot.Damage = progression.PistolLevel + progression.BonusDamage
+                + (Wallet.Instance != null ? Wallet.Instance.Level : 0);
             shot.Renderer.gameObject.SetActive(true);
             audioSource.PlayOneShot(click, 0.12f);
             return;
@@ -384,7 +390,7 @@ public class GreyboxLane : MonoBehaviour
             var hit = pool.FirstHit(from, to, 0.3f);
             shot.Renderer.transform.position = to;
             shot.Life -= Time.deltaTime;
-            if (hit != null) { hit.Hit(); shot.Life = 0; }
+            if (hit != null) { hit.Hit(shot.Damage); shot.Life = 0; }
             if (shot.Life <= 0) shot.Renderer.gameObject.SetActive(false);
         }
     }
@@ -392,6 +398,11 @@ public class GreyboxLane : MonoBehaviour
     public void DamagePlayer()
     {
         if (!Playing || Time.time < immunityUntil) return;
+        if (progression.TryBlockDamage())
+        {
+            immunityUntil = Time.time + 0.5f;
+            return;
+        }
         health--;
         immunityUntil = Time.time + 1f;
         audioSource.PlayOneShot(click, 0.6f);
@@ -412,7 +423,9 @@ public class GreyboxLane : MonoBehaviour
         lastSecond = Mathf.FloorToInt(elapsed);
         int remaining = Mathf.CeilToInt(duration - elapsed);
         timer.text = $"{remaining / 60:00}:{remaining % 60:00}";
-        status.text = $"Wave {Wave} / 3     {kills} kills";
+        status.text = progression != null
+            ? $"Wave {Wave}/3   Lv {progression.Level}   {kills}/{progression.NextLevelKills} kills"
+            : $"Wave {Wave}/3   {kills} kills";
         float fraction = Mathf.Clamp01((float)health / maxHealth);
         healthFill.localScale = new Vector3(fraction, 1, 1);
         healthFill.localPosition = new Vector3((fraction - 1) * 0.5f, 0, 0);

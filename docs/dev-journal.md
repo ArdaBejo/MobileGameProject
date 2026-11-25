@@ -527,3 +527,11 @@ The project owner excluded the live showcase, so this lab produced no showcase s
 ### Week 10 Lab A — store assets and capture tooling (25 November 2026)
 
 Started the store listing asset pass. The first promotional art draft used ImageGen. After owner feedback, replaced both assets with compositions of the original astronaut, moon-bat and deck sprites. Exported a 512×512 RGBA icon and 1024×500 RGB feature graphic. Prepared two 76-character short descriptions and a long description limited to the implemented arena loop, upgrades, settings and local storage. Added Development-only capture tooling that hides the runtime canvases and world health bar and exports a central 9:16 image. Android Development build dada9b08 verified the capture trigger. Saved five HUD-free RGB PNGs from the Pixel 8 emulator, then kept four distinct moments at 1080×1920. The final icon uses the exact owner-supplied astronaut portrait. Store asset dimensions, copy lengths and capture provenance are recorded in docs/store/asset-checklist.md. A two-second recognition response from another person and the Moodle post remain human activities.
+
+### Week 10 Lab B — owner critique and adaptive launcher (25 November 2026)
+
+Prepared icon, screenshot and copy pairs. The owner chose the automatic-fire screenshot first and short description B. Recorded these as owner preferences. Generated separate 432×432 launcher layers from the supplied portrait, with the full silhouette inside the central 264×264 area, and assigned the adaptive slots in Unity. The launcher label is now No Stars Remain. A connected Drive search did not find the survey file; the current count and raw CSV remain unverified.
+
+### Three-weapon progression
+
+Implemented the original Pistol, Laser Sword and Rocket Launcher plan alongside kill-based level-up choices. Added Damage Up, Speed Up and a rechargeable single-hit Shield. Choices pause the arena and preserve touch readability. The two-minute arena remains the initial balancing configuration. Android QA build 1759cd51 passed the local regression script for thresholds, choice/Back handling, unlocks, passives, area damage, automatic hits and Restart reset. The scripted kill credits are test inputs. Signed release verification follows.

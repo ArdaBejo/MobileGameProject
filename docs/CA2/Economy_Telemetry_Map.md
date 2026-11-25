@@ -13,3 +13,8 @@ No Stars Remain — Week 6 Lab B, 17 October 2026
 Each record has elapsed runtime and an eight-character random session ID. Attempts increment per lane within that session. `time_s` uses scaled gameplay time since level_start, excluding pauses; `score` is kills. `coins_earned` counts Wallet.Earn credits during the run, not the net balance after purchases; a fake coin pack would also count if used during the run. Purchase cost is captured before increasing the upgrade level. Metadata values are percent-encoded as single tokens; numeric formatting is locale-independent.
 
 Data stays in Unity logs/logcat and `telemetry.log` under `Application.persistentDataPath`; the game does not upload it or use an analytics SDK. Manual export is used for coursework evidence, and local storage/retention are disclosed in `docs/CA1/privacy-statement.md`.
+
+| Additional run event | Parameters | Trigger |
+| --- | --- | --- |
+| level_up | level, kills | Kill threshold opens the paused selection panel |
+| upgrade_selected | upgrade_id, run_level, next_kills | One offered weapon or passive is selected and gameplay resumes |

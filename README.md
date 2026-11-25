@@ -5,7 +5,7 @@
 **Project option:** 1 – Arena-Survivor Roguelite  
 **Current CA1 release:** 0.3.0
 
-**Current Unity project version:** 0.8.0 (versionCode 5). The CA1 device evidence below remains specific to 0.3.0; it does not verify the current project version.
+**Current Unity project version:** 0.9.0 (versionCode 6). The CA1 device evidence below remains specific to 0.3.0; it does not verify the current project version.
 
 The current enabled build scenes are `Boot`, `Menu`, `Game`, and `Result`, in that order. `Boot` loads `Menu` on startup. The earlier `MainMenu` and `Sample Scene` names below describe the CA1 release history.
 
@@ -32,19 +32,19 @@ The loader logs `[perf] scene <name> loaded in <milliseconds> ms`, including its
 
 ## Project overview
 
-No Stars Remain is a portrait-oriented arena-survivor roguelite for Android. Touch the player and drag to move. The pistol attacks automatically. Open Pause → Settings to adjust audio, accessibility and the device tier. Pause → Restart starts a fresh run and clears coins and pistol upgrades. The current planned weapons are:
+No Stars Remain is a portrait-oriented arena-survivor roguelite for Android. Touch the player and drag to move. The pistol attacks automatically. Kill thresholds pause the run for a choice of weapon or passive upgrade. Open Pause → Settings to adjust audio, accessibility and the device tier. Pause → Restart starts a fresh run and clears coins and pistol upgrades. The current weapons are:
 
 - Pistol
 - Laser Sword
 - Rocket Launcher
 
-Planned passive upgrades:
+Run passives offered at level-up:
 
 - Damage Up
 - Speed Up
 - Shield
 
-The Week 6 vertical-slice target is one arena, three weapons, three upgrades, a ten-minute run, and pause/resume functionality. These are development targets, not a claim that the full gameplay loop is complete in CA1.
+The current arena lasts two minutes with three waves. Pistol starts equipped. Laser Sword and Rocket Launcher unlock through kill-based choices. Damage Up, Speed Up and Shield last for the current run. Coin purchases still upgrade the pistol and retain their existing save rules. Restart clears the wallet and starts with the default arsenal.
 
 The CA1 build includes a splash screen, a separate `MainMenu` scene with working Start Game and Quit buttons, and the existing gameplay prototype in `Sample Scene`. Settings and pause/resume controls are available in the gameplay scene.
 
@@ -111,8 +111,8 @@ The repository should ignore signing files:
 2. In **File → Build Profiles**, select and activate **Release Android**.
 3. Check **Edit → Project Settings → Player → Android → Other Settings**:
    - Package name: `com.ardabecanim.mobilegame`
-   - Version: `0.8.0`
-   - Bundle Version Code: `5`
+   - Version: `0.9.0`
+   - Bundle Version Code: `6`
    - Minimum API Level: Android 8.0 / API 26
    - Target API Level: Automatic (highest installed)
    - Scripting Backend: IL2CPP
@@ -127,14 +127,14 @@ The repository should ignore signing files:
 7. Click **Build** and save the release APK as:
 
 ```text
-Builds/NoStarsRemain-0.8.0-arm64.apk
+Builds/NoStarsRemain-0.9.0-arm64.apk
 ```
 
 8. With an authorized Android device or emulator connected, install the APK using ADB (adjust paths as needed):
 
 ```powershell
 & "D:\UNITY\6000.6.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\platform-tools\adb.exe" devices
-& "D:\UNITY\6000.6.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\platform-tools\adb.exe" install -r "C:\Users\probe\OneDrive\Desktop\MobileGameProject\Builds\NoStarsRemain-0.8.0-arm64.apk"
+& "D:\UNITY\6000.6.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\platform-tools\adb.exe" install -r "C:\Users\probe\OneDrive\Desktop\MobileGameProject\Builds\NoStarsRemain-0.9.0-arm64.apk"
 ```
 
 9. Verify the installed version:
@@ -143,7 +143,7 @@ Builds/NoStarsRemain-0.8.0-arm64.apk
 & "D:\UNITY\6000.6.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\platform-tools\adb.exe" shell dumpsys package com.ardabecanim.mobilegame | Select-String "versionCode|versionName"
 ```
 
-Expected values are `versionCode=5` and `versionName=0.8.0`. Use the About panel or Logcat to identify the build.
+Expected values are `versionCode=6` and `versionName=0.9.0`. Use the About panel or Logcat to identify the build.
 
 **Update note:** An APK signed using the new keystore cannot replace an installation signed with the old key. If Android reports `INSTALL_FAILED_UPDATE_INCOMPATIBLE`, uninstall the older installation before installing the new APK; uninstalling removes the app's local data.
 
