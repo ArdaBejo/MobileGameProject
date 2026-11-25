@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] int maxHealth = 4;
+    [SerializeField] int maxHealth = 30;
     [SerializeField] int coinReward = 7;
     int health;
     EnemyPool pool;
@@ -29,7 +29,8 @@ public class Enemy : MonoBehaviour
 
     void OnEnable()
     {
-        health = maxHealth;
+        LifecycleGuard.PausedChanged += OnPauseChanged;
+        health = CombatBalance.EnemyHealth(maxHealth, GreyboxLane.Instance != null ? GreyboxLane.Instance.Wave : 1);
 
         if (GreyboxLane.Instance != null && GreyboxLane.Instance.Player != null && spriteRenderer != null)
         {
@@ -40,7 +41,7 @@ public class Enemy : MonoBehaviour
             spriteRenderer.color = originalColor;
     }
 
-    public void Hit() => Hit(1 + (Wallet.Instance != null ? Wallet.Instance.Level : 0));
+    public void Hit() => Hit(CombatBalance.Pistol(1, Wallet.Instance != null ? Wallet.Instance.Level : 0, 0));
 
     public async void Hit(int damage)
     {
@@ -59,7 +60,7 @@ public class Enemy : MonoBehaviour
         if (spriteRenderer != null)
         {
             CancelHitFeedback();
-            var feedback = CancellationTokenSource.CreateLinkedTokenSource(destroyCancellationToken);
+            var feedback = CancellationTokenSource.CreateLinkedTokenSource(destroyCancellationToken, Application.exitCancellationToken);
             hitFeedback = feedback;
             spriteRenderer.color = Color.red;
             try
@@ -76,7 +77,18 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void OnDisable() => CancelHitFeedback();
+    void OnDisable()
+    {
+        LifecycleGuard.PausedChanged -= OnPauseChanged;
+        CancelHitFeedback();
+    }
+
+    void OnPauseChanged(bool paused)
+    {
+        if (!paused) return;
+        CancelHitFeedback();
+        if (spriteRenderer != null) spriteRenderer.color = originalColor;
+    }
 
     void CancelHitFeedback()
     {

@@ -16,7 +16,7 @@ public class GreyboxLane : MonoBehaviour
     [SerializeField] float duration = 120f;
     [SerializeField] float movementSpeed = 3f;
     [SerializeField, Range(0.1f, 2f)] float walkAnimationSpeed = 0.8f;
-    [SerializeField] int maxHealth = 5;
+    [SerializeField] int maxHealth = 100;
     [SerializeField] float shotInterval = 0.4f;
     public Rect ArenaBounds { get; private set; }
     public Vector2 HalfSize => ArenaBounds.size * 0.5f;
@@ -26,7 +26,7 @@ public class GreyboxLane : MonoBehaviour
     public bool Playing => Player != null && manager.CurrentState == GameManager.State.Playing && !LifecycleGuard.IsPaused && !finished
         && (SceneLoader.Instance == null || !SceneLoader.Instance.IsLoading);
     public int Wave => Mathf.Min(3, 1 + Mathf.FloorToInt(elapsed / 40f));
-    public float SpawnInterval => Wave == 1 ? 1.75f : Wave == 2 ? 1.23f : 0.8f;
+    public float SpawnInterval => Wave == 1 ? 1.65f : Wave == 2 ? 1.25f : 0.95f;
     public float EnemySpeed => Wave == 1 ? 1.08f : Wave == 2 ? 1.3f : 1.5f;
 
     Sprite square;
@@ -372,8 +372,8 @@ public class GreyboxLane : MonoBehaviour
             shot.Renderer.transform.position = Player.position;
             shot.Velocity = ((Vector2)nearest.transform.position - (Vector2)Player.position).normalized * 9f;
             shot.Life = 1.5f;
-            shot.Damage = progression.PistolLevel + progression.BonusDamage
-                + (Wallet.Instance != null ? Wallet.Instance.Level : 0);
+            shot.Damage = CombatBalance.Pistol(progression.PistolLevel,
+                Wallet.Instance != null ? Wallet.Instance.Level : 0, progression.DamageLevel);
             shot.Renderer.gameObject.SetActive(true);
             audioSource.PlayOneShot(click, 0.12f);
             return;
@@ -403,7 +403,7 @@ public class GreyboxLane : MonoBehaviour
             immunityUntil = Time.time + 0.5f;
             return;
         }
-        health--;
+        health = Mathf.Max(0, health - CombatBalance.Contact(Wave));
         immunityUntil = Time.time + 1f;
         audioSource.PlayOneShot(click, 0.6f);
         Haptics.Pulse();

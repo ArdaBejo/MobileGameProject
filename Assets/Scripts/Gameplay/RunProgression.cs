@@ -17,7 +17,7 @@ public sealed class RunProgression : MonoBehaviour
     public int ShieldLevel { get; private set; }
     public int ShieldCharges { get; private set; }
     public float SpeedMultiplier => 1 + SpeedLevel * 0.12f;
-    public int BonusDamage => DamageLevel;
+    public int BonusDamage => DamageLevel; // Might rank; each rank adds 20% damage.
 
     enum Upgrade { Pistol, Sword, Rocket, Damage, Speed, Shield }
     readonly Upgrade[] candidates = new Upgrade[6];
@@ -112,7 +112,7 @@ public sealed class RunProgression : MonoBehaviour
                 : $"Laser Sword Lv {SwordLevel + 1}\nMore damage and a wider sweep";
             case Upgrade.Rocket: return RocketLevel == 0 ? "Rocket Launcher\nUnlock explosive automatic shots"
                 : $"Rocket Launcher Lv {RocketLevel + 1}\nMore damage and a larger blast";
-            case Upgrade.Damage: return $"Damage Up {DamageLevel + 1}/3\n+1 damage to every weapon";
+            case Upgrade.Damage: return $"Damage Up {DamageLevel + 1}/3\n+20% base damage to every weapon";
             case Upgrade.Speed: return $"Speed Up {SpeedLevel + 1}/3\n+12% movement speed";
             default: return $"Shield {ShieldLevel + 1}/3\nBlock one hit, recharge faster";
         }

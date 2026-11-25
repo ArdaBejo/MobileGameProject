@@ -32,6 +32,15 @@ public class LifecycleGuard : MonoBehaviour
         IsPaused = value;
         Time.timeScale = value ? 0f : 1f;
         AudioListener.pause = value;
-        if (changed) PausedChanged?.Invoke(value);
+        if (changed)
+        {
+            // Flush actual wallet state on every pause source, not only Android Home.
+            if (value && Wallet.Instance != null) WalletSave.Save(Wallet.Instance);
+            if (value) PlayerPrefs.Save();
+            if (!value && Wallet.Instance != null)
+                WalletSave.Load(Wallet.Instance);
+            Debug.Log($"[Lifecycle] paused={value} wallet={Wallet.Instance?.Coins} rank={Wallet.Instance?.Level}");
+            PausedChanged?.Invoke(value);
+        }
     }
 }

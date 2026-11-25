@@ -73,7 +73,7 @@ public sealed class RunWeapons : MonoBehaviour
             sword.transform.localScale = Vector3.one * radius;
             swordUntil = Time.time + 0.18f;
             sword.enabled = true;
-            pool.DamageInRadius(position, radius, 1 + progression.SwordLevel + progression.BonusDamage);
+            pool.DamageInRadius(position, radius, CombatBalance.Sword(progression.SwordLevel, progression.DamageLevel));
             nextSword = Time.time + Mathf.Max(0.5f, 1.7f - progression.SwordLevel * 0.15f);
         }
         if (progression.RocketLevel > 0 && Time.time >= nextRocket)
@@ -116,7 +116,7 @@ public sealed class RunWeapons : MonoBehaviour
                 Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90);
             rocket.Velocity = direction * 6;
             rocket.Life = 2.5f;
-            rocket.Damage = 2 + progression.RocketLevel * 2 + progression.BonusDamage;
+            rocket.Damage = CombatBalance.Rocket(progression.RocketLevel, progression.DamageLevel);
             rocket.Radius = 1.1f + progression.RocketLevel * 0.2f;
             rocket.Renderer.gameObject.SetActive(true);
             return;

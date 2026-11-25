@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22cd52db36281cc47b94258ae3e3689e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  maxHealth: 5
+  maxHealth: 30
   coinReward: 10
 --- !u!58 &3360239215928159638
 CircleCollider2D:

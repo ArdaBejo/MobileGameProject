@@ -10,6 +10,7 @@ public class Wallet : MonoBehaviour
     public event System.Action Changed;
     public event System.Action<int> Earned;
 
+    public bool CanUpgrade => Level < CombatBalance.MaxPaidLevels;
     public int NextCost => (int)(100 * Mathf.Pow(1.5f, Level));
 
     void Awake()
@@ -34,7 +35,7 @@ public class Wallet : MonoBehaviour
     public bool TryUpgrade()
     {
         int cost = NextCost;
-        if (Coins < cost)
+        if (!CanUpgrade || Coins < cost)
             return false;
 
         Coins -= cost;

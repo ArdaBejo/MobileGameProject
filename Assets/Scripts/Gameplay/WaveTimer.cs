@@ -2,32 +2,19 @@ using System;
 using System.Threading;
 using UnityEngine;
 
-public class WaveTimer : MonoBehaviour
+public class WaveTimer : ResumeGuard
 {
     [SerializeField] float interval = 2f;
     [SerializeField] EnemyPool pool;
 
-    CancellationTokenSource cts;
-
-    void OnEnable()
-    {
-        cts = CancellationTokenSource.CreateLinkedTokenSource(
-            Application.exitCancellationToken);
-
-        _ = RunAsync(cts.Token);
-    }
-
-    void OnDisable()
-    {
-        cts?.Cancel();
-        cts?.Dispose();
-        cts = null;
-    }
+    protected override void RestartTimer(CancellationToken token) => _ = RunAsync(token);
 
     async Awaitable RunAsync(CancellationToken ct)
     {
         try
         {
+            // A fresh interval on resume prevents a cancelled wait and its replacement spawning together.
+            await Awaitable.WaitForSecondsAsync(GreyboxLane.Instance != null ? GreyboxLane.Instance.SpawnInterval : interval, ct);
             // Let scene Start methods build the player and arena before spawning.
             await Awaitable.NextFrameAsync(ct);
             while (true)

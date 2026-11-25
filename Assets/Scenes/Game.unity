@@ -489,7 +489,7 @@ MonoBehaviour:
   spriteMaterialTemplate: {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   duration: 120
   movementSpeed: 3
-  maxHealth: 5
+  maxHealth: 100
   shotInterval: 0.4
 --- !u!1 &245516551
 GameObject:

@@ -65,19 +65,24 @@ public class WalletHud : MonoBehaviour
     {
         if (damageLabel == null || wallet == null) return;
         var run = RunProgression.Instance;
-        int damage = wallet.Level + (run != null ? run.PistolLevel + run.BonusDamage : 1);
+        int rank = run != null ? run.PistolLevel : 1;
+        int might = run != null ? run.DamageLevel : 0;
+        int damage = CombatBalance.Pistol(rank, wallet.Level, might);
         if (damage == displayedDamage) return;
         displayedDamage = damage;
-        damageLabel.SetText("{0} to {1} per hit", (float)damage, (float)(damage + 1));
+        if (wallet.CanUpgrade)
+            damageLabel.SetText("{0} to {1} per hit", (float)damage, (float)CombatBalance.Pistol(rank, wallet.Level + 1, might));
+        else damageLabel.SetText("{0} per hit (MAX)", (float)damage);
     }
 
     void Refresh()
     {
         if (wallet == null) return;
         coinsLabel.SetText("{0} coins", wallet.Coins);
-        upgradeLabel.SetText("Upgrade\n{0} coins", wallet.NextCost);
+        if (wallet.CanUpgrade) upgradeLabel.SetText("Upgrade\n{0} coins", wallet.NextCost);
+        else upgradeLabel.text = "MAX";
         RefreshDamage();
-        upgradeButton.interactable = wallet.Coins >= wallet.NextCost;
+        upgradeButton.interactable = wallet.CanUpgrade && wallet.Coins >= wallet.NextCost;
         upgradeButton.GetComponent<Image>().color = upgradeButton.interactable
             ? new Color(0.29f, 0.25f, 0.16f) : new Color(0.1f, 0.12f, 0.13f);
     }
@@ -87,3 +92,4 @@ public class WalletHud : MonoBehaviour
         if (wallet != null && (SceneLoader.Instance == null || !SceneLoader.Instance.IsLoading)) wallet.TryUpgrade();
     }
 }
+
