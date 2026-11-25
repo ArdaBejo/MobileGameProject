@@ -15,9 +15,10 @@ Drag your astronaut clear of alien swarms while your pistol fires automatically.
 Survive three waves in a two-minute arena and turn earned coins into more damage.
 
 - Move with direct touch-and-drag controls.
-- Face three waves with increasing enemy pressure.
-- Earn coins from defeated enemies and buy pistol damage upgrades.
-- Keep coins and upgrades between ordinary attempts.
+- Face three waves in a two-minute survival run.
+- Unlock Laser Sword and Rocket Launcher alongside your automatic pistol.
+- Choose weapon levels, damage, movement speed or a shield at kill milestones.
+- Earn coins and buy persistent pistol damage upgrades.
 - Start fresh with Restart in the Pause menu.
 - Adjust music volume, text size and device quality in Settings.
 - Play in portrait orientation with Low, Mid and High quality options.
@@ -28,4 +29,4 @@ Gameplay works offline. Progress, settings and diagnostic gameplay logs are stor
 
 Both short descriptions must remain within 80 characters and the long description within 4,000. Features describe the current arena build. The Restart action resets coins and pistol upgrades. Device tier overrides take effect at the next launch.
 
-The two variants are prepared for the Lab B critique. Reader preference has not been measured.
+The project owner selected short B in the Lab B critique on 25 November 2026. Group peer preference has not been measured.

@@ -12,7 +12,7 @@ Specs checked against the Play *Add preview assets* help page on 25 November 202
 | screenshots/04-enemy-pressure.png | 9:16, sides 1080–3840 px, RGB PNG, HUD hidden | 1080×1920, RGB PNG | Pass |
 | Screenshot count | Lab 4–6, promotion at least three portrait 9:16 shots | Four portrait 9:16 shots | Pass |
 | Short A / Short B | ≤80 characters each | 76 / 76 | Pass |
-| Long description | ≤4,000 characters | 793 | Pass |
+| Long description | ≤4,000 characters | 882 | Pass |
 
 The icon is the astronaut portrait supplied by the project owner, resized with nearest-neighbour sampling and its transparency preserved. It has no baked rounded corners. The feature graphic uses the real astronaut, moon-bat and deck assets, with the title and characters inside the central area.
 
@@ -34,3 +34,16 @@ Shot 02 from the raw capture set was excluded because it repeated a nearby movem
 ## Lab B handoff
 
 Preferred critique screenshot is 03-break-away.png. Short variants A and B are in descriptions.md. The Moodle exit ticket has not been posted.
+
+## Lab B exports — 25 November 2026
+
+| File | Verified export | Result |
+| --- | --- | --- |
+| icon-A.png / icon-B.png | 512×512 RGBA PNG; background is the only pair variable | Pass |
+| icon-A-48.png / icon-B-48.png | 48×48 RGBA PNG | Pass |
+| launcher-foreground.png | 432×432 RGBA; alpha bounds (84, 91)–(348, 341), inside central 264×264 | Pass |
+| launcher-background.png | 432×432 RGB, fully opaque | Pass |
+| short-description-selected.txt | Short B, 76 characters excluding line ending | Pass |
+| screenshot-order.txt | Owner-selected automatic-fire shot first, chase shot second | Pass |
+
+The adaptive layers are assigned to every supported Android adaptive icon slot. The Pixel 8 emulator launcher masked the portrait into a circle without clipping the intended silhouette. [Verification](launcher-android.png)

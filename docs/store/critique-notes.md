@@ -31,3 +31,9 @@ A/B comparison image ab-pairs.png places A on the left and B on the right. The f
 The earlier project journal records two owner-reported peer sessions from Week 8. A connected Drive search for the game title and feedback found no matching form or responses file. A current response count or form editor link has been requested from the owner. Current totals and a raw CSV export are unverified.
 
 Pack 3 closes on 29 November 2026 at 23:59. The lab sheet permits family and course-mates, while slide 7 asks for ten responses from people outside the family. Collecting ten non-family responses satisfies both sources. The QR has not been re-shared in this session.
+
+## Adaptive launcher verification
+
+Development build 1759cd51 was installed on the Pixel 8 Android 16 emulator. The launcher displayed the supplied astronaut portrait inside its circular mask, with the entire intended foreground visible. The exported foreground alpha bounds are (84, 91)–(348, 341) on a 432×432 canvas. [Launcher screenshot](launcher-android.png)
+
+The Android product label is No Stars Remain. Testing another manufacturer's launcher remains a separate peer check.

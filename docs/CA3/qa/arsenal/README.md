@@ -18,3 +18,11 @@ The local QA script credits synthetic kills to exercise the selection thresholds
 [Android log](android-checks.txt) · [Development choice screenshot](choice-development.png)
 
 Signed release installation and a normal-play choice check are recorded separately.
+
+## Signed 0.9.0 release
+
+Build dd2cd44e, source 2e24ecd, 36,652,066 bytes. Verification confirmed ARM64 IL2CPP, Development Build off and signing-certificate continuity. The installed base.apk hash matched the local release. The APK contains no local regression harness.
+
+A normal, unmodified arena run earned five kills and opened level 2. Back left the selection available, and selecting Laser Sword resumed gameplay. The existing Play Asset Delivery class-lookup warning also appeared on startup and is tracked in KnownIssues.md.
+
+[Release identity](release.json) · [Normal-play Logcat](release-log.txt) · [Signed choice screen](choice-release.png)

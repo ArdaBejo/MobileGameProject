@@ -1,0 +1,4 @@
+11-25 15:55:30.244  8406  8446 I Unity   : [telemetry] 2.85 8c8b4c69 session_start version=0.9.0 build=dd2cd44e device=Google%20sdk_gphone64_x86_64 app_version=0.9.0 device_model=Google%20sdk_gphone64_x86_64 android=Android%20OS%2016%20%2F%20API-36%20%28BE2A.250530.026.D1%2F13818094%29 tier=High
+11-25 15:55:32.736  8406  8446 I Unity   : [telemetry] 5.36 8c8b4c69 level_start level_id=1 attempt=1 coins=0
+11-25 15:55:42.954  8406  8446 I Unity   : [telemetry] 15.58 8c8b4c69 level_up level=2 kills=5
+11-25 15:55:44.463  8406  8446 I Unity   : [telemetry] 17.08 8c8b4c69 upgrade_selected upgrade_id=Sword run_level=2 next_kills=13

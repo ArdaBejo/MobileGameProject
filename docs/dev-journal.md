@@ -535,3 +535,5 @@ Prepared icon, screenshot and copy pairs. The owner chose the automatic-fire scr
 ### Three-weapon progression
 
 Implemented the original Pistol, Laser Sword and Rocket Launcher plan alongside kill-based level-up choices. Added Damage Up, Speed Up and a rechargeable single-hit Shield. Choices pause the arena and preserve touch readability. The two-minute arena remains the initial balancing configuration. Android QA build 1759cd51 passed the local regression script for thresholds, choice/Back handling, unlocks, passives, area damage, automatic hits and Restart reset. The scripted kill credits are test inputs. Signed release verification follows.
+
+Signed release dd2cd44e (0.9.0 / 6) passed APK signature, ARM64 IL2CPP and non-debuggable verification, then installed on the Pixel 8 emulator. A normal arena run reached five kills and selected Laser Sword successfully. Added release identity and screenshots to the arsenal QA folder. The existing asset-pack class lookup warning remains tracked.
