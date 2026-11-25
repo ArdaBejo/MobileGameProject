@@ -1,0 +1,1546 @@
+--------- beginning of main
+11-25 17:20:14.700 13037 13037 V Unity   : Context Type: GameActivity
+11-25 17:20:14.705 13037 13037 D Unity   : CommandLine:  
+11-25 17:20:14.740 13037 13056 I Unity   : UnityApplication::CreateInstance
+11-25 17:20:14.740 13037 13056 I Unity   : GameActivity Package Version '4.4.0'
+11-25 17:20:14.746 13037 13056 I Unity   : Starting Game Loop
+11-25 17:20:14.762 13037 13037 I Unity   : onResume
+11-25 17:20:14.762 13037 13037 I Unity   : resumeUnity
+11-25 17:20:14.764 13037 13056 I Unity   : Handle cmd APP_CMD_START(11)
+11-25 17:20:14.773 13037 13056 I Unity   : Handle cmd APP_CMD_RESUME(12)
+11-25 17:20:14.794 13037 13056 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-25 17:20:14.803 13037 13056 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-25 17:20:14.806 13037 13056 I Unity   : Handle cmd APP_CMD_CONTENT_RECT_CHANGED(5)
+11-25 17:20:14.810 13037 13056 I Unity   : Handle cmd APP_CMD_INIT_WINDOW(1)
+11-25 17:20:14.908 13037 13056 I Unity   : MemoryManager: Using 'Dynamic Heap' Allocator.
+11-25 17:20:14.908 13037 13056 I Unity   : Mimalloc is enabled and will override the Dynamic Heap and Dual Thread (Main and MainThread) allocators.
+11-25 17:20:14.910 13037 13056 D Unity   : [UnityMemory] Configuration Parameters - Can be set up in boot.config
+11-25 17:20:14.910 13037 13056 D Unity   :     "memorysetup-temp-allocator-size-cloud-worker=32768"
+11-25 17:20:14.910 13037 13056 D Unity   :     "memorysetup-temp-allocator-size-audio-worker=65536"
+11-25 17:20:14.911 13037 13056 D Unity   :     "memorysetup-temp-allocator-size-preload-manager=262144"
+11-25 17:20:14.911 13037 13056 D Unity   :     "memorysetup-remapper-allocator-initial-capacity=32768"
+11-25 17:20:14.911 13037 13056 D Unity   :     "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+11-25 17:20:14.911 13037 13056 D Unity   :     "memorysetup-temp-allocator-size-gfx=262144"
+11-25 17:20:14.915 13037 13056 D Unity   :     "memorysetup-allocator-temp-initial-block-size-main=262144"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-allocator-temp-initial-block-size-worker=262144"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-temp-allocator-size-background-worker=32768"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-temp-allocator-size-job-worker=262144"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-bucket-allocator-granularity=16"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-bucket-allocator-bucket-count=8"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-bucket-allocator-block-size=4194304"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-bucket-allocator-block-count=1"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-main-allocator-block-size=16777216"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-thread-allocator-block-size=16777216"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-main-allocator-mimalloc-enabled=1"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-gfx-main-allocator-block-size=16777216"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-gfx-thread-allocator-block-size=16777216"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-cache-allocator-block-size=4194304"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-typetree-allocator-block-size=2097152"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-profiler-bucket-allocator-granularity=16"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-profiler-bucket-allocator-bucket-count=8"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-profiler-bucket-allocator-block-size=4194304"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-profiler-bucket-allocator-block-count=1"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-profiler-allocator-block-size=16777216"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-profiler-editor-allocator-block-size=1048576"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-temp-allocator-size-main=4194304"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-job-temp-allocator-block-size=2097152"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-job-temp-allocator-block-size-background=1048576"
+11-25 17:20:14.916 13037 13056 D Unity   :     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+11-25 17:20:14.983 13037 13037 I Unity   : windowFocusChanged: true
+11-25 17:20:15.056 13037 13056 D Unity   : Enabling Unity systrace
+11-25 17:20:15.057 13037 13056 D Unity   : Starting Unity systrace
+11-25 17:20:15.166 13037 13056 I Unity   : SetGameState: isLoading: true, mode: UNKNOWN, label: -2, quality: -1
+11-25 17:20:15.176 13037 13056 D Unity   : [VFS] Mount /data/app/~~yBo8Tq2BkFwGgwDuat4pXg==/com.ardabecanim.mobilegame.week11-VkQljp7se3V9VLRAKfznDg==/base.apk
+11-25 17:20:15.188 13037 13056 E Unity   : java.lang.ClassNotFoundException: Didn't find class "com.google.android.play.core.assetpacks.AssetPackManager" on path: DexPathList[[zip file "/data/app/~~yBo8Tq2BkFwGgwDuat4pXg==/com.ardabecanim.mobilegame.week11-VkQljp7se3V9VLRAKfznDg==/base.apk"],nativeLibraryDirectories=[/data/app/~~yBo8Tq2BkFwGgwDuat4pXg==/com.ardabecanim.mobilegame.week11-VkQljp7se3V9VLRAKfznDg==/lib/arm64, /data/app/~~yBo8Tq2BkFwGgwDuat4pXg==/com.ardabecanim.mobilegame.week11-VkQljp7se3V9VLRAKfznDg==/base.apk!/lib/arm64-v8a, /system/lib64, /system_ext/lib64]]
+11-25 17:20:15.206 13037 13056 I Unity   : SystemInfo CPU = x86-64 SSE3 SSE4.1 AVX, Cores = 2, Memory = 2472mb
+11-25 17:20:15.206 13037 13056 I Unity   : SystemInfo ARM big.LITTLE configuration: 2 big (mask: 0x3), 0 little (mask: 0x0)
+11-25 17:20:15.208 13037 13056 I Unity   : ApplicationInfo 'com.ardabecanim.mobilegame.week11', Version '0.9.1', Min API Level '26', Target API Level '36'
+11-25 17:20:15.209 13037 13056 I Unity   : Built from '6000.6/respin/6000.6.0f1-fa21a270ab12' branch, Version '6000.6.0f1 (f7f8ed4d1e24)', Build type 'Development', Scripting Backend 'il2cpp', CPU 'arm64-v8a', Stripping 'Enabled'
+11-25 17:20:15.209 13037 13056 I Unity   : Device Model 'Google sdk_gphone64_x86_64', OS 'Android OS 16 (API 36)'
+11-25 17:20:15.230 13037 13056 D Unity   : Determine if il2cpp resources need to be extracted:
+11-25 17:20:15.241 13037 13056 D Unity   :     il2cpp resources are up to date, not extracting
+11-25 17:20:15.616 13037 13056 D Unity   : CodeReloadManager initialized
+11-25 17:20:15.617 13037 13056 D Unity   : InitializeScriptEngine OK (0x79641a478e80)
+11-25 17:20:15.617 13037 13056 D Unity   : [EGL] Attaching window :0x7961d9e248d0
+11-25 17:20:15.623 13037 13056 D Unity   : Found 2 interfaces on host :
+11-25 17:20:15.623 13037 13056 D Unity   :  0) 10.0.2.15
+11-25 17:20:15.623 13037 13056 D Unity   :  1) 10.0.2.16
+11-25 17:20:15.623 13037 13056 D Unity   : 
+11-25 17:20:15.625 13037 13056 D Unity   : Player connection [133455130842768]  Target information:
+11-25 17:20:15.625 13037 13056 D Unity   : 
+11-25 17:20:15.625 13037 13056 D Unity   : Player connection [133455130842768]  * "[IP] 10.0.2.15 [Port] 55000 [Flags] 2 [Guid] 251550301 [EditorId] 3905362948 [Version] 1048832 [Id] AndroidPlayer(11,Google_sdk_gphone64_x86_64@10.0.2.16) [Debug] 0 [PackageName] AndroidPlayer [ProjectName] No Stars Remain" 
+11-25 17:20:15.625 13037 13056 D Unity   : 
+11-25 17:20:15.625 13037 13056 D Unity   : Player connection [133455130842768]  * "[IP] 10.0.2.16 [Port] 55000 [Flags] 2 [Guid] 251550301 [EditorId] 3905362948 [Version] 1048832 [Id] AndroidPlayer(11,Google_sdk_gphone64_x86_64@10.0.2.16) [Debug] 0 [PackageName] AndroidPlayer [ProjectName] No Stars Remain" 
+11-25 17:20:15.625 13037 13056 D Unity   : 
+11-25 17:20:15.625 13037 13056 D Unity   : Player connection [133455130842768] Started UDP target info broadcast (1) on [225.0.0.222:54997].
+11-25 17:20:15.625 13037 13056 D Unity   : 
+11-25 17:20:15.677 13037 13056 D Unity   : Input System module state changed to: Initialized.
+11-25 17:20:15.695 13037 13056 D Unity   : [Physics::Module] Initialized fallback backend.
+11-25 17:20:15.695 13037 13056 D Unity   : [Physics::Module] Id: 0xdecafbad
+11-25 17:20:15.724 13037 13056 D Unity   : PlayerInitEngineNoGraphics OK
+11-25 17:20:15.724 13037 13056 I Unity   : Company Name: DefaultCompany
+11-25 17:20:15.724 13037 13056 I Unity   : Product Name: No Stars Remain
+11-25 17:20:15.724 13037 13056 D Unity   : AndroidGraphics::Startup window =  0x7961d9e248d0
+11-25 17:20:15.724 13037 13056 D Unity   : [EGL] Attaching window :0x7961d9e248d0
+11-25 17:20:15.730 13037 13056 D Unity   : [Subsystems] Discovering subsystems at path /data/app/~~yBo8Tq2BkFwGgwDuat4pXg==/com.ardabecanim.mobilegame.week11-VkQljp7se3V9VLRAKfznDg==/base.apk/assets/bin/Data/UnitySubsystems
+11-25 17:20:15.752 13037 13056 D Unity   : [EGL] Request: ES 3.2 RGB 000 0/0
+11-25 17:20:15.752 13037 13056 D Unity   : [EGL] Checking ES 3.2 support...
+11-25 17:20:15.752 13037 13056 D Unity   : [EGL] ES3.2 not supported
+11-25 17:20:15.752 13037 13056 D Unity   : [EGL] Request: ES 3.1+AEP RGB 000 0/0
+11-25 17:20:15.752 13037 13056 D Unity   : [EGL] Checking ES 3.1 support...
+11-25 17:20:15.765 13037 13056 D Unity   : [EGL] ES 3.1 support detected
+11-25 17:20:15.765 13037 13056 D Unity   : [EGL] Found: ID[1] ES 3.1+AEP RGB 888 24/8
+11-25 17:20:15.765 13037 13056 D Unity   : GfxDevice: creating device client; kGfxThreadingModeThreaded
+11-25 17:20:15.769 13037 13056 D Unity   : [EGL] Request: ES 3.2 RGB 000 0/0
+11-25 17:20:15.789 13037 13056 D Unity   : [EGL] Request: ES 3.1+AEP RGB 000 0/0
+11-25 17:20:15.790 13037 13056 D Unity   : [EGL] Found: ID[1] ES 3.1+AEP RGB 888 24/8
+11-25 17:20:15.790 13037 13056 D Unity   : [EGL] Request: ES 3.0 RGBA 8888 0/0
+11-25 17:20:15.791 13037 13056 D Unity   : [EGL] Found: ID[2] ES 3.0 RGBA 8888 24/8
+11-25 17:20:15.808 13037 13056 D Unity   : ANativeWindow: (1080/2400) RequestedResolution: (0/0) RenderingResolution: (0/0) EGLSurface: (1080/2400)
+11-25 17:20:15.834 13037 13056 D Unity   : Renderer: Android Emulator OpenGL ES Translator (NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2)
+11-25 17:20:15.834 13037 13056 D Unity   : Vendor:   Google (NVIDIA Corporation)
+11-25 17:20:15.834 13037 13056 D Unity   : Version:  OpenGL ES 3.1 (4.5.0 NVIDIA 581.57)
+11-25 17:20:15.834 13037 13056 D Unity   : GLES:     3
+11-25 17:20:15.834 13037 13056 D Unity   :  GL_EXT_debug_marker GL_EXT_robustness GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_OVR_multiview2 GL_EXT_multiview_texture_multisample GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 GL_EXT_texture_buffer ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU
+11-25 17:20:15.834 13037 13056 D Unity   : _YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_1
+11-25 17:20:15.844 13037 13056 D Unity   : OPENGL LOG: Creating OpenGL ES 3.1 graphics device ; Context level  <OpenGL ES 3.1> ; Context handle -1176246496
+11-25 17:20:15.873 13037 13056 D Unity   : [EGL] Attaching window :0x7961d9e248d0
+11-25 17:20:15.876 13037 13056 D Unity   : Requested framebuffer: resolution[1080x2400], rgba[8/8/8/8], depth+stencil[on], samples[1]
+11-25 17:20:15.879 13037 13056 D Unity   : Created framebuffer: resolution[1080x2400], rgba[8/8/8/8], depth+stencil[24/8], samples[0] 
+11-25 17:20:15.901 13037 13056 D Unity   : SwappyWrapper: InitSwappyWrapper() succeeded.
+11-25 17:20:15.916 13037 13056 D Unity   : [EGL] Attaching window :0x7961d9e248d0
+11-25 17:20:15.917 13037 13056 D Unity   : Initialize engine version: 6000.6.0f1 (f7f8ed4d1e24)
+11-25 17:20:15.917 13037 13056 D Unity   : [EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=1048576, entitiesPerBlock=256, slots reserved=4294967296 bytes
+11-25 17:20:16.136 13037 13056 D Unity   : [Physics::Module] Selected backend.
+11-25 17:20:16.136 13037 13056 D Unity   : [Physics::Module] Name: PhysX
+11-25 17:20:16.136 13037 13056 D Unity   : [Physics::Module] Id: 0xf2b8ea05
+11-25 17:20:16.136 13037 13056 D Unity   : [Physics::Module] SDK Version: 4.1.2
+11-25 17:20:16.136 13037 13056 D Unity   : [Physics::Module] Integration Version: 1.0.0
+11-25 17:20:16.136 13037 13056 D Unity   : [Physics::Module] Threading Mode: Multi-Threaded
+11-25 17:20:16.525 13037 13056 I Unity   : [AP ADPF] Device API Level: 36
+11-25 17:20:16.525 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:16.525 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.Google.Android.NativeApi:GetApiLevel()
+11-25 17:20:16.525 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.Google.Android.NativeApi:IsAvailable()
+11-25 17:20:16.525 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.Google.Android.GoogleAndroidAdaptivePerformanceSubsystem:RegisterDescriptor()
+11-25 17:20:16.525 13037 13056 I Unity   : 
+11-25 17:20:16.615 13037 13056 D Unity   : PlayerInitEngineGraphics OK
+11-25 17:20:16.650 13037 13056 I Unity   : SetGameState: isLoading: false, mode: UNKNOWN, label: -1, quality: 0
+11-25 17:20:16.651 13037 13056 I Unity   :     HasWindow = 1, HasFocus = 0
+11-25 17:20:16.651 13037 13056 I Unity   : Handle cmd APP_CMD_WINDOW_RESIZED(3)
+11-25 17:20:16.651 13037 13056 D Unity   : NativeWindow resized 1080x2400
+11-25 17:20:16.651 13037 13056 I Unity   : Handle cmd APP_CMD_WINDOW_REDRAW_NEEDED(4)
+11-25 17:20:16.652 13037 13056 I Unity   : Handle cmd APP_CMD_GAINED_FOCUS(7)
+11-25 17:20:16.652 13037 13056 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-25 17:20:16.689 13037 13056 D Unity   : ANativeWindow: (1080/2400) RequestedResolution: (0/0) RenderingResolution: (0/0) EGLSurface: (1080/2400)
+11-25 17:20:16.732 13037 13049 I Unity   : [AP ADPF] Listener: onHighTempWarning(warningLevel=0)
+11-25 17:20:16.732 13037 13049 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:16.732 13037 13049 I Unity   : UnityEngine.AdaptivePerformance.Google.Android.NativeApi:OnHighTempWarning(Int32)
+11-25 17:20:16.732 13037 13049 I Unity   : 
+11-25 17:20:16.742 13037 13056 D Unity   : [AP ADPF] APerformanceHintSession 0x796279e65290 is created for 2 threads with target duration 33 ms
+11-25 17:20:16.744 13037 13056 D Unity   : [AP ADPF] APerformanceHintSession 0x796279e2e870 is created for 2 threads with target duration 33 ms
+11-25 17:20:16.827 13037 13056 I Unity   : SetGameState: isLoading: true, mode: UNKNOWN, label: 0, quality: 0
+11-25 17:20:18.904 13037 13056 D Unity   : UnloadTime: 18.814302 ms
+11-25 17:20:18.984 13037 13056 I Unity   : [Adaptive Performance] Only default scaler profile available. Reset all scalers to default profile.
+11-25 17:20:18.984 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:18.984 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.IAdaptivePerformanceSettings:LoadScalerProfile(String)
+11-25 17:20:18.984 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:InitializeAdaptivePerformance()
+11-25 17:20:18.984 13037 13056 I Unity   : UnityEngine.GameObject:Internal_AddComponentWithType(Type)
+11-25 17:20:18.984 13037 13056 I Unity   : UnityEngine.GameObject:AddComponent()
+11-25 17:20:18.984 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManagerSpawner:Initialize(Boolean)
+11-25 17:20:18.984 13037 13056 I Unity   : 
+11-25 17:20:18.989 13037 13056 I Unity   : [Adaptive Performance] Subsystem version=36.0.0
+11-25 17:20:18.989 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:18.989 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:InitializeAdaptivePerformance()
+11-25 17:20:18.989 13037 13056 I Unity   : UnityEngine.GameObject:Internal_AddComponentWithType(Type)
+11-25 17:20:18.989 13037 13056 I Unity   : UnityEngine.GameObject:AddComponent()
+11-25 17:20:18.989 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManagerSpawner:Initialize(Boolean)
+11-25 17:20:18.989 13037 13056 I Unity   : 
+11-25 17:20:18.996 13037 13056 I Unity   : [AP ADPF] FrameTimingManager does not have results, skip reporting.
+11-25 17:20:18.996 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:18.996 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.Google.Android.GoogleAndroidAdaptivePerformanceSubsystemProvider:Update()
+11-25 17:20:18.996 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.Provider.AdaptivePerformanceSubsystem:Update()
+11-25 17:20:18.996 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:20:18.996 13037 13056 I Unity   : UnityEngine.GameObject:Internal_AddComponentWithType(Type)
+11-25 17:20:18.996 13037 13056 I Unity   : UnityEngine.GameObject:AddComponent()
+11-25 17:20:18.996 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManagerSpawner:Initialize(Boolean)
+11-25 17:20:18.996 13037 13056 I Unity   : 
+11-25 17:20:19.007 13037 13056 I Unity   : [Adaptive Performance] [thermal event] temperature level: 0.9, warning level: NoWarning, thermal trend: 0
+11-25 17:20:19.007 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.007 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogThermalEvent(ThermalMetrics)
+11-25 17:20:19.007 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:20:19.007 13037 13056 I Unity   : UnityEngine.GameObject:Internal_AddComponentWithType(Type)
+11-25 17:20:19.007 13037 13056 I Unity   : UnityEngine.GameObject:AddComponent()
+11-25 17:20:19.007 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManagerSpawner:Initialize(Boolean)
+11-25 17:20:19.007 13037 13056 I Unity   : 
+11-25 17:20:19.010 13037 13056 I Unity   : [Adaptive Performance] [performance mode event] performance mode: Standard, fps: -1
+11-25 17:20:19.010 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.010 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogPerformanceModeEvent(PerformanceMode)
+11-25 17:20:19.010 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:20:19.010 13037 13056 I Unity   : UnityEngine.GameObject:Internal_AddComponentWithType(Type)
+11-25 17:20:19.010 13037 13056 I Unity   : UnityEngine.GameObject:AddComponent()
+11-25 17:20:19.010 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManagerSpawner:Initialize(Boolean)
+11-25 17:20:19.010 13037 13056 I Unity   : 
+11-25 17:20:19.011 13037 13056 I Unity   : [Adaptive Performance] The Default Scaler Profile scaler profile is already loaded.
+11-25 17:20:19.011 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.011 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManagerSpawner:Initialize(Boolean)
+11-25 17:20:19.011 13037 13056 I Unity   : 
+11-25 17:20:19.046 13037 13056 D Unity   : UUID: 37b1dff539dc4bb8 => c84dd96fb8114248fbb56c4c018a5890
+11-25 17:20:19.600 13037 13056 I Unity   : SetGameState: isLoading: true, mode: UNKNOWN, label: 0, quality: 2
+11-25 17:20:19.615 13037 13056 I Unity   : tier=High
+11-25 17:20:19.615 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.615 13037 13056 I Unity   : UnityEngine.GameObject:Internal_AddComponentWithType(Type)
+11-25 17:20:19.615 13037 13056 I Unity   : UnityEngine.GameObject:AddComponent()
+11-25 17:20:19.615 13037 13056 I Unity   : PerformanceMode:EnsureOn(GameObject)
+11-25 17:20:19.615 13037 13056 I Unity   : Bootstrap:Awake()
+11-25 17:20:19.615 13037 13056 I Unity   : 
+11-25 17:20:19.632 13037 13056 I Unity   : perf_mode=Balanced high=False batterySaver=False targetFrameRate=60 renderScale=1.0
+11-25 17:20:19.632 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.632 13037 13056 I Unity   : PerformanceMode:Apply(PerfMode, Boolean)
+11-25 17:20:19.632 13037 13056 I Unity   : PerformanceMode:Awake()
+11-25 17:20:19.632 13037 13056 I Unity   : UnityEngine.GameObject:Internal_AddComponentWithType(Type)
+11-25 17:20:19.632 13037 13056 I Unity   : UnityEngine.GameObject:AddComponent()
+11-25 17:20:19.632 13037 13056 I Unity   : Bootstrap:Awake()
+11-25 17:20:19.632 13037 13056 I Unity   : 
+11-25 17:20:19.635 13037 13056 I Unity   : [telemetry] file /storage/emulated/0/Android/data/com.ardabecanim.mobilegame.week11/files/telemetry.log
+11-25 17:20:19.635 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.635 13037 13056 I Unity   : Telemetry:StartSession()
+11-25 17:20:19.635 13037 13056 I Unity   : Bootstrap:Awake()
+11-25 17:20:19.635 13037 13056 I Unity   : 
+11-25 17:20:19.641 13037 13056 I Unity   : [telemetry] 2.81 71ceb426 session_start version=0.9.1 build=6f48de21 device=Google%20sdk_gphone64_x86_64 app_version=0.9.1 device_model=Google%20sdk_gphone64_x86_64 android=Android%20OS%2016%20%2F%20API-36%20%28BE2A.250530.026.D1%2F13818094%29 tier=High
+11-25 17:20:19.641 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.641 13037 13056 I Unity   : Telemetry:Log(String, ValueTuple`2[])
+11-25 17:20:19.641 13037 13056 I Unity   : Telemetry:StartSession()
+11-25 17:20:19.641 13037 13056 I Unity   : Bootstrap:Awake()
+11-25 17:20:19.641 13037 13056 I Unity   : 
+11-25 17:20:19.717 13037 13056 I Unity   : SetGameState: isLoading: false, mode: UNKNOWN, label: 0, quality: 2
+11-25 17:20:19.741 13037 13056 D Unity   : Using NDK Choreographer.
+11-25 17:20:19.773 13037 13056 D Unity   : Stopping Unity systrace
+11-25 17:20:19.930 13037 13056 I Unity   : [AP] active warning=NoWarning level=0.90
+11-25 17:20:19.930 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.930 13037 13056 I Unity   : AdaptiveBootstrap:Start()
+11-25 17:20:19.930 13037 13056 I Unity   : 
+11-25 17:20:19.931 13037 13056 I Unity   : [W11QA] probe ready /storage/emulated/0/Android/data/com.ardabecanim.mobilegame.week11/files
+11-25 17:20:19.931 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.931 13037 13056 I Unity   : 
+11-25 17:20:19.947 13037 13056 I Unity   : [AP ADPF] FrameTimingManager does not have results, skip reporting.
+11-25 17:20:19.947 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.947 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.Google.Android.GoogleAndroidAdaptivePerformanceSubsystemProvider:Update()
+11-25 17:20:19.947 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.Provider.AdaptivePerformanceSubsystem:Update()
+11-25 17:20:19.947 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:20:19.947 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:19.947 13037 13056 I Unity   : 
+11-25 17:20:19.951 13037 13056 I Unity   : [Adaptive Performance] [thermal event] temperature level: 0.9, warning level: NoWarning, thermal trend: 0
+11-25 17:20:19.951 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.951 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogThermalEvent(ThermalMetrics)
+11-25 17:20:19.951 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:20:19.951 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:19.951 13037 13056 I Unity   : 
+11-25 17:20:19.952 13037 13056 I Unity   : [AP] thermal warning=NoWarning level=0.90 trend=0.00
+11-25 17:20:19.952 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.952 13037 13056 I Unity   : AdaptiveBootstrap:OnThermal(ThermalMetrics)
+11-25 17:20:19.952 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:20:19.952 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:19.952 13037 13056 I Unity   : 
+11-25 17:20:19.953 13037 13056 I Unity   : [Adaptive Performance] [Indexer] Deactivated Adaptive Decals scaler.
+11-25 17:20:19.953 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.953 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:DeactivateDisabledScalers()
+11-25 17:20:19.953 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:Update()
+11-25 17:20:19.953 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:19.953 13037 13056 I Unity   : 
+11-25 17:20:19.953 13037 13056 I Unity   : [Adaptive Performance] [Indexer] Deactivated Adaptive Layer Culling scaler.
+11-25 17:20:19.953 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.953 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:DeactivateDisabledScalers()
+11-25 17:20:19.953 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:Update()
+11-25 17:20:19.953 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:19.953 13037 13056 I Unity   : 
+11-25 17:20:19.955 13037 13056 I Unity   : [Adaptive Performance] [Indexer] Deactivated Adaptive Physics scaler.
+11-25 17:20:19.955 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.955 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:DeactivateDisabledScalers()
+11-25 17:20:19.955 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:Update()
+11-25 17:20:19.955 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:19.955 13037 13056 I Unity   : 
+11-25 17:20:19.955 13037 13056 I Unity   : [Adaptive Performance] [Indexer] Deactivated Adaptive View Distance scaler.
+11-25 17:20:19.955 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.955 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:DeactivateDisabledScalers()
+11-25 17:20:19.955 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:Update()
+11-25 17:20:19.955 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:19.955 13037 13056 I Unity   : 
+11-25 17:20:19.955 13037 13056 I Unity   : [Adaptive Performance] [Indexer] Deactivated Adaptive Sorting scaler.
+11-25 17:20:19.955 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.955 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:DeactivateDisabledScalers()
+11-25 17:20:19.955 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:Update()
+11-25 17:20:19.955 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:19.955 13037 13056 I Unity   : 
+11-25 17:20:19.956 13037 13056 I Unity   : [Adaptive Performance] [Indexer] Deactivated Adaptive Transparency scaler.
+11-25 17:20:19.956 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.956 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:DeactivateDisabledScalers()
+11-25 17:20:19.956 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:Update()
+11-25 17:20:19.956 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:19.956 13037 13056 I Unity   : 
+11-25 17:20:19.956 13037 13056 I Unity   : [Adaptive Performance] [Indexer] Deactivated Adaptive Shadow Quality scaler.
+11-25 17:20:19.956 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.956 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:DeactivateDisabledScalers()
+11-25 17:20:19.956 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:Update()
+11-25 17:20:19.956 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:19.956 13037 13056 I Unity   : 
+11-25 17:20:19.961 13037 13056 I Unity   : [Adaptive Performance] [Indexer] Deactivated Adaptive Shadowmap Resolution scaler.
+11-25 17:20:19.961 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.961 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:DeactivateDisabledScalers()
+11-25 17:20:19.961 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:Update()
+11-25 17:20:19.961 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:19.961 13037 13056 I Unity   : 
+11-25 17:20:19.962 13037 13056 I Unity   : [Adaptive Performance] [Indexer] Deactivated Adaptive Shadow Distance scaler.
+11-25 17:20:19.962 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.962 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:DeactivateDisabledScalers()
+11-25 17:20:19.962 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:Update()
+11-25 17:20:19.962 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:19.962 13037 13056 I Unity   : 
+11-25 17:20:19.962 13037 13056 I Unity   : [Adaptive Performance] [Indexer] Deactivated Adaptive Shadow Cascade scaler.
+11-25 17:20:19.962 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.962 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:DeactivateDisabledScalers()
+11-25 17:20:19.962 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:Update()
+11-25 17:20:19.962 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:19.962 13037 13056 I Unity   : 
+11-25 17:20:19.963 13037 13056 I Unity   : [Adaptive Performance] [Indexer] Deactivated Adaptive Resolution scaler.
+11-25 17:20:19.963 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.963 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:DeactivateDisabledScalers()
+11-25 17:20:19.963 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:Update()
+11-25 17:20:19.963 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:19.963 13037 13056 I Unity   : 
+11-25 17:20:19.963 13037 13056 I Unity   : [Adaptive Performance] [Indexer] Deactivated Adaptive MSAA scaler.
+11-25 17:20:19.963 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.963 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:DeactivateDisabledScalers()
+11-25 17:20:19.963 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:Update()
+11-25 17:20:19.963 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:19.963 13037 13056 I Unity   : 
+11-25 17:20:19.963 13037 13056 I Unity   : [Adaptive Performance] [Indexer] Deactivated Adaptive Lut scaler.
+11-25 17:20:19.963 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.963 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:DeactivateDisabledScalers()
+11-25 17:20:19.963 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:Update()
+11-25 17:20:19.963 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:19.963 13037 13056 I Unity   : 
+11-25 17:20:19.963 13037 13056 I Unity   : [Adaptive Performance] [Indexer] Deactivated Adaptive LOD scaler.
+11-25 17:20:19.963 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.963 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:DeactivateDisabledScalers()
+11-25 17:20:19.963 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:Update()
+11-25 17:20:19.963 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:19.963 13037 13056 I Unity   : 
+11-25 17:20:19.964 13037 13056 I Unity   : [Adaptive Performance] [Indexer] Deactivated Adaptive Framerate scaler.
+11-25 17:20:19.964 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:19.964 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:DeactivateDisabledScalers()
+11-25 17:20:19.964 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceIndexer:Update()
+11-25 17:20:19.964 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:19.964 13037 13056 I Unity   : 
+11-25 17:20:20.118 13037 13056 I Unity   : Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.
+11-25 17:20:20.118 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.118 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-25 17:20:20.118 13037 13056 I Unity   : UnityEngine.Rendering.Universal.DepthOfFieldGaussianPostProcessPass:.ctor(Shader)
+11-25 17:20:20.118 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-25 17:20:20.118 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-25 17:20:20.118 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-25 17:20:20.118 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-25 17:20:20.118 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-25 17:20:20.118 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-25 17:20:20.118 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-25 17:20:20.118 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-25 17:20:20.118 13037 13056 I Unity   : 
+11-25 17:20:20.118 13037 13056 I Unity   : Shader 'Hidden/Universal Render Pipeline/GaussianDepthOfField' is not supported or has been stripped from the build (in 'GaussianDepthOfField'). PostProcessing render passes will not execute.
+11-25 17:20:20.118 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.118 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-25 17:20:20.118 13037 13056 I Unity   : UnityEngine.Rendering.Universal.DepthOfFieldGaussianPostProcessPass:.ctor(Shader)
+11-25 17:20:20.118 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-25 17:20:20.118 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-25 17:20:20.118 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-25 17:20:20.118 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-25 17:20:20.118 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-25 17:20:20.118 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-25 17:20:20.118 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-25 17:20:20.118 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-25 17:20:20.118 13037 13056 I Unity   : 
+11-25 17:20:20.119 13037 13056 I Unity   : Shader 'Hidden/Universal Render Pipeline/BokehDepthOfField' is not supported or has been stripped from the build (in 'BokehDepthOfField'). PostProcessing render passes will not execute.
+11-25 17:20:20.119 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.119 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-25 17:20:20.119 13037 13056 I Unity   : UnityEngine.Rendering.Universal.DepthOfFieldBokehPostProcessPass:.ctor(Shader)
+11-25 17:20:20.119 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-25 17:20:20.119 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-25 17:20:20.119 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-25 17:20:20.119 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-25 17:20:20.119 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-25 17:20:20.119 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-25 17:20:20.119 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-25 17:20:20.119 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-25 17:20:20.119 13037 13056 I Unity   : 
+11-25 17:20:20.120 13037 13056 I Unity   : Shader 'Hidden/Universal Render Pipeline/CameraMotionBlur' is not supported or has been stripped from the build (in 'MotionBlur'). PostProcessing render passes will not execute.
+11-25 17:20:20.120 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.120 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-25 17:20:20.120 13037 13056 I Unity   : UnityEngine.Rendering.Universal.MotionBlurPostProcessPass:.ctor(Shader)
+11-25 17:20:20.120 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-25 17:20:20.120 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-25 17:20:20.120 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-25 17:20:20.120 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-25 17:20:20.120 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-25 17:20:20.120 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-25 17:20:20.120 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-25 17:20:20.120 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-25 17:20:20.120 13037 13056 I Unity   : 
+11-25 17:20:20.120 13037 13056 I Unity   : Shader 'Hidden/Universal Render Pipeline/PaniniProjection' is not supported or has been stripped from the build (in 'PaniniProjection'). PostProcessing render passes will not execute.
+11-25 17:20:20.120 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.120 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-25 17:20:20.120 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PaniniProjectionPostProcessPass:.ctor(Shader)
+11-25 17:20:20.120 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-25 17:20:20.120 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-25 17:20:20.120 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-25 17:20:20.120 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-25 17:20:20.120 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-25 17:20:20.120 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-25 17:20:20.120 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-25 17:20:20.120 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-25 17:20:20.120 13037 13056 I Unity   : 
+11-25 17:20:20.121 13037 13056 I Unity   : Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'Bloom'). PostProcessing render passes will not execute.
+11-25 17:20:20.121 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.121 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-25 17:20:20.121 13037 13056 I Unity   : UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-25 17:20:20.121 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-25 17:20:20.121 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-25 17:20:20.121 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-25 17:20:20.121 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-25 17:20:20.121 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-25 17:20:20.121 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-25 17:20:20.121 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-25 17:20:20.121 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-25 17:20:20.121 13037 13056 I Unity   : 
+11-25 17:20:20.124 13037 13056 I Unity   : Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'Bloom'). PostProcessing render passes will not execute.
+11-25 17:20:20.124 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.124 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-25 17:20:20.124 13037 13056 I Unity   : UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-25 17:20:20.124 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-25 17:20:20.124 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-25 17:20:20.124 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-25 17:20:20.124 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-25 17:20:20.124 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-25 17:20:20.124 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-25 17:20:20.124 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-25 17:20:20.124 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-25 17:20:20.124 13037 13056 I Unity   : 
+11-25 17:20:20.125 13037 13056 I Unity   : Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'Bloom'). PostProcessing render passes will not execute.
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-25 17:20:20.125 13037 13056 I Unity   : 
+11-25 17:20:20.125 13037 13056 I Unity   : Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'Bloom'). PostProcessing render passes will not execute.
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-25 17:20:20.125 13037 13056 I Unity   : 
+11-25 17:20:20.125 13037 13056 I Unity   : Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'Bloom'). PostProcessing render passes will not execute.
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-25 17:20:20.125 13037 13056 I Unity   : 
+11-25 17:20:20.125 13037 13056 I Unity   : Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'Bloom'). PostProcessing render passes will not execute.
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-25 17:20:20.125 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-25 17:20:20.125 13037 13056 I Unity   : 
+11-25 17:20:20.126 13037 13056 I Unity   : Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'Bloom'). PostProcessing render passes will not execute.
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-25 17:20:20.126 13037 13056 I Unity   : 
+11-25 17:20:20.126 13037 13056 I Unity   : Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'Bloom'). PostProcessing render passes will not execute.
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-25 17:20:20.126 13037 13056 I Unity   : 
+11-25 17:20:20.126 13037 13056 I Unity   : Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'Bloom'). PostProcessing render passes will not execute.
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-25 17:20:20.126 13037 13056 I Unity   : 
+11-25 17:20:20.126 13037 13056 I Unity   : Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'Bloom'). PostProcessing render passes will not execute.
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-25 17:20:20.126 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-25 17:20:20.126 13037 13056 I Unity   : 
+11-25 17:20:20.127 13037 13056 I Unity   : Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'Bloom'). PostProcessing render passes will not execute.
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-25 17:20:20.127 13037 13056 I Unity   : 
+11-25 17:20:20.127 13037 13056 I Unity   : Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'Bloom'). PostProcessing render passes will not execute.
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-25 17:20:20.127 13037 13056 I Unity   : 
+11-25 17:20:20.127 13037 13056 I Unity   : Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'Bloom'). PostProcessing render passes will not execute.
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-25 17:20:20.127 13037 13056 I Unity   : 
+11-25 17:20:20.127 13037 13056 I Unity   : Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'Bloom'). PostProcessing render passes will not execute.
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-25 17:20:20.127 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-25 17:20:20.127 13037 13056 I Unity   : 
+11-25 17:20:20.128 13037 13056 I Unity   : Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'Bloom'). PostProcessing render passes will not execute.
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-25 17:20:20.128 13037 13056 I Unity   : 
+11-25 17:20:20.128 13037 13056 I Unity   : Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'Bloom'). PostProcessing render passes will not execute.
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-25 17:20:20.128 13037 13056 I Unity   : 
+11-25 17:20:20.128 13037 13056 I Unity   : Shader 'Hidden/Universal Render Pipeline/Bloom' is not supported or has been stripped from the build (in 'Bloom'). PostProcessing render passes will not execute.
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcessUtils:LoadShader(Shader, String, LogType)
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.Universal.BloomPostProcessPass:.ctor(Shader)
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.Universal.PostProcess:.ctor(PostProcessData)
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2D:.ctor(Renderer2DData)
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.Universal.Renderer2DData:Create()
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreateRenderers()
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline()
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline()
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline(RenderPipelineAsset)
+11-25 17:20:20.128 13037 13056 I Unity   : UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal(RenderPipelineAsset, IntPtr, Object)
+11-25 17:20:20.128 13037 13056 I Unity   : 
+11-25 17:20:20.324 13037 13056 D Unity   : ANativeWindow: (1080/2400) RequestedResolution: (0/0) RenderingResolution: (0/0) EGLSurface: (1080/2400)
+11-25 17:20:20.346 13037 13056 I Unity   : [AP ADPF] FrameTimingManager does not have results, skip reporting.
+11-25 17:20:20.346 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.346 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.Google.Android.GoogleAndroidAdaptivePerformanceSubsystemProvider:Update()
+11-25 17:20:20.346 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.Provider.AdaptivePerformanceSubsystem:Update()
+11-25 17:20:20.346 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:20:20.346 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:20.346 13037 13056 I Unity   : 
+11-25 17:20:20.348 13037 13056 I Unity   : SetGameState: isLoading: true, mode: UNKNOWN, label: 1, quality: 2
+11-25 17:20:20.401 13037 13102 D Unity   : Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+11-25 17:20:20.408 13037 13056 I Unity   : [AP ADPF] FrameTimingManager does not have results, skip reporting.
+11-25 17:20:20.408 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.408 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.Google.Android.GoogleAndroidAdaptivePerformanceSubsystemProvider:Update()
+11-25 17:20:20.408 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.Provider.AdaptivePerformanceSubsystem:Update()
+11-25 17:20:20.408 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:20:20.408 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:20.408 13037 13056 I Unity   : 
+11-25 17:20:20.455 13037 13056 D Unity   : UnloadTime: 11.664840 ms
+11-25 17:20:20.544 13037 13056 I Unity   : SetGameState: isLoading: false, mode: UNKNOWN, label: 1, quality: 2
+11-25 17:20:20.555 13037 13056 I Unity   : [AP ADPF] FrameTimingManager does not have results, skip reporting.
+11-25 17:20:20.555 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.555 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.Google.Android.GoogleAndroidAdaptivePerformanceSubsystemProvider:Update()
+11-25 17:20:20.555 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.Provider.AdaptivePerformanceSubsystem:Update()
+11-25 17:20:20.555 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:20:20.555 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:20.555 13037 13056 I Unity   : 
+11-25 17:20:20.650 13037 13056 D Unity   : Unloading 4 unused Assets / (62 B). Loaded Objects now: 3113.
+11-25 17:20:20.650 13037 13056 D Unity   : Memory consumption went from 61.6 MB to 61.6 MB.
+11-25 17:20:20.651 13037 13056 D Unity   : Total: 37.952083 ms (FindLiveObjects: 3.892587 ms CreateObjectMapping: 2.930802 ms MarkObjects: 28.397882 ms  DeleteObjects: 1.497003 ms)
+11-25 17:20:20.651 13037 13056 D Unity   : 
+11-25 17:20:20.663 13037 13056 I Unity   : [perf] scene Menu loaded in 874 ms
+11-25 17:20:20.663 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.663 13037 13056 I Unity   : <Load>d__14:MoveNext()
+11-25 17:20:20.663 13037 13056 I Unity   : UnityEngine.StateMachineBox`1:DoMoveNext()
+11-25 17:20:20.663 13037 13056 I Unity   : PerformanceSettingsUI:.ctor()
+11-25 17:20:20.663 13037 13056 I Unity   : UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-25 17:20:20.663 13037 13056 I Unity   : 
+11-25 17:20:20.702 13037 13056 I Unity   : [perf] interactive 3.87s
+11-25 17:20:20.702 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:20.702 13037 13056 I Unity   : MenuReady:Update()
+11-25 17:20:20.702 13037 13056 I Unity   : 
+11-25 17:20:21.562 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:21.562 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:21.562 13037 13056 I Unity   : Average GPU frametime = 19.12 ms (Current = 19.10 ms)
+11-25 17:20:21.562 13037 13056 I Unity   : Average CPU frametime = 29.62 ms (Current = 7.41 ms)
+11-25 17:20:21.562 13037 13056 I Unity   : Average frametime = 36.64 ms (Current = 16.67 ms)
+11-25 17:20:21.562 13037 13056 I Unity   : Bottleneck Unknown, ThermalTrend 0.000
+11-25 17:20:21.562 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:21.562 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:21.562 13037 13056 I Unity   : FPS = 27.29
+11-25 17:20:21.562 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:21.562 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:21.562 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:21.562 13037 13056 I Unity   : 
+11-25 17:20:22.391 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:22.391 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:22.391 13037 13056 I Unity   : Average GPU frametime = 20.59 ms (Current = 27.87 ms)
+11-25 17:20:22.391 13037 13056 I Unity   : Average CPU frametime = 16.75 ms (Current = 3.00 ms)
+11-25 17:20:22.391 13037 13056 I Unity   : Average frametime = 26.65 ms (Current = 16.67 ms)
+11-25 17:20:22.391 13037 13056 I Unity   : Bottleneck Unknown, ThermalTrend 0.000
+11-25 17:20:22.391 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:22.391 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:22.391 13037 13056 I Unity   : FPS = 37.52
+11-25 17:20:22.391 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:22.391 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:22.391 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:22.391 13037 13056 I Unity   : 
+11-25 17:20:22.457 13037 13056 I Unity   : [Adaptive Performance] [perf event] bottleneck: GPU
+11-25 17:20:22.457 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:22.457 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogBottleneckEvent(PerformanceBottleneckChangeEventArgs)
+11-25 17:20:22.457 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:20:22.457 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:22.457 13037 13056 I Unity   : 
+11-25 17:20:22.458 13037 13056 I Unity   : [AP] bottleneck=GPU
+11-25 17:20:22.458 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:22.458 13037 13056 I Unity   : AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-25 17:20:22.458 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:20:22.458 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:22.458 13037 13056 I Unity   : 
+11-25 17:20:22.640 13037 13056 I Unity   : [Adaptive Performance] [perf event] bottleneck: TargetFrameRate
+11-25 17:20:22.640 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:22.640 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogBottleneckEvent(PerformanceBottleneckChangeEventArgs)
+11-25 17:20:22.640 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:20:22.640 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:22.640 13037 13056 I Unity   : 
+11-25 17:20:22.640 13037 13056 I Unity   : [AP] bottleneck=TargetFrameRate
+11-25 17:20:22.640 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:22.640 13037 13056 I Unity   : AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-25 17:20:22.640 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:20:22.640 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:22.640 13037 13056 I Unity   : 
+11-25 17:20:23.265 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:23.265 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:23.265 13037 13056 I Unity   : Average GPU frametime = 22.85 ms (Current = 28.17 ms)
+11-25 17:20:23.265 13037 13056 I Unity   : Average CPU frametime = 4.54 ms (Current = 7.48 ms)
+11-25 17:20:23.265 13037 13056 I Unity   : Average frametime = 17.00 ms (Current = 50.00 ms)
+11-25 17:20:23.265 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:20:23.265 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:23.265 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:23.265 13037 13056 I Unity   : FPS = 58.82
+11-25 17:20:23.265 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:23.265 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:23.265 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:23.265 13037 13056 I Unity   : 
+11-25 17:20:24.106 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:24.106 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:24.106 13037 13056 I Unity   : Average GPU frametime = 23.79 ms (Current = 26.64 ms)
+11-25 17:20:24.106 13037 13056 I Unity   : Average CPU frametime = 4.50 ms (Current = 3.07 ms)
+11-25 17:20:24.106 13037 13056 I Unity   : Average frametime = 17.17 ms (Current = 16.67 ms)
+11-25 17:20:24.106 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:20:24.106 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:24.106 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:24.106 13037 13056 I Unity   : FPS = 58.25
+11-25 17:20:24.106 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:24.106 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:24.106 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:24.106 13037 13056 I Unity   : 
+11-25 17:20:24.944 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:24.944 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:24.944 13037 13056 I Unity   : Average GPU frametime = 23.69 ms (Current = 23.98 ms)
+11-25 17:20:24.944 13037 13056 I Unity   : Average CPU frametime = 4.01 ms (Current = 3.13 ms)
+11-25 17:20:24.944 13037 13056 I Unity   : Average frametime = 16.83 ms (Current = 16.67 ms)
+11-25 17:20:24.944 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:20:24.944 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:24.944 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:24.944 13037 13056 I Unity   : FPS = 59.41
+11-25 17:20:24.944 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:24.944 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:24.944 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:24.944 13037 13056 I Unity   : 
+11-25 17:20:25.777 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:25.777 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:25.777 13037 13056 I Unity   : Average GPU frametime = 23.57 ms (Current = 21.42 ms)
+11-25 17:20:25.777 13037 13056 I Unity   : Average CPU frametime = 3.32 ms (Current = 2.87 ms)
+11-25 17:20:25.777 13037 13056 I Unity   : Average frametime = 16.67 ms (Current = 16.67 ms)
+11-25 17:20:25.777 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:20:25.777 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:25.777 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:25.777 13037 13056 I Unity   : FPS = 60.00
+11-25 17:20:25.777 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:25.777 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:25.777 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:25.777 13037 13056 I Unity   : 
+11-25 17:20:26.627 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:26.627 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:26.627 13037 13056 I Unity   : Average GPU frametime = 23.88 ms (Current = 21.56 ms)
+11-25 17:20:26.627 13037 13056 I Unity   : Average CPU frametime = 3.28 ms (Current = 2.65 ms)
+11-25 17:20:26.627 13037 13056 I Unity   : Average frametime = 16.83 ms (Current = 16.67 ms)
+11-25 17:20:26.627 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:20:26.627 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:26.627 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:26.627 13037 13056 I Unity   : FPS = 59.41
+11-25 17:20:26.627 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:26.627 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:26.627 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:26.627 13037 13056 I Unity   : 
+11-25 17:20:27.461 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:27.461 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:27.461 13037 13056 I Unity   : Average GPU frametime = 23.59 ms (Current = 21.67 ms)
+11-25 17:20:27.461 13037 13056 I Unity   : Average CPU frametime = 3.03 ms (Current = 2.46 ms)
+11-25 17:20:27.461 13037 13056 I Unity   : Average frametime = 16.83 ms (Current = 16.67 ms)
+11-25 17:20:27.461 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:20:27.461 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:27.461 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:27.461 13037 13056 I Unity   : FPS = 59.41
+11-25 17:20:27.461 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:27.461 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:27.461 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:27.461 13037 13056 I Unity   : 
+11-25 17:20:28.311 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:28.311 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:28.311 13037 13056 I Unity   : Average GPU frametime = 23.64 ms (Current = 25.51 ms)
+11-25 17:20:28.311 13037 13056 I Unity   : Average CPU frametime = 2.95 ms (Current = 3.15 ms)
+11-25 17:20:28.311 13037 13056 I Unity   : Average frametime = 16.83 ms (Current = 16.67 ms)
+11-25 17:20:28.311 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:20:28.311 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:28.311 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:28.311 13037 13056 I Unity   : FPS = 59.41
+11-25 17:20:28.311 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:28.311 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:28.311 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:28.311 13037 13056 I Unity   : 
+11-25 17:20:29.163 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:29.163 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:29.163 13037 13056 I Unity   : Average GPU frametime = 24.17 ms (Current = 34.75 ms)
+11-25 17:20:29.163 13037 13056 I Unity   : Average CPU frametime = 3.05 ms (Current = 3.26 ms)
+11-25 17:20:29.163 13037 13056 I Unity   : Average frametime = 17.00 ms (Current = 16.67 ms)
+11-25 17:20:29.163 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:20:29.163 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:29.163 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:29.163 13037 13056 I Unity   : FPS = 58.82
+11-25 17:20:29.163 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:29.163 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:29.163 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:29.163 13037 13056 I Unity   : 
+11-25 17:20:30.013 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:30.013 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:30.013 13037 13056 I Unity   : Average GPU frametime = 24.05 ms (Current = 25.04 ms)
+11-25 17:20:30.013 13037 13056 I Unity   : Average CPU frametime = 3.28 ms (Current = 3.62 ms)
+11-25 17:20:30.013 13037 13056 I Unity   : Average frametime = 17.00 ms (Current = 16.67 ms)
+11-25 17:20:30.013 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:20:30.013 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:30.013 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:30.013 13037 13056 I Unity   : FPS = 58.82
+11-25 17:20:30.013 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:30.013 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:30.013 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:30.013 13037 13056 I Unity   : 
+11-25 17:20:30.865 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:30.865 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:30.865 13037 13056 I Unity   : Average GPU frametime = 24.21 ms (Current = 26.84 ms)
+11-25 17:20:30.865 13037 13056 I Unity   : Average CPU frametime = 3.29 ms (Current = 2.73 ms)
+11-25 17:20:30.865 13037 13056 I Unity   : Average frametime = 17.00 ms (Current = 16.67 ms)
+11-25 17:20:30.865 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:20:30.865 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:30.865 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:30.865 13037 13056 I Unity   : FPS = 58.82
+11-25 17:20:30.865 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:30.865 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:30.865 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:30.865 13037 13056 I Unity   : 
+11-25 17:20:31.481 13037 13056 I Unity   : [Adaptive Performance] [perf event] bottleneck: GPU
+11-25 17:20:31.481 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:31.481 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogBottleneckEvent(PerformanceBottleneckChangeEventArgs)
+11-25 17:20:31.481 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:20:31.481 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:31.481 13037 13056 I Unity   : 
+11-25 17:20:31.482 13037 13056 I Unity   : [AP] bottleneck=GPU
+11-25 17:20:31.482 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:31.482 13037 13056 I Unity   : AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-25 17:20:31.482 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:20:31.482 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:31.482 13037 13056 I Unity   : 
+11-25 17:20:31.727 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:31.727 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:31.727 13037 13056 I Unity   : Average GPU frametime = 24.25 ms (Current = 22.21 ms)
+11-25 17:20:31.727 13037 13056 I Unity   : Average CPU frametime = 3.40 ms (Current = 3.02 ms)
+11-25 17:20:31.727 13037 13056 I Unity   : Average frametime = 17.17 ms (Current = 16.67 ms)
+11-25 17:20:31.727 13037 13056 I Unity   : Bottleneck GPU, ThermalTrend 0.000
+11-25 17:20:31.727 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:31.727 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:31.727 13037 13056 I Unity   : FPS = 58.25
+11-25 17:20:31.727 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:31.727 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:31.727 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:31.727 13037 13056 I Unity   : 
+11-25 17:20:32.112 13037 13056 I Unity   : [Adaptive Performance] [perf event] bottleneck: TargetFrameRate
+11-25 17:20:32.112 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:32.112 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogBottleneckEvent(PerformanceBottleneckChangeEventArgs)
+11-25 17:20:32.112 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:20:32.112 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:32.112 13037 13056 I Unity   : 
+11-25 17:20:32.112 13037 13056 I Unity   : [AP] bottleneck=TargetFrameRate
+11-25 17:20:32.112 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:32.112 13037 13056 I Unity   : AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-25 17:20:32.112 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:20:32.112 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:32.112 13037 13056 I Unity   : 
+11-25 17:20:32.563 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:32.563 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:32.563 13037 13056 I Unity   : Average GPU frametime = 23.70 ms (Current = 22.31 ms)
+11-25 17:20:32.563 13037 13056 I Unity   : Average CPU frametime = 3.45 ms (Current = 4.37 ms)
+11-25 17:20:32.563 13037 13056 I Unity   : Average frametime = 17.00 ms (Current = 16.67 ms)
+11-25 17:20:32.563 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:20:32.563 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:32.563 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:32.563 13037 13056 I Unity   : FPS = 58.82
+11-25 17:20:32.563 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:32.563 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:32.563 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:32.563 13037 13056 I Unity   : 
+11-25 17:20:33.414 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:33.414 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:33.414 13037 13056 I Unity   : Average GPU frametime = 23.02 ms (Current = 22.54 ms)
+11-25 17:20:33.414 13037 13056 I Unity   : Average CPU frametime = 3.66 ms (Current = 3.77 ms)
+11-25 17:20:33.414 13037 13056 I Unity   : Average frametime = 16.83 ms (Current = 16.67 ms)
+11-25 17:20:33.414 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:20:33.414 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:33.414 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:33.414 13037 13056 I Unity   : FPS = 59.41
+11-25 17:20:33.414 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:33.414 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:33.414 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:33.414 13037 13056 I Unity   : 
+11-25 17:20:34.244 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:34.244 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:34.244 13037 13056 I Unity   : Average GPU frametime = 22.77 ms (Current = 21.72 ms)
+11-25 17:20:34.244 13037 13056 I Unity   : Average CPU frametime = 3.72 ms (Current = 2.73 ms)
+11-25 17:20:34.244 13037 13056 I Unity   : Average frametime = 16.83 ms (Current = 16.67 ms)
+11-25 17:20:34.244 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:20:34.244 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:34.244 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:34.244 13037 13056 I Unity   : FPS = 59.41
+11-25 17:20:34.244 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:34.244 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:34.244 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:34.244 13037 13056 I Unity   : 
+11-25 17:20:35.096 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:35.096 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:35.096 13037 13056 I Unity   : Average GPU frametime = 23.01 ms (Current = 18.97 ms)
+11-25 17:20:35.096 13037 13056 I Unity   : Average CPU frametime = 3.45 ms (Current = 4.47 ms)
+11-25 17:20:35.096 13037 13056 I Unity   : Average frametime = 16.83 ms (Current = 16.67 ms)
+11-25 17:20:35.096 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:20:35.096 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:35.096 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:35.096 13037 13056 I Unity   : FPS = 59.41
+11-25 17:20:35.096 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:35.096 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:35.096 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:35.096 13037 13056 I Unity   : 
+11-25 17:20:35.928 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:35.928 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:35.928 13037 13056 I Unity   : Average GPU frametime = 23.16 ms (Current = 22.46 ms)
+11-25 17:20:35.928 13037 13056 I Unity   : Average CPU frametime = 3.44 ms (Current = 2.72 ms)
+11-25 17:20:35.928 13037 13056 I Unity   : Average frametime = 16.83 ms (Current = 16.67 ms)
+11-25 17:20:35.928 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:20:35.928 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:35.928 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:35.928 13037 13056 I Unity   : FPS = 59.41
+11-25 17:20:35.928 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:35.928 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:35.928 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:35.928 13037 13056 I Unity   : 
+11-25 17:20:36.780 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:36.780 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:36.780 13037 13056 I Unity   : Average GPU frametime = 23.27 ms (Current = 20.93 ms)
+11-25 17:20:36.780 13037 13056 I Unity   : Average CPU frametime = 3.57 ms (Current = 3.42 ms)
+11-25 17:20:36.780 13037 13056 I Unity   : Average frametime = 16.83 ms (Current = 16.67 ms)
+11-25 17:20:36.780 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:20:36.780 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:36.780 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:36.780 13037 13056 I Unity   : FPS = 59.41
+11-25 17:20:36.780 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:36.780 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:36.780 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:36.780 13037 13056 I Unity   : 
+11-25 17:20:37.614 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:37.614 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:37.614 13037 13056 I Unity   : Average GPU frametime = 23.22 ms (Current = 22.11 ms)
+11-25 17:20:37.614 13037 13056 I Unity   : Average CPU frametime = 3.68 ms (Current = 2.99 ms)
+11-25 17:20:37.614 13037 13056 I Unity   : Average frametime = 16.83 ms (Current = 16.67 ms)
+11-25 17:20:37.614 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:20:37.614 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:37.614 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:37.614 13037 13056 I Unity   : FPS = 59.41
+11-25 17:20:37.614 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:37.614 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:37.614 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:37.614 13037 13056 I Unity   : 
+11-25 17:20:38.459 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:38.459 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:38.459 13037 13056 I Unity   : Average GPU frametime = 22.87 ms (Current = 24.00 ms)
+11-25 17:20:38.459 13037 13056 I Unity   : Average CPU frametime = 3.97 ms (Current = 3.23 ms)
+11-25 17:20:38.459 13037 13056 I Unity   : Average frametime = 16.83 ms (Current = 16.67 ms)
+11-25 17:20:38.459 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:20:38.459 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:38.459 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:38.459 13037 13056 I Unity   : FPS = 59.41
+11-25 17:20:38.459 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:38.459 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:38.459 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:38.459 13037 13056 I Unity   : 
+11-25 17:20:39.291 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:39.291 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:39.291 13037 13056 I Unity   : Average GPU frametime = 22.94 ms (Current = 19.30 ms)
+11-25 17:20:39.291 13037 13056 I Unity   : Average CPU frametime = 3.63 ms (Current = 3.40 ms)
+11-25 17:20:39.291 13037 13056 I Unity   : Average frametime = 16.83 ms (Current = 16.67 ms)
+11-25 17:20:39.291 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:20:39.291 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:39.291 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:39.291 13037 13056 I Unity   : FPS = 59.41
+11-25 17:20:39.291 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:39.291 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:39.291 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:39.291 13037 13056 I Unity   : 
+11-25 17:20:40.124 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:40.124 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:40.124 13037 13056 I Unity   : Average GPU frametime = 22.89 ms (Current = 26.94 ms)
+11-25 17:20:40.124 13037 13056 I Unity   : Average CPU frametime = 3.14 ms (Current = 3.04 ms)
+11-25 17:20:40.124 13037 13056 I Unity   : Average frametime = 16.67 ms (Current = 16.67 ms)
+11-25 17:20:40.124 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:20:40.124 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:40.124 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:40.124 13037 13056 I Unity   : FPS = 60.00
+11-25 17:20:40.124 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:40.124 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:40.124 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:40.124 13037 13056 I Unity   : 
+11-25 17:20:40.735 13037 13056 I Unity   : Start Game clicked
+11-25 17:20:40.735 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:40.735 13037 13056 I Unity   : MainMenuManager:StartGame()
+11-25 17:20:40.735 13037 13056 I Unity   : UnityEngine.Events.UnityEvent:Invoke()
+11-25 17:20:40.735 13037 13056 I Unity   : UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+11-25 17:20:40.735 13037 13056 I Unity   : UnityEngine.InputSystem.UI.InputSystemUIInputModule:ProcessPointerButton(ButtonState&, PointerEventData)
+11-25 17:20:40.735 13037 13056 I Unity   : UnityEngine.InputSystem.UI.InputSystemUIInputModule:ProcessPointer(PointerModel&)
+11-25 17:20:40.735 13037 13056 I Unity   : UnityEngine.InputSystem.UI.InputSystemUIInputModule:Process()
+11-25 17:20:40.735 13037 13056 I Unity   : 
+11-25 17:20:40.792 13037 13056 I Unity   : [Adaptive Performance] [perf event] bottleneck: GPU
+11-25 17:20:40.792 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:40.792 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogBottleneckEvent(PerformanceBottleneckChangeEventArgs)
+11-25 17:20:40.792 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:20:40.792 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:40.792 13037 13056 I Unity   : 
+11-25 17:20:40.792 13037 13056 I Unity   : [AP] bottleneck=GPU
+11-25 17:20:40.792 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:40.792 13037 13056 I Unity   : AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-25 17:20:40.792 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:20:40.792 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:40.792 13037 13056 I Unity   : 
+11-25 17:20:40.797 13037 13056 I Unity   : SetGameState: isLoading: true, mode: UNKNOWN, label: 2, quality: 2
+11-25 17:20:40.930 13037 13102 D Unity   : Unloading 15 Unused Serialized files (Serialized files now loaded: 0)
+11-25 17:20:41.018 13037 13056 D Unity   : UnloadTime: 47.876614 ms
+11-25 17:20:41.232 13037 13056 I Unity   : [Boot] Google sdk_gphone64_x86_64 | Android OS 16 / API-36 (BE2A.250530.026.D1/13818094) | OpenGLES3 | 1080x2400 @ 420 dpi
+11-25 17:20:41.232 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:41.232 13037 13056 I Unity   : MobileBootstrap:Awake()
+11-25 17:20:41.232 13037 13056 I Unity   : 
+11-25 17:20:41.296 13037 13056 I Unity   : SetGameState: isLoading: false, mode: UNKNOWN, label: 2, quality: 2
+11-25 17:20:41.455 13037 13056 I Unity   : [W11QA] state paused=False scale=1 audioPaused=False elapsed=0 hp=100 wave=1 enemies=0 kills=0 sword=0 rocket=0 coins=40 rank=0 draws=0 batches=0 setpass=10 tris=131 mainNs=15327973 renderNs=0
+11-25 17:20:41.455 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:41.455 13037 13056 I Unity   : LocalWeek11Probe:Update()
+11-25 17:20:41.455 13037 13056 I Unity   : 
+11-25 17:20:41.824 13037 13056 D Unity   : Unloading 7 unused Assets / (0.9 KB). Loaded Objects now: 4004.
+11-25 17:20:41.824 13037 13056 D Unity   : Memory consumption went from 66.0 MB to 66.0 MB.
+11-25 17:20:41.824 13037 13056 D Unity   : Total: 30.830222 ms (FindLiveObjects: 1.312464 ms CreateObjectMapping: 0.457475 ms MarkObjects: 22.980007 ms  DeleteObjects: 5.768295 ms)
+11-25 17:20:41.824 13037 13056 D Unity   : 
+11-25 17:20:41.827 13037 13056 I Unity   : [Adaptive Performance] [perf event] bottleneck: Unknown
+11-25 17:20:41.827 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:41.827 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogBottleneckEvent(PerformanceBottleneckChangeEventArgs)
+11-25 17:20:41.827 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:20:41.827 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:41.827 13037 13056 I Unity   : 
+11-25 17:20:41.827 13037 13056 I Unity   : [AP] bottleneck=Unknown
+11-25 17:20:41.827 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:41.827 13037 13056 I Unity   : AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-25 17:20:41.827 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:20:41.827 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:20:41.827 13037 13056 I Unity   : 
+11-25 17:20:41.828 13037 13056 I Unity   : [perf] scene Game loaded in 1092 ms
+11-25 17:20:41.828 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:41.828 13037 13056 I Unity   : <Load>d__14:MoveNext()
+11-25 17:20:41.828 13037 13056 I Unity   : UnityEngine.StateMachineBox`1:DoMoveNext()
+11-25 17:20:41.828 13037 13056 I Unity   : PerformanceSettingsUI:.ctor()
+11-25 17:20:41.828 13037 13056 I Unity   : UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-25 17:20:41.828 13037 13056 I Unity   : 
+11-25 17:20:41.831 13037 13056 I Unity   : [telemetry] 25.00 71ceb426 level_start level_id=1 attempt=1 coins=40
+11-25 17:20:41.831 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:41.831 13037 13056 I Unity   : Telemetry:Log(String, ValueTuple`2[])
+11-25 17:20:41.831 13037 13056 I Unity   : GameManager:BeginRun()
+11-25 17:20:41.831 13037 13056 I Unity   : GameManager:SetState(State)
+11-25 17:20:41.831 13037 13056 I Unity   : <Start>d__17:MoveNext()
+11-25 17:20:41.831 13037 13056 I Unity   : System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
+11-25 17:20:41.831 13037 13056 I Unity   : System.Runtime.CompilerServices.MoveNextRunner:Run()
+11-25 17:20:41.831 13037 13056 I Unity   : PerformanceSettingsUI:.ctor()
+11-25 17:20:41.831 13037 13056 I Unity   : UnityEngine.DoubleBufferedAwaitableList:SwapAndComplete()
+11-25 17:20:41.831 13037 13056 I Unity   : 
+11-25 17:20:41.938 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:41.938 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:41.938 13037 13056 I Unity   : Average GPU frametime = 21.89 ms (Current = 24.72 ms)
+11-25 17:20:41.938 13037 13056 I Unity   : Average CPU frametime = 14.87 ms (Current = 32.26 ms)
+11-25 17:20:41.938 13037 13056 I Unity   : Average frametime = 26.33 ms (Current = 16.67 ms)
+11-25 17:20:41.938 13037 13056 I Unity   : Bottleneck Unknown, ThermalTrend 0.000
+11-25 17:20:41.938 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:41.938 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:41.938 13037 13056 I Unity   : FPS = 37.97
+11-25 17:20:41.938 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:41.938 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:41.938 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:41.938 13037 13056 I Unity   : 
+11-25 17:20:42.466 13037 13056 I Unity   : [W11QA] state paused=False scale=1 audioPaused=False elapsed=0.6200001 hp=100 wave=1 enemies=0 kills=0 sword=0 rocket=0 coins=40 rank=0 draws=0 batches=0 setpass=19 tris=586 mainNs=18387191 renderNs=0
+11-25 17:20:42.466 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:42.466 13037 13056 I Unity   : LocalWeek11Probe:Update()
+11-25 17:20:42.466 13037 13056 I Unity   : 
+11-25 17:20:42.802 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:20:42.802 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:20:42.802 13037 13056 I Unity   : Average GPU frametime = 21.70 ms (Current = 8.69 ms)
+11-25 17:20:42.802 13037 13056 I Unity   : Average CPU frametime = 16.78 ms (Current = 15.34 ms)
+11-25 17:20:42.802 13037 13056 I Unity   : Average frametime = 26.67 ms (Current = 16.67 ms)
+11-25 17:20:42.802 13037 13056 I Unity   : Bottleneck Unknown, ThermalTrend 0.000
+11-25 17:20:42.802 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:20:42.802 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:20:42.802 13037 13056 I Unity   : FPS = 37.50
+11-25 17:20:42.802 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:20:42.802 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:42.802 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:20:42.802 13037 13056 I Unity   : 
+11-25 17:20:42.884 13037 13037 I Unity   : onPause
+11-25 17:20:42.898 13037 13037 I Unity   : pauseUnity
+11-25 17:20:42.930 13037 13037 I Unity   : windowFocusChanged: false
+11-25 17:20:42.930 13037 13056 I Unity   : Handle cmd APP_CMD_PAUSE(14)
+11-25 17:20:43.004 13037 13056 I Unity   : [Lifecycle] paused=True wallet=40 rank=0
+11-25 17:20:43.004 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:43.004 13037 13056 I Unity   : LifecycleGuard:SetGlobalPaused(Boolean)
+11-25 17:20:43.004 13037 13056 I Unity   : 
+11-25 17:20:43.034 13037 13056 I Unity   : Game state changed to: Paused
+11-25 17:20:43.034 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:20:43.034 13037 13056 I Unity   : GameManager:SetState(State)
+11-25 17:20:43.034 13037 13056 I Unity   : LifecycleGuard:SetGlobalPaused(Boolean)
+11-25 17:20:43.034 13037 13056 I Unity   : 
+11-25 17:20:43.055 13037 13111 D Unity   : ChoreographerNDK: Ignoring event, since Choreographer is disabled
+11-25 17:20:43.071 13037 13056 I Unity   : SetGameState: isLoading: false, mode: CONTENT, label: -6, quality: 2
+11-25 17:20:43.075 13037 13056 I Unity   : Handle cmd APP_CMD_LOST_FOCUS(8)
+11-25 17:20:44.311 13037 13056 I Unity   : Handle cmd APP_CMD_TERM_WINDOW(2)
+11-25 17:20:44.312 13037 13056 D Unity   : [EGL] Attaching window :0x0
+11-25 17:20:44.324 13037 13037 D Unity   : PersistentUnitySurface.preserveContent: com.unity3d.player.UnityPlayerGameActivity$GameActivitySurfaceView{1b89f2 VFE...... .F....I. 0,0-1080,2400 #7f080125 app:id/unitySurfaceView aid=1073741824}
+11-25 17:20:44.330 13037 13037 D Unity   : PersistentUnitySurface.PlaceholderView.Copy: com.unity3d.player.UnityPlayerGameActivity$GameActivitySurfaceView{1b89f2 VFE...... .F....I. 0,0-1080,2400 #7f080125 app:id/unitySurfaceView aid=1073741824} Width 1080  Height 2400
+11-25 17:20:44.867 13037 13136 D Unity   : PixelCopy finished: 0
+11-25 17:20:44.885 13037 13056 I Unity   : Handle cmd APP_CMD_LOW_MEMORY(10)
+11-25 17:20:44.890 13037 13056 I Unity   : Handle cmd APP_CMD_STOP(15)
+11-25 17:20:44.901 13037 13056 I Unity   : Handle cmd APP_CMD_SAVE_STATE(13)
+11-25 17:21:14.937 13037 13056 I Unity   : Handle cmd APP_CMD_START(11)
+11-25 17:21:14.938 13037 13037 I Unity   : onNewIntent
+11-25 17:21:14.941 13037 13037 I Unity   : onResume
+11-25 17:21:14.953 13037 13056 I Unity   : Handle cmd APP_CMD_RESUME(12)
+11-25 17:21:14.966 13037 13056 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-25 17:21:14.969 13037 13056 I Unity   : Handle cmd APP_CMD_INIT_WINDOW(1)
+11-25 17:21:14.970 13037 13056 D Unity   : [EGL] Attaching window :0x7961d9e21bc0
+11-25 17:21:15.068 13037 13056 D Unity   : ANativeWindow: (1080/2400) RequestedResolution: (0/0) RenderingResolution: (0/0) EGLSurface: (1080/2400)
+11-25 17:21:15.127 13037 13056 I Unity   :     HasWindow = 1, HasFocus = 0
+11-25 17:21:15.127 13037 13056 I Unity   : Handle cmd APP_CMD_WINDOW_REDRAW_NEEDED(4)
+11-25 17:21:15.139 13037 13037 I Unity   : windowFocusChanged: true
+11-25 17:21:15.139 13037 13037 I Unity   : resumeUnity
+11-25 17:21:15.140 13037 13056 I Unity   : Handle cmd APP_CMD_GAINED_FOCUS(7)
+11-25 17:21:15.202 13037 13056 D Unity   : Found 2 interfaces on host Google_sdk_gphone64_x86_64@10.0.2.16:
+11-25 17:21:15.202 13037 13056 D Unity   :  0) 10.0.2.15
+11-25 17:21:15.202 13037 13056 D Unity   :  1) 10.0.2.16
+11-25 17:21:15.202 13037 13056 D Unity   : 
+11-25 17:21:15.210 13037 13056 D Unity   : Player connection [133455130842768]  Target information:
+11-25 17:21:15.210 13037 13056 D Unity   : 
+11-25 17:21:15.210 13037 13056 D Unity   : Player connection [133455130842768]  * "[IP] 10.0.2.15 [Port] 55000 [Flags] 2 [Guid] 251550301 [EditorId] 3905362948 [Version] 1048832 [Id] AndroidPlayer(11,Google_sdk_gphone64_x86_64@10.0.2.16) [Debug] 0 [PackageName] AndroidPlayer [ProjectName] No Stars Remain" 
+11-25 17:21:15.210 13037 13056 D Unity   : 
+11-25 17:21:15.211 13037 13056 D Unity   : Player connection [133455130842768]  * "[IP] 10.0.2.16 [Port] 55000 [Flags] 2 [Guid] 251550301 [EditorId] 3905362948 [Version] 1048832 [Id] AndroidPlayer(11,Google_sdk_gphone64_x86_64@10.0.2.16) [Debug] 0 [PackageName] AndroidPlayer [ProjectName] No Stars Remain" 
+11-25 17:21:15.211 13037 13056 D Unity   : 
+11-25 17:21:15.211 13037 13056 D Unity   : Player connection [133455130842768] Started UDP target info broadcast (1) on [225.0.0.222:54997].
+11-25 17:21:15.211 13037 13056 D Unity   : 
+11-25 17:21:15.212 13037 13056 D Unity   : Player connection [133455130842768] Started UDP target info broadcast (1) on [225.0.0.222:54997].
+11-25 17:21:15.212 13037 13056 D Unity   : 
+11-25 17:21:15.233 13037 13056 I Unity   : SetGameState: isLoading: false, mode: UNKNOWN, label: 2, quality: 2
+11-25 17:21:15.297 13037 13056 I Unity   : [Adaptive Performance] [thermal event] temperature level: 0.9, warning level: NoWarning, thermal trend: 0
+11-25 17:21:15.297 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:15.297 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogThermalEvent(ThermalMetrics)
+11-25 17:21:15.297 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:21:15.297 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:21:15.297 13037 13056 I Unity   : 
+11-25 17:21:15.298 13037 13056 I Unity   : [AP] thermal warning=NoWarning level=0.90 trend=0.00
+11-25 17:21:15.298 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:15.298 13037 13056 I Unity   : AdaptiveBootstrap:OnThermal(ThermalMetrics)
+11-25 17:21:15.298 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:21:15.298 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:21:15.298 13037 13056 I Unity   : 
+11-25 17:21:15.300 13037 13056 I Unity   : [W11QA] state paused=True scale=0 audioPaused=True elapsed=1.103333 hp=100 wave=1 enemies=0 kills=0 sword=0 rocket=0 coins=40 rank=0 draws=0 batches=0 setpass=38 tris=1172 mainNs=32341129897 renderNs=0
+11-25 17:21:15.300 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:15.300 13037 13056 I Unity   : LocalWeek11Probe:Update()
+11-25 17:21:15.300 13037 13056 I Unity   : 
+11-25 17:21:16.095 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:21:16.095 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:21:16.095 13037 13056 I Unity   : Average GPU frametime = 21.33 ms (Current = 27.85 ms)
+11-25 17:21:16.095 13037 13056 I Unity   : Average CPU frametime = 9.39 ms (Current = 3.61 ms)
+11-25 17:21:16.095 13037 13056 I Unity   : Average frametime = 18.56 ms (Current = 16.67 ms)
+11-25 17:21:16.095 13037 13056 I Unity   : Bottleneck Unknown, ThermalTrend 0.000
+11-25 17:21:16.095 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:21:16.095 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:21:16.095 13037 13056 I Unity   : FPS = 53.88
+11-25 17:21:16.095 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:21:16.095 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:16.095 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:21:16.095 13037 13056 I Unity   : 
+11-25 17:21:16.312 13037 13056 I Unity   : [W11QA] state paused=True scale=0 audioPaused=True elapsed=1.103333 hp=100 wave=1 enemies=0 kills=0 sword=0 rocket=0 coins=40 rank=0 draws=0 batches=0 setpass=23 tris=718 mainNs=17346738 renderNs=0
+11-25 17:21:16.312 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:16.312 13037 13056 I Unity   : LocalWeek11Probe:Update()
+11-25 17:21:16.312 13037 13056 I Unity   : 
+11-25 17:21:16.931 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:21:16.931 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:21:16.931 13037 13056 I Unity   : Average GPU frametime = 21.38 ms (Current = 18.49 ms)
+11-25 17:21:16.931 13037 13056 I Unity   : Average CPU frametime = 6.54 ms (Current = 4.72 ms)
+11-25 17:21:16.931 13037 13056 I Unity   : Average frametime = 17.55 ms (Current = 16.67 ms)
+11-25 17:21:16.931 13037 13056 I Unity   : Bottleneck Unknown, ThermalTrend 0.000
+11-25 17:21:16.931 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:21:16.931 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:21:16.931 13037 13056 I Unity   : FPS = 56.97
+11-25 17:21:16.931 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:21:16.931 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:16.931 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:21:16.931 13037 13056 I Unity   : 
+11-25 17:21:17.057 13037 13056 I Unity   : [Adaptive Performance] [perf event] bottleneck: TargetFrameRate
+11-25 17:21:17.057 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:17.057 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogBottleneckEvent(PerformanceBottleneckChangeEventArgs)
+11-25 17:21:17.057 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:21:17.057 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:21:17.057 13037 13056 I Unity   : 
+11-25 17:21:17.057 13037 13056 I Unity   : [AP] bottleneck=TargetFrameRate
+11-25 17:21:17.057 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:17.057 13037 13056 I Unity   : AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-25 17:21:17.057 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:21:17.057 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:21:17.057 13037 13056 I Unity   : 
+11-25 17:21:17.316 13037 13056 I Unity   : [W11QA] state paused=True scale=0 audioPaused=True elapsed=1.103333 hp=100 wave=1 enemies=0 kills=0 sword=0 rocket=0 coins=40 rank=0 draws=0 batches=0 setpass=23 tris=718 mainNs=18697318 renderNs=0
+11-25 17:21:17.316 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:17.316 13037 13056 I Unity   : LocalWeek11Probe:Update()
+11-25 17:21:17.316 13037 13056 I Unity   : 
+11-25 17:21:17.763 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:21:17.763 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:21:17.763 13037 13056 I Unity   : Average GPU frametime = 21.07 ms (Current = 20.36 ms)
+11-25 17:21:17.763 13037 13056 I Unity   : Average CPU frametime = 4.42 ms (Current = 5.99 ms)
+11-25 17:21:17.763 13037 13056 I Unity   : Average frametime = 16.67 ms (Current = 16.67 ms)
+11-25 17:21:17.763 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:21:17.763 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:21:17.763 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:21:17.763 13037 13056 I Unity   : FPS = 60.00
+11-25 17:21:17.763 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:21:17.763 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:17.763 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:21:17.763 13037 13056 I Unity   : 
+11-25 17:21:18.331 13037 13056 I Unity   : [W11QA] state paused=True scale=0 audioPaused=True elapsed=1.103333 hp=100 wave=1 enemies=0 kills=0 sword=0 rocket=0 coins=40 rank=0 draws=0 batches=0 setpass=23 tris=718 mainNs=16106064 renderNs=0
+11-25 17:21:18.331 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:18.331 13037 13056 I Unity   : LocalWeek11Probe:Update()
+11-25 17:21:18.331 13037 13056 I Unity   : 
+11-25 17:21:18.460 13037 13056 I Unity   : [Lifecycle] paused=False wallet=40 rank=0
+11-25 17:21:18.460 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:18.460 13037 13056 I Unity   : LifecycleGuard:SetGlobalPaused(Boolean)
+11-25 17:21:18.460 13037 13056 I Unity   : UnityEngine.Events.UnityEvent:Invoke()
+11-25 17:21:18.460 13037 13056 I Unity   : UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+11-25 17:21:18.460 13037 13056 I Unity   : UnityEngine.InputSystem.UI.InputSystemUIInputModule:ProcessPointerButton(ButtonState&, PointerEventData)
+11-25 17:21:18.460 13037 13056 I Unity   : UnityEngine.InputSystem.UI.InputSystemUIInputModule:ProcessPointer(PointerModel&)
+11-25 17:21:18.460 13037 13056 I Unity   : UnityEngine.InputSystem.UI.InputSystemUIInputModule:Process()
+11-25 17:21:18.460 13037 13056 I Unity   : 
+11-25 17:21:18.460 13037 13056 I Unity   : Game state changed to: Playing
+11-25 17:21:18.460 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:18.460 13037 13056 I Unity   : GameManager:SetState(State)
+11-25 17:21:18.460 13037 13056 I Unity   : LifecycleGuard:SetGlobalPaused(Boolean)
+11-25 17:21:18.460 13037 13056 I Unity   : UnityEngine.Events.UnityEvent:Invoke()
+11-25 17:21:18.460 13037 13056 I Unity   : UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+11-25 17:21:18.460 13037 13056 I Unity   : UnityEngine.InputSystem.UI.InputSystemUIInputModule:ProcessPointerButton(ButtonState&, PointerEventData)
+11-25 17:21:18.460 13037 13056 I Unity   : UnityEngine.InputSystem.UI.InputSystemUIInputModule:ProcessPointer(PointerModel&)
+11-25 17:21:18.460 13037 13056 I Unity   : UnityEngine.InputSystem.UI.InputSystemUIInputModule:Process()
+11-25 17:21:18.460 13037 13056 I Unity   : 
+11-25 17:21:18.645 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:21:18.645 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:21:18.645 13037 13056 I Unity   : Average GPU frametime = 21.72 ms (Current = 23.77 ms)
+11-25 17:21:18.645 13037 13056 I Unity   : Average CPU frametime = 5.23 ms (Current = 3.83 ms)
+11-25 17:21:18.645 13037 13056 I Unity   : Average frametime = 17.17 ms (Current = 16.67 ms)
+11-25 17:21:18.645 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:21:18.645 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:21:18.645 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:21:18.645 13037 13056 I Unity   : FPS = 58.25
+11-25 17:21:18.645 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:21:18.645 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:18.645 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:21:18.645 13037 13056 I Unity   : 
+11-25 17:21:19.343 13037 13056 I Unity   : [W11QA] state paused=False scale=1 audioPaused=False elapsed=2.003332 hp=100 wave=1 enemies=0 kills=0 sword=0 rocket=0 coins=40 rank=0 draws=0 batches=0 setpass=19 tris=586 mainNs=13815645 renderNs=0
+11-25 17:21:19.343 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:19.343 13037 13056 I Unity   : LocalWeek11Probe:Update()
+11-25 17:21:19.343 13037 13056 I Unity   : 
+11-25 17:21:19.478 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:21:19.478 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:21:19.478 13037 13056 I Unity   : Average GPU frametime = 22.74 ms (Current = 23.00 ms)
+11-25 17:21:19.478 13037 13056 I Unity   : Average CPU frametime = 4.74 ms (Current = 5.62 ms)
+11-25 17:21:19.478 13037 13056 I Unity   : Average frametime = 17.17 ms (Current = 16.67 ms)
+11-25 17:21:19.478 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:21:19.478 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:21:19.478 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:21:19.478 13037 13056 I Unity   : FPS = 58.25
+11-25 17:21:19.478 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:21:19.478 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:19.478 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:21:19.478 13037 13056 I Unity   : 
+11-25 17:21:20.324 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:21:20.324 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:21:20.324 13037 13056 I Unity   : Average GPU frametime = 22.71 ms (Current = 25.17 ms)
+11-25 17:21:20.324 13037 13056 I Unity   : Average CPU frametime = 4.58 ms (Current = 4.15 ms)
+11-25 17:21:20.324 13037 13056 I Unity   : Average frametime = 16.83 ms (Current = 16.67 ms)
+11-25 17:21:20.324 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:21:20.324 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:21:20.324 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:21:20.324 13037 13056 I Unity   : FPS = 59.41
+11-25 17:21:20.324 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:21:20.324 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:20.324 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:21:20.324 13037 13056 I Unity   : 
+11-25 17:21:20.357 13037 13056 I Unity   : [W11QA] state paused=False scale=1 audioPaused=False elapsed=3.019998 hp=100 wave=1 enemies=1 kills=0 sword=0 rocket=0 coins=40 rank=0 draws=0 batches=0 setpass=22 tris=592 mainNs=16506721 renderNs=0
+11-25 17:21:20.357 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:20.357 13037 13056 I Unity   : LocalWeek11Probe:Update()
+11-25 17:21:20.357 13037 13056 I Unity   : 
+11-25 17:21:21.157 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:21:21.157 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:21:21.157 13037 13056 I Unity   : Average GPU frametime = 22.62 ms (Current = 20.80 ms)
+11-25 17:21:21.157 13037 13056 I Unity   : Average CPU frametime = 4.76 ms (Current = 4.06 ms)
+11-25 17:21:21.157 13037 13056 I Unity   : Average frametime = 16.83 ms (Current = 16.67 ms)
+11-25 17:21:21.157 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:21:21.157 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:21:21.157 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:21:21.157 13037 13056 I Unity   : FPS = 59.41
+11-25 17:21:21.157 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:21:21.157 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:21.157 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:21:21.157 13037 13056 I Unity   : 
+11-25 17:21:21.375 13037 13056 I Unity   : [W11QA] state paused=False scale=1 audioPaused=False elapsed=4.036664 hp=100 wave=1 enemies=1 kills=0 sword=0 rocket=0 coins=40 rank=0 draws=0 batches=0 setpass=22 tris=592 mainNs=18527329 renderNs=0
+11-25 17:21:21.375 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:21.375 13037 13056 I Unity   : LocalWeek11Probe:Update()
+11-25 17:21:21.375 13037 13056 I Unity   : 
+11-25 17:21:21.718 13037 13056 I Unity   : [Adaptive Performance] [perf event] bottleneck: GPU
+11-25 17:21:21.718 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:21.718 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogBottleneckEvent(PerformanceBottleneckChangeEventArgs)
+11-25 17:21:21.718 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:21:21.718 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:21:21.718 13037 13056 I Unity   : 
+11-25 17:21:21.719 13037 13056 I Unity   : [AP] bottleneck=GPU
+11-25 17:21:21.719 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:21.719 13037 13056 I Unity   : AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-25 17:21:21.719 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:21:21.719 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:21:21.719 13037 13056 I Unity   : 
+11-25 17:21:21.910 13037 13037 I Unity   : windowFocusChanged: false
+11-25 17:21:21.913 13037 13056 I Unity   : Handle cmd APP_CMD_LOST_FOCUS(8)
+11-25 17:21:21.917 13037 13056 I Unity   : [Lifecycle] paused=True wallet=50 rank=0
+11-25 17:21:21.917 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:21.917 13037 13056 I Unity   : LifecycleGuard:SetGlobalPaused(Boolean)
+11-25 17:21:21.917 13037 13056 I Unity   : 
+11-25 17:21:21.928 13037 13056 I Unity   : Game state changed to: Paused
+11-25 17:21:21.928 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:21.928 13037 13056 I Unity   : GameManager:SetState(State)
+11-25 17:21:21.928 13037 13056 I Unity   : LifecycleGuard:SetGlobalPaused(Boolean)
+11-25 17:21:21.928 13037 13056 I Unity   : 
+11-25 17:21:24.575 13037 13037 I Unity   : windowFocusChanged: true
+11-25 17:21:24.575 13037 13056 I Unity   : Handle cmd APP_CMD_GAINED_FOCUS(7)
+11-25 17:21:24.656 13037 13056 I Unity   : [W11QA] state paused=True scale=0 audioPaused=True elapsed=4.570004 hp=100 wave=1 enemies=1 kills=1 sword=0 rocket=0 coins=50 rank=0 draws=0 batches=0 setpass=22 tris=590 mainNs=2754694451 renderNs=0
+11-25 17:21:24.656 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:24.656 13037 13056 I Unity   : LocalWeek11Probe:Update()
+11-25 17:21:24.656 13037 13056 I Unity   : 
+11-25 17:21:24.785 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:21:24.785 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:21:24.785 13037 13056 I Unity   : Average GPU frametime = 22.92 ms (Current = 29.03 ms)
+11-25 17:21:24.785 13037 13056 I Unity   : Average CPU frametime = 5.87 ms (Current = 4.38 ms)
+11-25 17:21:24.785 13037 13056 I Unity   : Average frametime = 17.17 ms (Current = 16.67 ms)
+11-25 17:21:24.785 13037 13056 I Unity   : Bottleneck GPU, ThermalTrend 0.000
+11-25 17:21:24.785 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:21:24.785 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:21:24.785 13037 13056 I Unity   : FPS = 58.25
+11-25 17:21:24.785 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:21:24.785 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:24.785 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:21:24.785 13037 13056 I Unity   : 
+11-25 17:21:25.629 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:21:25.629 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:21:25.629 13037 13056 I Unity   : Average GPU frametime = 22.37 ms (Current = 22.11 ms)
+11-25 17:21:25.629 13037 13056 I Unity   : Average CPU frametime = 6.08 ms (Current = 4.05 ms)
+11-25 17:21:25.629 13037 13056 I Unity   : Average frametime = 17.33 ms (Current = 16.67 ms)
+11-25 17:21:25.629 13037 13056 I Unity   : Bottleneck GPU, ThermalTrend 0.000
+11-25 17:21:25.629 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:21:25.629 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:21:25.629 13037 13056 I Unity   : FPS = 57.69
+11-25 17:21:25.629 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:21:25.629 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:25.629 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:21:25.629 13037 13056 I Unity   : 
+11-25 17:21:25.665 13037 13056 I Unity   : [W11QA] state paused=True scale=0 audioPaused=True elapsed=4.570004 hp=100 wave=1 enemies=1 kills=1 sword=0 rocket=0 coins=50 rank=0 draws=0 batches=0 setpass=26 tris=722 mainNs=18133225 renderNs=0
+11-25 17:21:25.665 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:25.665 13037 13056 I Unity   : LocalWeek11Probe:Update()
+11-25 17:21:25.665 13037 13056 I Unity   : 
+11-25 17:21:26.147 13037 13056 I Unity   : [Adaptive Performance] [perf event] bottleneck: TargetFrameRate
+11-25 17:21:26.147 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:26.147 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogBottleneckEvent(PerformanceBottleneckChangeEventArgs)
+11-25 17:21:26.147 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:21:26.147 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:21:26.147 13037 13056 I Unity   : 
+11-25 17:21:26.147 13037 13056 I Unity   : [AP] bottleneck=TargetFrameRate
+11-25 17:21:26.147 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:26.147 13037 13056 I Unity   : AdaptiveBootstrap:OnBottleneck(PerformanceBottleneckChangeEventArgs)
+11-25 17:21:26.147 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:UpdateSubsystem()
+11-25 17:21:26.147 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:Update()
+11-25 17:21:26.147 13037 13056 I Unity   : 
+11-25 17:21:26.478 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:21:26.478 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:21:26.478 13037 13056 I Unity   : Average GPU frametime = 21.09 ms (Current = 28.10 ms)
+11-25 17:21:26.478 13037 13056 I Unity   : Average CPU frametime = 4.42 ms (Current = 4.06 ms)
+11-25 17:21:26.478 13037 13056 I Unity   : Average frametime = 17.00 ms (Current = 16.67 ms)
+11-25 17:21:26.478 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:21:26.478 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:21:26.478 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:21:26.478 13037 13056 I Unity   : FPS = 58.82
+11-25 17:21:26.478 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:21:26.478 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:26.478 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:21:26.478 13037 13056 I Unity   : 
+11-25 17:21:26.680 13037 13056 I Unity   : [W11QA] state paused=True scale=0 audioPaused=True elapsed=4.570004 hp=100 wave=1 enemies=1 kills=1 sword=0 rocket=0 coins=50 rank=0 draws=0 batches=0 setpass=26 tris=722 mainNs=17445026 renderNs=0
+11-25 17:21:26.680 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:26.680 13037 13056 I Unity   : LocalWeek11Probe:Update()
+11-25 17:21:26.680 13037 13056 I Unity   : 
+11-25 17:21:27.200 13037 13056 I Unity   : [Baseline] avg 77.08 ms  p99 33.33 ms
+11-25 17:21:27.200 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:27.200 13037 13056 I Unity   : FrameTimeSampler:Update()
+11-25 17:21:27.200 13037 13056 I Unity   : 
+11-25 17:21:27.311 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:21:27.311 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:21:27.311 13037 13056 I Unity   : Average GPU frametime = 20.80 ms (Current = 23.87 ms)
+11-25 17:21:27.311 13037 13056 I Unity   : Average CPU frametime = 4.07 ms (Current = 3.85 ms)
+11-25 17:21:27.311 13037 13056 I Unity   : Average frametime = 16.83 ms (Current = 16.67 ms)
+11-25 17:21:27.311 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:21:27.311 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:21:27.311 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:21:27.311 13037 13056 I Unity   : FPS = 59.41
+11-25 17:21:27.311 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:21:27.311 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:27.311 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:21:27.311 13037 13056 I Unity   : 
+11-25 17:21:27.683 13037 13056 I Unity   : [W11QA] state paused=True scale=0 audioPaused=True elapsed=4.570004 hp=100 wave=1 enemies=1 kills=1 sword=0 rocket=0 coins=50 rank=0 draws=0 batches=0 setpass=26 tris=722 mainNs=37233283 renderNs=0
+11-25 17:21:27.683 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:27.683 13037 13056 I Unity   : LocalWeek11Probe:Update()
+11-25 17:21:27.683 13037 13056 I Unity   : 
+11-25 17:21:27.885 13037 13056 I Unity   : [Lifecycle] paused=False wallet=50 rank=0
+11-25 17:21:27.885 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:27.885 13037 13056 I Unity   : LifecycleGuard:SetGlobalPaused(Boolean)
+11-25 17:21:27.885 13037 13056 I Unity   : UnityEngine.Events.UnityEvent:Invoke()
+11-25 17:21:27.885 13037 13056 I Unity   : UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+11-25 17:21:27.885 13037 13056 I Unity   : UnityEngine.InputSystem.UI.InputSystemUIInputModule:ProcessPointerButton(ButtonState&, PointerEventData)
+11-25 17:21:27.885 13037 13056 I Unity   : UnityEngine.InputSystem.UI.InputSystemUIInputModule:ProcessPointer(PointerModel&)
+11-25 17:21:27.885 13037 13056 I Unity   : UnityEngine.InputSystem.UI.InputSystemUIInputModule:Process()
+11-25 17:21:27.885 13037 13056 I Unity   : 
+11-25 17:21:27.887 13037 13056 I Unity   : Game state changed to: Playing
+11-25 17:21:27.887 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:27.887 13037 13056 I Unity   : GameManager:SetState(State)
+11-25 17:21:27.887 13037 13056 I Unity   : LifecycleGuard:SetGlobalPaused(Boolean)
+11-25 17:21:27.887 13037 13056 I Unity   : UnityEngine.Events.UnityEvent:Invoke()
+11-25 17:21:27.887 13037 13056 I Unity   : UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+11-25 17:21:27.887 13037 13056 I Unity   : UnityEngine.InputSystem.UI.InputSystemUIInputModule:ProcessPointerButton(ButtonState&, PointerEventData)
+11-25 17:21:27.887 13037 13056 I Unity   : UnityEngine.InputSystem.UI.InputSystemUIInputModule:ProcessPointer(PointerModel&)
+11-25 17:21:27.887 13037 13056 I Unity   : UnityEngine.InputSystem.UI.InputSystemUIInputModule:Process()
+11-25 17:21:27.887 13037 13056 I Unity   : 
+11-25 17:21:28.178 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:21:28.178 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:21:28.178 13037 13056 I Unity   : Average GPU frametime = 21.94 ms (Current = 21.41 ms)
+11-25 17:21:28.178 13037 13056 I Unity   : Average CPU frametime = 4.21 ms (Current = 3.81 ms)
+11-25 17:21:28.178 13037 13056 I Unity   : Average frametime = 17.00 ms (Current = 16.67 ms)
+11-25 17:21:28.178 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:21:28.178 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:21:28.178 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:21:28.178 13037 13056 I Unity   : FPS = 58.82
+11-25 17:21:28.178 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:21:28.178 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:28.178 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:21:28.178 13037 13056 I Unity   : 
+11-25 17:21:28.695 13037 13056 I Unity   : [W11QA] state paused=False scale=1 audioPaused=False elapsed=5.370014 hp=100 wave=1 enemies=1 kills=1 sword=0 rocket=0 coins=50 rank=0 draws=0 batches=0 setpass=22 tris=590 mainNs=16614203 renderNs=0
+11-25 17:21:28.695 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:28.695 13037 13056 I Unity   : LocalWeek11Probe:Update()
+11-25 17:21:28.695 13037 13056 I Unity   : 
+11-25 17:21:29.011 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:21:29.011 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:21:29.011 13037 13056 I Unity   : Average GPU frametime = 23.29 ms (Current = 22.87 ms)
+11-25 17:21:29.011 13037 13056 I Unity   : Average CPU frametime = 4.60 ms (Current = 4.20 ms)
+11-25 17:21:29.011 13037 13056 I Unity   : Average frametime = 17.00 ms (Current = 16.67 ms)
+11-25 17:21:29.011 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:21:29.011 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:21:29.011 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:21:29.011 13037 13056 I Unity   : FPS = 58.82
+11-25 17:21:29.011 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:21:29.011 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:29.011 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:21:29.011 13037 13056 I Unity   : 
+11-25 17:21:29.696 13037 13056 I Unity   : [W11QA] state paused=False scale=1 audioPaused=False elapsed=6.370027 hp=100 wave=1 enemies=1 kills=2 sword=0 rocket=0 coins=60 rank=0 draws=0 batches=0 setpass=20 tris=588 mainNs=16956702 renderNs=0
+11-25 17:21:29.696 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:29.696 13037 13056 I Unity   : LocalWeek11Probe:Update()
+11-25 17:21:29.696 13037 13056 I Unity   : 
+11-25 17:21:29.878 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:21:29.878 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:21:29.878 13037 13056 I Unity   : Average GPU frametime = 23.89 ms (Current = 25.49 ms)
+11-25 17:21:29.878 13037 13056 I Unity   : Average CPU frametime = 4.70 ms (Current = 3.90 ms)
+11-25 17:21:29.878 13037 13056 I Unity   : Average frametime = 17.00 ms (Current = 16.67 ms)
+11-25 17:21:29.878 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:21:29.878 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:21:29.878 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:21:29.878 13037 13056 I Unity   : FPS = 58.82
+11-25 17:21:29.878 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:21:29.878 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:29.878 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:21:29.878 13037 13056 I Unity   : 
+11-25 17:21:29.915 13037 13056 I Unity   : [Lifecycle] paused=True wallet=60 rank=0
+11-25 17:21:29.915 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:29.915 13037 13056 I Unity   : LifecycleGuard:SetGlobalPaused(Boolean)
+11-25 17:21:29.915 13037 13056 I Unity   : UnityEngine.Events.UnityEvent:Invoke()
+11-25 17:21:29.915 13037 13056 I Unity   : UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+11-25 17:21:29.915 13037 13056 I Unity   : UnityEngine.InputSystem.UI.InputSystemUIInputModule:ProcessPointerButton(ButtonState&, PointerEventData)
+11-25 17:21:29.915 13037 13056 I Unity   : UnityEngine.InputSystem.UI.InputSystemUIInputModule:ProcessPointer(PointerModel&)
+11-25 17:21:29.915 13037 13056 I Unity   : UnityEngine.InputSystem.UI.InputSystemUIInputModule:Process()
+11-25 17:21:29.915 13037 13056 I Unity   : 
+11-25 17:21:29.917 13037 13056 I Unity   : Game state changed to: Paused
+11-25 17:21:29.917 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:29.917 13037 13056 I Unity   : GameManager:SetState(State)
+11-25 17:21:29.917 13037 13056 I Unity   : LifecycleGuard:SetGlobalPaused(Boolean)
+11-25 17:21:29.917 13037 13056 I Unity   : UnityEngine.Events.UnityEvent:Invoke()
+11-25 17:21:29.917 13037 13056 I Unity   : UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+11-25 17:21:29.917 13037 13056 I Unity   : UnityEngine.InputSystem.UI.InputSystemUIInputModule:ProcessPointerButton(ButtonState&, PointerEventData)
+11-25 17:21:29.917 13037 13056 I Unity   : UnityEngine.InputSystem.UI.InputSystemUIInputModule:ProcessPointer(PointerModel&)
+11-25 17:21:29.917 13037 13056 I Unity   : UnityEngine.InputSystem.UI.InputSystemUIInputModule:Process()
+11-25 17:21:29.917 13037 13056 I Unity   : 
+11-25 17:21:30.713 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:21:30.713 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:21:30.713 13037 13056 I Unity   : Average GPU frametime = 23.32 ms (Current = 20.62 ms)
+11-25 17:21:30.713 13037 13056 I Unity   : Average CPU frametime = 4.42 ms (Current = 3.82 ms)
+11-25 17:21:30.713 13037 13056 I Unity   : Average frametime = 17.00 ms (Current = 16.67 ms)
+11-25 17:21:30.713 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:21:30.713 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:21:30.713 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:21:30.713 13037 13056 I Unity   : FPS = 58.82
+11-25 17:21:30.713 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:21:30.713 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:30.713 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:21:30.713 13037 13056 I Unity   : 
+11-25 17:21:30.713 13037 13056 I Unity   : [W11QA] state paused=True scale=0 audioPaused=True elapsed=6.586696 hp=100 wave=1 enemies=1 kills=2 sword=0 rocket=0 coins=60 rank=0 draws=0 batches=0 setpass=26 tris=722 mainNs=18736849 renderNs=0
+11-25 17:21:30.713 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:30.713 13037 13056 I Unity   : LocalWeek11Probe:Update()
+11-25 17:21:30.713 13037 13056 I Unity   : 
+11-25 17:21:31.546 13037 13056 I Unity   : [Adaptive Performance] SkinTemp=0.9 PerformanceMode=Standard
+11-25 17:21:31.546 13037 13056 I Unity   : Performance level CPU=-1/-1 GPU=-1/-1 thermal warn=NoWarning(0) thermal level=0.90 mode=Automatic
+11-25 17:21:31.546 13037 13056 I Unity   : Average GPU frametime = 22.70 ms (Current = 22.47 ms)
+11-25 17:21:31.546 13037 13056 I Unity   : Average CPU frametime = 3.92 ms (Current = 3.54 ms)
+11-25 17:21:31.546 13037 13056 I Unity   : Average frametime = 16.67 ms (Current = 16.67 ms)
+11-25 17:21:31.546 13037 13056 I Unity   : Bottleneck TargetFrameRate, ThermalTrend 0.000
+11-25 17:21:31.546 13037 13056 I Unity   : CPU Boost Mode False, GPU Boost Mode False
+11-25 17:21:31.546 13037 13056 I Unity   : Cluster Info = Big Cores: 0 Medium Cores: 0 Little Cores: 0
+11-25 17:21:31.546 13037 13056 I Unity   : FPS = 60.00
+11-25 17:21:31.546 13037 13056 I Unity   : Performance Mode = Standard
+11-25 17:21:31.546 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:31.546 13037 13056 I Unity   : UnityEngine.AdaptivePerformance.AdaptivePerformanceManager:LogAdaptivePerformanceStatus()
+11-25 17:21:31.546 13037 13056 I Unity   : 
+11-25 17:21:31.729 13037 13056 I Unity   : [W11QA] state paused=True scale=0 audioPaused=True elapsed=6.586696 hp=100 wave=1 enemies=1 kills=2 sword=0 rocket=0 coins=60 rank=0 draws=0 batches=0 setpass=26 tris=722 mainNs=17018819 renderNs=0
+11-25 17:21:31.729 13037 13056 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-25 17:21:31.729 13037 13056 I Unity   : LocalWeek11Probe:Update()
+11-25 17:21:31.729 13037 13056 I Unity   : 

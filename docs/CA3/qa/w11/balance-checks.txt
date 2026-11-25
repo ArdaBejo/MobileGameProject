@@ -1,0 +1,4 @@
+11-25 17:18:51.545 12700 12790 I Unity   : [W11QA] balance pistol=14/30 sword=26/50 rocket=42/82 might=22 legacyCapped=24 hp=30/45/60 contact=12/16/20
+11-25 17:18:51.569 12700 12790 I Unity   : [W11QA] PASS wave1: enemyHp=30 aliveAfterTwo14=true contactRemaining=88
+11-25 17:18:51.572 12700 12790 I Unity   : [W11QA] PASS wave2: enemyHp=45 aliveAfterTwo14=true contactRemaining=84
+11-25 17:18:51.575 12700 12790 I Unity   : [W11QA] PASS wave3: enemyHp=60 aliveAfterTwo14=true contactRemaining=80

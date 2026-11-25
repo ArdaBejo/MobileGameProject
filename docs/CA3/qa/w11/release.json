@@ -1,0 +1,14 @@
+{
+  "package": "com.ardabecanim.mobilegame",
+  "version": "0.9.1",
+  "versionCode": 7,
+  "buildId": "efb9acb7",
+  "sourceCommit": "2aa8675",
+  "architecture": "arm64-v8a",
+  "debuggable": false,
+  "bytes": 36651894,
+  "sha256": "d079a84574ed43d7c12d04895afc2d4215ea616d7c01fe993b28a6c1a367f555",
+  "signerSha256": "50af179f3373e23e7170e08ccb0360d21685eb192d06e8b790c7a63f5f61d560",
+  "device": "Pixel 8 AVD / sdk_gphone64_x86_64, Android 16 API 36",
+  "note": "ARM64 IL2CPP on an x86-64 emulator; host translation and background Unity builds affect timings."
+}

@@ -1,0 +1,7 @@
+11-25 17:25:52.446 13037 13056 I Unity   : [W11QA] state paused=True scale=0 audioPaused=True elapsed=91.63953 hp=100 wave=3 enemies=60 kills=5 sword=1 rocket=0 coins=90 rank=0 draws=0 batches=0 setpass=23 tris=932 mainNs=17525548 renderNs=0
+11-25 17:25:53.461 13037 13056 I Unity   : [W11QA] state paused=True scale=0 audioPaused=True elapsed=91.63953 hp=100 wave=3 enemies=60 kills=5 sword=1 rocket=0 coins=90 rank=0 draws=0 batches=0 setpass=23 tris=932 mainNs=15540226 renderNs=0
+11-25 17:25:54.440 13037 13056 I Unity   : [Lifecycle] paused=False wallet=90 rank=0
+11-25 17:25:54.462 13037 13056 I Unity   : [W11QA] state paused=False scale=1 audioPaused=False elapsed=91.63953 hp=100 wave=3 enemies=60 kills=5 sword=1 rocket=0 coins=90 rank=0 draws=0 batches=0 setpass=23 tris=932 mainNs=25027726 renderNs=0
+11-25 17:25:55.463 13037 13056 I Unity   : [W11QA] state paused=False scale=1 audioPaused=False elapsed=92.65639 hp=100 wave=3 enemies=57 kills=9 sword=1 rocket=0 coins=130 rank=0 draws=0 batches=0 setpass=19 tris=680 mainNs=16266839 renderNs=0
+11-25 17:25:56.480 13037 13056 I Unity   : [Lifecycle] paused=True wallet=140 rank=0
+11-25 17:25:56.482 13037 13056 I Unity   : [W11QA] state paused=True scale=0 audioPaused=True elapsed=93.67327 hp=100 wave=3 enemies=57 kills=10 sword=1 rocket=0 coins=140 rank=0 draws=0 batches=0 setpass=19 tris=788 mainNs=16980260 renderNs=0

@@ -22,4 +22,4 @@ Opening enemies take fewer pistol hits than before. The final-wave spawn jump is
 
 References: https://vampire.survivors.wiki/w/Max_Health and https://vampire.survivors.wiki/w/Might (community documentation, consulted for the stat structure).
 
-Validation: full gameplay assembly compiles with the Unity 6000.6 toolchain. Android runtime checks follow in the Week 11 evidence.
+Validation: full gameplay assembly compiles with the Unity 6000.6 toolchain. Android QA runtime assertions passed for spawned enemy HP 30/45/60, survival after two 14-damage hits, and contact-health outcomes 88/84/80. See [checks](w11/balance-checks.txt). Signed release 0.9.1 / 7 was installed and the normal run reached Wave 3 with real upgrade choices.

@@ -5,9 +5,11 @@
 **Project option:** 1 – Arena-Survivor Roguelite  
 **Current CA1 release:** 0.3.0
 
-**Current Unity project version:** 0.9.0 (versionCode 6). The CA1 device evidence below remains specific to 0.3.0; it does not verify the current project version.
+**Current Unity project version:** 0.9.1 (versionCode 7). The CA1 device evidence below remains specific to 0.3.0; it does not verify the current project version.
 
 The current enabled build scenes are `Boot`, `Menu`, `Game`, and `Result`, in that order. `Boot` loads `Menu` on startup. The earlier `MainMenu` and `Sample Scene` names below describe the CA1 release history.
+
+Current combat uses 100 player HP, wave-scaled enemy health and three weapons with percentage Damage Up. See [balance values](docs/CA3/qa/combat-balance.md) and [pause/timer audit](docs/CA3/qa/awaitable-audit.md). The Week 5 sections below describe the original greybox, before the art and balance passes.
 
 ## Week 5 Lab B — Part A greybox
 
@@ -111,8 +113,8 @@ The repository should ignore signing files:
 2. In **File → Build Profiles**, select and activate **Release Android**.
 3. Check **Edit → Project Settings → Player → Android → Other Settings**:
    - Package name: `com.ardabecanim.mobilegame`
-   - Version: `0.9.0`
-   - Bundle Version Code: `6`
+   - Version: `0.9.1`
+   - Bundle Version Code: `7`
    - Minimum API Level: Android 8.0 / API 26
    - Target API Level: Automatic (highest installed)
    - Scripting Backend: IL2CPP
@@ -127,14 +129,14 @@ The repository should ignore signing files:
 7. Click **Build** and save the release APK as:
 
 ```text
-Builds/NoStarsRemain-0.9.0-arm64.apk
+Builds/NoStarsRemain-0.9.1-arm64.apk
 ```
 
 8. With an authorized Android device or emulator connected, install the APK using ADB (adjust paths as needed):
 
 ```powershell
 & "D:\UNITY\6000.6.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\platform-tools\adb.exe" devices
-& "D:\UNITY\6000.6.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\platform-tools\adb.exe" install -r "C:\Users\probe\OneDrive\Desktop\MobileGameProject\Builds\NoStarsRemain-0.9.0-arm64.apk"
+& "D:\UNITY\6000.6.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\platform-tools\adb.exe" install -r "C:\Users\probe\OneDrive\Desktop\MobileGameProject\Builds\NoStarsRemain-0.9.1-arm64.apk"
 ```
 
 9. Verify the installed version:
@@ -143,7 +145,7 @@ Builds/NoStarsRemain-0.9.0-arm64.apk
 & "D:\UNITY\6000.6.0f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\platform-tools\adb.exe" shell dumpsys package com.ardabecanim.mobilegame | Select-String "versionCode|versionName"
 ```
 
-Expected values are `versionCode=6` and `versionName=0.9.0`. Use the About panel or Logcat to identify the build.
+Expected values are `versionCode=7` and `versionName=0.9.1`. Use the About panel or Logcat to identify the build.
 
 **Update note:** An APK signed using the new keystore cannot replace an installation signed with the old key. If Android reports `INSTALL_FAILED_UPDATE_INCOMPATIBLE`, uninstall the older installation before installing the new APK; uninstalling removes the app's local data.
 

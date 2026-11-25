@@ -1,0 +1,1 @@
+SELECT s.ts,s.dur,th.tid FROM slice s JOIN thread_track tt ON s.track_id=tt.id JOIN thread th USING(utid) JOIN process p USING(upid) WHERE p.name='com.ardabecanim.mobilegame' AND s.name='eglSwapBuffers' AND s.dur>=0 ORDER BY s.ts;

@@ -1,0 +1,77 @@
+using System;
+using System.IO;
+using System.Reflection;
+using Unity.Profiling;
+using UnityEngine;
+
+// Injected into the isolated Development project only; never shipped in the release.
+public sealed class LocalWeek11Probe : MonoBehaviour
+{
+    float next;
+    ProfilerRecorder draws, batches, passes, triangles, main, render;
+    string command;
+    [RuntimeInitializeOnLoadMethod]
+    static void Register()
+    {
+        var go = new GameObject("Local Week 11 probe");
+        DontDestroyOnLoad(go);
+        go.AddComponent<LocalWeek11Probe>();
+    }
+    void Start()
+    {
+        command = Path.Combine(Application.persistentDataPath, "qa-command.txt");
+        draws = ProfilerRecorder.StartNew(ProfilerCategory.Render, "Draw Calls Count");
+        batches = ProfilerRecorder.StartNew(ProfilerCategory.Render, "Batches Count");
+        passes = ProfilerRecorder.StartNew(ProfilerCategory.Render, "SetPass Calls Count");
+        triangles = ProfilerRecorder.StartNew(ProfilerCategory.Render, "Triangles Count");
+        main = ProfilerRecorder.StartNew(ProfilerCategory.Internal, "Main Thread");
+        render = ProfilerRecorder.StartNew(ProfilerCategory.Internal, "Render Thread");
+        Debug.Log("[W11QA] probe ready " + Application.persistentDataPath);
+    }
+    static object Read(object target, string field) => target.GetType().GetField(field, BindingFlags.NonPublic | BindingFlags.Instance).GetValue(target);
+    void Update()
+    {
+        if (Time.realtimeSinceStartup < next) return;
+        next = Time.realtimeSinceStartup + 1;
+        var lane = GreyboxLane.Instance;
+        if (lane == null || lane.Player == null) return;
+        var run = RunProgression.Instance;
+        var pool = FindFirstObjectByType<EnemyPool>();
+        Debug.Log($"[W11QA] state paused={LifecycleGuard.IsPaused} scale={Time.timeScale} audioPaused={AudioListener.pause} elapsed={Read(lane, "elapsed")} hp={Read(lane, "health")} wave={lane.Wave} enemies={pool.ActiveCount} kills={lane.Kills} sword={run.SwordLevel} rocket={run.RocketLevel} coins={Wallet.Instance.Coins} rank={Wallet.Instance.Level} draws={draws.LastValue} batches={batches.LastValue} setpass={passes.LastValue} tris={triangles.LastValue} mainNs={main.LastValue} renderNs={render.LastValue}");
+        if (!File.Exists(command)) return;
+        string action = File.ReadAllText(command).Trim(); File.Delete(command);
+        if (action == "heavy")
+        {
+            typeof(GreyboxLane).GetField("elapsed", BindingFlags.NonPublic | BindingFlags.Instance).SetValue(lane, 85f);
+            typeof(GreyboxLane).GetField("immunityUntil", BindingFlags.NonPublic | BindingFlags.Instance).SetValue(lane, Time.time + 600);
+            for (int i = pool.ActiveCount; i < 60; i++) pool.Spawn(lane.ArenaCenter + UnityEngine.Random.insideUnitCircle * 3);
+            Debug.Log("[W11QA] synthetic heavy fixture: wave3, pool cap60, invulnerability; not a release pacing measurement");
+        }
+        if (action == "balance")
+        {
+            Debug.Log($"[W11QA] balance pistol={CombatBalance.Pistol(1,0,0)}/{CombatBalance.Pistol(5,0,0)} sword={CombatBalance.Sword(1,0)}/{CombatBalance.Sword(5,0)} rocket={CombatBalance.Rocket(1,0)}/{CombatBalance.Rocket(5,0)} might={CombatBalance.Pistol(1,0,3)} legacyCapped={CombatBalance.Pistol(1,99,0)} hp={CombatBalance.EnemyHealth(30,1)}/{CombatBalance.EnemyHealth(30,2)}/{CombatBalance.EnemyHealth(30,3)} contact={CombatBalance.Contact(1)}/{CombatBalance.Contact(2)}/{CombatBalance.Contact(3)}");
+            int originalHealth = (int)Read(lane, "health");
+            float originalElapsed = (float)Read(lane, "elapsed");
+            for (int wave = 1; wave <= 3; wave++)
+            {
+                typeof(GreyboxLane).GetField("elapsed", BindingFlags.NonPublic | BindingFlags.Instance).SetValue(lane, (wave-1)*40f);
+                var enemy = pool.Spawn(lane.Player.position + Vector3.right * 2);
+                int observedHp = (int)Read(enemy,"health");
+                for (int hits=0; hits<2; hits++) enemy.Hit(14);
+                bool aliveAfterTwo = enemy.gameObject.activeSelf;
+                enemy.Hit(1000);
+                typeof(GreyboxLane).GetField("immunityUntil", BindingFlags.NonPublic | BindingFlags.Instance).SetValue(lane, -1f);
+                typeof(GreyboxLane).GetField("health", BindingFlags.NonPublic | BindingFlags.Instance).SetValue(lane, 100);
+                lane.DamagePlayer();
+                int remaining = (int)Read(lane,"health");
+                if (observedHp != CombatBalance.EnemyHealth(30,wave) || !aliveAfterTwo || remaining != 100-CombatBalance.Contact(wave))
+                    throw new Exception("[W11QA] FAIL balance wave " + wave);
+                Debug.Log($"[W11QA] PASS wave{wave}: enemyHp={observedHp} aliveAfterTwo14=true contactRemaining={remaining}");
+            }
+            typeof(GreyboxLane).GetField("elapsed", BindingFlags.NonPublic | BindingFlags.Instance).SetValue(lane, originalElapsed);
+            typeof(GreyboxLane).GetField("health", BindingFlags.NonPublic | BindingFlags.Instance).SetValue(lane, originalHealth);
+
+        }
+    }
+    void OnDestroy() { draws.Dispose(); batches.Dispose(); passes.Dispose(); triangles.Dispose(); main.Dispose(); render.Dispose(); }
+}
