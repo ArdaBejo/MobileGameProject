@@ -523,3 +523,7 @@ The Windows Editor Game View captured 7,186 active arena frames over 60.17 secon
 ### Week 9 Lab B — final-sprint setup (12 November 2026)
 
 The project owner excluded the live showcase, so this lab produced no showcase survey or ranked showcase fixes. Existing Week 8 peer feedback documents a request for Restart and an observation that the opening felt easy. Restart was implemented and the early waves were tuned before this lab. The CA3 targets use the measured performance baseline and resilience plan. The Async Pack 2 checklist records the 17 November deadline. The CA2 video plan covers the signed Android candidate from the launcher through a complete run and relaunch. Recording is pending.
+
+### Week 10 Lab A — store assets and capture tooling (25 November 2026)
+
+Started the store listing asset pass. Created a white astronaut helmet icon and blue spacecraft-deck feature graphic from the existing arena reference, with ImageGen assistance. Exported a 512×512 RGBA icon and 1024×500 RGB feature graphic. Prepared two 76-character short descriptions and a long description limited to the implemented arena loop, upgrades, settings and local storage. Added Development-only capture tooling that hides the runtime canvases and world health bar and exports a central 9:16 image. Android capture verification is in progress.
