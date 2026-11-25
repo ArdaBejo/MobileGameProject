@@ -1,6 +1,6 @@
 # Store asset provenance
 
-The icon uses the original astronaut helmet pixels from the first frame of Assets/Resources/Sprite-0002.aseprite. The complete helmet outline is enlarged with nearest-neighbour sampling over a solid teal background.
+The icon uses the exact astronaut portrait supplied by the project owner on 25 November 2026. Its composition and transparency are preserved, with a 512×512 export using nearest-neighbour sampling.
 
 The feature graphic combines the first-frame astronaut and moon-bat sprites with Assets/Resources/ArenaDeck.png. Nearest-neighbour enlargement keeps their original pixel shapes. A teal tint supports title readability, and Bahnschrift lettering sets the game title. Its yellow square represents the projectile drawn by the current game.
 

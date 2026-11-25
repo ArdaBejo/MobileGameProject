@@ -1,0 +1,7 @@
+11-25 15:27:52.885  6970  7030 I Unity   : [telemetry] 2.87 d85d9209 session_start version=0.8.0 build=dada9b08 device=Google%20sdk_gphone64_x86_64 app_version=0.8.0 device_model=Google%20sdk_gphone64_x86_64 android=Android%20OS%2016%20%2F%20API-36%20%28BE2A.250530.026.D1%2F13818094%29 tier=Low
+11-25 15:27:58.181  6970  7030 I Unity   : [telemetry] 8.17 d85d9209 level_start level_id=1 attempt=1 coins=0
+11-25 15:28:29.128  6970  7030 I Unity   : [StoreShot] Saved /storage/emulated/0/Android/data/com.ardabecanim.mobilegame.storeqa/files/shot00_1080x1920.png
+11-25 15:28:32.996  6970  7030 I Unity   : [StoreShot] Saved /storage/emulated/0/Android/data/com.ardabecanim.mobilegame.storeqa/files/shot01_1080x1920.png
+11-25 15:28:38.167  6970  7030 I Unity   : [StoreShot] Saved /storage/emulated/0/Android/data/com.ardabecanim.mobilegame.storeqa/files/shot02_1080x1920.png
+11-25 15:28:42.368  6970  7030 I Unity   : [StoreShot] Saved /storage/emulated/0/Android/data/com.ardabecanim.mobilegame.storeqa/files/shot03_1080x1920.png
+11-25 15:28:46.528  6970  7030 I Unity   : [StoreShot] Saved /storage/emulated/0/Android/data/com.ardabecanim.mobilegame.storeqa/files/shot04_1080x1920.png
