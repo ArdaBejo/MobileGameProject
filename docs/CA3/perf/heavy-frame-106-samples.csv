@@ -1,0 +1,1237 @@
+sample,name,inclusive_ms
+0,"Main Thread",31.789632797241211
+1,"PlayerLoop",31.606868743896484
+2,"Initialization.UpdateCameraMotionVectors",0.0025710000190883875
+3,"Initialization.DirectorSampleTime",0.011792000383138657
+4,"Director.SampleTime",0.010533000342547894
+5,"Initialization.AsyncUploadTimeSlicedUpdate",0.0025080000050365925
+6,"Initialization.XREarlyUpdate",0.00073600001633167267
+7,"EarlyUpdate.PollPlayerConnection",0.017649000510573387
+8,"PlayerConnection.Poll",0.016805000603199005
+9,"PlayerConnection.Poll",0.015351000241935253
+10,"GeneralConnection.Poll",0.011238999664783478
+11,"Connections.Poll",0.0018479999853298068
+12,"Connections.Process",0.0066249999217689037
+13,"EarlyUpdate.GpuTimestamp",0.00039400000241585076
+14,"EarlyUpdate.AnalyticsCoreStatsUpdate",0.010154999792575836
+15,"EarlyUpdate.InsightsUpdate",0.018147999420762062
+16,"EarlyUpdate.UnityWebRequestUpdate",0.012794000096619129
+17,"EarlyUpdate.ExecuteMainThreadJobs",0.0029559999238699675
+18,"EarlyUpdate.ProcessMouseInWindow",0.0030269999988377094
+19,"EarlyUpdate.ClearLines",0.00014800000644754618
+20,"EarlyUpdate.PresentBeforeUpdate",0.00044999999227002263
+21,"EarlyUpdate.ResetFrameStatsAfterPresent",0.00030399998649954796
+22,"EarlyUpdate.UpdateAsyncInstantiate",0.0019920000340789557
+23,"EarlyUpdate.UpdateAsyncReadbackManager",0.0010939999483525753
+24,"EarlyUpdate.UpdateTextureStreamingManager",0.049233999103307724
+25,"TextureStreamingManager.Update",0.04755600169301033
+26,"TextureStreamingManager.LoadMipLevels",0.0011289999820291996
+27,"TextureStreamingManager.UpdateRenderers",0.037634000182151794
+28,"WaitForCompleted",0
+29,"EarlyUpdate.UpdatePreloading",0.0075420001521706581
+30,"Loading.UpdatePreloading",0.0063260002061724663
+31,"UpdatePreloading",0.005402000155299902
+32,"Application.Integrate Assets in Background",0.0041589997708797455
+33,"Preload Single Step",0.0014979999978095293
+34,"suspendPointHook.Invoke",0.00094499997794628143
+35,"EarlyUpdate.UpdateContentLoading",0.012089000083506107
+36,"ContentLoadFrontend.IntegrateUpdate",0.0025150000583380461
+37,"UnityEngine.ContentLoadModule.dll!Unity.Loading::ContentLoadingSystem.ProcessResults() [Invoke]",0.0034839999862015247
+38,"EarlyUpdate.RendererNotifyInvisible",0.013783999718725681
+39,"EarlyUpdate.PlayerCleanupCachedData",0.012497000396251678
+40,"Cleanup Unused Cached Data",0.010019999928772449
+41,"PlayerCleanupCachedData",0.0082339998334646225
+42,"RenderTexture.GarbageCollectTemporary",0.002208000048995018
+43,"CleanUp.TextRenderingGarbageCollect",0.0017989999614655972
+44,"EarlyUpdate.UpdateCanvasRectTransform",0.061870001256465912
+45,"EarlyUpdate.XRUpdate",0.0054879998788237572
+46,"EarlyUpdate.UpdateInputManager",0.0018830000190064311
+47,"EarlyUpdate.ScriptRunDelayedStartupFrame",0.00558000011369586
+48,"CoroutinesDelayedCalls",0.0029909999575465918
+49,"EarlyUpdate.ARCoreUpdate",0.0006750000175088644
+50,"EarlyUpdate.DispatchEventQueueEvents",0.0035500000230968
+51,"GlobalEventQueue",0.0025839998852461576
+52,"EarlyUpdate.PhysicsCore2DEarlyUpdate",0.020685000345110893
+53,"PhysicsCore2D.PhysicsWorld.SyncInterpolation",0.017731999978423119
+54,"PhysicsCore2D.PhysicsWorld.ProcessTransformWriteTweens",0.0076750000007450581
+55,"EarlyUpdate.Physics2DEarlyUpdate",0.00086700002430006862
+56,"EarlyUpdate.PhysicsResetInterpolatedTransformPosition",0.03130200132727623
+57,"Physics.Interpolation",0.0028560000937432051
+58,"Profiler.CollectPhysicsStats",0.024376999586820602
+59,"EarlyUpdate.SpriteAtlasManagerUpdate",0.00041499998769722879
+60,"EarlyUpdate.TilemapRendererEarlyUpdate",0.00067600002512335777
+61,"FixedUpdate.ClearLines",9.6000003395602107E-05
+62,"FixedUpdate.NewInputFixedUpdate",0.047649998217821121
+63,"UnityEngine.InputModule.dll!UnityEngineInternal.Input::NativeInputSystem.NotifyBeforeUpdate() [Invoke]",0.035760998725891113
+64,"GC.Alloc",0.0037799999117851257
+65,"FixedUpdate.DirectorFixedSampleTime",0.0021049999631941319
+66,"FixedUpdate.AudioFixedUpdate",0.0430850014090538
+67,"AudioManager.FixedUpdate",0.039448000490665436
+68,"FixedUpdate.ScriptRunBehaviourFixedUpdate",0.0065190000459551811
+69,"FixedBehaviourUpdate",0.0026710000820457935
+70,"FixedUpdate.DirectorFixedUpdate",0.018492000177502632
+71,"Director.PrepareFrame",0.0015620000194758177
+72,"Director.ProcessFrame",0.0010440000332891941
+73,"FixedUpdate.XRFixedUpdate",0.00079899997217580676
+74,"FixedUpdate.PhysicsFixedUpdate",0.17105799913406372
+75,"Physics.PrepareSimulationStage",0.023950999602675438
+76,"Physics.SyncTransforms",0.021080000326037407
+77,"Physics.CalculateChangedColliderTransforms",0.0053519997745752335
+78,"TransformChangeSystem",0.0031020001042634249
+79,"Physics.CalculateChangedBodyTransforms",0.00045299998600967228
+80,"TransformChangeSystem",0.00023700000019744039
+81,"ScheduleJob",0
+82,"WaitForCompleted",0
+83,"Physics.WriteRigidbodyPoses",0.00013299999409355223
+84,"Physics.WriteColliderPoses",0.00024100000155158341
+85,"Physics.RunSimulationStage",0.015138000249862671
+86,"Physics.Simulate",0.011919000186026096
+87,"PxScene.simulate",0.0061320001259446144
+88,"FixedUpdate.PhysicsCore2DFixedUpdate",0.06317400187253952
+89,"PhysicsCore2D.TransformChanged",0.0080420002341270447
+90,"TransformChangeSystem",0.0025919999461621046
+91,"PhysicsCore2D.PhysicsWorld.SimulateBatch",0.043042000383138657
+92,"PhysicsCore2D.PhysicsWorld.PreSimulate",0.02212199941277504
+93,"UnityEngine.PhysicsCore2DModule.dll!Unity.U2D.Physics::PhysicsEvents.InvokePreSimulate() [Invoke]",0.0048850001767277718
+94,"PhysicsCore2D.PhysicsWorld.Simulate.StepWorlds",0.00091300002532079816
+95,"PhysicsCore2D.PhysicsWorld.WriteTransforms",0.0025329999625682831
+96,"PhysicsCore2D.PhysicsWorld.PostSimulate",0.0020779999904334545
+97,"UnityEngine.PhysicsCore2DModule.dll!Unity.U2D.Physics::PhysicsEvents.InvokePostSimulate() [Invoke]",0.00055799999972805381
+98,"FixedUpdate.Physics2DFixedUpdate",0.19367699325084686
+99,"Physics2D.Simulate",0.18713100254535675
+100,"Physics2D.SyncTransformChanges",0.13835699856281281
+101,"Physics2D.SyncRigidbodyTransformChanges",0.0025979999918490648
+102,"TransformChangeSystem",0.00078200001735240221
+103,"Physics2D.SyncColliderTransformChanges",0.13487699627876282
+104,"TransformChangeSystem",0.07991500198841095
+105,"ScheduleJob",0
+106,"WaitForJobGroupID",0.013993999920785427
+107,"Find dependency chain",0.0025420000310987234
+108,"BeginJob",0
+109,"EngineJob",0.0031830000225454569
+110,"TransformChangeSystem",0.0022489998955279589
+111,"EndJob",0
+112,"WaitForCompleted",0
+113,"TransformChangeSystem",0.0032679999712854624
+114,"Physics2D.Collider2D.DestroyShapes",0.01397900003939867
+115,"Physics2D.FlagContactsForRecreation",0.000674000009894371
+116,"Physics2D.Collider2D.CreateShapes",0.023742999881505966
+117,"Physics2D.CircleColliderPrepareShapes",0.0060459999367594719
+118,"Physics2D.Collider2D.DestroyShapes",0.0016110000433400273
+119,"Physics2D.FlagContactsForRecreation",0.00011000000085914508
+120,"Physics2D.Collider2D.CreateShapes",0.0018980000168085098
+121,"Physics2D.CircleColliderPrepareShapes",0.00035399998887442052
+122,"Physics2D.Step",0.0372529998421669
+123,"Physics2D.FindNewContacts",0.020052000880241394
+124,"Physics2D.StoreBodyMoveStates",0.00079999997979030013
+125,"Physics2D.ContactsCollide",0.00088599999435245991
+126,"Physics2D.SolveDiscrete",0.0052550002001225948
+127,"Physics2D.ClearIslandFlags",0.00035899999784305692
+128,"Physics2D.SolveDiscreteTraversal",0.0010639999527484179
+129,"Physics2D.SynchronizeFixtures",0.00024500000290572643
+130,"Physics2D.FindNewContacts",0.00024100000155158341
+131,"Physics2D.SolveContinuous",0.0034099998883903027
+132,"Physics2D.ClearContinuousIslandFlags",0.00026599998818710446
+133,"Physics2D.SolveContinuousTraversal",0.0018400000408291817
+134,"Physics2D.FindMinimumContinuousContact",0.0007130000158213079
+135,"Physics2D.ClearBodyForces",0.00043099999311380088
+136,"Physics2D.TriggerContactsFinalUpdate",0.00043499999446794391
+137,"Physics2D.RestoreBodyMoveStates",0.0002460000105202198
+138,"Physics2D.WriteTransforms",0.0014519999967887998
+139,"Physics2D.EffectorFixedUpdate",0.00021300000662449747
+140,"Physics2D.JointBreakLimits",0.000506000011228025
+141,"Physics2D.CompileContactCallbacks",0.00046999999904073775
+142,"FixedUpdate.DirectorFixedUpdatePostPhysics",0.0030769999139010906
+143,"Director.PrepareFrame",0.00066800002241507173
+144,"Director.ProcessFrame",0.00034100000630132854
+145,"FixedUpdate.ScriptRunDelayedFixedFrameRate",0.0031930000986903906
+146,"CoroutinesDelayedCalls",0.0020800000056624413
+147,"PreUpdate.PhysicsUpdate",0.003671000013127923
+148,"Physics.Interpolation",0.00092700001550838351
+149,"PreUpdate.PhysicsCore2DUpdate",0.0056159999221563339
+150,"PhysicsCore2D.PhysicsWorld.ProcessTransformWriteTweens",0.0029460000805556774
+151,"PhysicsCore2D.PhysicsWorld.WriteTransformTweens",0.00107999995816499
+152,"PreUpdate.Physics2DUpdate",0.0011940000113099813
+153,"PreUpdate.CheckTexFieldInput",0.0004949999856762588
+154,"PreUpdate.IMGUISendQueuedEvents",0.0025559999048709869
+155,"PreUpdate.NewInputUpdate",0.0870010033249855
+156,"UnityEngine.InputModule.dll!UnityEngineInternal.Input::NativeInputSystem.NotifyBeforeUpdate() [Invoke]",0.074538998305797577
+157,"Touchscreen.OnNextUpdate",0.0024470000062137842
+158,"Touchscreen.OnNextUpdate",0.00031299999682232738
+159,"Touchscreen.OnNextUpdate",0.00033599999733269215
+160,"Touchscreen.OnNextUpdate",0.00067199999466538429
+161,"Touchscreen.OnNextUpdate",0.00011200000153621659
+162,"Touchscreen.OnNextUpdate",0.00011100000119768083
+163,"Touchscreen.OnNextUpdate",0.0001610000035725534
+164,"Touchscreen.OnNextUpdate",0.00010699999984353781
+165,"Touchscreen.OnNextUpdate",0.00021399999968707561
+166,"Touchscreen.OnNextUpdate",0.00010599999950500205
+167,"Touchscreen.OnNextUpdate",0.00010699999984353781
+168,"Touchscreen.OnNextUpdate",0.0001140000022132881
+169,"GC.Alloc",0.00089600001228973269
+170,"UnityEngine.InputModule.dll!UnityEngineInternal.Input::NativeInputSystem.ProcessInputUpdate() [Invoke]",0.0068259998224675655
+171,"InputUpdate",0.0037219999358057976
+172,"PreUpdate.InputForUIUpdate",0.0065259998664259911
+173,"UnityEngine.InputForUIModule.dll!UnityEngine.InputForUI::EventProvider.NotifyUpdate() [Invoke]",0.0043299999088048935
+174,"PreUpdate.SendMouseEvents",0.0012250000145286322
+175,"Monobehaviour.OnMouse_",0.00031400000443682075
+176,"PreUpdate.WindUpdate",0.0054999999701976776
+177,"SpeedTreeWindManager.Update",0.0047720000147819519
+178,"SpeedTreeWindManager.UpdateGlobalAndLocalWinds",0.0018899999558925629
+179,"Update.ScriptRunBehaviourUpdate",0.67842197418212891
+180,"BehaviourUpdate",0.67626601457595825
+181,"UnityEngine.UI.dll!UnityEngine.EventSystems::EventSystem.Update() [Invoke]",0.03531000018119812
+182,"Assembly-CSharp.dll!::PerformanceMode.Update() [Invoke]",0.0019759999122470617
+183,"UnityEngine.AdaptivePerformanceModule.dll!UnityEngine.AdaptivePerformance::AdaptivePerformanceManager.Update() [Invoke]",0.32125398516654968
+184,"UnityEngine.CoreModule.dll!UnityEngine.Rendering::OnDemandRendering.GetRenderFrameInterval() [Invoke]",0.0018489999929443002
+185,"UnityEngine.CoreModule.dll!UnityEngine.Rendering::OnDemandRendering.GetRenderFrameInterval() [Invoke]",0.00015399999392684549
+186,"Profiler.FrameMetadata",0.0013069999404251575
+187,"CPU frametime",0
+188,"CPU avg frametime",0
+189,"GPU frametime",0
+190,"GPU avg frametime",0
+191,"CPU performance level",0
+192,"GPU performance level",0
+193,"Frametime",0
+194,"Avg frametime",0
+195,"Thermal Warning Level",0
+196,"Temperature Level",0
+197,"Temperature Trend",0
+198,"Bottleneck",0
+199,"Performance Mode",0
+200,"CPU Utilization",0
+201,"GPU Utilization",0
+202,"Assembly-CSharp.dll!::PerformanceOverlay.Update() [Invoke]",0.029467999935150146
+203,"GC.Alloc",0.0006779999821446836
+204,"Assembly-CSharp.dll!::LocalWeek11Probe.Update() [Invoke]",0.0017989999614655972
+205,"Assembly-CSharp.dll!::GreyboxLane.Update() [Invoke]",0.061615999788045883
+206,"Assembly-CSharp.dll!::WalletHud.Update() [Invoke]",0.0052930000238120556
+207,"Assembly-CSharp.dll!::FrameTimeSampler.Update() [Invoke]",0.0018680000212043524
+208,"Assembly-CSharp.dll!::PauseMenu.Update() [Invoke]",0.0021869998890906572
+209,"Assembly-CSharp.dll!::GreyboxSafeArea.Update() [Invoke]",0.0023900000378489494
+210,"Unity.RenderPipelines.Core.Runtime.dll!UnityEngine.Rendering::Volume.Update() [Invoke]",0.0017849999712780118
+211,"Assembly-CSharp.dll!::GreyboxSafeArea.Update() [Invoke]",0.00063899997621774673
+212,"Assembly-CSharp.dll!::RunProgression.Update() [Invoke]",0.001715000020340085
+213,"Assembly-CSharp.dll!::RunWeapons.Update() [Invoke]",0.014798999764025211
+214,"Assembly-CSharp.dll!::GreyboxSafeArea.Update() [Invoke]",0.0017519999528303742
+215,"Assembly-CSharp.dll!::ThermalOverlay.Update() [Invoke]",0.0015719999792054296
+216,"Assembly-CSharp.dll!::GreyboxSafeArea.Update() [Invoke]",0.00033999999868683517
+217,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.0070070000365376472
+218,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.0015539999585598707
+219,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00096400000620633364
+220,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.0007379999733529985
+221,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00091599998995661736
+222,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.000590000010561198
+223,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00066800002241507173
+224,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00059399998281151056
+225,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00056900002527982
+226,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00064300000667572021
+227,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.000661000027321279
+228,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00056700001005083323
+229,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.0005680000176653266
+230,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00066399999195709825
+231,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00056000001495704055
+232,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00055900000734254718
+233,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00055900000734254718
+234,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00060700002359226346
+235,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00056199997197836637
+236,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00056700001005083323
+237,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00057099998230114579
+238,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00058100000023841858
+239,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00068800000008195639
+240,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00059399998281151056
+241,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00056399998720735312
+242,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.0060879997909069061
+243,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.0013549999566748738
+244,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00082800001837313175
+245,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00078100000973790884
+246,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00072399998316541314
+247,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00065200001699849963
+248,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00075599999399855733
+249,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.000623999978415668
+250,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00056999997468665242
+251,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00069299997994676232
+252,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00060099997790530324
+253,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00056299997959285975
+254,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00057099998230114579
+255,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00056399998720735312
+256,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.0005680000176653266
+257,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00055799999972805381
+258,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00059399998281151056
+259,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00057099998230114579
+260,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00056299997959285975
+261,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00056499999482184649
+262,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00056399998720735312
+263,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00078699999721720815
+264,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00060600001597777009
+265,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.000783999974373728
+266,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00056600000243633986
+267,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00057299999753013253
+268,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00059499999042600393
+269,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00056399998720735312
+270,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00056999997468665242
+271,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00063500000396743417
+272,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00057199998991563916
+273,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00060099997790530324
+274,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00056700001005083323
+275,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00058599998010322452
+276,"Assembly-CSharp.dll!::Enemy.Update() [Invoke]",0.00083799997810274363
+277,"Update.ScriptRunDelayedDynamicFrameRate",0.012005999684333801
+278,"CoroutinesDelayedCalls",0.010976999998092651
+279,"UnityEngine.CoreModule.dll!UnityEngine::Awaitable.OnUpdate() [Invoke]",0.0037730000913143158
+280,"Update.ScriptRunDelayedTasks",0.27952799201011658
+281,"UnityEngine.CoreModule.dll!UnityEngine::UnitySynchronizationContext.ExecuteTasks() [Invoke]",0.27566999197006226
+282,"Update.DirectorUpdate",0.0024500000290572643
+283,"Director.PrepareFrame",0.00045200000749900937
+284,"Director.ProcessFrame",0.00021499999274965376
+285,"PreLateUpdate.DirectorUpdateAnimationBegin",1.0427520275115967
+286,"Director.PrepareFrame",0.77658098936080933
+287,"ScheduleJob",0
+288,"WaitForJobGroupID",0.632070004940033
+289,"Find dependency chain",0.0018139999592676759
+290,"BeginJob",0
+291,"EngineJob",0.041290000081062317
+292,"Director.PrepareFrameJob",0.040646001696586609
+293,"PlayableOutput.PrepareFrame",0.038291998207569122
+294,"AnimatorControllerPlayable.PrepareFrame",0.025397000834345818
+295,"EndJob",0
+296,"BeginJob",0
+297,"EngineJob",0.00621799984946847
+298,"Director.PrepareFrameJob",0.0059440000914037228
+299,"PlayableOutput.PrepareFrame",0.0056380000896751881
+300,"AnimatorControllerPlayable.PrepareFrame",0.0027620000764727592
+301,"EndJob",0
+302,"BeginJob",0
+303,"EngineJob",0.0045529999770224094
+304,"Director.PrepareFrameJob",0.00444599986076355
+305,"PlayableOutput.PrepareFrame",0.0040969997644424438
+306,"AnimatorControllerPlayable.PrepareFrame",0.0019079999765381217
+307,"EndJob",0
+308,"BeginJob",0
+309,"EngineJob",0.0047089997678995132
+310,"Director.PrepareFrameJob",0.0045889997854828835
+311,"PlayableOutput.PrepareFrame",0.0041910000145435333
+312,"AnimatorControllerPlayable.PrepareFrame",0.0017950000474229455
+313,"EndJob",0
+314,"BeginJob",0
+315,"EngineJob",0.0081160003319382668
+316,"Director.PrepareFrameJob",0.007890000008046627
+317,"PlayableOutput.PrepareFrame",0.007548999972641468
+318,"AnimatorControllerPlayable.PrepareFrame",0.0019869999960064888
+319,"EndJob",0
+320,"BeginJob",0
+321,"EngineJob",0.0068620000965893269
+322,"Director.PrepareFrameJob",0.00660899979993701
+323,"PlayableOutput.PrepareFrame",0.00622300012037158
+324,"AnimatorControllerPlayable.PrepareFrame",0.0038369998801499605
+325,"EndJob",0
+326,"BeginJob",0
+327,"EngineJob",0.0046159997582435608
+328,"Director.PrepareFrameJob",0.0044900001958012581
+329,"PlayableOutput.PrepareFrame",0.0042380001395940781
+330,"AnimatorControllerPlayable.PrepareFrame",0.0017630000365898013
+331,"EndJob",0
+332,"BeginJob",0
+333,"EngineJob",0.004970999900251627
+334,"Director.PrepareFrameJob",0.0048719998449087143
+335,"PlayableOutput.PrepareFrame",0.0046020001173019409
+336,"AnimatorControllerPlayable.PrepareFrame",0.0025619999505579472
+337,"EndJob",0
+338,"BeginJob",0
+339,"EngineJob",0.0042209997773170471
+340,"Director.PrepareFrameJob",0.0041000000201165676
+341,"PlayableOutput.PrepareFrame",0.0039049999322742224
+342,"AnimatorControllerPlayable.PrepareFrame",0.0021220000926405191
+343,"EndJob",0
+344,"BeginJob",0
+345,"EngineJob",0.0038429999258369207
+346,"Director.PrepareFrameJob",0.003696999978274107
+347,"PlayableOutput.PrepareFrame",0.0034590000286698341
+348,"AnimatorControllerPlayable.PrepareFrame",0.001639000023715198
+349,"EndJob",0
+350,"BeginJob",0
+351,"EngineJob",0.0041840001940727234
+352,"Director.PrepareFrameJob",0.004065999761223793
+353,"PlayableOutput.PrepareFrame",0.0038699998985975981
+354,"AnimatorControllerPlayable.PrepareFrame",0.0017930000321939588
+355,"EndJob",0
+356,"BeginJob",0
+357,"EngineJob",0.0044760000891983509
+358,"Director.PrepareFrameJob",0.0043620001524686813
+359,"PlayableOutput.PrepareFrame",0.0041410000994801521
+360,"AnimatorControllerPlayable.PrepareFrame",0.0018090000376105309
+361,"EndJob",0
+362,"BeginJob",0
+363,"EngineJob",0.0038970001041889191
+364,"Director.PrepareFrameJob",0.00380500010214746
+365,"PlayableOutput.PrepareFrame",0.0035739999730139971
+366,"AnimatorControllerPlayable.PrepareFrame",0.0013200000394135714
+367,"EndJob",0
+368,"BeginJob",0
+369,"EngineJob",0.0058249998837709427
+370,"Director.PrepareFrameJob",0.0056960000656545162
+371,"PlayableOutput.PrepareFrame",0.0054970001801848412
+372,"AnimatorControllerPlayable.PrepareFrame",0.0018100000452250242
+373,"EndJob",0
+374,"BeginJob",0
+375,"EngineJob",0.0094929998740553856
+376,"Director.PrepareFrameJob",0.0092599997296929359
+377,"PlayableOutput.PrepareFrame",0.0089010000228881836
+378,"AnimatorControllerPlayable.PrepareFrame",0.0042790002189576626
+379,"EndJob",0
+380,"BeginJob",0
+381,"EngineJob",0.0052649998106062412
+382,"Director.PrepareFrameJob",0.0050389999523758888
+383,"PlayableOutput.PrepareFrame",0.0048099998384714127
+384,"AnimatorControllerPlayable.PrepareFrame",0.0020459999796003103
+385,"EndJob",0
+386,"BeginJob",0
+387,"EngineJob",0.0035470000002533197
+388,"Director.PrepareFrameJob",0.0034159999340772629
+389,"PlayableOutput.PrepareFrame",0.0032200000714510679
+390,"AnimatorControllerPlayable.PrepareFrame",0.0015579999890178442
+391,"EndJob",0
+392,"BeginJob",0
+393,"EngineJob",0.0031610000878572464
+394,"Director.PrepareFrameJob",0.0030610000248998404
+395,"PlayableOutput.PrepareFrame",0.0028800000436604023
+396,"AnimatorControllerPlayable.PrepareFrame",0.0013770000077784061
+397,"EndJob",0
+398,"BeginJob",0
+399,"EngineJob",0.0042159999720752239
+400,"Director.PrepareFrameJob",0.0040989997796714306
+401,"PlayableOutput.PrepareFrame",0.0038000000640749931
+402,"AnimatorControllerPlayable.PrepareFrame",0.0015279999934136868
+403,"EndJob",0
+404,"BeginJob",0
+405,"EngineJob",0.0033430000767111778
+406,"Director.PrepareFrameJob",0.0032470000442117453
+407,"PlayableOutput.PrepareFrame",0.0030330000445246696
+408,"AnimatorControllerPlayable.PrepareFrame",0.0015679999487474561
+409,"EndJob",0
+410,"BeginJob",0
+411,"EngineJob",0.004036999773234129
+412,"Director.PrepareFrameJob",0.00392200006172061
+413,"PlayableOutput.PrepareFrame",0.0037249999586492777
+414,"AnimatorControllerPlayable.PrepareFrame",0.0012240000069141388
+415,"EndJob",0
+416,"BeginJob",0
+417,"EngineJob",0.00367600005120039
+418,"Director.PrepareFrameJob",0.0035389999393373728
+419,"PlayableOutput.PrepareFrame",0.0033899999689310789
+420,"AnimatorControllerPlayable.PrepareFrame",0.0017000000225380063
+421,"EndJob",0
+422,"BeginJob",0
+423,"EngineJob",0.0033859999384731054
+424,"Director.PrepareFrameJob",0.003292999928817153
+425,"PlayableOutput.PrepareFrame",0.0031580000650137663
+426,"AnimatorControllerPlayable.PrepareFrame",0.001576000009663403
+427,"EndJob",0
+428,"BeginJob",0
+429,"EngineJob",0.0036700000055134296
+430,"Director.PrepareFrameJob",0.0035689999349415302
+431,"PlayableOutput.PrepareFrame",0.0032869998831301928
+432,"AnimatorControllerPlayable.PrepareFrame",0.0018019999843090773
+433,"EndJob",0
+434,"BeginJob",0
+435,"EngineJob",0.0045309998095035553
+436,"Director.PrepareFrameJob",0.0044359997846186161
+437,"PlayableOutput.PrepareFrame",0.004288999829441309
+438,"AnimatorControllerPlayable.PrepareFrame",0.0023489999584853649
+439,"EndJob",0
+440,"BeginJob",0
+441,"EngineJob",0.0038219999987632036
+442,"Director.PrepareFrameJob",0.0037249999586492777
+443,"PlayableOutput.PrepareFrame",0.003599999938160181
+444,"AnimatorControllerPlayable.PrepareFrame",0.0018690000288188457
+445,"EndJob",0
+446,"BeginJob",0
+447,"EngineJob",0.0066450000740587711
+448,"Director.PrepareFrameJob",0.006370999850332737
+449,"PlayableOutput.PrepareFrame",0.0058960001915693283
+450,"AnimatorControllerPlayable.PrepareFrame",0.001547000021673739
+451,"EndJob",0
+452,"BeginJob",0
+453,"EngineJob",0.0071029998362064362
+454,"Director.PrepareFrameJob",0.00685400003567338
+455,"PlayableOutput.PrepareFrame",0.0065100002102553844
+456,"AnimatorControllerPlayable.PrepareFrame",0.0037670000456273556
+457,"EndJob",0
+458,"BeginJob",0
+459,"EngineJob",0.0036869999021291733
+460,"Director.PrepareFrameJob",0.00356299988925457
+461,"PlayableOutput.PrepareFrame",0.0032240001019090414
+462,"AnimatorControllerPlayable.PrepareFrame",0.0014459999511018395
+463,"EndJob",0
+464,"BeginJob",0
+465,"EngineJob",0.0035139999818056822
+466,"Director.PrepareFrameJob",0.0034000000450760126
+467,"PlayableOutput.PrepareFrame",0.0029700000304728746
+468,"AnimatorControllerPlayable.PrepareFrame",0.0014299999456852674
+469,"EndJob",0
+470,"BeginJob",0
+471,"EngineJob",0.0052189999260008335
+472,"Director.PrepareFrameJob",0.0051199998706579208
+473,"PlayableOutput.PrepareFrame",0.004749000072479248
+474,"AnimatorControllerPlayable.PrepareFrame",0.0025100000202655792
+475,"EndJob",0
+476,"WaitForCompleted",0
+477,"Director.ProcessFrame",0.26380500197410583
+478,"Animators.Update",0.26221400499343872
+479,"Animators.PrepareFirstPass",0.0545010007917881
+480,"Animators.ProcessGraphJob",0.15922899544239044
+481,"ScheduleJob",0
+482,"WaitForJobGroupID",0.12169099599123001
+483,"Find dependency chain",0.0011640000157058239
+484,"BeginJob",0
+485,"EngineJob",0.11290399730205536
+486,"Animator.ProcessGraph",0.02032800018787384
+487,"AnimationClipPlayable.EvaluateClip",0.003292999928817153
+488,"Animator.PrepareAnimationEvents",0.0021120000164955854
+489,"Animator.ProcessGraph",0.0074209999293088913
+490,"AnimationClipPlayable.EvaluateClip",0.00081900000805035233
+491,"Animator.PrepareAnimationEvents",0.00072200002614408731
+492,"Animator.ProcessGraph",0.0024170000106096268
+493,"AnimationClipPlayable.EvaluateClip",0.0002390000008745119
+494,"Animator.PrepareAnimationEvents",0.00030499999411404133
+495,"Animator.ProcessGraph",0.0025790000800043344
+496,"AnimationClipPlayable.EvaluateClip",0.0003169999981764704
+497,"Animator.PrepareAnimationEvents",0.00024399999529123306
+498,"Animator.ProcessGraph",0.0031830000225454569
+499,"AnimationClipPlayable.EvaluateClip",0.000830999983008951
+500,"Animator.PrepareAnimationEvents",0.00041599999531172216
+501,"Animator.ProcessGraph",0.0023910000454634428
+502,"AnimationClipPlayable.EvaluateClip",0.00012799999967683107
+503,"Animator.PrepareAnimationEvents",0.00066899997182190418
+504,"Animator.ProcessGraph",0.0027419999241828918
+505,"AnimationClipPlayable.EvaluateClip",0.00028300000121816993
+506,"Animator.PrepareAnimationEvents",0.00028199999360367656
+507,"Animator.ProcessGraph",0.0022640000097453594
+508,"AnimationClipPlayable.EvaluateClip",0.00011500000255182385
+509,"Animator.PrepareAnimationEvents",0.000291000003926456
+510,"Animator.ProcessGraph",0.0023310000542551279
+511,"AnimationClipPlayable.EvaluateClip",0.00010299999848939478
+512,"Animator.PrepareAnimationEvents",0.00012700000661425292
+513,"Animator.ProcessGraph",0.001601999974809587
+514,"AnimationClipPlayable.EvaluateClip",0.00010199999815085903
+515,"Animator.PrepareAnimationEvents",0.00015300000086426735
+516,"Animator.ProcessGraph",0.00356299988925457
+517,"AnimationClipPlayable.EvaluateClip",0.00011500000255182385
+518,"Animator.PrepareAnimationEvents",0.00051199999870732427
+519,"Animator.ProcessGraph",0.0021379999816417694
+520,"AnimationClipPlayable.EvaluateClip",0.00010599999950500205
+521,"Animator.PrepareAnimationEvents",0.00035300001036375761
+522,"Animator.ProcessGraph",0.0018220000201836228
+523,"AnimationClipPlayable.EvaluateClip",0.00010599999950500205
+524,"Animator.PrepareAnimationEvents",0.00023999999393709004
+525,"Animator.ProcessGraph",0.0062719997949898243
+526,"AnimationClipPlayable.EvaluateClip",0.00062100001377984881
+527,"Animator.PrepareAnimationEvents",0.00059399998281151056
+528,"Animator.ProcessGraph",0.003312000073492527
+529,"AnimationClipPlayable.EvaluateClip",0.00010800000018207356
+530,"Animator.PrepareAnimationEvents",0.00030300000798888505
+531,"Animator.ProcessGraph",0.0016680000117048621
+532,"AnimationClipPlayable.EvaluateClip",0.00010599999950500205
+533,"Animator.PrepareAnimationEvents",0.00021100000594742596
+534,"Animator.ProcessGraph",0.0021490000654011965
+535,"AnimationClipPlayable.EvaluateClip",0.00011799999629147351
+536,"Animator.PrepareAnimationEvents",0.00043799998820759356
+537,"Animator.ProcessGraph",0.00202700006775558
+538,"AnimationClipPlayable.EvaluateClip",0.00010399999882793054
+539,"Animator.PrepareAnimationEvents",0.00011799999629147351
+540,"Animator.ProcessGraph",0.0018019999843090773
+541,"AnimationClipPlayable.EvaluateClip",0.00010599999950500205
+542,"Animator.PrepareAnimationEvents",0.00026699999580159783
+543,"Animator.ProcessGraph",0.0022980000358074903
+544,"AnimationClipPlayable.EvaluateClip",0.00010199999815085903
+545,"Animator.PrepareAnimationEvents",0.00042100000428035855
+546,"Animator.ProcessGraph",0.0014599999412894249
+547,"AnimationClipPlayable.EvaluateClip",0.00024900000425986946
+548,"Animator.PrepareAnimationEvents",0.00014299999747890979
+549,"Animator.ProcessGraph",0.0023280000314116478
+550,"AnimationClipPlayable.EvaluateClip",0.00010399999882793054
+551,"Animator.PrepareAnimationEvents",0.00023700000019744039
+552,"Animator.ProcessGraph",0.0020469999872148037
+553,"AnimationClipPlayable.EvaluateClip",0.00026199998683296144
+554,"Animator.PrepareAnimationEvents",0.00017699999443721026
+555,"Animator.ProcessGraph",0.001930000027641654
+556,"AnimationClipPlayable.EvaluateClip",0.00012099999730708078
+557,"Animator.PrepareAnimationEvents",0.0003060000017285347
+558,"Animator.ProcessGraph",0.0017229999648407102
+559,"AnimationClipPlayable.EvaluateClip",0.00018400000408291817
+560,"Animator.PrepareAnimationEvents",0.00023000000510364771
+561,"Animator.ProcessGraph",0.0018520000157877803
+562,"AnimationClipPlayable.EvaluateClip",0.00010299999848939478
+563,"Animator.PrepareAnimationEvents",0.00026999998954124749
+564,"Animator.ProcessGraph",0.0014290000544860959
+565,"AnimationClipPlayable.EvaluateClip",0.00020500000391621143
+566,"Animator.PrepareAnimationEvents",0.0001900000061141327
+567,"Animator.ProcessGraph",0.0022819999139755964
+568,"AnimationClipPlayable.EvaluateClip",0.00017499999376013875
+569,"Animator.PrepareAnimationEvents",0.00036599999293684959
+570,"EndJob",0
+571,"WaitForCompleted",0
+572,"Animators.FireAnimationEventsAndBehaviours",0.0032339999452233315
+573,"Animators.ApplyOnAnimatorMove",0.023902000859379768
+574,"Animator.ApplyOnAnimatorMove",0.0026179999113082886
+575,"Animator.ApplyOnAnimatorMove",0.000311999989207834
+576,"Animator.ApplyOnAnimatorMove",0.0001340000017080456
+577,"Animator.ApplyOnAnimatorMove",0.00020700000459328294
+578,"Animator.ApplyOnAnimatorMove",0.00020300000323913991
+579,"Animator.ApplyOnAnimatorMove",0.00033700000494718552
+580,"Animator.ApplyOnAnimatorMove",0.00010599999950500205
+581,"Animator.ApplyOnAnimatorMove",0.00031400000443682075
+582,"Animator.ApplyOnAnimatorMove",9.2000002041459084E-05
+583,"Animator.ApplyOnAnimatorMove",0.00017299999308306724
+584,"Animator.ApplyOnAnimatorMove",0.00020700000459328294
+585,"Animator.ApplyOnAnimatorMove",0.00021899999410379678
+586,"Animator.ApplyOnAnimatorMove",0.00014899999951012433
+587,"Animator.ApplyOnAnimatorMove",0.00028199999360367656
+588,"Animator.ApplyOnAnimatorMove",0.0001900000061141327
+589,"Animator.ApplyOnAnimatorMove",0.00017600000137463212
+590,"Animator.ApplyOnAnimatorMove",0.00016199999663513154
+591,"Animator.ApplyOnAnimatorMove",0.00016599999798927456
+592,"Animator.ApplyOnAnimatorMove",0.00019500000053085387
+593,"Animator.ApplyOnAnimatorMove",8.6000000010244548E-05
+594,"Animator.ApplyOnAnimatorMove",0.0002680000034160912
+595,"Animator.ApplyOnAnimatorMove",0.00032600000849924982
+596,"Animator.ApplyOnAnimatorMove",8.6000000010244548E-05
+597,"Animator.ApplyOnAnimatorMove",0.00017499999376013875
+598,"Animator.ApplyOnAnimatorMove",0.00019900000188499689
+599,"Animator.ApplyOnAnimatorMove",9.5000003057066351E-05
+600,"Animator.ApplyOnAnimatorMove",0.00029299999005161226
+601,"Animator.ApplyOnAnimatorMove",0.00025499999173916876
+602,"Animator.ApplyOnAnimatorMove",0.00019500000053085387
+603,"Animator.ApplyOnAnimatorMove",7.4999996286351234E-05
+604,"Animator.ApplyOnAnimatorMove",0.0002010000025620684
+605,"Animator.ApplyOnAnimatorMove",0.00020799999765586108
+606,"Animator.ApplyOnAnimatorMove",0.00019200000679120421
+607,"Animator.ApplyOnAnimatorMove",0.00026100000832229853
+608,"Animator.ApplyOnAnimatorMove",0.00018699999782256782
+609,"Animator.ApplyOnAnimatorMove",0.00020999999833293259
+610,"Animator.ApplyOnAnimatorMove",0.00023200000578071922
+611,"Animator.ApplyOnAnimatorMove",0.00019500000053085387
+612,"Animator.ApplyOnAnimatorMove",0.00020900000527035445
+613,"Animator.ApplyOnAnimatorMove",0.00023700000019744039
+614,"Animator.ApplyOnAnimatorMove",0.00020799999765586108
+615,"Animator.ApplyOnAnimatorMove",0.00021499999274965376
+616,"Animator.ApplyOnAnimatorMove",0.00024699998903088272
+617,"Animator.ApplyOnAnimatorMove",0.00019900000188499689
+618,"Animator.ApplyOnAnimatorMove",0.00032200000714510679
+619,"Animator.ApplyOnAnimatorMove",0.00020900000527035445
+620,"Animator.ApplyOnAnimatorMove",0.00018000000272877514
+621,"Animator.ApplyOnAnimatorMove",0.00054699997417628765
+622,"Animator.ApplyOnAnimatorMove",0.00023099999816622585
+623,"Animator.ApplyOnAnimatorMove",0.00020500000391621143
+624,"Animator.ApplyOnAnimatorMove",0.00020500000391621143
+625,"Animator.ApplyOnAnimatorMove",9.9999997473787516E-05
+626,"Animator.ApplyOnAnimatorMove",0.0002010000025620684
+627,"Animator.ApplyOnAnimatorMove",0.00020399999630171806
+628,"Animator.ApplyOnAnimatorMove",0.0002390000008745119
+629,"Animator.ApplyOnAnimatorMove",0.00033199999597854912
+630,"Animator.ApplyOnAnimatorMove",0.00020300000323913991
+631,"Animator.ApplyOnAnimatorMove",0.00012700000661425292
+632,"Animator.ApplyOnAnimatorMove",0.0002460000105202198
+633,"Animator.ApplyOnAnimatorMove",0.0003279999946244061
+634,"Animator.ApplyOnAnimatorMove",0.00023299999884329736
+635,"PreLateUpdate.DirectorUpdateAnimationEnd",0.23818099498748779
+636,"Director.PrepareFrame",0.00026599998818710446
+637,"Director.ProcessFrame",0.23648099601268768
+638,"Animators.Update",0.23548699915409088
+639,"Animators.PrepareSecondPass",0.023790000006556511
+640,"Animators.SortWriteJob",0.017985999584197998
+641,"Animators.SortWriteJob",0.0001049999991664663
+642,"Animators.ProcessAnimationsJob",0.10182800143957138
+643,"ScheduleJob",0
+644,"WaitForJobGroupID",0.067607998847961426
+645,"Find dependency chain",0.00069900002563372254
+646,"BeginJob",0
+647,"EngineJob",0.060215998440980911
+648,"Animator.ProcessAnimations",0.012040999718010426
+649,"Animator.ProcessAnimations",0.002819000044837594
+650,"Animator.ProcessAnimations",0.0011780000058934093
+651,"Animator.ProcessAnimations",0.0013269999762997031
+652,"Animator.ProcessAnimations",0.0010679999832063913
+653,"Animator.ProcessAnimations",0.0011129999766126275
+654,"Animator.ProcessAnimations",0.00088800000958144665
+655,"Animator.ProcessAnimations",0.0010349999647587538
+656,"Animator.ProcessAnimations",0.001095999963581562
+657,"Animator.ProcessAnimations",0.00076000002445653081
+658,"Animator.ProcessAnimations",0.0010469999397173524
+659,"Animator.ProcessAnimations",0.00093699997523799539
+660,"Animator.ProcessAnimations",0.00080799998249858618
+661,"Animator.ProcessAnimations",0.00079600000753998756
+662,"Animator.ProcessAnimations",0.00079999997979030013
+663,"Animator.ProcessAnimations",0.0010430000256747007
+664,"Animator.ProcessAnimations",0.00091699999757111073
+665,"Animator.ProcessAnimations",0.0011050000321120024
+666,"Animator.ProcessAnimations",0.0008009999874047935
+667,"Animator.ProcessAnimations",0.00072599999839439988
+668,"Animator.ProcessAnimations",0.00089799996931105852
+669,"Animator.ProcessAnimations",0.00093400001060217619
+670,"Animator.ProcessAnimations",0.00071799999568611383
+671,"Animator.ProcessAnimations",0.00081399996997788548
+672,"Animator.ProcessAnimations",0.000783999974373728
+673,"Animator.ProcessAnimations",0.00082900002598762512
+674,"Animator.ProcessAnimations",0.00078599998960271478
+675,"Animator.ProcessAnimations",0.0040179998613893986
+676,"Animator.ProcessAnimations",0.00203699991106987
+677,"Animator.ProcessAnimations",0.0011530000483617187
+678,"Animator.ProcessAnimations",0.0013790000230073929
+679,"Animator.ProcessAnimations",0.0009590000263415277
+680,"Animator.ProcessAnimations",0.0011289999820291996
+681,"Animator.ProcessAnimations",0.001247999956831336
+682,"Animator.ProcessAnimations",0.0015419999836012721
+683,"EndJob",0
+684,"WaitForCompleted",0
+685,"Animators.WriteJob",0.00021399999968707561
+686,"Animators.WriteJob",5.2999999752501026E-05
+687,"Animators.WriteJob",0.050544001162052155
+688,"ScheduleJob",0
+689,"WaitForJobGroupID",0.019216999411582947
+690,"Find dependency chain",0.00067999999737367034
+691,"BeginJob",0
+692,"EngineJob",0.011377999559044838
+693,"Animator.WriteTransforms",0.0011220000451430678
+694,"Animator.WriteTransforms",0.00027399999089539051
+695,"Animator.WriteTransforms",0.00016999999934341758
+696,"Animator.WriteTransforms",0.00014099999680183828
+697,"Animator.WriteTransforms",0.0001449999981559813
+698,"Animator.WriteTransforms",6.2999999499879777E-05
+699,"Animator.WriteTransforms",0.00013099999341648072
+700,"Animator.WriteTransforms",6.0999998822808266E-05
+701,"Animator.WriteTransforms",4.8999998398358E-05
+702,"Animator.WriteTransforms",4.8999998398358E-05
+703,"Animator.WriteTransforms",6.9000001531094313E-05
+704,"Animator.WriteTransforms",0.00024399999529123306
+705,"Animator.WriteTransforms",0.00012099999730708078
+706,"Animator.WriteTransforms",0.00033599999733269215
+707,"Animator.WriteTransforms",0.00014400000509340316
+708,"Animator.WriteTransforms",4.400000034365803E-05
+709,"Animator.WriteTransforms",5.7000001106644049E-05
+710,"Animator.WriteTransforms",5.4000000091036782E-05
+711,"Animator.WriteTransforms",4.70000013592653E-05
+712,"Animator.WriteTransforms",0.0001449999981559813
+713,"Animator.WriteTransforms",4.5000000682193786E-05
+714,"Animator.WriteTransforms",5.0999999075429514E-05
+715,"Animator.WriteTransforms",0.0001340000017080456
+716,"Animator.WriteTransforms",5.0999999075429514E-05
+717,"Animator.WriteTransforms",6.3999999838415533E-05
+718,"Animator.WriteTransforms",4.3000000005122274E-05
+719,"Animator.WriteTransforms",0.00021100000594742596
+720,"Animator.WriteTransforms",0.00012799999967683107
+721,"Animator.WriteTransforms",4.3000000005122274E-05
+722,"Animator.WriteTransforms",0.00017400000069756061
+723,"Animator.WriteTransforms",4.0999999328050762E-05
+724,"Animator.WriteTransforms",0.00017499999376013875
+725,"Animator.WriteTransforms",0.00013499999477062374
+726,"Animator.WriteTransforms",4.1999999666586518E-05
+727,"Animator.WriteTransforms",0.0001340000017080456
+728,"Animator.WriteTransforms",4.400000034365803E-05
+729,"Animator.WriteTransforms",4.400000034365803E-05
+730,"Animator.WriteTransforms",0.00013200000103097409
+731,"Animator.WriteTransforms",6.3999999838415533E-05
+732,"Animator.WriteTransforms",9.1000001702923328E-05
+733,"Animator.WriteTransforms",4.1999999666586518E-05
+734,"Animator.WriteTransforms",4.400000034365803E-05
+735,"Animator.WriteTransforms",4.3000000005122274E-05
+736,"Animator.WriteTransforms",4.3000000005122274E-05
+737,"Animator.WriteTransforms",0.00018499999714549631
+738,"Animator.WriteTransforms",5.4000000091036782E-05
+739,"Animator.WriteTransforms",4.400000034365803E-05
+740,"Animator.WriteTransforms",4.1999999666586518E-05
+741,"Animator.WriteTransforms",4.3000000005122274E-05
+742,"Animator.WriteTransforms",4.1999999666586518E-05
+743,"Animator.WriteTransforms",0.00015300000086426735
+744,"Animator.WriteTransforms",4.400000034365803E-05
+745,"Animator.WriteTransforms",4.1999999666586518E-05
+746,"Animator.WriteTransforms",0.00020700000459328294
+747,"Animator.WriteTransforms",4.3000000005122274E-05
+748,"Animator.WriteTransforms",7.4000003223773092E-05
+749,"Animator.WriteTransforms",5.2999999752501026E-05
+750,"Animator.WriteTransforms",4.400000034365803E-05
+751,"Animator.WriteTransforms",7.4999996286351234E-05
+752,"Animator.WriteTransforms",4.0999999328050762E-05
+753,"EndJob",0
+754,"BeginJob",0
+755,"EngineJob",0.00041700000292621553
+756,"Animator.WriteTransforms",7.1000002208165824E-05
+757,"EndJob",0
+758,"WaitForCompleted",0
+759,"Animators.WriteProperties",0.019793000072240829
+760,"Animator.WriteProperties",0.0065150000154972076
+761,"Animator.WriteProperties",0.0004949999856762588
+762,"Animator.WriteProperties",0.00019799999427050352
+763,"Animator.WriteProperties",0.00022899999748915434
+764,"Animator.WriteProperties",0.00019500000053085387
+765,"Animator.WriteProperties",0.00016599999798927456
+766,"Animator.WriteProperties",0.00016199999663513154
+767,"Animator.WriteProperties",0.00016399999731220305
+768,"Animator.WriteProperties",0.00016799999866634607
+769,"Animator.WriteProperties",0.00011200000153621659
+770,"Animator.WriteProperties",0.00018600000475998968
+771,"Animator.WriteProperties",0.00019099999917671084
+772,"Animator.WriteProperties",9.2000002041459084E-05
+773,"Animator.WriteProperties",7.599999662488699E-05
+774,"Animator.WriteProperties",0.00038199999835342169
+775,"Animator.WriteProperties",0.00018099999579135329
+776,"Animator.WriteProperties",0.00015799999528098851
+777,"Animator.WriteProperties",8.70000003487803E-05
+778,"Animator.WriteProperties",7.79999973019585E-05
+779,"Animator.WriteProperties",0.00017600000137463212
+780,"Animator.WriteProperties",8.2999998994637281E-05
+781,"Animator.WriteProperties",7.8999997640494257E-05
+782,"Animator.WriteProperties",7.6999996963422745E-05
+783,"Animator.WriteProperties",9.6999996458180249E-05
+784,"Animator.WriteProperties",7.8999997640494257E-05
+785,"Animator.WriteProperties",0.00018800000543706119
+786,"Animator.WriteProperties",7.9999997979030013E-05
+787,"Animator.WriteProperties",8.1999998656101525E-05
+788,"Animator.WriteProperties",9.3000002379994839E-05
+789,"Animator.WriteProperties",7.79999973019585E-05
+790,"Animator.WriteProperties",0.00020399999630171806
+791,"Animator.WriteProperties",0.00012799999967683107
+792,"Animator.WriteProperties",0.00014600000577047467
+793,"Animator.WriteProperties",0.00016900000628083944
+794,"Animator.WriteProperties",0.00011000000085914508
+795,"Animator.WriteProperties",0.00020300000323913991
+796,"Animator.WriteProperties",0.00011000000085914508
+797,"Animator.WriteProperties",9.9999997473787516E-05
+798,"Animator.WriteProperties",9.9999997473787516E-05
+799,"Animator.WriteProperties",0.00011300000187475234
+800,"Animator.WriteProperties",0.00011500000255182385
+801,"Animator.WriteProperties",0.00020799999765586108
+802,"Animator.WriteProperties",0.00011700000322889537
+803,"Animator.WriteProperties",0.00011500000255182385
+804,"Animator.WriteProperties",0.00011000000085914508
+805,"Animator.WriteProperties",0.00011799999629147351
+806,"Animator.WriteProperties",0.00041400000918656588
+807,"Animator.WriteProperties",0.00011300000187475234
+808,"Animator.WriteProperties",0.00011700000322889537
+809,"Animator.WriteProperties",0.00011799999629147351
+810,"Animator.WriteProperties",0.00014200000441633165
+811,"Animator.WriteProperties",0.00031000000308267772
+812,"Animator.WriteProperties",0.00011999999696854502
+813,"Animator.WriteProperties",0.00015799999528098851
+814,"Animator.WriteProperties",0.00010299999848939478
+815,"Animator.WriteProperties",9.7999996796716E-05
+816,"Animator.WriteProperties",7.79999973019585E-05
+817,"Animator.WriteProperties",0.00013899999612476677
+818,"Animator.WriteProperties",0.0001900000061141327
+819,"Animator.WriteProperties",0.00029399999766610563
+820,"Animator.WriteProperties",0.0002010000025620684
+821,"PreLateUpdate.DirectorDeferredEvaluate",0.0015529999509453773
+822,"PreLateUpdate.UIElementsUpdatePanels",0.02277899906039238
+823,"UnityEngine.UIElementsModule.dll!UnityEngine.UIElements::UIElementsRuntimeUtilityNative.UpdatePanels() [Invoke]",0.018216000869870186
+824,"UIR.Free",0.0017709999810904264
+825,"UIElements.PreUpdatePanelRenderers",0.0045949998311698437
+826,"PreLateUpdate.EndGraphicsJobsAfterScriptUpdate",0.0099670002236962318
+827,"EndGraphicsJobs",0.0090849995613098145
+828,"Gfx.EndAsyncJobFrame",0.0054899998940527439
+829,"WaitForRenderJobs",0.0044669997878372669
+830,"PreLateUpdate.ConstraintManagerUpdate",0.0021049999631941319
+831,"ConstraintManager::Update",0.001276999944821
+832,"ConstraintManager::Update::JobSetup",0.00028800001018680632
+833,"PreLateUpdate.PhysicsCore2DLateUpdate",0.0050019999034702778
+834,"PhysicsCore2D.PhysicsWorld.SimulateBatch",0.00034400000004097819
+835,"PreLateUpdate.Physics2DLateUpdate",0.0053189997561275959
+836,"Physics2D.CollectProfileInfo",0.0032200000714510679
+837,"PreLateUpdate.PhysicsLateUpdate",0.00044800000614486635
+838,"PreLateUpdate.ScriptRunBehaviourLateUpdate",0.017062999308109283
+839,"LateBehaviourUpdate",0.015565999783575535
+840,"UnityEngine.AdaptivePerformanceModule.dll!UnityEngine.AdaptivePerformance::AdaptivePerformanceManager.LateUpdate() [Invoke]",0.0059529999271035194
+841,"Assembly-CSharp.dll!::GreyboxLane.LateUpdate() [Invoke]",0.002432999899610877
+842,"Unity.RenderPipelines.Universal.2D.Runtime.dll!UnityEngine.Rendering.Universal::Light2D.LateUpdate() [Invoke]",0.000881000014487654
+843,"PostLateUpdate.PlayerSendFrameStarted",0.022637000307440758
+844,"FrameEvents.XRBeginFrame",0.0051750000566244125
+845,"FrameEvents.NewInputBeforeRenderUpdate",0.0096209999173879623
+846,"UnityEngine.InputModule.dll!UnityEngineInternal.Input::NativeInputSystem.NotifyBeforeUpdate() [Invoke]",0.0064799999818205833
+847,"GC.Alloc",0.00068300002021715045
+848,"FrameEvents.OnBeforeRenderCallback",0.0055649997666478157
+849,"UnityEngine.CoreModule.dll!UnityEngine::Application.InvokeOnBeforeRender() [Invoke]",0.0045019998215138912
+850,"PostLateUpdate.DirectorLateUpdate",0.0016400000313296914
+851,"Director.PrepareFrame",0.00024699998903088272
+852,"Director.ProcessFrame",0.00019200000679120421
+853,"PostLateUpdate.ScriptRunDelayedDynamicFrameRate",0.0016820000018924475
+854,"CoroutinesDelayedCalls",0.0010469999397173524
+855,"PostLateUpdate.UpdateRectTransform",0.0049319998361170292
+856,"TransformChangeSystem",0.0019480000482872128
+857,"TransformChangeSystem",0.00086299999384209514
+858,"PostLateUpdate.PlayerUpdateCanvases",0.11245899647474289
+859,"UIEvents.UpdateCanvasRectTransform",0.027032999321818352
+860,"UIEvents.AlignCanvasRectTransformWithCamera",0.001306000049225986
+861,"UIEvents.WillRenderCanvases",0.080920003354549408
+862,"UGUI.Rendering.UpdateBatches",0.0799660012125969
+863,"UnityEngine.UIModule.dll!UnityEngine::Canvas.SendPreWillRenderCanvases() [Invoke]",0.019997000694274902
+864,"UnityEngine.UIModule.dll!UnityEngine::Canvas.SendWillRenderCanvases() [Invoke]",0.036093998700380325
+865,"Layout",0.01305800024420023
+866,"CanvasUpdate.Prelayout",0.0023449999280273914
+867,"CanvasUpdate.Layout",0.00017699999443721026
+868,"CanvasUpdate.PostLayout",0.00016599999798927456
+869,"Render",0.0030869999900460243
+870,"ClipperRegistry.Cull",0.0014850000152364373
+871,"CanvasUpdate.PreRender",0.00040200000512413681
+872,"CanvasUpdate.LatePreRender",0.0001230000052601099
+873,"TransformChangeSystem",0.00093600002583116293
+874,"TransformChangeSystem",0.0001720000000204891
+875,"TransformChangeSystem",0.00016799999866634607
+876,"TransformChangeSystem",0.00015500000154133886
+877,"TransformChangeSystem",0.000155999994603917
+878,"TransformChangeSystem",0.00014600000577047467
+879,"TransformChangeSystem",0.00016799999866634607
+880,"TransformChangeSystem",0.00013000000035390258
+881,"TransformChangeSystem",0.00010199999815085903
+882,"TransformChangeSystem",9.7999996796716E-05
+883,"TransformChangeSystem",0.00010199999815085903
+884,"TransformChangeSystem",9.7999996796716E-05
+885,"TransformChangeSystem",9.7999996796716E-05
+886,"TransformChangeSystem",9.6000003395602107E-05
+887,"TransformChangeSystem",9.9999997473787516E-05
+888,"TransformChangeSystem",9.6000003395602107E-05
+889,"TransformChangeSystem",9.3000002379994839E-05
+890,"TransformChangeSystem",0.00015999999595806003
+891,"TransformChangeSystem",0.00014400000509340316
+892,"TransformChangeSystem",0.00016999999934341758
+893,"TransformChangeSystem",8.70000003487803E-05
+894,"TransformChangeSystem",0.00010699999984353781
+895,"TransformChangeSystem",8.800000068731606E-05
+896,"TransformChangeSystem",8.70000003487803E-05
+897,"PostLateUpdate.UpdateAudio",0.12607200443744659
+898,"AudioManager.Update",0.11462000012397766
+899,"AudioSource.Update",0.051800999790430069
+900,"Audio.FMODSystemUpdate",0.035330001264810562
+901,"Audibility computation",0.0058229998685419559
+902,"Flush DSP connections",0.0016710000345483422
+903,"SoundManager.Update",0.0033809999004006386
+904,"PostLateUpdate.VFXUpdate",0.001576000009663403
+905,"PostLateUpdate.EndGraphicsJobsAfterScriptLateUpdate",0.00081100000534206629
+906,"EndGraphicsJobs",0.00039900001138448715
+907,"PostLateUpdate.UpdateCustomRenderTextures",0.013693000189960003
+908,"CustomRenderTextures.Update",0.010963000357151031
+909,"PostLateUpdate.XRPostLateUpdate",0.00043799998820759356
+910,"PostLateUpdate.UpdateAllRenderers",0.088520996272563934
+911,"Renderers.OncePerFrameUpdate",0.00040600000647827983
+912,"PrepareUpdateRendererBoundingVolumes",0.0048980000428855419
+913,"ScheduleUpdateRendererBoundingVolumes",0.053479000926017761
+914,"TransformChangeSystem",0.051959000527858734
+915,"ScheduleJob",0
+916,"ScheduleJob",0
+917,"FinalizeUpdateRendererBoundingVolumes",0.00098000001162290573
+918,"WaitForJobGroupID",0.017255999147892
+919,"Find dependency chain",0.000957000011112541
+920,"BeginJob",0
+921,"EngineJob",0.0070859999395906925
+922,"UpdateRendererBoundingVolumes",0.00622999994084239
+923,"EndJob",0
+924,"BeginJob",0
+925,"UpdateRendererBoundingVolumes",0.0027610000688582659
+926,"EndJob",0
+927,"WaitForCompleted",0
+928,"Update Lights",0.00204299995675683
+929,"TransformChangeSystem",0.00092199997743591666
+930,"PostLateUpdate.EnlightenRuntimeUpdate",0.010463000275194645
+931,"UnityEngine.CoreModule.dll!UnityEngine.Rendering::SupportedRenderingFeatures.IsLightmapBakeTypeSupportedByRef() [Invoke]",0.0041570002213120461
+932,"PostLateUpdate.SortingGroupsUpdate",0.0018870000494644046
+933,"SortingGroupManager.Update",0.00073099997825920582
+934,"PostLateUpdate.UpdateVideoTextures",0.0020620001014322042
+935,"PostLateUpdate.DirectorRenderImage",0.0036520001012831926
+936,"Director.PrepareFrame",0.000307999987853691
+937,"Director.ProcessFrame",0.00015799999528098851
+938,"PostLateUpdate.PlayerEmitCanvasGeometry",0.0068720001727342606
+939,"UIEvents.CanvasManagerEmitOffScreenGeometry",0.0029380000196397305
+940,"UGUI.Rendering.EmitWorldScreenspaceCameraGeometry",0.0019320000428706408
+941,"UIEvents.CanvasmanagerEmitOnScreenGeometry",0.0026869999710470438
+942,"UGUI.Rendering.EmitWorldScreenspaceCameraGeometry",0.0025069999974220991
+943,"PostLateUpdate.FinishFrameRendering",25.019664764404297
+944,"UnityEngine.CoreModule.dll!UnityEngine.Rendering::RenderPipelineManager.HandleRenderPipelineChange() [Invoke]",0.0022990000434219837
+945,"UnityEngine.CoreModule.dll!UnityEngine.Experimental.Rendering::ScriptableRuntimeReflectionSystemWrapper.Internal_ScriptableRuntimeReflectionSystemWrapper_TickRealtimeProbes() [Invoke]",0.010572999715805054
+946,"ReflectionProbes.Update",0.00609700009226799
+947,"EndGraphicsJobs",0.00027799999224953353
+948,"Gfx.WaitForPresentOnGfxThread",9.9284029006958
+949,"Semaphore.WaitForSignal",9.92592716217041
+950,"UnityEngine.CoreModule.dll!UnityEngine.Rendering::RenderPipelineManager.HandleRenderPipelineChange() [Invoke]",0.00788700021803379
+951,"Camera.Render",0.0098959999158978462
+952,"beforeCameraRender.Invoke",0.0021299999207258224
+953,"UnityEngine.CoreModule.dll!UnityEngine.Rendering::RenderPipelineManager.DoRenderLoop_Internal() [Invoke]",13.76716423034668
+954,"Inl_UniversalRenderTotal",13.710326194763184
+955,"Inl_RenderPipeline.BeginContextRendering",0.0016560000367462635
+956,"Inl_UniversalRenderPipeline.SetupPerFrameShaderConstants",0.017944000661373138
+957,"Inl_RenderCameraStack",13.604118347167969
+958,"Inl_RenderPipeline.BeginCameraRendering",0.00080300000263378024
+959,"Inl_UpdateVolumeFramework",0.062141001224517822
+960,"VolumeManager.Update",0.052972998470067978
+961,"VolumeManager.ReplaceData",0.0067449999041855335
+962,"Inl_UniversalRenderPipeline.CreateCameraData",0.051169000566005707
+963,"Inl_UniversalRenderPipeline.InitializeStackedCameraData",0.021462999284267426
+964,"Inl_UniversalRenderPipeline.InitializeAdditionalCameraData",0.70637398958206177
+965,"Inl_UniversalRenderPipeline.RenderSingleCameraInternal: Main Camera",3.8105700016021729
+966,"Inl_ScriptableRenderer.SetupCullingParameters",0.029438000172376633
+967,"Cull 2D Lights and Shadow Casters",0.01614999957382679
+968,"Inl_UniversalRenderPipeline.SetupPerCameraShaderConstants",0.17233400046825409
+969,"CullScriptable",0.65503400564193726
+970,"TerrainManager.CullAllTerrains",0.0036430000327527523
+971,"Terrain.UpdateSplatProperties",0.00083999999333173037
+972,"ScheduleCullingGroups",0.00054899998940527439
+973,"CullingGroupSendEvents",0.00022499999613501132
+974,"PrepareUpdateRendererBoundingVolumes",0.0011599999852478504
+975,"ReflectionProbeAnchorManagerUpdate",0.010331999510526657
+976,"ReflectionProbeAnchorPositionUpdate",0.0047450000420212746
+977,"PrepareSceneCullingParameters",0.023265000432729721
+978,"TransformChangeSystem",0.00021899999410379678
+979,"TransformChangeSystem",0.0013379999436438084
+980,"LOD.ComputeLOD",0.0036400000099092722
+981,"LOD.ComputeLOD",0.0010169999441131949
+982,"SceneCulling",0.2977679967880249
+983,"ScheduleJob",0
+984,"ScheduleAllocJob",0
+985,"KickJobs",0
+986,"PrepareSceneNodes",0.0219969991594553
+987,"ScheduleJob",0
+988,"ScheduleJob",0
+989,"WaitForJobGroupID",0.034008000046014786
+990,"Find dependency chain",0.0025979999918490648
+991,"BeginJob",0
+992,"EngineJob",0.014190999791026115
+993,"CullSceneDynamicObjects",0.013089999556541443
+994,"CullObjectsWithoutUmbra",0.0045639998279511929
+995,"EndJob",0
+996,"BeginJob",0
+997,"CullSceneDynamicObjectsCombineJob",0.0035550000611692667
+998,"CombineJobResults",0.00020799999765586108
+999,"EndJob",0
+1000,"WaitForCompleted",0
+1001,"CullSendEvents",0.059581000357866287
+1002,"afterCullingOutputReady.Invoke",0.01640000008046627
+1003,"Terrain.Trees.OnWillRender",0.0012710000155493617
+1004,"WaitForJobGroupID",0.018012000247836113
+1005,"Find dependency chain",0.00070899998536333442
+1006,"BeginJob",0
+1007,"EngineJob",0.0032840000931173563
+1008,"PrepareSceneNodesSetUp",0.00084599998081102967
+1009,"EndJob",0
+1010,"BeginJob",0
+1011,"EngineJob",0.00026999998954124749
+1012,"PrepareSceneNodesSetUp",4.8999998398358E-05
+1013,"EndJob",0
+1014,"BeginJob",0
+1015,"EngineJob",0.00015100000018719584
+1016,"PrepareSceneNodesSetUp",4.8999998398358E-05
+1017,"EndJob",0
+1018,"BeginJob",0
+1019,"EngineJob",0.000391999987186864
+1020,"PrepareSceneNodesSetUp",5.8999998145736754E-05
+1021,"EndJob",0
+1022,"WaitForCompleted",0
+1023,"WaitForJobGroupID",0.017779000103473663
+1024,"Find dependency chain",0.00090300000738352537
+1025,"WaitForCompleted",0
+1026,"PrepareUpdateRendererBoundingVolumes",0.0005769999697804451
+1027,"CullResults.CreateSharedRendererScene",0.27912700176239014
+1028,"BeginRenderQueueExtraction",0.016983000561594963
+1029,"ReflectionProbeAnchorManagerUpdate",0.00216299993917346
+1030,"ReflectionProbeAnchorPositionUpdate",0.0010969999711960554
+1031,"ScheduleJob",0
+1032,"EndRenderQueueExtraction",0.24464300274848938
+1033,"ScheduleAllocJob",0
+1034,"KickJobs",0
+1035,"WaitForJobGroupID",0.094493001699447632
+1036,"Find dependency chain",0.0013050000416114926
+1037,"BeginJob",0
+1038,"EngineJob",0.083438999950885773
+1039,"ExecuteRenderQueueJob",0.082645997405052185
+1040,"SpriteRenderer.PrepareNode",0.076099000871181488
+1041,"EndJob",0
+1042,"BeginJob",0
+1043,"CombineJobResults",0.00044500001240521669
+1044,"EndJob",0
+1045,"WaitForCompleted",0
+1046,"QueuePrepareIntegrateMainThreadObjects",0.0070340000092983246
+1047,"SpriteRenderer.PrepareNode",0.0052410000935196877
+1048,"CullResultsToNativeArrays",0.004792999941855669
+1049,"Inl_UniversalRenderPipeline.CreateRenderingData",0.030386999249458313
+1050,"Inl_UniversalRenderPipeline.CreateLightData",0.011486000381410122
+1051,"Inl_UniversalRenderPipeline.GetMainLightIndex",0.00097100000130012631
+1052,"Inl_UniversalRenderPipeline.CreateShadowData",0.0067369998432695866
+1053,"Inl_UniversalRenderPipeline.GetPerObjectLightFlags",0.00065900001209229231
+1054,"Inl_ScriptableRenderer.AddRenderPasses",0.000881000014487654
+1055,"Inl_RecordRenderGraph",2.0606539249420166
+1056,"Inl_Sort Render Passes",0.0027409999165683985
+1057,"Inl_On Record Render Graph",2.0341300964355469
+1058,"FindObjectsOfType",0.0025529998820275068
+1059,"UnsafeUtility.Malloc",0.0071549997664988041
+1060,"UnsafeUtility.Free",0.0065500000491738319
+1061,"Profiler.FrameMetadata",0.00094200001331046224
+1062,"Profiler.FrameMetadata",0.0026859999634325504
+1063,"GC.Alloc",0.001323999953456223
+1064,"Profiler.FrameMetadata",0.00040600000647827983
+1065,"Profiler.FrameMetadata",0.0011859999503940344
+1066,"Inl_UberPostSetupBloomPass",0.011632000096142292
+1067,"Inl_ComputeHashRenderGraph",0.036786001175642014
+1068,"Inl_CompileRenderGraph",0.0217289999127388
+1069,"Inl_ExecuteRenderGraph",0.62600797414779663
+1070,"Inl_NRPRGComp_ExecuteInitializeResources",0.0010229999898001552
+1071,"Inl_Initialize Frame",0.025140000507235527
+1072,"Inl_ScriptableRenderer.ClearRenderingState",0.0098329996690154076
+1073,"Inl_NRPRGComp_ExecuteDestroyResources",0.0033760000951588154
+1074,"Inl_NRPRGComp_ExecuteInitializeResources",0.0019379999721422791
+1075,"Inl_Setup Camera Properties",0.050223998725414276
+1076,"Inl_ScriptableRenderer.SetPerCameraShaderVariables",0.0377269983291626
+1077,"Inl_NRPRGComp_ExecuteDestroyResources",0.0020620001014322042
+1078,"Inl_NRPRGComp_ExecuteInitializeResources",0.019348999485373497
+1079,"Inl_NRPRGComp_ExecuteBeginRenderpassCommand",0.027845000848174095
+1080,"Inl_ColorGradingLUT",0.12848000228405
+1081,"Inl_NRPRGComp_ExecuteDestroyResources",0.00084100000094622374
+1082,"Inl_NRPRGComp_ExecuteInitializeResources",0.00016300000424962491
+1083,"Inl_SetGlobalProperties",0.006074999924749136
+1084,"Inl_NRPRGComp_ExecuteDestroyResources",0.00058499997248873115
+1085,"Inl_NRPRGComp_ExecuteInitializeResources",0.0031449999660253525
+1086,"Inl_NRPRGComp_ExecuteBeginRenderpassCommand",0.0037139998748898506
+1087,"Inl_Light2D SRT Pass",0.19379499554634094
+1088,"Inl_NRPRGComp_ExecuteDestroyResources",0.0012309999438002706
+1089,"Inl_NRPRGComp_ExecuteInitializeResources",0.00043899999582208693
+1090,"Inl_SetLightBlendTextures",0.004846000112593174
+1091,"Inl_NRPRGComp_ExecuteDestroyResources",0.00099600001703947783
+1092,"Inl_NRPRGComp_ExecuteInitializeResources",0.0014459999511018395
+1093,"Inl_NRPRGComp_ExecuteBeginRenderpassCommand",0.012476000003516674
+1094,"Inl_Renderer2D Pass",0.019123999401926994
+1095,"Inl_NRPRGComp_ExecuteDestroyResources",0.0013480000197887421
+1096,"Inl_NRPRGComp_ExecuteInitializeResources",0.0013079999480396509
+1097,"Inl_NRPRGComp_ExecuteBeginRenderpassCommand",0.004623000044375658
+1098,"Inl_NRPRGComp_ExecuteDestroyResources",0.0010310000507161021
+1099,"Inl_NRPRGComp_ExecuteInitializeResources",0.00037399999564513564
+1100,"Inl_NRPRGComp_ExecuteDestroyResources",0.011212999932467937
+1101,"Inl_NRPRGComp_ExecuteInitializeResources",0.00016599999798927456
+1102,"Inl_NRPRGComp_ExecuteDestroyResources",0.000387999985832721
+1103,"Inl_ScriptableRenderer.InternalFinishRenderingCommon",0.00098200002685189247
+1104,"Inl_ScriptableRenderContext.Submit",8.5071010589599609
+1105,"KickJobs",0
+1106,"ScheduleJob",0
+1107,"ScheduleAllocJob",0
+1108,"KickJobs",0
+1109,"UniversalRenderPipeline.RenderSingleCameraInternal: Main Camera",5.8158349990844727
+1110,"RenderLoop.CleanupNodeQueue",0.0032689999788999557
+1111,"ExecuteRenderGraph",5.7775907516479492
+1112,"Initialize Frame",0.10827499628067017
+1113,"Setup Camera Properties",0.70945501327514648
+1114,"ColorGradingLUT",0.0924220010638237
+1115,"RenderingCommandBuffer.PrepareKeywords",0.0033370000310242176
+1116,"Graphics.DrawProcedural",0.0033410000614821911
+1117,"SetGlobalProperties",0.007429999765008688
+1118,"Light2D SRT Pass",0.0023680001031607389
+1119,"Multiply",0.00078499998198822141
+1120,"SetLightBlendTextures",0.00496299983933568
+1121,"Renderer2D Pass",2.0426878929138184
+1122,"RenderLoop.ScheduleDraw",2.0340800285339355
+1123,"WaitForCompleted",0
+1124,"RenderLoop.ScheduleDraw",2.0256080627441406
+1125,"WaitForCompleted",0
+1126,"RenderLoop.Draw",0.4366610050201416
+1127,"StdRender.ApplyShader",0.24184799194335938
+1128,"ApplyPass.PrepareKeywords",0.0011490000179037452
+1129,"BatchRenderer.Flush",0.088175997138023376
+1130,"StdRender.ApplyShader",0.011669999919831753
+1131,"ApplyPass.PrepareKeywords",0.00085499999113380909
+1132,"BatchRenderer.Flush",0.026186000555753708
+1133,"SpriteRenderer.RenderMultiple",0.017892999574542046
+1134,"RenderLoop.DrawSRPBatcher",1.5655900239944458
+1135,"SRPBRender.ApplyShader",0.01911499910056591
+1136,"ApplyPass.PrepareKeywords",0.000859999970998615
+1137,"SRPBatcher.Flush",1.4406859874725342
+1138,"SRPBRender.ApplyShader",0.053978998214006424
+1139,"ApplyPass.PrepareKeywords",0.002655999967828393
+1140,"SRPBatcher.Flush",0.021733000874519348
+1141,"RenderingCommandBuffer.PrepareKeywords",0.00093600002583116293
+1142,"Graphics.DrawProcedural",0.0013010000111535192
+1143,"UIEvents.CanvasManagerRenderOverlays",2.6020040512084961
+1144,"UI.RenderOverlays",2.6002459526062012
+1145,"Canvas.RenderOverlays",2.3298099040985107
+1146,"Material.SetPassFast",0.0933699980378151
+1147,"ApplyPass.PrepareKeywords",0.0019330000504851341
+1148,"Material.SetPassFast",0.015607999637722969
+1149,"ApplyPass.PrepareKeywords",0.00081499997759237885
+1150,"Material.SetPassFast",0.010153000243008137
+1151,"ApplyPass.PrepareKeywords",0.00020300000323913991
+1152,"Canvas.RenderOverlays",0.20184600353240967
+1153,"Material.SetPassFast",0.0079619996249675751
+1154,"ApplyPass.PrepareKeywords",0.00057500001275911927
+1155,"Material.SetPassFast",0.08831699937582016
+1156,"ApplyPass.PrepareKeywords",9.9999997473787516E-05
+1157,"Material.SetPassFast",0.016648000106215477
+1158,"ApplyPass.PrepareKeywords",0.000775999971665442
+1159,"Material.SetPassFast",0.014910000376403332
+1160,"ApplyPass.PrepareKeywords",0.00069900002563372254
+1161,"Material.SetPassFast",0.0092019997537136078
+1162,"ApplyPass.PrepareKeywords",0.0005549999768845737
+1163,"Canvas.RenderOverlays",0.0013699999544769526
+1164,"Canvas.RenderOverlays",0.024838000535964966
+1165,"Material.SetPassFast",0.010075000114738941
+1166,"ApplyPass.PrepareKeywords",0.00057299999753013253
+1167,"Material.SetPassFast",0.0047260001301765442
+1168,"ApplyPass.PrepareKeywords",0.00015900000289548188
+1169,"Canvas.RenderOverlays",0.024826999753713608
+1170,"Material.SetPassFast",0.004288999829441309
+1171,"ApplyPass.PrepareKeywords",0.00015700000221841037
+1172,"Material.SetPassFast",0.010514000430703163
+1173,"ApplyPass.PrepareKeywords",0.00054899998940527439
+1174,"Canvas.RenderOverlays",0.0019799999427050352
+1175,"UIEvents.IMGUIRenderOverlays",0.032432999461889267
+1176,"GUI.Repaint",0.029651999473571777
+1177,"UnityEngine.IMGUIModule.dll!UnityEngine::Event.Internal_MakeMasterEventCurrent() [Invoke]",0.011130999773740768
+1178,"RenderLoop.CleanupNodeQueue",0.004846000112593174
+1179,"Inl_RenderPipeline.EndCameraRendering",0.0024200000334531069
+1180,"Inl_RenderPipeline.EndContextRendering",0.0010949999559670687
+1181,"DestroyCullResults",0.036827001720666885
+1182,"RenderLoop.CleanupNodeQueue",0.00088599999435245991
+1183,"RenderLoop.CleanupNodeQueue",0.019406000152230263
+1184,"UnityEngine.CoreModule.dll!UnityEngine.Rendering::SupportedRenderingFeatures.IsUIOverlayRenderedBySRP() [Invoke]",0.0057330001145601273
+1185,"WatermarkRender",1.0780220031738281
+1186,"Material.SetPassFast",0.041342999786138535
+1187,"ApplyPass.PrepareKeywords",0.0029829998966306448
+1188,"GUITexture.Draw",0.0052160001359879971
+1189,"EndGraphicsJobs",0.00042799999937415123
+1190,"PostLateUpdate.BatchModeUpdate",0.0012760000536218286
+1191,"PostLateUpdate.PlayerSendFrameComplete",0.15489499270915985
+1192,"PlayerEndOfFrame",0.15312999486923218
+1193,"CoroutinesDelayedCalls",0.026923999190330505
+1194,"UnityEngine.CoreModule.dll!UnityEngine::Awaitable.OnEndOfFrame() [Invoke]",0.0092839999124407768
+1195,"FrameEvents.XREndFrame",0.0018390000332146883
+1196,"Profiler.ScreenshotUpdate",0.11619299650192261
+1197,"Profiler.FrameMetadata",0.001500000013038516
+1198,"Profiler.FrameMetadata",0.013074000366032124
+1199,"Profiler.FrameMetadata",0.00057799997739493847
+1200,"Profiler.FrameMetadata",0.00039800000376999378
+1201,"PostLateUpdate.UpdateCaptureScreenshot",0.00066700001480057836
+1202,"PostLateUpdate.PresentAfterDraw",0.015289999544620514
+1203,"Graphics.PresentAndSync",0.011737000197172165
+1204,"Device.Present",0.010373000055551529
+1205,"EndDynamicVBOFrame",0.0062219998799264431
+1206,"PostLateUpdate.ClearImmediateRenderers",0.0015620000194758177
+1207,"PostLateUpdate.PlayerSendFramePostPresent",0.0012459999416023493
+1208,"FrameEvents.XRPostPresent",0.00082700001075863838
+1209,"PostLateUpdate.UpdateResolution",0.151855006814003
+1210,"PostLateUpdate.InputEndFrame",0.0014309999532997608
+1211,"PostLateUpdate.TriggerEndOfFrameCallbacks",0.0015360000543296337
+1212,"PostLateUpdate.GUIClearEvents",0.0018139999592676759
+1213,"PostLateUpdate.ShaderHandleErrors",0.00088800000958144665
+1214,"PostLateUpdate.ResetInputAxis",0.00037200000951997936
+1215,"PostLateUpdate.ProfilerSynchronizeStats",0.0010999999940395355
+1216,"PostLateUpdate.MemoryFrameMaintenance",0.076144002377986908
+1217,"PostLateUpdate.XRPreEndFrame",0.00050099997315555811
+1218,"PostLateUpdate.ProfilerEndFrame",0.043543998152017593
+1219,"Profiler.FlushCounters",0.039958998560905457
+1220,"Profiler.CollectLegacyStats",0.020222999155521393
+1221,"Profiler.SerializeStats",0.0069369999691843987
+1222,"Profiler.FlushCountersWithFlushOnEndOfFrame",0.011737000197172165
+1223,"Profiler.FlushFileIOCounters",0.0014009999576956034
+1224,"Profiler.FlushMemoryCounters",0.0031429999507963657
+1225,"Input.Android.PostProcess",0.00044199998956173658
+1226,"ScheduleJob",0
+1227,"TimeUpdate.WaitForLastPresentationAndUpdateTime",0.053449001163244247
+1228,"WaitForTargetFPS",0.039028998464345932
+1229,"GarbageCollector.CollectIncremental",0.0049600000493228436
+1230,"UnityEngine.CoreModule.dll!UnityEngine.Rendering::OnDemandRendering.GetRenderFrameInterval() [Invoke]",0.0057379999198019505
+1231,"UnityEngine.CoreModule.dll!UnityEngine.Rendering::OnDemandRendering.GetRenderFrameInterval() [Invoke]",0.00015199999324977398
+1232,"TimeManager.Update",0.0052069998346269131
+1233,"Input.Android.Process",0.0020759999752044678
+1234,"UnityEngine.CoreModule.dll!UnityEngine.Rendering::OnDemandRendering.GetRenderFrameInterval() [Invoke]",0.00013600000238511711
+1235,"UnityEngine.CoreModule.dll!UnityEngine.Rendering::OnDemandRendering.GetRenderFrameInterval() [Invoke]",0.00011500000255182385

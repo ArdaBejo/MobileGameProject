@@ -1,0 +1,26 @@
+sample,name,inclusive_ms
+0,Main Thread,31.789632797241211
+1,PlayerLoop,31.606868743896484
+943,PostLateUpdate.FinishFrameRendering,25.019664764404297
+953,UnityEngine.CoreModule.dll!UnityEngine.Rendering::RenderPipelineManager.DoRenderLoop_Internal() [Invoke],13.76716423034668
+954,Inl_UniversalRenderTotal,13.710326194763184
+957,Inl_RenderCameraStack,13.604118347167969
+948,Gfx.WaitForPresentOnGfxThread,9.9284029006958
+949,Semaphore.WaitForSignal,9.92592716217041
+1104,Inl_ScriptableRenderContext.Submit,8.5071010589599609
+1109,UniversalRenderPipeline.RenderSingleCameraInternal: Main Camera,5.8158349990844727
+1111,ExecuteRenderGraph,5.7775907516479492
+965,Inl_UniversalRenderPipeline.RenderSingleCameraInternal: Main Camera,3.8105700016021729
+1143,UIEvents.CanvasManagerRenderOverlays,2.6020040512084961
+1144,UI.RenderOverlays,2.6002459526062012
+1145,Canvas.RenderOverlays,2.3298099040985107
+1055,Inl_RecordRenderGraph,2.0606539249420166
+1121,Renderer2D Pass,2.0426878929138184
+1057,Inl_On Record Render Graph,2.0341300964355469
+1122,RenderLoop.ScheduleDraw,2.0340800285339355
+1124,RenderLoop.ScheduleDraw,2.0256080627441406
+1134,RenderLoop.DrawSRPBatcher,1.5655900239944458
+1137,SRPBatcher.Flush,1.4406859874725342
+1185,WatermarkRender,1.0780220031738281
+285,PreLateUpdate.DirectorUpdateAnimationBegin,1.0427520275115967
+286,Director.PrepareFrame,0.77658098936080933

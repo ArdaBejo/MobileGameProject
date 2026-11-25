@@ -1,0 +1,8 @@
+Original pace.pftrace, Perfetto trace_processor v59.1
+SQL: screenshot-overlap.sql
+
+overlaps_screenshot,intervals,average_ms,over33.33_ms,max_ms
+0,446,16.889,2,51.295352
+1,102,19.351,10,49.829678
+
+Eight screencap processes were observed. Their first/last scheduled spans define overlap. Correlation does not prove that screencap alone caused the long intervals.

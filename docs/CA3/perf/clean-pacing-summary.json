@@ -1,0 +1,12 @@
+{
+  "method": "consecutive eglSwapBuffers entry timestamps on app render thread; submission cadence, not GPU execution or display presentation",
+  "swapEvents": 450,
+  "intervals": 449,
+  "spanSeconds": 9.464858119,
+  "avgMs": 21.07986218040089,
+  "p99Ms": 38.706292,
+  "maxMs": 51.181551,
+  "over16_7ms": 374,
+  "over33_33ms": 11,
+  "over16_7Percent": 83.29621380846325
+}

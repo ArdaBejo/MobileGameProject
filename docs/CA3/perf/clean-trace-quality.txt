@@ -1,0 +1,8 @@
+| name | value |
+|---|---|
+
+(0 rows)
+
+| screenshot_processes |
+|---|
+| 0 |

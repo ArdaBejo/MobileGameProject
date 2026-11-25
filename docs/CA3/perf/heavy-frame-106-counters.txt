@@ -1,0 +1,5 @@
+Frame 106, Android Development capture; frameTimeMs=31.7896328
+Draw Calls Count marker=2059 value=0
+Batches Count marker=2058 value=0
+SetPass Calls Count marker=2161 value=0
+Triangles Count marker=2159 value=0
